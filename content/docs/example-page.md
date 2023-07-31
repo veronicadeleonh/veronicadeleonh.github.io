@@ -5,5 +5,5 @@
 <---> <!-- magic separator, between columns -->
 <---> <!-- magic separator, between columns -->
 
-_Bella Vista, Venzuela 2015_
+_Bella Vista, Venezuela 2015_
 {{< /columns >}}
