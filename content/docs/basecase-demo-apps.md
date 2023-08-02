@@ -6,7 +6,8 @@ _2019, Berlin_
 
 #### Client
 
-BaseCase GmbH
+##### BaseCase GmbH
+
 BaseCase is a drag-and-drop platform to create interactive online content. With BaseCase the user is able to integrate UI elements and realize dynamic calculations on the screen.
 
 <---> <!-- magic separator, between columns -->
