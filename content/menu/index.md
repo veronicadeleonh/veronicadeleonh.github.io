@@ -5,6 +5,7 @@ headless = true
 - [Example page]({{< relref "/docs/example-page" >}})
 - [EyeEm's Checkout Redesign]({{< relref "/docs/eyeems-checkout" >}})
 - [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})
+- [PONG Game]({{< relref "/docs/pong-game" >}})
 
 **Photography**
 
