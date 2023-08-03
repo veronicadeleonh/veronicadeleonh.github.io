@@ -10,4 +10,5 @@ headless = true
 **Photography**
 
 - [Bella Vista Video]({{< relref "/docs/bella-vista-video" >}})
-- [Rome Pride 2010]({{< relref "/docs/rome-pride-2010" >}})
+- [Roma Pride 2010]({{< relref "/docs/roma-pride-2010" >}})
+- [Make City]({{< relref "/docs/make-city" >}})

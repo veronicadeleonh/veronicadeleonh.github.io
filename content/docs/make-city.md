@@ -1,0 +1,36 @@
+# Make City
+
+_2015, Berlin_
+
+On June 2015 I had the opportunity to collaborate on the Make City Festival in Berlin documenting some of the events.
+
+_**MAKE CITY** is Berlin’s first festival for architecture and urban alternatives, bringing together architects, planners, civic groups and developers in a citywide conversation on thinking and making city differently._
+
+_Make City Festival / Make_Shift gGmbH (c) Verónica De León Hernández_
+
+{{< button href="https://web.archive.org/web/20170421033901/http://makecity.berlin/" >}}Make City's Website{{< /button >}}
+
+For more images of the festival visit their Flickr page:
+
+{{< button href="https://www.flickr.com/photos/134056871@N04/" >}}Make City's Flickr page{{< /button >}}
+
+![Women Co-Housing](/images/make-city-00.jpg)
+_Women Co-Housing_
+![Pre-Fab Revisted](/images/make-city-01.jpg)
+![Pre-Fab Revisted](/images/make-city-02.jpg)
+_Pre-Fab revisted_
+![3x grün](/images/make-city-03.jpg)
+![3x grün](/images/make-city-04.jpg)
+_3x grün_
+![Neue italianissche Architektur](/images/make-city-05.jpg)
+_Neue italianissche Architektur_
+![Makers LIB: Realities United](/images/make-city-06.jpg)
+_Makers LIB: Realities United_  
+@ [elegant embellishments](http://www.elegantembellishments.net/)
+![Shelter](/images/make-city-07.jpg)
+_Shelter_  
+@ [Mall of Berlin](https://www.mallofberlin.de/)
+![Symposium Verflechtungen: Planen und bauen im Berlin der 1960er-Jahre](/images/make-city-08.jpg)
+_Symposium Verflechtungen:_
+_Planen und bauen im Berlin der 1960er-Jahre_  
+@ [Berlinische Galerie](http://www.berlinischegalerie.de/)
