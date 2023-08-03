@@ -2,11 +2,11 @@
 
 _2015, Berlin_
 
-On June 2015 I had the opportunity to collaborate on the Make City Festival in Berlin documenting some of the events.
+_Make City Festival / Make_Shift gGmbH (c) Verónica De León Hernández_
+
+On June 2015 I volunteered as a photographer in the Make City Festival in Berlin to document some of their events.
 
 _**MAKE CITY** is Berlin’s first festival for architecture and urban alternatives, bringing together architects, planners, civic groups and developers in a citywide conversation on thinking and making city differently._
-
-_Make City Festival / Make_Shift gGmbH (c) Verónica De León Hernández_
 
 {{< button href="https://web.archive.org/web/20170421033901/http://makecity.berlin/" >}}Make City's Website{{< /button >}}
 
