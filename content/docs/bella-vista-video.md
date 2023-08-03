@@ -2,6 +2,10 @@
 
 _2016, Berlin_
 
+https://player.vimeo.com/video/166104401
+
+<iframe src="https://player.vimeo.com/video/166104401" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ruffle-polyfilled="" style="max-width:100" ></iframe>
+
 _Bella Vista_ is the name of a humble fisherman area in the southeast coast of _Isla Margarita_. In this area of the island I lived and grew up with my parents and my two siblings. Living on a 7th floor apartment in a building located almost at the middle of Bella Vista Beach, gave us an ample view of the _Guaraguao’s Bay_. Here we were able to see the sea everyday just by looking through any of the windows pointing south or by walking through the terraces.
 
 ![Bella Vista Map](/images/bella-vista-map.gif)

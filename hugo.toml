@@ -2,5 +2,8 @@ baseURL = 'http://veronicadeleon.de/'
 languageCode = 'en-us'
 title = 'VDLH Portfolio'
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [params]
     BookMenuBundle = '/menu'
