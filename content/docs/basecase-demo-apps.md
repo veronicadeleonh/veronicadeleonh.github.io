@@ -57,6 +57,6 @@ BaseCase interactive apps were mainly designed for iPad users. Nevertheless, I h
 
 ![Interesting Insights](/images/bc-demo-apps-interesting.svg)
 
-#### Drug Dosage Calculator
+#### Drug Dosage Calculator Tool
 
 ![Interesting Insights](/images/bc-demo-apps-ddc.svg)
