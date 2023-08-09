@@ -21,16 +21,15 @@ They are the only ones with whom I could share exactly what I feel when I see th
 
 LA LÁGRIMA  
 Traditional  
-Arrangements María Márquez  
-http://mariamarquez.com
+Arrangements [María Márquez](http://mariamarquez.com/)
 
 #### Special thanks to
 
 Tulio De León  
 Natalia De León  
 Luigia Fortino de De León  
-Nicholas M. Scholz  
-DJ Lionza
+[Nicholas M. Scholz](https://matsn.de)  
+[DJ Lionza](https://soundcloud.com/lionza-music)
 
 #### Video Stills
 

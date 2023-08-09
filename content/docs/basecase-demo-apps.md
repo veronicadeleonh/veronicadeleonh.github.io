@@ -18,6 +18,13 @@ As **UX/UI Designer** I contributed to this project being responsible for the de
 This library was a collection of demos are interactive presentations that showcase the capabilities of the BaseCase platform as a data visualization tool.
 {{< /columns >}}
 
+#### Brief
+
+Each one of these applications were built based upon requests and needs from the Customer Success (CS) Team. For each app, the CS Team would provide a list of functionalities and rough ideas about the UX of the tool.
+After brief team discussions and brainstorming, I would make the final decisions to translate our ideas into user-friendly intereactive tools that follow the **UX/UI principles**.
+
+![BC Demo Apps Brief](/images/bc-demo-apps-brief.svg)
+
 {{< columns >}} <!-- begin columns block -->
 
 #### Powerpoint Slides
@@ -42,3 +49,14 @@ experiment with product’s corporate identity for a balanced UI
 
 using BaseCase to obtain the final product
 {{< /columns >}}
+
+#### Interesting Insights
+
+The story-telling of some applications required the implementation of a navigation that allowed users to jump between different sections of the app. An initial calculation page could also dynamically update the linked content throughout the following sections of the tool.
+BaseCase interactive apps were mainly designed for iPad users. Nevertheless, I had the chance to work on a phone screen adaptation when BaseCase launched an Add-On supported by iPhone as well.
+
+![Interesting Insights](/images/bc-demo-apps-interesting.svg)
+
+#### Drug Dosage Calculator
+
+![Interesting Insights](/images/bc-demo-apps-ddc.svg)
