@@ -27,11 +27,19 @@ After brief team discussions and brainstorming, I would make the final decisions
 
 {{< columns >}} <!-- begin columns block -->
 
+<div class="number-circle-wrap">
+    <div class="number-circle">1</div>
+</div>
+
 #### Powerpoint Slides
 
 explaining app requirements
 
 <---> <!-- magic separator, between columns -->
+
+<div class="number-circle-wrap">
+    <div class="number-circle">2</div>
+</div>
 
 #### Brainstorming UX
 
@@ -39,15 +47,24 @@ wireframing and sketching on paper
 
 <---> <!-- magic separator, between columns -->
 
+<div class="number-circle-wrap">
+    <div class="number-circle">3</div>
+</div>
+
 #### UI design choices
 
 experiment with product’s corporate identity for a balanced UI
 
 <---> <!-- magic separator, between columns -->
 
+<div class="number-circle-wrap">
+    <div class="number-circle">4</div>
+</div>
+
 #### UX/UI implementation
 
 using BaseCase to obtain the final product
+
 {{< /columns >}}
 
 #### Interesting Insights
