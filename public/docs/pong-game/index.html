@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PONG GAME # 2020, Berlin
+Github: https://github.com/veronicadeleonh/pong-game
+Role # As a UX/UI Designer and Web Developer of this product, I have recreated the look and feel of arcade games to build my own version of the PONG game. Relying on online documentation, I used vanilla JavaScript and P5.js to code the functionalities of the game and CSS to implement the UI. Brief # I wanted to create a two players experience where the users could enter their games to record the score before starting the match.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="PONG GAME # 2020, Berlin
+Github: https://github.com/veronicadeleonh/pong-game
+Role # As a UX/UI Designer and Web Developer of this product, I have recreated the look and feel of arcade games to build my own version of the PONG game. Relying on online documentation, I used vanilla JavaScript and P5.js to code the functionalities of the game and CSS to implement the UI. Brief # I wanted to create a two players experience where the users could enter their games to record the score before starting the match." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://veronicadeleon.de/docs/pong-game/" /><meta property="article:section" content="docs" />
+
+
+<title>Pong Game | VDLH Portfolio</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.17781f9bc635181af1e0870d5311d20cb854bc82046261da1d4e1a552b8a5911.css" integrity="sha256-F3gfm8Y1GBrx4IcNUxHSDLhUvIIEYmHaHU4aVSuKWRE=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.5c864bdff79e7539e8eac7fd31c8bead8da3deffe94db6b4c68c03bbea3389c2.js" integrity="sha256-XIZL3/eedTno6sf9Mci&#43;rY2j3v/pTba0xowDu&#43;ozicI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>VDLH Portfolio</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/docs/eyeems-checkout/">EyeEm&rsquo;s Checkout Redesign</a></li>
+<li><a href="/docs/creators-search-tool/">Creators Search Tool</a></li>
+<li><a href="/docs/pong-game/"class=active>PONG Game</a></li>
+<li><a href="/docs/basecase-demo-apps/">BaseCase Demo Apps</a></li>
+</ul>
+<p><strong>Photography</strong></p>
+<ul>
+<li><a href="/docs/bella-vista-video/">Bella Vista Video</a></li>
+<li><a href="/docs/make-city/">Make City</a></li>
+<li><a href="/docs/roma-pride-2010/">Roma Pride 2010</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Pong Game</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="pong-game">
+  PONG GAME
+  <a class="anchor" href="#pong-game">#</a>
+</h1>
+<p><em>2020, Berlin</em></p>
+<p>Github: <a href="https://github.com/veronicadeleonh/pong-game">https://github.com/veronicadeleonh/pong-game</a></p>
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <!-- begin columns block -->
+<h4 id="role">
+  Role
+  <a class="anchor" href="#role">#</a>
+</h4>
+<p>As a <strong>UX/UI Designer</strong> and <strong>Web Developer</strong> of this product, I have recreated the look and feel of arcade games to build my own version of the PONG game. Relying on online documentation, I used vanilla <strong>JavaScript</strong> and <strong>P5.js</strong> to code the functionalities of the game and CSS to implement the UI.
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <!-- magic separator, between columns -->
+<h4 id="brief">
+  Brief
+  <a class="anchor" href="#brief">#</a>
+</h4>
+<p>I wanted to create a two players experience where the users could enter their games to record the score before starting the match. All the instructions on how to play are shown on the screen and the winner of the match is congratulated at the end. This was a project part of a <strong>Full-Stack Web-Development</strong> bootcamp at <strong>IronHack Berlin</strong>.
+  </div>
+
+</div>
+
+<p>Play Pong: <a href="https://veronicadeleonh.github.io/pong-game/">https://veronicadeleonh.github.io/pong-game/</a></p>
+<div style="background-color:#4F53B3">
+<img src="/images/pong-game.png" width="750" >
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
