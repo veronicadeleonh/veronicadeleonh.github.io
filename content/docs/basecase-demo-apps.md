@@ -1,4 +1,4 @@
-# (to-do) BaseCase Demo Apps
+# BaseCase Demo Apps
 
 _2019, Berlin_
 
@@ -67,7 +67,7 @@ using BaseCase to obtain the final product
 
 {{< /columns >}}
 
-#### Interesting Insights
+<!-- #### Interesting Insights
 
 The story-telling of some applications required the implementation of a navigation that allowed users to jump between different sections of the app. An initial calculation page could also dynamically update the linked content throughout the following sections of the tool.
 BaseCase interactive apps were mainly designed for iPad users. Nevertheless, I had the chance to work on a phone screen adaptation when BaseCase launched an Add-On supported by iPhone as well.
@@ -76,4 +76,4 @@ BaseCase interactive apps were mainly designed for iPad users. Nevertheless, I h
 
 #### Drug Dosage Calculator Tool
 
-![Interesting Insights](/images/bc-demo-apps-ddc.svg)
+![Interesting Insights](/images/bc-demo-apps-ddc.svg)-->

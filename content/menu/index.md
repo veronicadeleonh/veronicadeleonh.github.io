@@ -6,7 +6,8 @@ headless = true
 <!-- - [Creators Search Tool]({{< relref "/docs/creators-search-tool" >}})-->
 
 - [PONG Game]({{< relref "/docs/pong-game" >}})
-<!-- - [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})-->
+- [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})
+- [ZF Workbook]({{< relref "/docs/zf-workbook" >}})
 
 **Photography**
 
