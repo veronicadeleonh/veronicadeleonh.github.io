@@ -1,4 +1,4 @@
-# EyeEm's Checkout Process Redesign
+# (to-do) EyeEm's Checkout Process Redesign
 
 _2023, Berlin_
 
