@@ -8,6 +8,7 @@ headless = true
 - [PONG Game]({{< relref "/docs/pong-game" >}})
 - [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})
 - [ZF Workbook]({{< relref "/docs/zf-workbook" >}})
+- [Peer Coaching White Paper]({{< relref "/docs/peer-coaching-whitepaper" >}})
 
 **Photography**
 
