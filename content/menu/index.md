@@ -2,10 +2,11 @@
 headless = true
 +++
 
-- [EyeEm's Checkout Redesign]({{< relref "/docs/eyeems-checkout" >}})
-- [Creators Search Tool]({{< relref "/docs/creators-search-tool" >}})
+<!-- - [EyeEm's Checkout Redesign]({{< relref "/docs/eyeems-checkout" >}})-->
+<!-- - [Creators Search Tool]({{< relref "/docs/creators-search-tool" >}})-->
+
 - [PONG Game]({{< relref "/docs/pong-game" >}})
-- [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})
+<!-- - [BaseCase Demo Apps]({{< relref "/docs/basecase-demo-apps" >}})-->
 
 **Photography**
 
