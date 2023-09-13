@@ -6,13 +6,9 @@ _Make City Festival / Make_Shift gGmbH (c) Verónica De León Hernández_
 
 On June 2015 I volunteered as a photographer in the Make City Festival in Berlin to document some of their events.
 
-_**MAKE CITY** is Berlin’s first festival for architecture and urban alternatives, bringing together architects, planners, civic groups and developers in a citywide conversation on thinking and making city differently._
+_**[MAKE CITY](https://web.archive.org/web/20170421033901/http://makecity.berlin/)** is Berlin’s first festival for architecture and urban alternatives, bringing together architects, planners, civic groups and developers in a citywide conversation on thinking and making city differently._
 
-{{< button href="https://web.archive.org/web/20170421033901/http://makecity.berlin/" >}}Make City's Website{{< /button >}}
-
-For more images of the festival visit their Flickr page:
-
-{{< button href="https://www.flickr.com/photos/134056871@N04/" >}}Make City's Flickr page{{< /button >}}
+For more images of the festival visit their [Flickr page](https://www.flickr.com/photos/134056871@N04/).
 
 ![Women Co-Housing](/images/make-city-00.jpg)
 _Women Co-Housing_
