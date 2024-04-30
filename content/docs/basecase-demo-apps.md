@@ -15,7 +15,7 @@ BaseCase is a drag-and-drop platform to create interactive online content. With 
 #### Role
 
 As **UX/UI Designer** I contributed to this project being responsible for the design and implementation of a line of demos that built the BaseCase Demo Apps Library.
-This library was a collection of demos are interactive presentations that showcase the capabilities of the BaseCase platform as a data visualization tool.
+This library was a collection of demos are interactive presentations that showcase the capabilities of the BaseCase platform as a data visualization tool
 {{< /columns >}}
 
 #### Brief
