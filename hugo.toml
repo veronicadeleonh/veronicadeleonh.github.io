@@ -8,8 +8,12 @@ title = 'Verónica De León Hernández'
 [params]
     disableThemeToggle = true
 
+[params.cover]
+    responsiveImages = false
+    linkFullImages = true
+
+
 [params.homeInfoParams]
-    Title = "Hi"
     Content = "I'm **Verónica**, a **Product Designer** based in Berlin, but I thrive on agile collaboration with remote teams. I'm passionate about crafting stunning mobile apps and websites, merging design finesse with technical savvy. Let's join forces, no matter where you are, to transform concepts into digital brilliance!"
 
 [[params.socialIcons]]

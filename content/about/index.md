@@ -7,3 +7,11 @@ Hey there! I'm Verónica, a Product Designer based in Berlin who loves to collab
 ### Education
 
 ### Languages
+
+Spanish
+
+English
+
+German
+
+Italian

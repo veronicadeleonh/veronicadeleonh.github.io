@@ -1,7 +1,7 @@
 ---
 title: "PONG Game"
 layout: "archives"
-url: "/archives/"
+url: "/pong-game/"
 summary: archives
 ---
 

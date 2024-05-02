@@ -1,11 +1,17 @@
 ---
 title: "Bella Vista Video"
-layout: "archives"
-url: "/archives/"
-summary: archives
+url: "/bella-vista-video/"
+layout: "test"
+summary: 2016, Berlin
+cover:
+  image: "/images/bellavista-video-01.jpg"
+  alt: "Bella Vista Video"
+  caption: "Bella Vista Video"
+  relative: false
+  hidden: false
+  hiddenInList: false
+  hiddenInSingle: false
 ---
-
-# Bella Vista Video
 
 _2016, Berlin_
 
@@ -40,7 +46,7 @@ Luigia Fortino de De León
 
 #### Video Stills
 
-![Bella Vista Video](/images/bellavista-video-01.jpg)
+![Bella Vista Video](/projects/bella-vista-video/images/bellavista-video-01.jpg)
 ![Bella Vista Video](/images/bellavista-video-02.jpg)
 ![Bella Vista Video](/images/bellavista-video-03.jpg)
 ![Bella Vista Video](/images/bellavista-video-04.jpg)
@@ -52,3 +58,4 @@ Luigia Fortino de De León
 ![Bella Vista Video](/images/bellavista-video-10.jpg)
 ![Bella Vista Video](/images/bellavista-video-11.jpg)
 ![Bella Vista Video](/images/bellavista-video-12.jpg)
+<img src = "/images/bellavista-video-01.jpg">
