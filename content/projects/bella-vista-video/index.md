@@ -7,8 +7,8 @@ cover:
   image: "/images/bellavista-video-01.jpg"
   alt: "Bella Vista Video"
   caption: "Bella Vista Video"
-  relative: false
-  hidden: false
+  relative: true
+  hidden: true
   hiddenInList: false
   hiddenInSingle: false
 ---
