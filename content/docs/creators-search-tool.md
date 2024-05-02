@@ -2,8 +2,6 @@
 
 _2021, Berlin_
 
-{{< columns >}}
-
 #### Client
 
 The Creator's Search Tool was intended to be an internal tool used by the Production Team at Talenthouse.
@@ -13,5 +11,3 @@ The Creator's Search Tool was intended to be an internal tool used by the Produc
 #### Brief
 
 To facilitate the search of talent..
-
-{{< /columns >}}

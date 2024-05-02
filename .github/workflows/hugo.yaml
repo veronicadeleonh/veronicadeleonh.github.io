@@ -60,7 +60,7 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --theme hugo-book
+            --theme hugo-PaperModX
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

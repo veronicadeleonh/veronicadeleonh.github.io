@@ -11,18 +11,18 @@ This set of Photographs took part on
 - Sinner's Party Vol 2, Löwenbräukeller. November 2011, Munich.
 
 ![Roma Pride 2010](/images/rome-pride_01.jpg)
-{{< columns >}} <!-- begin columns block -->
+
 ![Roma Pride 2010](/images/rome-pride_08.jpg)
 <---> <!-- magic separator, between columns -->
 ![Roma Pride 2010](/images/rome-pride_10.jpg)
-{{< /columns >}}
+
 ![Roma Pride 2010](/images/rome-pride_02.jpg)
 ![Roma Pride 2010](/images/rome-pride_03.jpg)
 ![Roma Pride 2010](/images/rome-pride_04.jpg)
-{{< columns >}} <!-- begin columns block -->
+
 ![Roma Pride 2010](/images/rome-pride_07.jpg)
-<---> <!-- magic separator, between columns -->
+
 ![Rome Pride 2010](/images/rome-pride_09.jpg)
-{{< /columns >}}
+
 ![Roma Pride 2010](/images/rome-pride_05.jpg)
 ![Roma Pride 2010](/images/rome-pride_06.jpg)
