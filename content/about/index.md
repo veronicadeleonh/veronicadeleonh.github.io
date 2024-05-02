@@ -4,14 +4,41 @@ Hey there! I'm Verónica, a Product Designer based in Berlin who loves to collab
 
 ### Work Experience
 
+Mondly
+Senior Product Designer
+Growth Designer
+
+EyeEm
+Product Designer
+
+BaseCase
+UX/UI Designer
+Marketing Designer
+
 ### Education
+
+Full-Stack Web Develeopment Bootcamp
+Ironhack
+🇩🇪 Berlin, Germany
+
+Fotografie und Neuen Medien
+Akademie der Bildenden Künste
+🇩🇪 Munich, Germany
+
+Editorial Design Diploma
+Accademia di Belle Arti
+🇮🇹 Rome, Italy
 
 ### Languages
 
-Spanish
+🇻🇪 Spanish
+Native
 
-English
+🇺🇸 English
+Proficient
 
-German
+🇮🇹 Italian
+Proficient
 
-Italian
+🇩🇪 German
+Upper intermidiate
