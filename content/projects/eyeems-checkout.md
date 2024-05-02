@@ -1,3 +1,10 @@
+---
+title: "EyeEm's Checkout Process"
+layout: "archives"
+url: "/archives/"
+summary: archives
+---
+
 # (to-do) EyeEm's Checkout Process Redesign
 
 _2023, Berlin_

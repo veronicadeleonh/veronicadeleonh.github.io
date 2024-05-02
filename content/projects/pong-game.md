@@ -1,3 +1,10 @@
+---
+title: "PONG Game"
+layout: "archives"
+url: "/archives/"
+summary: archives
+---
+
 # PONG GAME
 
 _2020, Berlin_

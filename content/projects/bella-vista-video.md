@@ -1,3 +1,10 @@
+---
+title: "Bella Vista Video"
+layout: "archives"
+url: "/archives/"
+summary: archives
+---
+
 # Bella Vista Video
 
 _2016, Berlin_
