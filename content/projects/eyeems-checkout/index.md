@@ -9,7 +9,7 @@ cover:
   alt: "EyeEm's Checkout Flow"
   caption: "EyeEm's Checkout Flow"
   relative: true
-  hidden: true
+  hidden: false
   hiddenInList: false
   hiddenInSingle: false
 ---

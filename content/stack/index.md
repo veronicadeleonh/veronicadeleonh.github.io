@@ -4,6 +4,8 @@
 
 Figma
 
+Figjam
+
 Notion
 
 Slack
@@ -12,7 +14,11 @@ Webflow
 
 HTML/CSS
 
+Visual Code
+
 ## Secondary
+
+Midjourney
 
 Photoshop
 
@@ -20,6 +26,12 @@ InDesign
 
 Affity Designer
 
-## Mastering
+Github
+
+## Improving
+
+React
 
 JavaScript
+
+Framer

@@ -9,7 +9,7 @@ cover:
   alt: "BaseCase Demo Apps"
   caption: "BaseCase Demo Apps"
   relative: true
-  hidden: true
+  hidden: false
   hiddenInList: false
   hiddenInSingle: false
 ---
