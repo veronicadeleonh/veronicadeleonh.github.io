@@ -6,3 +6,14 @@
     color: var(--link-hover-color);
     box-shadow: none;
 }
+
+.post-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.entry-cover {
+    width: 60%;
+    margin: 0;
+}
