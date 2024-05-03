@@ -9,12 +9,12 @@ cover:
   alt: "BaseCase Demo Apps"
   caption: "BaseCase Demo Apps"
   relative: true
-  hidden: false
+  hidden: true
   hiddenInList: false
   hiddenInSingle: false
 ---
 
-_2019, Berlin_
+![BaseCase Demo App](images/basecase-thumb.jpg)
 
 ### About BaseCase
 

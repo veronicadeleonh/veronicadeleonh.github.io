@@ -14,6 +14,8 @@ cover:
   hiddenInSingle: false
 ---
 
+![EyeEm's Checkout Flow](images/eyeem-thumb.jpg)
+
 #### About EyeEm
 
 **EyeEm** is a global photography community and marketplace. We connect our engaged creators with leading brands to provide original, unique and on-brand content. Our mission is to empower our community by offering them a platform to get discovered, while giving brands access to the most powerful creative imagery worldwide."

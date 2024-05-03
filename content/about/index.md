@@ -4,28 +4,34 @@ Hey there! I'm Verónica, a Product Designer based in Berlin who loves to collab
 
 ### Work Experience
 
-Mondly https://mondly.com/
+#### Mondly https://mondly.com/
+
 Senior Product Designer
 Growth Designer
 
-EyeEm http://eyeem.com
+#### EyeEm http://eyeem.com
+
 Product Designer
 
-BaseCase https://basecase.com/
+#### BaseCase https://basecase.com/
+
 UX/UI Designer
 Marketing Designer
 
 ### Education
 
-Full-Stack Web Develeopment Bootcamp
+#### Full-Stack Web Develeopment Bootcamp
+
 Ironhack https://www.ironhack.com/
 🇩🇪 Berlin, Germany
 
-Fotografie und Neuen Medien
+#### Fotografie und Neuen Medien
+
 Akademie der Bildenden Künste https://www.adbk.de/de/
 🇩🇪 Munich, Germany
 
-Editorial Design Diploma
+#### Editorial Design Diploma
+
 Accademia di Belle Arti https://abaroma.it/
 🇮🇹 Rome, Italy
 
