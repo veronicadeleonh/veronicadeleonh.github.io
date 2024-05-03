@@ -26,7 +26,7 @@ Akademie der Bildenden Künste
 🇩🇪 Munich, Germany
 
 Editorial Design Diploma
-Accademia di Belle Arti
+Accademia di Belle Arti https://abaroma.it/
 🇮🇹 Rome, Italy
 
 ### Languages
