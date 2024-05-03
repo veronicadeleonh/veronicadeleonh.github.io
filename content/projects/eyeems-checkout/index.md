@@ -9,12 +9,10 @@ cover:
   alt: "EyeEm's Checkout Flow"
   caption: "EyeEm's Checkout Flow"
   relative: true
-  hidden: false
+  hidden: true
   hiddenInList: false
   hiddenInSingle: false
 ---
-
-_2023, Berlin_
 
 #### About EyeEm
 
