@@ -23,6 +23,8 @@
     border: 1px solid var(--border);
     border-radius: 8px;
     margin: 16px -16px;
+    background-color: transparent;
+    transition: background-color 300ms;
 }
 .background-card:hover {
     background-color: #f4f5f6;
