@@ -12,7 +12,9 @@ Slack
 
 Webflow
 
-HTML/CSS
+HTML
+
+CSS
 
 Visual Code
 

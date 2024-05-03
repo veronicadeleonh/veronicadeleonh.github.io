@@ -4,47 +4,61 @@ Hey there! I'm Verónica, a Product Designer based in Berlin who loves to collab
 
 ### Work Experience
 
-#### Mondly https://mondly.com/
+<div class="background-card">
+    <h4>Mondly https://mondly.com/</h4>
+    <p>Senior Product Designer</p>
+    <p>Growth Designer</p>
+</div>
 
-Senior Product Designer
-Growth Designer
+<div class="background-card">
+    <h4>EyeEm http://eyeem.com</h4>
+    <p>Product Designer</p>
+</div>
 
-#### EyeEm http://eyeem.com
-
-Product Designer
-
-#### BaseCase https://basecase.com/
-
-UX/UI Designer
-Marketing Designer
+<div class="background-card">
+    <h4>BaseCase https://basecase.com/</h4>
+    <p>UX/UI Designer</p>
+    <p>Marketing Designer</p>
+</div>
 
 ### Education
 
-#### Full-Stack Web Develeopment Bootcamp
+<div class="background-card">
+    <h4>Full-Stack Web Development Bootcamp</h4>
+    <p>Ironhack https://www.ironhack.com/</p>
+    <p>🇩🇪 Berlin, Germany</p>
+</div>
 
-Ironhack https://www.ironhack.com/
-🇩🇪 Berlin, Germany
+<div class="background-card">
+    <h4>Fotografie und Neuen Medien</h4>
+    <p>Akademie der Bildenden Künste https://www.adbk.de/de/</p>
+    <p>🇩🇪 Munich, Germany</p>
+</div>
 
-#### Fotografie und Neuen Medien
-
-Akademie der Bildenden Künste https://www.adbk.de/de/
-🇩🇪 Munich, Germany
-
-#### Editorial Design Diploma
-
-Accademia di Belle Arti https://abaroma.it/
-🇮🇹 Rome, Italy
+<div class="background-card">
+    <h4>Editorial Design Diploma</h4>
+    <p>Accademia di Belle Arti https://abaroma.it//</p>
+    <p>🇮🇹 Rome, Italy</p>
+</div>
 
 ### Languages
 
+<div class="background-card">
 🇻🇪 Spanish
 Native
+</div>
 
+<div class="background-card">
 🇺🇸 English
 Proficient
+</div>
 
+<div class="background-card">
 🇮🇹 Italian
 Proficient
+</div>
 
+<div class="background-card">
 🇩🇪 German
 Upper intermidiate
+</div>
