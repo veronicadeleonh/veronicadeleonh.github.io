@@ -19,8 +19,8 @@
 }
 
 .card-background {
-    padding: 4%;
-    border: 1px solid var(--border);
+    padding: 2% 4%;
+/*    border: 1px solid var(--border); */
     border-radius: 8px;
     margin: 16px -30px;
     display: flex;
@@ -28,14 +28,21 @@
     background-color: transparent;
     transition: background-color 300ms;
 }
+
+@media screen and (max-width: 500px) {
+    margin: 16px -15px;
+}
+
+
 .card-background:hover {
-    background-color: #f4f5f6;
+    background-color: #f7f9f6;
 }
 
 .card-paragraph {
-    margin-bottom: 0 !important;
+    margin: 0 0 8px !important;
 }
 
 .card-title {
-    margin: 0 !important;
+    margin: 0 0 8px !important;
 }
+
