@@ -30,9 +30,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    margin: 16px -15px;
+    .card-background {
+        margin: 16px -15px;
+    }
 }
-
 
 .card-background:hover {
     background-color: #f7f9f6;
