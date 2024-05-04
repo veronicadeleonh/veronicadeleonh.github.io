@@ -4,76 +4,76 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 ### Work Experience
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>Mondly https://mondly.com/</h4>
-        <p>Senior Product Designer</p>
-        <p>Growth Designer</p>
+        <h4 class="card-title">Mondly https://mondly.com/</h4>
+        <p class="card-paragraph">Senior Product Designer</p>
+        <p class="card-paragraph">Growth Designer</p>
     </div>
     <div class="card-year">
-        2023
+        2023 - 2024
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>EyeEm http://eyeem.com</h4>
-        <p>Product Designer</p>
+        <h4 class="card-title">EyeEm http://eyeem.com</h4>
+        <p class="card-paragraph">Product Designer</p>
     </div>
     <div class="card-year">
-        2023
+        2021 - 2022
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>BaseCase https://basecase.com/</h4>
-        <p>UX/UI Designer</p>
-        <p>Marketing Designer</p>
+        <h4 class="card-title">BaseCase https://basecase.com/</h4>
+        <p class="card-paragraph">UX/UI Designer</p>
+        <p class="card-paragraph">Marketing Designer</p>
     </div>
     <div class="card-year">
-        2023
+        2017 - 2020
     </div>
 </div>
 
 ### Education
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>Full-Stack Web Development Bootcamp</h4>
-        <p>Ironhack https://www.ironhack.com/</p>
-        <p>🇩🇪 Berlin, Germany</p>
+        <h4 class="card-title">Full-Stack Web Development Bootcamp</h4>
+        <p class="card-paragraph">Ironhack https://www.ironhack.com/</p>
+        <p class="card-paragraph"> Berlin, Germany 🇩🇪</p>
     </div>
     <div class="card-year">
-        2023
+        2020
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>Fotografie und Neuen Medien</h4>
-        <p>Akademie der Bildenden Künste https://www.adbk.de/de/</p>
-        <p>🇩🇪 Munich, Germany</p>
+        <h4 class="card-title">Fotografie und Neuen Medien</h4>
+        <p class="card-paragraph">Akademie der Bildenden Künste https://www.adbk.de/de/</p>
+        <p class="card-paragraph">Munich, Germany 🇩🇪</p>
     </div>
     <div class="card-year">
-        2023
+        2010 -2011
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
-        <h4>Editorial Design Diploma</h4>
-        <p>Accademia di Belle Arti https://abaroma.it//</p>
-        <p>🇮🇹 Rome, Italy</p>
+        <h4 class="card-title">Editorial Design Diploma</h4>
+        <p class="card-paragraph">Accademia di Belle Arti https://abaroma.it//</p>
+        <p class="card-paragraph">Rome, Italy 🇮🇹</p>
     </div>
     <div class="card-year">
-        2023
+        2008 - 2012
     </div>
 </div>
 
 ### Languages
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
         <strong>Spanish 🇻🇪</strong>
     </div>
@@ -82,7 +82,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
         <strong>English 🇺🇸</strong>
     </div>
@@ -91,7 +91,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
         <strong>Italian 🇮🇹</strong>
     </div>
@@ -100,11 +100,20 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="background-card">
+<div class="card-background">
     <div class="card-description">
         <strong>German 🇩🇪</strong>
     </div>
     <div class="card-year">
         Upper intermidiate
+    </div>
+</div>
+
+<div class="card-background">
+    <div class="card-description">
+        <strong>Portuguese 🇧🇷</strong>
+    </div>
+    <div class="card-year">
+        Beginner
     </div>
 </div>

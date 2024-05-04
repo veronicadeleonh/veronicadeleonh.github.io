@@ -18,16 +18,24 @@
     margin: 0;
 }
 
-.background-card {
+.card-background {
     padding: 4%;
     border: 1px solid var(--border);
     border-radius: 8px;
-    margin: 16px -16px;
+    margin: 16px -30px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     transition: background-color 300ms;
 }
-.background-card:hover {
+.card-background:hover {
     background-color: #f4f5f6;
+}
+
+.card-paragraph {
+    margin-bottom: 0 !important;
+}
+
+.card-title {
+    margin: 0 !important;
 }
