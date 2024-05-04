@@ -5,60 +5,106 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 ### Work Experience
 
 <div class="background-card">
-    <h4>Mondly https://mondly.com/</h4>
-    <p>Senior Product Designer</p>
-    <p>Growth Designer</p>
+    <div class="card-description">
+        <h4>Mondly https://mondly.com/</h4>
+        <p>Senior Product Designer</p>
+        <p>Growth Designer</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 <div class="background-card">
-    <h4>EyeEm http://eyeem.com</h4>
-    <p>Product Designer</p>
+    <div class="card-description">
+        <h4>EyeEm http://eyeem.com</h4>
+        <p>Product Designer</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 <div class="background-card">
-    <h4>BaseCase https://basecase.com/</h4>
-    <p>UX/UI Designer</p>
-    <p>Marketing Designer</p>
+    <div class="card-description">
+        <h4>BaseCase https://basecase.com/</h4>
+        <p>UX/UI Designer</p>
+        <p>Marketing Designer</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 ### Education
 
 <div class="background-card">
-    <h4>Full-Stack Web Development Bootcamp</h4>
-    <p>Ironhack https://www.ironhack.com/</p>
-    <p>🇩🇪 Berlin, Germany</p>
+    <div class="card-description">
+        <h4>Full-Stack Web Development Bootcamp</h4>
+        <p>Ironhack https://www.ironhack.com/</p>
+        <p>🇩🇪 Berlin, Germany</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 <div class="background-card">
-    <h4>Fotografie und Neuen Medien</h4>
-    <p>Akademie der Bildenden Künste https://www.adbk.de/de/</p>
-    <p>🇩🇪 Munich, Germany</p>
+    <div class="card-description">
+        <h4>Fotografie und Neuen Medien</h4>
+        <p>Akademie der Bildenden Künste https://www.adbk.de/de/</p>
+        <p>🇩🇪 Munich, Germany</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 <div class="background-card">
-    <h4>Editorial Design Diploma</h4>
-    <p>Accademia di Belle Arti https://abaroma.it//</p>
-    <p>🇮🇹 Rome, Italy</p>
+    <div class="card-description">
+        <h4>Editorial Design Diploma</h4>
+        <p>Accademia di Belle Arti https://abaroma.it//</p>
+        <p>🇮🇹 Rome, Italy</p>
+    </div>
+    <div class="card-year">
+        2023
+    </div>
 </div>
 
 ### Languages
 
 <div class="background-card">
-🇻🇪 Spanish
-Native
+    <div class="card-description">
+        <strong>Spanish 🇻🇪</strong>
+    </div>
+    <div class="card-year">
+        Native
+    </div>
 </div>
 
 <div class="background-card">
-🇺🇸 English
-Proficient
+    <div class="card-description">
+        <strong>English 🇺🇸</strong>
+    </div>
+    <div class="card-year">
+        Proficient
+    </div>
 </div>
 
 <div class="background-card">
-🇮🇹 Italian
-Proficient
+    <div class="card-description">
+        <strong>Italian 🇮🇹</strong>
+    </div>
+    <div class="card-year">
+        Proficient
+    </div>
 </div>
 
 <div class="background-card">
-🇩🇪 German
-Upper intermidiate
+    <div class="card-description">
+        <strong>German 🇩🇪</strong>
+    </div>
+    <div class="card-year">
+        Upper intermidiate
+    </div>
 </div>
