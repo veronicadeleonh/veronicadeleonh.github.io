@@ -5,6 +5,9 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 ### Work Experience
 
 <div class="card-background">
+    <div class="card-icon">
+        <img src="images/work-mondly.svg">
+    </div>
     <div class="card-description">
         <h4 class="card-title">Mondly https://mondly.com/</h4>
         <p class="card-paragraph">Senior Product Designer</p>
@@ -16,6 +19,9 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 </div>
 
 <div class="card-background">
+    <div class="card-icon">
+        <img src="images/work-eyeem.svg">
+    </div>
     <div class="card-description">
         <h4 class="card-title">EyeEm http://eyeem.com</h4>
         <p class="card-paragraph">Product Designer</p>
@@ -26,6 +32,9 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 </div>
 
 <div class="card-background">
+    <div class="card-icon">
+        <img src="images/work-basecase.svg">
+    </div>
     <div class="card-description">
         <h4 class="card-title">BaseCase https://basecase.com/</h4>
         <p class="card-paragraph">UX/UI Designer</p>
