@@ -4,41 +4,45 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 ### Work Experience
 
-<div class="card-background">
-    <div class="card-icon">
-        <img src="images/work-mondly.svg">
-    </div>
-    <div class="card-description">
-        <h4 class="card-title">Mondly https://mondly.com/</h4>
-        <p class="card-paragraph">Senior Product Designer</p>
-        <p class="card-paragraph">Growth Designer</p>
+<div class="card-background flex-grid">
+    <div class="card-icon-and-description">
+        <div class="card-icon">
+            <img src="images/work-mondly.svg">
+        </div>
+        <div class="card-description">
+            <h4 class="card-title">Mondly https://mondly.com/</h4>
+            <p class="card-paragraph">Growth & Senior Product Designer</p>
+        </div>
     </div>
     <div class="card-year">
         2023 - 2024
     </div>
 </div>
 
-<div class="card-background">
-    <div class="card-icon">
-        <img src="images/work-eyeem.svg">
-    </div>
-    <div class="card-description">
-        <h4 class="card-title">EyeEm http://eyeem.com</h4>
-        <p class="card-paragraph">Product Designer</p>
+<div class="card-background flex-grid">
+    <div class="card-icon-and-description">
+        <div class="card-icon">
+            <img src="images/work-eyeem.svg">
+        </div>
+        <div class="card-description">
+            <h4 class="card-title">EyeEm http://eyeem.com</h4>
+            <p class="card-paragraph">Product Designer</p>
+        </div>
     </div>
     <div class="card-year">
         2021 - 2022
     </div>
 </div>
 
-<div class="card-background">
-    <div class="card-icon">
-        <img src="images/work-basecase.svg">
-    </div>
-    <div class="card-description">
-        <h4 class="card-title">BaseCase https://basecase.com/</h4>
-        <p class="card-paragraph">UX/UI Designer</p>
-        <p class="card-paragraph">Marketing Designer</p>
+<div class="card-background flex-grid">
+    <div class="card-icon-and-description">
+        <div class="card-icon">
+            <img src="images/work-basecase.svg">
+        </div>
+        <div class="card-description">
+            <h4 class="card-title">BaseCase https://basecase.com/</h4>
+            <p class="card-paragraph">Marketing & UX/UI Designer</p>
+        </div>
     </div>
     <div class="card-year">
         2017 - 2020
@@ -47,7 +51,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 ### Education
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <h4 class="card-title">Full-Stack Web Development Bootcamp</h4>
         <p class="card-paragraph">Ironhack https://www.ironhack.com/</p>
@@ -58,7 +62,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <h4 class="card-title">Fotografie und Neuen Medien</h4>
         <p class="card-paragraph">Akademie der Bildenden Künste https://www.adbk.de/de/</p>
@@ -69,9 +73,9 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
-        <h4 class="card-title">Editorial Design Diploma</h4>
+        <h4 class="card-title">Grafica Editoriale</h4>
         <p class="card-paragraph">Accademia di Belle Arti https://abaroma.it//</p>
         <p class="card-paragraph">Rome, Italy 🇮🇹</p>
     </div>
@@ -82,7 +86,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 ### Languages
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <strong>Spanish 🇻🇪</strong>
     </div>
@@ -91,7 +95,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <strong>English 🇺🇸</strong>
     </div>
@@ -100,7 +104,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <strong>Italian 🇮🇹</strong>
     </div>
@@ -109,7 +113,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <strong>German 🇩🇪</strong>
     </div>
@@ -118,7 +122,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
-<div class="card-background">
+<div class="card-background flex-grid">
     <div class="card-description">
         <strong>Portuguese 🇧🇷</strong>
     </div>

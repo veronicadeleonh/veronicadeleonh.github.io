@@ -41,7 +41,8 @@
 }
 
 .card-paragraph {
-    margin: 0 0 8px !important;
+    margin: 0 0 !important;
+    color: #9fa2a5;
 }
 
 .card-title {
@@ -51,6 +52,12 @@
 .card-icon {
     width: 50px;
     filter: drop-shadow(rgb(0, 0, 0, 0.15) 0px 4px 2px);
+}
+
+.card-icon-and-description {
+    display:flex; 
+    gap: 16px; 
+    align-items: center
 }
 
 .flex-grid {
