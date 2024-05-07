@@ -58,7 +58,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     <div class="card-description">
         <h4 class="card-title">Full-Stack Web Development Bootcamp</h4>
         <p class="card-paragraph">Ironhack https://www.ironhack.com/</p>
-        <p class="card-paragraph"> Berlin, Germany 🇩🇪</p>
+        <p class="card-paragraph"> Berlin, Germany <span class="fi" style="background-image: url(images/de.svg)"></span></p>
     </div>
     <div class="card-year">
         2020
@@ -69,7 +69,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     <div class="card-description">
         <h4 class="card-title">Fotografie und Neuen Medien</h4>
         <p class="card-paragraph">Akademie der Bildenden Künste https://www.adbk.de/de/</p>
-        <p class="card-paragraph">Munich, Germany 🇩🇪</p>
+        <p class="card-paragraph"> Munich, Germany <span class="fi" style="background-image: url(images/de.svg)"></span></p>
     </div>
     <div class="card-year">
         2010 -2011
@@ -80,7 +80,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     <div class="card-description">
         <h4 class="card-title">Grafica Editoriale</h4>
         <p class="card-paragraph">Accademia di Belle Arti https://abaroma.it//</p>
-        <p class="card-paragraph">Rome, Italy 🇮🇹</p>
+        <p class="card-paragraph">Rome, Italy <span class="fi" style="background-image: url(images/it.svg)"></span></p>
     </div>
     <div class="card-year">
         2008 - 2012
@@ -91,7 +91,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <strong>Spanish 🇻🇪</strong>
+        <strong>Spanish <span class="fi" style="background-image: url(images/ve.svg)"></span></strong>
     </div>
     <div class="card-year">
         Native
@@ -100,7 +100,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <strong>English 🇺🇸</strong>
+        <strong>English <span class="fi" style="background-image: url(images/us.svg)"></span></strong>
     </div>
     <div class="card-year">
         Proficient
@@ -109,7 +109,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <strong>Italian 🇮🇹</strong>
+        <strong>Italian <span class="fi" style="background-image: url(images/it.svg)"></span></strong>
     </div>
     <div class="card-year">
         Proficient
@@ -118,7 +118,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <strong>German 🇩🇪</strong>
+        <strong>German <span class="fi" style="background-image: url(images/de.svg)"></span></strong>
     </div>
     <div class="card-year">
         Upper intermidiate
@@ -127,7 +127,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <strong>Portuguese 🇧🇷</strong>
+        <strong>Portuguese <span class="fi" style="background-image: url(images/br.svg)"></span></strong>
     </div>
     <div class="card-year">
         Beginner
