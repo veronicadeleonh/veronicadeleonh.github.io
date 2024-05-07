@@ -4,6 +4,9 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 ### Work Experience
 
+<span class="fi fi-ad"></span> <span class="fi fi-ad fis"></span>
+<span class="fi fi-gr"></span> <span class="fi fi-gr fis"></span>
+
 <div class="card-background flex-grid">
     <div class="card-icon-and-description">
         <div class="card-icon">
