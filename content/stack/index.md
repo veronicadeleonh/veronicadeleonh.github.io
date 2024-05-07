@@ -9,18 +9,18 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Figma</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Interface Design</p>
         </div>
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-notion.svg">
+            <img src="images/stack-webflow.svg">
         </div>
         <div class="card-description">
-            <h4 class="card-title">Notion</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <h4 class="card-title">Webflow</h4>
+            <p class="card-paragraph">Web Design</p>
         </div>
-    </div>            
+    </div>
 </div>
 
 <div class="flex-grid">
@@ -30,18 +30,18 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Slack</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Team Communication</p>
         </div>
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-webflow.svg">
+            <img src="images/stack-notion.svg">
         </div>
         <div class="card-description">
-            <h4 class="card-title">Webflow</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <h4 class="card-title">Notion</h4>
+            <p class="card-paragraph">Documentation</p>
         </div>
-    </div>
+    </div>          
 </div>
 
 <div class="flex-grid">
@@ -51,7 +51,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">HTML</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Development</p>
         </div>
     </div>
     <div class="card-background col">
@@ -60,7 +60,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">CSS</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Development</p>
         </div>
     </div>
 </div>
@@ -74,7 +74,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Github</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Development</p>
         </div>
     </div>
     <div class="card-background col">
@@ -83,7 +83,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Visual Studio Code</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Development</p>
         </div>
     </div>
 </div>
@@ -95,7 +95,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Photoshop</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Graphic Design</p>
         </div>
     </div>
     <div class="card-background col">
@@ -104,7 +104,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">InDesign</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Editorial Design</p>
         </div>
     </div>
 </div>
@@ -116,7 +116,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Affinity Designer</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Editorial Design</p>
         </div>
     </div>
     <div class="card-background col">
@@ -125,7 +125,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Affinity Publisher</h4>
-            <p class="card-paragraph">Product DEsigner</p>
+            <p class="card-paragraph">Editorial Design</p>
         </div>
     </div>
 </div>
@@ -139,7 +139,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">React</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Development</p>
         </div>
     </div>
     <div class="card-background col">
@@ -148,7 +148,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Javascript</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Front-End Web </p>
         </div>
     </div>
 </div>
@@ -160,7 +160,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Framer</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Web Design</p>
         </div>
     </div>
     <div class="card-background col">
@@ -169,7 +169,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">ChapGPt</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">AI Tool</p>
         </div>
     </div>
 </div>
@@ -181,7 +181,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Midjourney</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">AI Tool</p>
         </div>
     </div>
     <div class="card-background col">
@@ -190,7 +190,7 @@
         </div>
         <div class="card-description">
             <h4 class="card-title">Sketch</h4>
-            <p class="card-paragraph">Product Designer</p>
+            <p class="card-paragraph">Interface Design</p>
         </div>
     </div>
 </div>
