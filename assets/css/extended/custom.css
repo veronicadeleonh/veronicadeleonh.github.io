@@ -46,7 +46,7 @@ sup {
 }
 
 .entry-cover {
-    width: 35%;
+    width: 45%;
     margin: 0;
 }
 
@@ -126,4 +126,27 @@ sup {
   
   .fi.fis {
     width: 0.8em;
+  }
+  
+  .fip {
+    position: relative;
+    display: inline;
+    width: 1em;
+    line-height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 24px;
+  }
+
+  .btn-rounded {
+    border: 1px solid #dadbdc;
+    padding: 1% 2%;
+    border-radius: 300px;
+    transition: background-color 300ms
+  }
+
+  .btn-rounded:hover {
+    border: 1px solid #f7f9f6;
+    background-color: #f7f9f6
   }

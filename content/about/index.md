@@ -2,6 +2,8 @@
 
 Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves to collaborate with remote teams. When I'm not crafting stunning mobile apps and websites, you'll often find me indulging in my passions for analog photography, traveling, and immersing myself in nature.
 
+<a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)">read.cv</a>
+
 ### Work Experience
 
 <div class="card-background flex-grid">
