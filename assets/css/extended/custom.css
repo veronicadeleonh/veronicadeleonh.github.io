@@ -59,7 +59,7 @@ sup {
     padding: 1% 2%;
 /*    border: 1px solid var(--border); */
     border-radius: 8px;
-    margin: 16px -16px;
+    margin: 16px -15px;
     display: flex;
     align-items: center;
     gap: 16px;
