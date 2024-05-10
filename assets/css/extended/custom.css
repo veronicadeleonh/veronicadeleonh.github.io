@@ -1,5 +1,6 @@
 body {
     font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
     zoom: 85%;
 }
 
@@ -50,10 +51,13 @@ sup {
     margin: 0;
 }
 
-
 .first-entry .entry-content {
     font-size: 20px;
     font-weight: 300;
+}
+
+.entry-content {
+    font-size: 16px;
 }
 
 .card-background {
@@ -91,7 +95,7 @@ sup {
 
 .card-paragraph {
     margin: 0 0 !important;
-    color: #9fa2a5;
+    color: #787b7d;
 }
 
 .card-title {
@@ -161,4 +165,19 @@ sup {
   .btn-rounded:hover {
     border: 1px solid #f7f9f6;
     background-color: #f7f9f6
+  }
+
+  .photo-footnote {
+    text-align: end;
+    font-size: 14px;
+  }
+
+  .connect-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .connect-icons img {
+    width: 24px;
   }

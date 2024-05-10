@@ -4,6 +4,12 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)">read.cv</a>
 
+<hr>
+
+![About Me](images/about-me-pics.jpg)
+
+<p class="photo-footnote">Tarifa, Spain - 2024</p>
+
 ### Work Experience
 
 <div class="card-background flex-grid">
