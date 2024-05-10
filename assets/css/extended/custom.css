@@ -78,6 +78,10 @@ sup {
         align-items: baseline;
         gap: 0;
     }
+
+    .card-description {
+        width: 70%;
+    }
 }
 
 .card-background:hover {

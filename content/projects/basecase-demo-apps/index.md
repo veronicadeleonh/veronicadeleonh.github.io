@@ -2,7 +2,7 @@
 title: "BaseCase Demo Apps"
 layout: "BaseCase"
 url: "/basecase-demo-apps/"
-summary: 2019, Berlin
+summary: 2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, BerlinBerlinBerlinBerlinBerlinBerlinBerlinBerlinBerlin
 weight: 3
 cover:
   image: images/basecase-thumb.jpg
