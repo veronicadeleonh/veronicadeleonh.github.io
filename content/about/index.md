@@ -2,7 +2,12 @@
 
 Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves to collaborate with remote teams. When I'm not crafting stunning mobile apps and websites, you'll often find me indulging in my passions for analog photography, traveling, and immersing myself in nature.
 
-<a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)">read.cv</a>
+<div class="about-links">
+    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></a>
+    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></a>
+    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></a>
+    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)">read.cv</a>
+</div>
 
 <hr>
 
@@ -63,6 +68,8 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     </div>
 </div>
 
+<hr>
+
 ### Education
 
 <div class="card-background flex-grid">
@@ -101,6 +108,8 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
         2008 - 2012
     </div>
 </div>
+
+<hr>
 
 ### Languages
 
