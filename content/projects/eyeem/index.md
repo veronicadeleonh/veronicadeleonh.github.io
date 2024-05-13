@@ -18,13 +18,19 @@ cover:
 
 #### About EyeEm
 
-**EyeEm** is a global photography community and marketplace. We connect our engaged creators with leading brands to provide original, unique and on-brand content. Our mission is to empower our community by offering them a platform to get discovered, while giving brands access to the most powerful creative imagery worldwide."
+**EyeEm** is as a global photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content. The platform's mission centers around empowering its community by providing them with a robust platform for discovery, while simultaneously granting brands access to powerful creative imagery from around the globe.
 
-- _https://www.eyeem.com/story_
+#### My role at EyeEm
+
+During my role at EyeEm I had the chance to work together with the rest of the Product team on the maintainance of the platform, conducting research, prototyping and testing solutions, until coming up with the best resulting version to implemented on the platform
 
 #### EyEem's Checkout Flow
 
-In 2022, EyeEm re-vamped the Checkout Process Redesign project with the scope of offering the buyer users a new experience while performing a purchase. After carefully reading the data coming out of researches made in the previous years,
+In 2022, EyeEm re-vamped the Checkout Process Redesign project with the scope of offering the buyer users a new experience while performing a purchase. After carefully reading the data coming out of researches made in the previous years and analizing the current flow.
+
+![EyeEm](images/cart-abandonment.png)
+
+<p class="photo-footnote">Figma screenshot from the cart abandonment phase</p>
 
 ## Cart & Checkout Process
 
