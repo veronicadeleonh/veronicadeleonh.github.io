@@ -163,27 +163,38 @@ sup {
   
   .fip {
     position: relative;
-    display: inline;
-    width: 1em;
+    display: inline-block;
+    width: 24px;
     line-height: 1em;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 24px;
+    background-position: center;
   }
 
-  .btn-rounded {
+  .btn-connect {
+    display: flex;
     border: 1px solid #dadbdc;
-    padding: 1% 2%;
     border-radius: 300px;
-    transition: background-color 300ms;
-    font-weight: 400 !important;
+    transition: background-color 300ms;  
   }
 
-  .btn-rounded:hover {
+  .rounded {
+    gap: 8px;   
+    padding: 1% 2%;   
+    font-weight: 400 !important;    
+  }
+
+  .circled {
+    justify-content: center;
+    width: 45px;
+    height: 45px;   
+  }
+
+  .btn-connect:hover {
     border: 1px solid #f7f9f6;
     background-color: #f7f9f6
   }
+
 
   .photo-footnote {
     text-align: end;

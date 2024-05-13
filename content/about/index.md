@@ -3,10 +3,10 @@
 Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves to collaborate with remote teams. When I'm not crafting stunning mobile apps and websites, you'll often find me indulging in my passions for analog photography, traveling, and immersing myself in nature.
 
 <div class="about-links">
-    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></a>
-    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></a>
-    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></a>
-    <a class="btn-rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)">read.cv</a>
+    <a class="btn-connect circled" href="https://linkedin.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
+    <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
+    <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></span></a>
+    <a class="btn-connect rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)"></span><p style="margin:0!important">read.cv</p></a>
 </div>
 
 <hr>
