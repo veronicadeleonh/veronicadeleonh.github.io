@@ -1,6 +1,4 @@
 body {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
     zoom: 85%;
 }
 
@@ -40,6 +38,14 @@ sup {
 
 .post-entry:hover {
     background-color: #f7f9f6;
+}
+
+.post-entry img {
+    transition: all 300ms;
+}
+
+.post-entry:hover img {
+    transform: scale(1.05,1.05);
 }
 
 .entry-cover {
@@ -88,6 +94,15 @@ sup {
 .card-background:hover {
     background-color: #f7f9f6;
 }
+
+.card-background img {
+    transition: all 300ms;
+}
+
+.card-background:hover img {
+    transform: scale(1.05,1.05);
+}
+
 
 .card-paragraph {
     margin: 0 0 !important;

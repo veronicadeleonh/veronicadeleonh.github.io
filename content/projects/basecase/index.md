@@ -2,7 +2,7 @@
 title: "BaseCase Demo Apps"
 layout: "BaseCase"
 url: "/basecase-demo-apps/"
-summary: 2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, Berlin2019, BerlinBerlinBerlinBerlinBerlinBerlinBerlinBerlinBerlin
+summary: 2019, Berlin
 weight: 3
 cover:
   image: images/basecase-thumb.jpg
@@ -20,7 +20,7 @@ cover:
 
 BaseCase is a drag-and-drop platform to create interactive online content. With BaseCase the user is able to integrate UI elements and realize dynamic calculations on the screen.
 
-### Role
+### Role at Basecase
 
 As **UX/UI Designer** I contributed to this project being responsible for the design and implementation of a line of demos that built the BaseCase Demo Apps Library.
 This library was a collection of demos are interactive presentations that showcase the capabilities of the BaseCase platform as a data visualization tool.
@@ -30,7 +30,7 @@ This library was a collection of demos are interactive presentations that showca
 Each one of these applications were built based upon requests and needs from the Customer Success (CS) Team. For each app, the CS Team would provide a list of functionalities and rough ideas about the UX of the tool.
 After brief team discussions and brainstorming, I would make the final decisions to translate our ideas into user-friendly intereactive tools that follow the **UX/UI principles**.
 
-![BC Demo Apps Brief](/images/bc-demo-apps-brief.svg)
+![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
 <div class="number-circle-wrap">
     <div class="number-circle">1</div>
