@@ -1,11 +1,7 @@
 body {
     font-family: "Source Sans 3", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     zoom: 85%;
-}
-
-strong {
-    font-weight: 600;
 }
 
 :root {
@@ -53,7 +49,7 @@ sup {
 
 .first-entry .entry-content {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .entry-content {
@@ -73,7 +69,7 @@ sup {
 }
 
 @media screen and (max-width: 500px) {
-    .card-background {
+    .card-background, .card-connect {
         margin: 16px -6px;
     }
 
@@ -159,7 +155,8 @@ sup {
     border: 1px solid #dadbdc;
     padding: 1% 2%;
     border-radius: 300px;
-    transition: background-color 300ms
+    transition: background-color 300ms;
+    font-weight: 500;
   }
 
   .btn-rounded:hover {
@@ -172,12 +169,11 @@ sup {
     font-size: 14px;
   }
 
-  .connect-icons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
-  }
 
-  .connect-icons img {
-    width: 24px;
-  }
+.post-content a:hover {
+    color: black;
+}
+
+#menu .active {
+    box-shadow: none;
+}

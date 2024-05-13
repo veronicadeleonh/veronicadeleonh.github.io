@@ -3,10 +3,6 @@
 
 ### Let's connect!
 
-You can reach me via <strong><a href="mailto:v.dleon@gmail.com">hello@veronicadeleon.de</a></strong> or connect with me on the web.
+You can reach me via email or connect with me on the web.
 
-<div class="connect-icons>
-<a href="#" target=_blank><img src="images/likedin.svg"></a>
-<a href="#" target=_blank><img src="images/instagram.svg"></a>
-<a href="#" target=_blank><img src="images/github.svg"></a>
-</div>
+<a style="font-weight:600" href="mailto:v.dleon@gmail.com">hello@veronicadeleon.de</a>
