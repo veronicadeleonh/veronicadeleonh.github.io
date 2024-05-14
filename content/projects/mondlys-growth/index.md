@@ -4,6 +4,8 @@ layout: "mondly"
 url: "/mondly"
 summary: 2024, Berlin
 weight: 1
+ShowToc: true
+TocOpen: true
 cover:
   image: images/mondly-thumb.jpg
   alt: "Mondly"

@@ -4,6 +4,8 @@ layout: "eyeem"
 url: "/eyeem/"
 summary: 2023, Berlin
 weight: 2
+ShowToc: true
+TocOpen: true
 cover:
   image: images/eyeem-thumb.jpg
   alt: "EyeEm"
@@ -36,9 +38,9 @@ In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of
 
 <p class="photo-footnote">Figma screenshot identifying pain points on the Checkout phase</p>
 
-#### Proposal 1
+##### Proposal 1
 
-#### Proposal 2
+##### Proposal 2
 
 #### EyeEm's Web presence
 

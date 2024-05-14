@@ -7,6 +7,7 @@ title = 'Verónica De León Hernández'
 
 [params]
     disableThemeToggle = true
+    TocSide = "right"
 
 [params.cover]
     responsiveImages = false

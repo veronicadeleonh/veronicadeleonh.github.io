@@ -4,6 +4,8 @@ layout: "BaseCase"
 url: "/basecase"
 summary: 2019, Berlin
 weight: 3
+ShowToc: true
+TocOpen: true
 cover:
   image: images/basecase-thumb.jpg
   alt: "BaseCase"
