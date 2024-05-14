@@ -22,7 +22,7 @@ cover:
 
 #### My role at EyeEm
 
-During my role at EyeEm, I collaborated with the Product team on platform maintenance, conducting research, prototyping, and testing solutions to deliver the best possible version for implementation.
+During my role at EyeEm, I was part of the Product Desgin team collaborating on platform maintenance, conducting research, desiging new features, prototyping, and testing solutions to deliver the best possible version for implementation.
 
 #### EyEem's Cart & Checkout Flow
 
