@@ -224,3 +224,7 @@ sup {
 .comments-separator {
     height: 0;
 }
+
+.first-entry {
+    min-height: 280px;
+}
