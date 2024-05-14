@@ -44,13 +44,24 @@ We realised that loggout users were struggling the most dduring the flow, reflec
 
 ##### Proposal 2
 
+#### Cart Dropdown Redesign
+
 #### EyeEm's Web presence
 
 <a href="http://eyeem.com" target="_blank">EyeEm.com</a> combines the flexibility of Webflow with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining the site.
 
 In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation, design, and conceptualization of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow, sharing account control with the Front-End Team.
 
+Here are some live examples:
+
+![EyeEm Web](images/eyeem-web.jpg)
 http://eyeem.com
+
+![EyeEm Web](images/eyeem-creative-trends.jpg)
 https://creativetrends.eyeem.com/
+
+![EyeEm Web](images/eyeem-magazine.jpg)
 https://www.eyeem.com/magazine
+
+![EyeEm Web](images/eyeem-awards.jpg)
 https://www.eyeem.com/awards
