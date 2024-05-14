@@ -11,6 +11,7 @@
     {{/* see: https://gohugo.io/variables/taxonomy/#taxonomy-terms-page-variables */}}
     {{- if eq .Kind "term" -}}{{- .Data.Singular }}: {{ end -}}
     {{ .Title -}}
+
   </h1>
   {{- if .Description }}
   <div class="post-description">

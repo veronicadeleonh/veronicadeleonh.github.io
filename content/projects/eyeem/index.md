@@ -40,11 +40,11 @@ In 2022, EyeEm re-vamped the Checkout Process Redesign project with the scope of
 
 #### Proposal 2
 
-### EyeEm's Web presence
+#### EyeEm's Web presence
 
 Eyeem.com is a hybrid between Webflow and Front-End that gave the design team full control of the implementation and behaviour of the website. During my time at EyeEm I was able support on the maintance of the site.
 
-A big part of my role at Eyeem was also the maintainance and creation of landingpages to support the ongoing marketing campanigns. Usign Webflow, I was involve on the ideation and concept and in charge of the design, implementation final release of the these web projects, sharing the full ocntrol of our Webflow account with the Front-End Team.
+A big part of my role at Eyeem was also the maintainance and creation of landingpages to support the ongoing marketing campanigns. Usign Webflow, I was involve on the ideation and concept and in charge of the design, implementation final release of the these web projects, sharing the full control of our Webflow account with the Front-End Team.
 
 http://eyeem.com
 https://creativetrends.eyeem.com/

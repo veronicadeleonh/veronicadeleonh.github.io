@@ -16,22 +16,6 @@ title = 'Verónica De León Hernández'
 [params.homeInfoParams]
     Content = "I'm **Verónica**, a **Product Designer** based in Berlin, but I thrive on agile collaboration with remote teams. I'm passionate about crafting stunning mobile apps and websites, merging design finesse with technical savvy. Let's join forces, no matter where you are, to transform concepts into digital brilliance!"
 
-[[params.socialIcons]]
-    name = "instagram"
-    url = "http://instagram.com/veronicadeleoh"
-
-[[params.socialIcons]]
-    name = "linkedin-simple"
-    url = "<link2>"
-
-[[params.socialIcons]]
-    name = "github-simple"
-    url = "<link2>"
-
-[[params.socialIcons]]
-    name = "cv"
-    url = "<link2>"
-
 
 [menu]
 
