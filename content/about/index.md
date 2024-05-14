@@ -11,7 +11,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
 
 <hr>
 
-![About Me](images/about-me-pics.jpg)
+![VDLH - Tarifa 2024](images/vdlh-tarifa.jpg)
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
 
