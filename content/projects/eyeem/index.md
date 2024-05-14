@@ -26,17 +26,15 @@ During my role at EyeEm, I was part of the Product Desgin team collaborating on 
 
 #### EyEem's Cart & Checkout Flow
 
-In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenuw and offering the users a fresh purchase experience. We started making a descriptive analisis of the current flow, first as a documentation and then by identifiying the pain points in Figma.
+In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue and offering the users a refreshed purchase experience. We started making a descriptive analysis of the current flow, first documenting the data about the abandonment rate along the flow and then by identifiying the UI pain points in Figma.
 
-![EyeEm](images/cart-abandonment.png)
+![EyeEm Cart](images/cart-phase.png)
 
-<p class="photo-footnote">Figma screenshot identifying pain points on the cart abandonment phase</p>
+<p class="photo-footnote">Figma screenshot identifying pain points on the Cart phase</p>
 
-We discovered that we could divide our findings into two groups: the quick wins, referring to the short-term fixes that could create an inmediate impact, and the long-term wins, which requiered extra time and resources from the dev team.
+![EyeEm Checkout](images/checkout-phase.png)
 
-Note: The payment process was not built in Webflow, which required the involvement of the Front-End team.
-
-#### Quick wins for loggout users
+<p class="photo-footnote">Figma screenshot identifying pain points on the Checkout phase</p>
 
 #### Proposal 1
 
