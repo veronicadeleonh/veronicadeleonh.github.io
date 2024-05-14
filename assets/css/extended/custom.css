@@ -220,3 +220,7 @@ sup {
     align-items: center;
     margin-top: 32px!important;
 }
+
+.comments-separator {
+    height: 0;
+}
