@@ -38,3 +38,7 @@ weight = 3
 name = "Get in touch"
 url = "/contact/"
 weight = 4
+
+[[socialIcons]]
+name = "instagram"
+url = "<link>"

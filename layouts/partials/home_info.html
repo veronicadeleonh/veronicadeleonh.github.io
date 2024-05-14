@@ -1,0 +1,20 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+  <header class="entry-header">
+    <h1>{{ .Title | markdownify }}</h1>
+  </header>
+  <section class="entry-content">
+    {{- trim .Content "\n" | markdownify -}}
+  </section>
+  <footer class="entry-footer">
+    <div class="home-about-links">
+    <div class="about-links">
+      <a class="btn-connect circled" href="https://linkedin.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/linkedin.svg)"></span></a>
+      <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/instagram.svg)"></span></a>
+      <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
+  </div>
+    <a href="/about">Read more <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
+    </div>
+  </footer>
+</article>
+{{- end -}}
