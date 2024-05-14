@@ -22,19 +22,21 @@ cover:
 
 #### My role at EyeEm
 
-During my role at EyeEm I had the chance to work together with the rest of the Product team on the maintainance of the platform, conducting research, prototyping and testing solutions, until coming up with the best resulting version to implemented on the platform
+During my role at EyeEm, I collaborated with the Product team on platform maintenance, conducting research, prototyping, and testing solutions to deliver the best possible version for implementation.
 
-#### EyEem's Checkout Flow
+#### EyEem's Cart & Checkout Flow
 
-In 2022, EyeEm re-vamped the Checkout Process Redesign project with the scope of offering the buyer users a new experience while performing a purchase. After carefully reading the data coming out of researches made in the previous years and analizing the current flow.
+In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenuw and offering the users a fresh purchase experience. We started making a descriptive analisis of the current flow, first as a documentation and then by identifiying the pain points in Figma.
 
 ![EyeEm](images/cart-abandonment.png)
 
-<p class="photo-footnote">Figma screenshot from the cart abandonment phase</p>
+<p class="photo-footnote">Figma screenshot identifying pain points on the cart abandonment phase</p>
 
-## Cart & Checkout Process
+We discovered that we could divide our findings into two groups: the quick wins, referring to the short-term fixes that could create an inmediate impact, and the long-term wins, which requiered extra time and resources from the dev team.
 
-### Quick wins for loggout users
+Note: The payment process was not built in Webflow, which required the involvement of the Front-End team.
+
+#### Quick wins for loggout users
 
 #### Proposal 1
 
@@ -42,9 +44,9 @@ In 2022, EyeEm re-vamped the Checkout Process Redesign project with the scope of
 
 #### EyeEm's Web presence
 
-Eyeem.com is a hybrid between Webflow and Front-End that gave the design team full control of the implementation and behaviour of the website. During my time at EyeEm I was able support on the maintance of the site.
+<a href="http://eyeem.com" target="_blank">EyeEm.com</a> combines the flexibility of Webflow with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining the site.
 
-A big part of my role at Eyeem was also the maintainance and creation of landingpages to support the ongoing marketing campanigns. Usign Webflow, I was involve on the ideation and concept and in charge of the design, implementation final release of the these web projects, sharing the full control of our Webflow account with the Front-End Team.
+In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation, design, and conceptualization of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow, sharing account control with the Front-End Team.
 
 http://eyeem.com
 https://creativetrends.eyeem.com/

@@ -1,13 +1,13 @@
 ---
-title: "Mondly's Growth"
+title: "Mondly"
 layout: "mondly"
-url: "/mondlys-growth/"
+url: "/mondly"
 summary: 2024, Berlin
 weight: 1
 cover:
   image: images/mondly-thumb.jpg
-  alt: "Mondly's Growth"
-  caption: "Mondly's Growth"
+  alt: "Mondly"
+  caption: "Mondly"
   relative: true
   hidden: true
   hiddenInList: false
