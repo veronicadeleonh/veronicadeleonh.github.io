@@ -28,7 +28,9 @@ During my role at EyeEm, I was part of the Product Desgin team collaborating on 
 
 #### EyEem's Cart & Checkout Flow
 
-In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue and offering the users a refreshed purchase experience. We started making a descriptive analysis of the current flow, first documenting the data about the abandonment rate along the flow and then by identifiying the UI pain points in Figma.
+In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue and offering the users a refreshed purchase experience. We started making a descriptive analysis of the current flow, first reviewing the data about the abandonment rate and mapping it along the UI pain points in the flow in Figma.
+
+We realised that loggout users were struggling the most dduring the flow, reflecting a ~15% of a drop on the authentication phase.
 
 ![EyeEm Cart](images/cart-phase.png)
 
