@@ -77,7 +77,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     <a href="https://www.ironhack.com/" target="_blank">
         <p class="card-title">Full-Stack Web Development Bootcamp<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
     </a>
-        <p class="card-paragraph">Ironhack Berlin</p>
+        <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
     <div class="card-year">
         2020
@@ -90,7 +90,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
         <p class="card-title">
             Fotografie und Neuen Medien<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
     </a>
-        <p class="card-paragraph">Akademie der Bildenden Künste München</p>
+        <p class="card-paragraph">Akademie der Bildenden Künste München <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
     <div class="card-year">
         2010 -2011
@@ -102,7 +102,7 @@ Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves t
     <a href="https://abaroma.it/" target="_blank">
         <p class="card-title">Grafica Editoriale<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
     </a>
-        <p class="card-paragraph">Accademia di Belle Arti di Roma</p>
+        <p class="card-paragraph">Accademia di Belle Arti di Roma <span class="fi" style="background-image: url(images/it.svg)"></p>
     </div>
     <div class="card-year">
         2008 - 2012
