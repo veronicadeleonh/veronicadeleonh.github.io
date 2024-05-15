@@ -30,13 +30,9 @@ During my role at EyeEm, I was part of the Product Desgin team collaborating on 
 
 In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue and offering the users a refreshed purchase experience. We started making a descriptive analysis of the current flow, first reviewing the data about the abandonment rate and mapping it along the UI pain points in the flow in Figma.
 
-We realised that loggout users were struggling the most dduring the flow, reflecting a ~15% of a drop on the authentication phase.
+![Cart and Checkout Flow](images/cart-checkout-flow.png)
 
-![EyeEm Cart](images/cart-phase.png)
-
-<p class="photo-footnote">Figma screenshot identifying pain points on the Cart phase</p>
-
-![EyeEm Checkout](images/checkout-phase.png)
+<p class="photo-footnote">Figma screenshot describing the flow for loggout desktop users</p>
 
 <p class="photo-footnote">Figma screenshot identifying pain points on the Checkout phase</p>
 
@@ -55,13 +51,13 @@ In addition to the main webpage, EyeEm frequently launched landing pages to supp
 Here are some live examples:
 
 ![EyeEm Web](images/eyeem-web.jpg)
-http://eyeem.com
+<a href="http://eyeem.com" target="_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-magazine.jpg)
-https://www.eyeem.com/magazine
+<a class="inline-link" href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-awards.jpg)
-https://www.eyeem.com/awards
+<a href="https://www.eyeem.com/awards" target="_blank">eyeem.com/awards<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-creative-trends.jpg)
-https://creativetrends.eyeem.com/
+<a href="https://creativetrends.eyeem.com/" target="_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
