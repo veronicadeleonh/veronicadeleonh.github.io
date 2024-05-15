@@ -28,19 +28,33 @@ During my role at EyeEm, I was part of the Product Desgin team collaborating on 
 
 #### EyEem's Cart & Checkout Flow
 
-In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue and offering the users a refreshed purchase experience. We started making a descriptive analysis of the current flow, first reviewing the data about the abandonment rate and mapping it along the UI pain points in the flow in Figma.
+In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue in short term. We started by making a descriptive analysis of the current flow supported by the data collected on the abandonment rate.
 
 ![Cart and Checkout Flow](images/cart-checkout-flow.png)
 
 <p class="photo-footnote">Figma screenshot describing the flow for loggout desktop users</p>
 
-<p class="photo-footnote">Figma screenshot identifying pain points on the Checkout phase</p>
+Analising the data, we discovered that:
+
+- about 95% of the users who completed a purchase were desktop users
+- more than 60% of users didn't proceed in the authetication step
+- about 15% of users exited EyeEm.com after seeing the authentication screen
+
+As our main scope was to focus on the quick wins, it was clear to us that we needed draw the flow for desktop loggedout users and W mapped all UI pain points on it in Figma.
+
+![Cart Pain points](images/cart-phase.png)
+
+<p class="photo-footnote">Zoom-in to Figma identifying pain points on the Cart phase</p>
 
 ##### Proposal 1
 
 ##### Proposal 2
 
+##### Redesigned screens
+
 #### Cart Dropdown Redesign
+
+##### Prototype
 
 #### EyeEm's Web presence
 
