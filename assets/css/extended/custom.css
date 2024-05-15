@@ -1,5 +1,5 @@
 body {
-    zoom: 85%;
+    zoom: 90%;
 }
 
 :root {
@@ -43,7 +43,7 @@ sup {
 }
 
 .post-entry:hover {
-    background-color: #f7f9f6;
+    background-color: #e7ecef;
 }
 
 .post-entry img {
@@ -55,7 +55,7 @@ sup {
 }
 
 .entry-cover {
-    width: 45%;
+    width: 50%;
     margin: 0;
 }
 
@@ -66,6 +66,8 @@ sup {
 
 .entry-content {
     font-size: 16px;
+    font-weight: 400;
+    color: #8f9396;
 }
 
 .card-background {
@@ -95,10 +97,14 @@ sup {
     .card-description {
         width: 70%;
     }
+
+    .first-entry {
+        min-height: 320px !important;
+    }
 }
 
 .card-background:hover {
-    background-color: #f7f9f6;
+    background-color: #e7ecef;
 }
 
 .card-background img {
@@ -106,13 +112,12 @@ sup {
 }
 
 .card-background:hover img {
-    transform: scale(1.02,1.02);
+    transform: scale(1.05,1.05);
 }
-
 
 .card-paragraph {
     margin: 0 0 !important;
-    color: #787b7d;
+    color: #8f9396;
 }
 
 .card-title {
@@ -136,7 +141,7 @@ sup {
     justify-content: space-between;
   }
 
-  .col {
+.col {
     width: 50%; 
 }
 
@@ -144,24 +149,24 @@ sup {
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
-  }
+}
   
-  .fi {
+.fi {
     position: relative;
     display: inline-block;
     width: 1em;
     line-height: 1em;
-  }
+}
 
-  .fi:before {
+.fi:before {
     content: " ";
-  }
+}
   
-  .fi.fis {
+.fi.fis {
     width: 0.8em;
-  }
+}
   
-  .fip {
+.fip {
     position: relative;
     display: inline-block;
     width: 24px;
@@ -169,40 +174,38 @@ sup {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-  .btn-connect {
+.btn-connect {
     display: flex;
     border: 1px solid #dadbdc;
     border-radius: 300px;
     transition: border 300ms;  
-  }
+}
 
-  .rounded {
+.rounded {
     gap: 8px;   
     padding: 1% 2%;   
     font-weight: 400 !important;    
-  }
+}
 
-  .circled {
+.circled {
     justify-content: center;
     width: 45px;
     height: 45px;   
-  }
+}
 
-  .btn-connect:hover {
+.btn-connect:hover {
     border: 1px solid #afb0b1;
-  }
+}
 
-
-  .photo-footnote {
+.photo-footnote {
     text-align: end;
     font-size: 14px;
     margin-top: -16px;
-  }
+}
 
-
-    .post-content a:hover {
+.post-content a:hover {
     color: black;
 }
 
@@ -246,4 +249,14 @@ sup {
 .inline-link:hover span {
     transform: translateX(4px);
     filter: invert(64%) sepia(60%) saturate(7492%) hue-rotate(200deg) brightness(97%) contrast(91%);
+}
+
+#menu a {
+    color: #8f9396;
+    font-weight: 400;
+}
+
+.footer, .top-link {
+    font-size: 12px;
+    color: #8f9396;
 }
