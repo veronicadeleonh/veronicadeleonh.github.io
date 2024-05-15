@@ -1,5 +1,5 @@
 body {
-    zoom: 90%;
+    zoom: 95%;
 }
 
 :root {
@@ -72,7 +72,6 @@ sup {
 
 .card-background {
     padding: 1% 2%;
-/*    border: 1px solid var(--border); */
     border-radius: 8px;
     margin: 16px -15px;
     display: flex;
