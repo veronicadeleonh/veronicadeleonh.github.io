@@ -229,3 +229,21 @@ sup {
 .first-entry {
     min-height: 280px;
 }
+
+.inline-link {
+    font-size: 17px;
+    transition: color 150ms;
+}
+
+.inline-link:hover {
+    color: #2f80ed;
+}
+
+.inline-link span {
+    transition: all 150ms;
+}
+
+.inline-link:hover span {
+    transform: translateX(4px);
+    filter: invert(64%) sepia(60%) saturate(7492%) hue-rotate(200deg) brightness(97%) contrast(91%);
+}
