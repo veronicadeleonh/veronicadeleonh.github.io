@@ -40,4 +40,4 @@ With the need of suppporting Basecase's online presence, we developed a serie of
 
 ![BaseCase Features](images/basecase-features.svg)
 
-<p class="photo-footnote">Example of some of the Features illustrations created for BaseCase's website</p>
+<p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>

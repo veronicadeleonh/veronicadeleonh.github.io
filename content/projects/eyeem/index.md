@@ -40,7 +40,7 @@ Analising the data, we discovered that:
 - more than 60% of users didn't proceed in the authetication step
 - about 15% of users exited EyeEm.com after seeing the authentication screen
 
-As our main scope was to focus on the quick wins, it was clear to us that we needed draw the flow for desktop loggedout users and W mapped all UI pain points on it in Figma.
+As our main scope was to focus on the quick wins, it was clear to us that we needed draw the flow for desktop logged out users and map all pain points on it in Figma.
 
 ![Cart Pain points](images/cart-phase.png)
 
