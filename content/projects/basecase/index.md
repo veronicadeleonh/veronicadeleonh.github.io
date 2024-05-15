@@ -33,3 +33,5 @@ My collaboration began with assisting in the creation of digital and physical br
 As **UX/UI Designer**, I contributed to this project by designing and implementing a series of demos that formed the BaseCase Demo Apps Library. This library is a collection of interactive presentations showcasing the capabilities of the BaseCase platform as a data visualization tool.
 
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
+
+#### Marketing Assets

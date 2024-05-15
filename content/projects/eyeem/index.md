@@ -57,11 +57,11 @@ Here are some live examples:
 ![EyeEm Web](images/eyeem-web.jpg)
 http://eyeem.com
 
-![EyeEm Web](images/eyeem-creative-trends.jpg)
-https://creativetrends.eyeem.com/
-
 ![EyeEm Web](images/eyeem-magazine.jpg)
 https://www.eyeem.com/magazine
 
 ![EyeEm Web](images/eyeem-awards.jpg)
 https://www.eyeem.com/awards
+
+![EyeEm Web](images/eyeem-creative-trends.jpg)
+https://creativetrends.eyeem.com/

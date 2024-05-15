@@ -168,7 +168,7 @@
             <img src="images/stack-chatgpt.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">ChapGPt</p>
+            <p class="card-title">ChapGPT</p>
             <p class="card-paragraph">AI Tool</p>
         </div>
     </div>
