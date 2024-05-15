@@ -20,7 +20,7 @@ cover:
 
 #### About BaseCase
 
-BaseCase is a drag-and-drop platform to create interactive online content. With BaseCase the user is able to integrate UI elements and realize dynamic calculations on the screen.
+BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content. With BaseCase the user is able to integrate UI elements and realize dynamic calculations on the screen.
 
 #### My role at Basecase
 
@@ -35,3 +35,9 @@ As **UX/UI Designer**, I contributed to this project by designing and implementi
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
 #### Marketing Assets
+
+With the need of suppporting Basecase's online presence, we developed a serie of images for marketing campaings that could go from the launching of new features until the participation of the company on fairs. I was also reponsible for the development of images used on Basecase website, some of them are still live under each category on https://basecase.com/features
+
+![BaseCase Features](images/basecase-features.svg)
+
+<p class="photo-footnote">Example of some of the Features illustrations created for BaseCase's website</p>
