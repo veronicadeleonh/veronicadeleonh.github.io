@@ -1,6 +1,6 @@
-![VDLH - Coney Island 2022](images/vdlh-coney-island.jpg)
+![VDLH - Coney Island 2022](images/vdlh-samana.jpg)
 
-<p class="photo-footnote">Coney Island, New York - 2022</p>
+<p class="photo-footnote">Samaná, Domenican Republic - 2022</p>
 
 ### Let's connect!
 
