@@ -67,7 +67,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 <div class="box-notes orange">
 <strong>Long-term wins</strong>
     <ul>
-      <li>introduce guest checkout</li>
+      <li>Introduce guest checkout</li>
       <li>Apply single-click sign up</li>
     </ul>
 </div>

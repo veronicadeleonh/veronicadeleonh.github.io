@@ -22,7 +22,6 @@
         </div>
     </div>
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -43,7 +42,6 @@
         </div>
     </div>          
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -87,7 +85,6 @@
         </div>
     </div>
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -108,7 +105,6 @@
         </div>
     </div>
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -152,7 +148,6 @@
         </div>
     </div>
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -165,15 +160,14 @@
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-chatgpt.svg">
+            <img src="images/stack-bubble.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">ChapGPT</p>
-            <p class="card-paragraph">AI Tool</p>
+            <p class="card-title">Bubble</p>
+            <p class="card-paragraph">Product Design</p>
         </div>
     </div>
 </div>
-
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -186,11 +180,11 @@
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-sketch.svg">
+            <img src="images/stack-chatgpt.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">Sketch</p>
-            <p class="card-paragraph">Interface Design</p>
+            <p class="card-title">ChatGPT</p>
+            <p class="card-paragraph">AI</p>
         </div>
     </div>
 </div>

@@ -27,6 +27,14 @@ Mondly is a language laring app which mission is to build bridges between people
 
 ### Mondly Web
 
+Offer page / Blog
+
 ### Mondly Growth
 
+![Seasonal Promos](images/seasonal-promos.jpg)
+![Google Consent](images/google-consent.jpg)
+
 ### Mondly Marketing
+
+![App Store Images](images/app-store-images.jpg)
+![W2W](images/w2w.jpg)
