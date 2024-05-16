@@ -37,35 +37,57 @@ As part of the Product Design Team, we worked closely with of data analyst and d
 
 Analising the data about the cart abandonment, we discovered that:
 
-- about 95% of the users who completed a purchase were desktop users
-- more than 60% of users didn't proceed in the authetication step
-- about 15% of users exited EyeEm.com after seeing the authentication screen
+<div class="box-notes blue">
+<strong>Data Take-aways</strong>
+  <ul>
+      <li>~95% of the users who completed a purchase were desktop userst</li>
+      <li>More than 60% of users didn't proceed in the authetication step</li>
+      <li>~15% of users exited EyeEm.com after seeing the authentication screen</li>
+    </ul>
+</div>
 
-![Authentication Pain points](images/authentication-painpoints.png)
+![Authentication Pain points](images/auth-pain-points.jpg)
 
 <p class="photo-footnote">Zoom-in to Figma showing the inconsistencies in the flow after users logged in</p>
 
-Analising the flow came up with a list of quick wins:
+These were the take-aways we got from identifying all pain points in the flow:
 
-- inconsistency in bg color
-- Calculate Tax (VAT) when users are already logged in and only one step ahead from the purchase
-- Change wording in during the authentication phase to remind user we are going through a purchase process
-- adjust the flow for users authenticating with Google and Facebook
-- pre-save billing and payment details
-- add licensing fields
-- introduce guest checkout
+<div class="box-notes green">
+  <strong>Quick wins</strong>
+    <ul>
+      <li>Inconsistency in bg color</li>
+      <li>Calculate Tax (VAT) after users log in and only one step ahead from the purchase</li>
+      <li>Remind users during the authentication that they are performing a purchase</li>
+      <li>Adjust the flow for users authenticating with Google and Facebook</li>
+      <li>Pre-save billing and payment details / Make billing address to be optional</li>
+      <li>Add licensing fields</li>
+    </ul>
+</div>
+<br>
+<div class="box-notes orange">
+<strong>Long-term wins</strong>
+    <ul>
+      <li>introduce guest checkout</li>
+      <li>Apply single-click sign up</li>
+    </ul>
+</div>
 
 #### Low-fi & Prototype
 
 We iterate different possible solutions
 
-https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
+<a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
+" target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
 ![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
 
 <p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Checkout phase</p>
 
 #### Hi-fi & Redesigned screens
+
+The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
+
+Here is a glympse to a couple of the final redesigned screens:
 
 ![Redesigned Cart + Auth screens](images/cart-view-auth.png)
 
