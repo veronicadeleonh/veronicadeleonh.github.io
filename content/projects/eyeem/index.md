@@ -21,41 +21,59 @@ cover:
 
 #### About EyeEm
 
-**EyeEm** is as a global photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content. The platform's mission centers around empowering its community by providing them with a robust platform for discovery, while simultaneously granting brands access to powerful creative imagery from around the globe.
+**EyeEm** is as a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.
 
 #### My role at EyeEm
 
-During my role at EyeEm, I was part of the Product Desgin team collaborating on platform maintenance, conducting research, desiging new features, prototyping, and testing solutions to deliver the best possible version for implementation.
+During my role at EyeEm, I was part of the Product Desgin team collaborating on platform maintenance, conducting research, desiging new features, prototyping, and testing solutions.
+
+#### The Platform
+
+EyeEm is a browser-based platform for photographers to get discovered and for brands to access a curated selection of images, dividing the user base into two main groups: the creators and the buyers.
 
 #### EyEem's Cart & Checkout Flow
 
-In 2022, EyeEm re-vamped the Cart and Checkout Process project with the scope of increasing the revenue in short term. We started by making a descriptive analysis of the current flow supported by the data collected on the abandonment rate.
+As part of the Product Design Team, we worked closely with of data analyst and developers on the developemt of new and re-vamped features. In the case of the Cart & Checkout re-vamp, we joined forces and started by making a descriptive analysis of data coming from the current flow.
 
-![Cart and Checkout Flow](images/cart-checkout-flow.png)
-
-<p class="photo-footnote">Figma screenshot describing the flow for loggout desktop users</p>
-
-Analising the data, we discovered that:
+Analising the data about the cart abandonment, we discovered that:
 
 - about 95% of the users who completed a purchase were desktop users
 - more than 60% of users didn't proceed in the authetication step
 - about 15% of users exited EyeEm.com after seeing the authentication screen
 
-As our main scope was to focus on the quick wins, it was clear to us that we needed draw the flow for desktop logged out users and map all pain points on it in Figma.
+![Authentication Pain points](images/authentication-painpoints.png)
 
-![Cart Pain points](images/cart-phase.png)
+<p class="photo-footnote">Zoom-in to Figma showing the inconsistencies in the flow after users logged in</p>
 
-<p class="photo-footnote">Zoom-in to Figma identifying pain points on the Cart phase</p>
+Analising the flow came up with a list of quick wins:
 
-##### Proposal 1
+- inconsistency in bg color
+- Calculate Tax (VAT) when users are already logged in and only one step ahead from the purchase
+- Change wording in during the authentication phase to remind user we are going through a purchase process
+- adjust the flow for users authenticating with Google and Facebook
+- pre-save billing and payment details
+- add licensing fields
+- introduce guest checkout
 
-##### Proposal 2
+#### Low-fi & Prototype
 
-##### Redesigned screens
+We iterate different possible solutions
 
-#### Cart Dropdown Redesign
+https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 
-##### Prototype
+![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
+
+<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Checkout phase</p>
+
+#### Hi-fi & Redesigned screens
+
+![Redesigned Cart + Auth screens](images/cart-view-auth.png)
+
+<p class="photo-footnote">Redesigned Authentication screen</p>
+
+![Thank you screens](images/thank-you-page.png)
+
+<p class="photo-footnote">Redesigned Thank you screen</p>
 
 #### EyeEm's Web presence
 

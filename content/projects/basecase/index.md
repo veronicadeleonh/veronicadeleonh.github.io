@@ -21,17 +21,17 @@ cover:
 
 #### About BaseCase
 
-BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content. With BaseCase the user is able to integrate UI elements and realize dynamic calculations on the screen.
+BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content, tailored for the health care and medical science business.
 
 #### My role at Basecase
 
-My collaboration began with assisting in the creation of digital and physical brochures, along with the necessary images for the web and recurring social media campaigns. After expressing interest in building my own BaseCase apps, I became involved in redesigning BaseCase's old demo applications and conceptualizing new ones upon request.
+My collaboration began with assisting the Marketing team on the design of digital and physical brochures, along with the necessary images for the web and recurring social media campaigns. After expressing interest in building my own BaseCase apps, I became involved in the production of client-facing apps and responsible for the BaseCase Apps Library.
 
 #### The Demo App Library
 
 ![BaseCase Demo App](images/demo-apps.jpg)
 
-As **UX/UI Designer**, I contributed to this project by designing and implementing a series of demos that formed the BaseCase Demo Apps Library. This library is a collection of interactive presentations showcasing the capabilities of the BaseCase platform as a data visualization tool.
+This library was a collection of interactive presentations showcasing the capabilities of the BaseCase platform as a data visualization tool. I was fully responsible for the conzeptualisation, design and implementation of the tools.
 
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
