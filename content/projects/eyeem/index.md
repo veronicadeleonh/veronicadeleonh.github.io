@@ -53,7 +53,7 @@ Analising the data about the cart abandonment, we discovered that:
 These were the take-aways we got from identifying all pain points in the flow:
 
 <div class="box-notes green">
-  <strong>Quick wins</strong>
+  <strong>Quick fixes</strong>
     <ul>
       <li>Inconsistency in bg color</li>
       <li>Calculate Tax (VAT) after users log in and only one step ahead from the purchase</li>
@@ -65,7 +65,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 </div>
 <br>
 <div class="box-notes orange">
-<strong>Long-term wins</strong>
+<strong>Long-term fixes</strong> (becoming relevant after the first test rounds)
     <ul>
       <li>Introduce guest checkout</li>
       <li>Apply single-click sign up</li>

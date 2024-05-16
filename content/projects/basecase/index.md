@@ -35,10 +35,18 @@ This library was a collection of interactive presentations showcasing the capabi
 
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
+![BaseCase Demo App](images/basecase-demo-1.png)
+
+![BaseCase Demo App](images/basecase-demo-2.png)
+
+![BaseCase Demo App](images/basecase-demo-3.png)
+
+<p class="photo-footnote">Close-up's to some of the tools that made part of the Demo App Library</p>
+
 #### Marketing Assets
 
 With the need of suppporting Basecase's online presence, we developed a serie of images for marketing campaings that could go from the launching of new features until the participation of the company on fairs. I was also reponsible for the development of images used on Basecase website, some of them are still live under each category on https://basecase.com/features
 
-![BaseCase Features](images/basecase-features.svg)
+![BaseCase Features](images/basecase-features.png)
 
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
