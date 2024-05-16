@@ -6,6 +6,7 @@ summary: 2023, Berlin
 weight: 2
 ShowToc: true
 TocOpen: true
+ShowPostNavLinks: true
 cover:
   image: images/eyeem-thumb.jpg
   alt: "EyeEm"

@@ -6,6 +6,7 @@ summary: 2019, Berlin
 weight: 3
 ShowToc: true
 TocOpen: true
+ShowPostNavLinks: true
 cover:
   image: images/basecase-thumb.jpg
   alt: "BaseCase"

@@ -6,6 +6,7 @@ summary: 2024, Berlin
 weight: 1
 ShowToc: true
 TocOpen: true
+ShowPostNavLinks: true
 cover:
   image: images/mondly-thumb.jpg
   alt: "Mondly"
