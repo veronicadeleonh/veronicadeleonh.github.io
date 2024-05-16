@@ -1,6 +1,6 @@
 # About me
 
-Hey there! I'm **Verónica**, a **Product Designer** based in Berlin who loves to collaborate with remote teams. When I'm not crafting mobile apps and websites, you'll often find me snapping analog photos, exploring new places, getting lost in nature, or enjoying some sports.
+I'm **Verónica**, a **Product Designer** based in Berlin with experience collaborating on remote teams. When I'm not crafting mobile apps and websites, you'll often find me snapping analog photos, exploring new places, getting lost in nature or enjoying some sports.
 
 <div class="about-links">
     <a class="btn-connect circled" href="https://linkedin.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
