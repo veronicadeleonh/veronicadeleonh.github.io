@@ -124,7 +124,7 @@ I'm **Verónica**, a **Product Designer** based in Berlin with experience collab
 
 <div class="card-background flex-grid">
     <div class="card-description">
-        <p class="card-title">English <span class="fi" style="background-image: url(images/us.svg)"></span></p>
+        <p class="card-title">English <span class="fi" style="background-image: url(images/gb.svg)"></span></p>
     </div>
     <div class="card-year">
         Proficient
