@@ -31,13 +31,27 @@ My collaboration began with assisting the Marketing team on the design of digita
 
 ![BaseCase Demo App](images/demo-apps.jpg)
 
-This library was a collection of interactive presentations showcasing the capabilities of the BaseCase platform as a data visualization tool. I was fully responsible for the conzeptualisation, design and implementation of the tools.
+This library was a collection of tools that supported BaseCase's documentation. These tools would exemplify from BaseCase's more basic funtionalities until the most complex features, as well as product updates and use cases tutorials. I was fully responsible for the ideation, design (or redesign) and implementation of the tools.
+
+<div class="box-notes blue">
+<strong style="text-transform: uppercase">Process creating the tools</strong>
+
+<div>
+  <div class="numbering">1</div><span>I would first translate the brief coming from the stakeholders, identifying the scope and usage of the demo</span>
+</div>
+<div class="numbering">2</div> Then I'd move into Sketch to create low-fi mockups and put all the ideation into place
+<div class="numbering">3</div>The next step would be to create an imaginary healthcare brand, which included choosing colors, fonts and creating a logo.
+<div class="numbering">4</div> I would then move into BaseCase platform and implement the design and funcionality of the app
+<div class="numbering">5</div> Before moving the tool to QA, I would make a round of tests, ensuring that there was a proper usage of features and that calculations coming from the spreadsheets were performing correctly.
+</div>
 
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
-![BaseCase Demo App](images/basecase-demo-1.png)
+<<UPDATE WORKFLOW IMAGE>>
 
 ![BaseCase Demo App](images/basecase-demo-2.png)
+
+![BaseCase Demo App](images/basecase-demo-1.png)
 
 ![BaseCase Demo App](images/basecase-demo-3.png)
 

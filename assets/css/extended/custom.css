@@ -280,3 +280,16 @@ sup {
     background-color: #3867d60f;
     border-color: #3867d6;
 }
+
+.numbering {
+    background-color: #3967d6;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+}

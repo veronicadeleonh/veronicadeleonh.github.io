@@ -33,9 +33,11 @@ EyeEm is a browser-based platform for photographers to get discovered and for br
 
 #### EyEem's Cart & Checkout Flow
 
-As part of the Product Design Team, we worked closely with of data analyst and developers on the developemt of new and re-vamped features. In the case of the Cart & Checkout re-vamp, we joined forces and started by making a descriptive analysis of data coming from the current flow.
+As part of the Product Design Team, we worked closely with of data analyst and developers on the developemt of new and re-vamped features. In the case of the Cart & Checkout re-vamp, we joined forces and started by making a descriptive analysis of data coming from the current flow together with the pain points we found on the flow.
 
 Analising the data about the cart abandonment, we discovered that:
+
+-------REMOVE
 
 <div class="box-notes blue">
 <strong>Data Take-aways</strong>
@@ -45,10 +47,11 @@ Analising the data about the cart abandonment, we discovered that:
       <li>~15% of users exited EyeEm.com after seeing the authentication screen</li>
     </ul>
 </div>
+-------
 
-![Authentication Pain points](images/auth-pain-points.jpg)
+<<IMAGE OF ALL FLOW WITH PAINPOINTS AND DATA TAKE-AWAYS>>
 
-<p class="photo-footnote">Zoom-in to Figma showing the inconsistencies in the flow after users logged in</p>
+<p class="photo-footnote">Identifying Data take-awys and pain points on the flow</p>
 
 These were the take-aways we got from identifying all pain points in the flow:
 
@@ -81,7 +84,7 @@ We iterate different possible solutions
 
 ![Checkout Prototyoing phase](images/cart-protoyping-phase.png)
 
-<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart hase</p>
+<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart phase, marking UI and interaction issues</p>
 
 #### Hi-fi & Redesigned screens
 
