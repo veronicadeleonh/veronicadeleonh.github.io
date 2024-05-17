@@ -79,13 +79,17 @@ We iterate different possible solutions
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
-![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
+![Checkout Prototyoing phase](images/cart-protoyping-phase.png)
 
-<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Checkout phase</p>
+<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart hase</p>
 
 #### Hi-fi & Redesigned screens
 
 The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
+
+![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
+
+<p class="photo-footnote">Figma screenshot from the Hi-fi Prototype on the Checkout phase marking some of the applied changes</p>
 
 Here is a glympse to a couple of the final redesigned screens:
 
