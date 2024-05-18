@@ -109,6 +109,10 @@ sup {
     .btn-connect {
         line-height: 32px;
     }
+
+    .rounded {
+        padding: 1% 3% !important;
+    }
 }
 
 .card-background:hover {
