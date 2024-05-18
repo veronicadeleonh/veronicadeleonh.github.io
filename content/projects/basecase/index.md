@@ -21,7 +21,7 @@ cover:
 
 #### About BaseCase
 
-BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content, tailored for the health care and medical science business.
+BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content, tailored for the healthcare and medical science business.
 
 #### My role at Basecase
 
@@ -31,7 +31,7 @@ My collaboration began with assisting the Marketing team on the design of digita
 
 ![BaseCase Demo App](images/demo-apps.jpg)
 
-This library was a collection of tools that supported BaseCase's documentation. These tools would exemplify from BaseCase's more basic funtionalities until the most complex features, as well as product updates and use cases tutorials. I was fully responsible for the ideation, design (or redesign) and implementation of the tools.
+This library was a collection of tools that supported BaseCase documentation, illustrating everything from basic functionalities to complex features, along with product updates and use case tutorials. I was fully responsible for the ideation, design (or redesign), and implementation of these tools.
 
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
@@ -64,7 +64,7 @@ This library was a collection of tools that supported BaseCase's documentation. 
 
 #### Marketing Assets
 
-With the need of suppporting Basecase's online presence, we developed a serie of images for marketing campaings that could go from the launching of new features until the participation of the company on fairs. I was also reponsible for the development of images used on Basecase website, some of them are still live under each category on https://basecase.com/features
+To support BaseCase's online presence, we developed a series of images for marketing campaigns, ranging from new feature launches to company participation in fairs. I was also responsible for creating images for the BaseCase website, many of which are still live under each category on <a href="https://basecase.com/features" target="_blank">BaseCase Features<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> page.
 
 ![BaseCase Features](images/basecase-features.png)
 
