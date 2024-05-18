@@ -41,7 +41,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
   Light mode was introduced at the request of the User Acquisition Team, based on the assumption that images with light backgrounds perform better in app stores. We organized several Design Team workshops to develop a light version of our new brand, ensuring it met the Marketing team's needs.
 </div>
 
-![App Store Images](images/app-store-images.jpg)
+![App Store Images](images/app-store-images.png)
 
 <p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
@@ -49,11 +49,11 @@ Some of the tests we made included the redesign of the Offer page and the App an
 
 The Growth team initiated several A/B tests aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
 
-![Seasonal Promos](images/seasonal-promos.jpg)
+![Seasonal Promos](images/seasonal-campaigns.png)
+
+<p class="photo-footnote">New layout for the in-App adds created for the Spring Campaign. The background image was generated using Midjourney</p>
 
 <<PREMIUM SCREEN TEST FIGMA SCREENSHOT>>
-
-<p class="photo-footnote">New In-App Add design created for the Spring Campaign</p>
 
 ### Marketing Campaigns
 

@@ -100,6 +100,11 @@ sup {
     .first-entry {
         min-height: 320px !important;
     }
+
+    .card-year {
+        text-align: right;
+        text-wrap: nowrap;
+    }
 }
 
 .card-background:hover {
