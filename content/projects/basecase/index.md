@@ -58,13 +58,9 @@ This library was a collection of tools that supported BaseCase's documentation. 
   <div class="numbers">6</div><span style="width:95%">Move the tool to QA</span>
 </div>
 
-![BaseCase Demo App](images/basecase-demo-2.png)
+![BC Demo Apps](images/basecase-detailed-demo.png)
 
-![BaseCase Demo App](images/basecase-demo-1.png)
-
-![BaseCase Demo App](images/basecase-demo-3.png)
-
-<p class="photo-footnote">Close-up's to some of the tools that made part of the Demo App Library</p>
+<p class="photo-footnote">Close-ups to some of the tools that made part of the Demo App Library</p>
 
 #### Marketing Assets
 

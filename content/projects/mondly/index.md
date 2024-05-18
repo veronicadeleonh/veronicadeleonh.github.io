@@ -51,7 +51,7 @@ The Growth team initiated several A/B tests aimed at increasing Premium Subscrip
 
 ![Seasonal Promos](images/seasonal-promos.jpg)
 
-<<PREMIUN SCREEN TEST FIGMA SCREENSHOT>>
+<<PREMIUM SCREEN TEST FIGMA SCREENSHOT>>
 
 <p class="photo-footnote">New In-App Add design created for the Spring Campaign</p>
 
@@ -59,4 +59,10 @@ The Growth team initiated several A/B tests aimed at increasing Premium Subscrip
 
 One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.
 
-![W2W](images/w2w.jpg)
+![W2W Screens](images/w2w-screens.png)
+
+<p class="photo-footnote">Figma screenshot from the library used on the W2W campaign project</p>
+
+![W2W Components](images/w2w-components.png)
+
+<p class="photo-footnote">Figma screenshot from the library used on the W2W campaign project</p>

@@ -263,7 +263,7 @@ sup {
 .box-notes {
     border: 2px solid;
     border-radius: 4px;
-    padding: 2% 2% 0;
+    padding: 2% 2%;
 }
 
 .green {
@@ -299,4 +299,8 @@ sup {
     border-radius: 50%;
     font-size: 14px;
     font-weight: 700;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }

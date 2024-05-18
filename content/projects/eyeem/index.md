@@ -43,7 +43,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 
 <div class="box-notes green">
   <strong>Quick fixes</strong>
-    <ul>
+    <ul class="no-margin-bottom">
       <li>Inconsistency in bg color</li>
       <li>Calculate Tax (VAT) after users log in and only one step ahead from the purchase</li>
       <li>Remind users during the authentication that they are performing a purchase</li>
@@ -55,7 +55,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 <br>
 <div class="box-notes orange">
 <strong>Long-term fixes</strong> (becoming relevant after the first test rounds)
-    <ul>
+    <ul class="no-margin-bottom">
       <li>Introduce guest checkout</li>
       <li>Apply single-click sign up</li>
     </ul>
@@ -79,8 +79,6 @@ The high-resolutions screens were built usign EyeEm's Design system to ensure co
 ![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
 
 <p class="photo-footnote">Figma screenshot from the Hi-fi Prototype on the Checkout phase marking some of the applied changes</p>
-
-Here is a glympse to a couple of the final redesigned screens:
 
 ![Redesigned Cart + Auth screens](images/cart-view-auth.png)
 
