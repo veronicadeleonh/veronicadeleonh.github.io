@@ -25,7 +25,7 @@ BaseCase is a no-code platform that allows the users to translate spreadsheets i
 
 #### My role at Basecase
 
-My collaboration began with assisting the Marketing team on the design of digital and physical brochures, along with the necessary images for the web and recurring social media campaigns. After expressing interest in building my own BaseCase apps, I became involved in the production of client-facing apps and responsible for the BaseCase Apps Library.
+My collaboration began with assisting the Marketing team on the design of digital and physical brochures, along with the necessary images for the web and recurring social media campaigns. After expressing interest in building my own BaseCase apps, I became involved in the production of client-facing tools and responsible for the BaseCase Apps Library.
 
 #### The Demo App Library
 
@@ -33,21 +33,30 @@ My collaboration began with assisting the Marketing team on the design of digita
 
 This library was a collection of tools that supported BaseCase's documentation. These tools would exemplify from BaseCase's more basic funtionalities until the most complex features, as well as product updates and use cases tutorials. I was fully responsible for the ideation, design (or redesign) and implementation of the tools.
 
-<div class="box-notes blue">
-<strong style="text-transform: uppercase">Process creating the tools</strong>
-
-<div>
-  <div class="numbering">1</div><span>I would first translate the brief coming from the stakeholders, identifying the scope and usage of the demo</span>
-</div>
-<div class="numbering">2</div> Then I'd move into Sketch to create low-fi mockups and put all the ideation into place
-<div class="numbering">3</div>The next step would be to create an imaginary healthcare brand, which included choosing colors, fonts and creating a logo.
-<div class="numbering">4</div> I would then move into BaseCase platform and implement the design and funcionality of the app
-<div class="numbering">5</div> Before moving the tool to QA, I would make a round of tests, ensuring that there was a proper usage of features and that calculations coming from the spreadsheets were performing correctly.
-</div>
-
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
 <<UPDATE WORKFLOW IMAGE>>
+
+<strong style="text-transform: uppercase">Process creating the tools</strong>
+
+<div class="numbering">
+  <div class="numbers">1</div><span style="width:95%">Identifying the scope and usage of the demo</span>
+</div>
+<div class="numbering">
+  <div class="numbers">2</div><span style="width:95%">Create low-fi mockups in Sketch and put all the ideation into place</span>
+</div>
+<div class="numbering">
+  <div class="numbers">3</div><span style="width:95%">Create an imaginary healthcare brand, choosing colors, fonts and logo</span>
+</div>
+<div class="numbering">
+  <div class="numbers">4</div><span style="width:95%">Implement the design and functionalities using the BaseCase platform</span>
+</div>
+<div class="numbering">
+  <div class="numbers">5</div><span style="width:95%">Test the app internally ensuring its full performance</span>
+</div>
+<div class="numbering">
+  <div class="numbers">6</div><span style="width:95%">Move the tool to QA</span>
+</div>
 
 ![BaseCase Demo App](images/basecase-demo-2.png)
 

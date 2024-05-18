@@ -282,7 +282,14 @@ sup {
 }
 
 .numbering {
-    background-color: #3967d6;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.numbers {
+    background-color: #000;
     width: 24px;
     height: 24px;
     color: #fff;

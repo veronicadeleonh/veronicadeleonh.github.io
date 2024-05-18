@@ -25,7 +25,7 @@ cover:
 
 #### My role at EyeEm
 
-During my role at EyeEm, I was part of the Product Desgin team collaborating on platform maintenance, conducting research, desiging new features, prototyping, and testing solutions.
+During my role at EyeEm, I was part of the Product Desgin team collaborating on platform maintenance, conducting research, designing new features, prototyping, and testing solutions.
 
 #### The Platform
 
@@ -33,21 +33,7 @@ EyeEm is a browser-based platform for photographers to get discovered and for br
 
 #### EyEem's Cart & Checkout Flow
 
-As part of the Product Design Team, we worked closely with of data analyst and developers on the developemt of new and re-vamped features. In the case of the Cart & Checkout re-vamp, I reviewed the data research and report made before I joined the team, to create a descriptive analysis and map the pain points on a flow in Figma.
-
-Analising the data about the cart abandonment, we discovered that:
-
--------REMOVE
-
-<div class="box-notes blue">
-<strong>Data Take-aways</strong>
-  <ul>
-      <li>~95% of the users who completed a purchase were desktop userst</li>
-      <li>More than 60% of users didn't proceed in the authetication step</li>
-      <li>~15% of users exited EyeEm.com after seeing the authentication screen</li>
-    </ul>
-</div>
--------
+Our Product Design team worked closely with data analysts and developers. In the case of the Cart & Checkout re-vamp, I reviewed the data research and report made by the team on the previous months, to then create a descriptive analysis and map the pain points of the flow.
 
 <<IMAGE OF ALL FLOW WITH PAINPOINTS AND DATA TAKE-AWAYS>>
 
@@ -77,7 +63,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 
 #### Low-fi & Prototype
 
-We iterate different possible solutions
+We iterate different possible solutions in Figma, coming out with a solution that ticked all the Quick fixes boxes and at the same time took in consideration the constraints from the legal team and the capacity of the developers.
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
@@ -106,9 +92,9 @@ Here is a glympse to a couple of the final redesigned screens:
 
 #### EyeEm's Web presence
 
-<a href="http://eyeem.com" target="_blank">EyeEm.com</a> combines the flexibility of Webflow with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining the site.
+<a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of Webflow with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining these areas of the site.
 
-In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation, design, and conceptualization of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow, sharing account control with the Front-End Team.
+In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation and design of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow, sharing account control with the Front-End team.
 
 Here are some live examples:
 
