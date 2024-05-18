@@ -55,7 +55,7 @@ This library was a collection of tools that supported BaseCase documentation, il
   <div class="numbers">5</div><span style="width:95%">Test the app internally ensuring its full performance</span>
 </div>
 <div class="numbering">
-  <div class="numbers">6</div><span style="width:95%">Move the tool to QA</span>
+  <div class="numbers">6</div><span style="width:95%">Send the tool to QA</span>
 </div>
 
 ![BC Demo Apps](images/basecase-detailed-demo.png)
