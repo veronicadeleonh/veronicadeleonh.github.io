@@ -105,6 +105,10 @@ sup {
         text-align: right;
         text-wrap: nowrap;
     }
+
+    .btn-connect {
+        line-height: 32px;
+    }
 }
 
 .card-background:hover {
