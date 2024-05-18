@@ -72,21 +72,19 @@ We iterate different possible solutions in Figma, coming out with a solution tha
 
 <p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart phase, marking UI and interaction issues</p>
 
-#### Hi-fi & Redesigned screens
-
-The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
-
 ![Checkout Prototyoing phase](images/checkout-protoyping-phase.png)
 
 <p class="photo-footnote">Figma screenshot from the Hi-fi Prototype on the Checkout phase marking some of the applied changes</p>
 
-![Redesigned Cart + Auth screens](images/cart-view-auth.png)
+#### Hi-fi & Redesigned screens
 
-<p class="photo-footnote">Redesigned Authentication screen</p>
+The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
 
-![Thank you screens](images/thank-you-page.png)
+![EyeEm Hi-fi](images/eyeem-auth.png)
 
-<p class="photo-footnote">Redesigned Thank you screen</p>
+![EyeEm Hi-fi](images/eyeem-thank-you.png)
+
+<p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a section of the Thank you screen at the end of the purchase</p>
 
 #### EyeEm's Web presence
 
