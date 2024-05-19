@@ -41,7 +41,8 @@ Some of the tests we made included the redesign of the Offer page and the App an
 
 <p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
-![App Store Images](images/app-store-images.png)
+![App Store Images](images/app-store-images-dark.png)
+![App Store Images](images/app-store-images-light.png)
 
 <p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
