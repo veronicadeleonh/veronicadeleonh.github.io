@@ -65,4 +65,4 @@ One major ongoing marketing campaign involved creating an onboarding flow with a
 
 ![W2W Screens](images/w2w-screens.png)
 
-<p class="photo-footnote">Figma screenshot from the W2W camoaing mockups</p>
+<p class="photo-footnote">Figma screenshot from the W2W campaing mockups</p>
