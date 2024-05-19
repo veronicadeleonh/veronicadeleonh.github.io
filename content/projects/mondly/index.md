@@ -39,7 +39,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 
 ![Offer page](images/mondly-offer-page.png)
 
-<p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
+<p class="photo-footnote">Glimpse to the Offer Page redesign</p>
 
 ![App Store Images](images/app-store-images-dark.png)
 ![App Store Images](images/app-store-images-light.png)
@@ -47,7 +47,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 <p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 <div class="box-notes orange">
-  Light mode was introduced based on a benchamrk research which show competitors choosing light backgrounds on their app store images. We organized several Design Team workshops to develop a light version of our new brand, that we could include on the A/B Testing.
+  Light mode was introduced based on a benchmark research which show competitors choosing light backgrounds on their app store images. We organized several Design Team workshops to develop a light version of our new brand, that we could include on the A/B Testing.
 </div>
 
 ### Mondly Growth
@@ -56,9 +56,7 @@ The Growth team initiated several A/B tests aimed at increasing Premium Subscrip
 
 ![Seasonal Promos](images/seasonal-campaigns.png)
 
-<p class="photo-footnote">New layout for the in-App adds created for the Spring Campaign. The background image was generated using Midjourney</p>
-
-<<PREMIUM SCREEN TEST FIGMA SCREENSHOT>>
+<p class="photo-footnote">New layout for the in-App adds created for the Spring Campaign. Both version where subject of an A/B test on the background images. Both images were generated using Midjourney</p>
 
 ### Marketing Campaigns
 

@@ -76,9 +76,9 @@ We iterate different possible solutions in Figma, coming out with a solution tha
 
 The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
 
-![EyeEm Hi-fi](images/eyeem-auth.png)
+![EyeEm Hi-fi](images/eyeem-hifi.png)
 
-![EyeEm Hi-fi](images/eyeem-checkout.png)
+![EyeEm Hi-fi](images/eyeem-auth.png)
 
 ![EyeEm Hi-fi](images/eyeem-thank-you.png)
 
