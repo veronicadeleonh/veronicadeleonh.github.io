@@ -35,14 +35,18 @@ Before I joined the team, the product designers put in place a detailed Design S
 
 ### Mondly Web & Marketing
 
-Some of the tests we made included the redesign of the Offer page and the App and Google Store images, both resulting on a increase of user engagement of 3% on the Offer page and an increase of almost 5% of App Store downloads with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
+Some of the tests we made included the redesign of the Offer page and the App and Google Store images, both resulting on a increase of average time on page and the unique pageviews on the Offer page and an increase of almost 3% of App Store downloads with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
+
+![Offer page](images/mondly-offer-page.png)
+
+<p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 ![App Store Images](images/app-store-images.png)
 
 <p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 <div class="box-notes orange">
-  Light mode was introduced at the request of the User Acquisition Team, based on the assumption that images with light backgrounds perform better in app stores. We organized several Design Team workshops to develop a light version of our new brand, ensuring it met the Marketing team's needs.
+  Light mode was introduced based on a benchamrk research which show competitors choosing light backgrounds on their app store images. We organized several Design Team workshops to develop a light version of our new brand, that we could include on the A/B Testing.
 </div>
 
 ### Mondly Growth
