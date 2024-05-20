@@ -269,6 +269,10 @@ sup {
     box-shadow: none;
 }
 
+.footer a {
+    box-shadow: none;
+}
+
 .footer, .top-link {
     font-size: 12px;
     color: #8f9396;
