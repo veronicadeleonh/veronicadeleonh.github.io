@@ -74,15 +74,15 @@ We iterate different possible solutions in Figma, coming out with a solution tha
 
 #### Hi-fi & Redesigned screens
 
-The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
-
 ![EyeEm Hi-fi](images/eyeem-hifi.png)
+
+The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
 
 ![EyeEm Hi-fi](images/eyeem-auth.png)
 
 ![EyeEm Hi-fi](images/eyeem-thank-you.png)
 
-<p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a segment of the Optional Billing update. At the bottom, a section of the Thank you screen at the end of the purchase.</p>
+<p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a section of the Thank you screen at the end of the purchase.</p>
 
 #### EyeEm's Web presence
 
@@ -93,13 +93,13 @@ In addition to the main webpage, EyeEm frequently launched landing pages to supp
 Here are some live examples:
 
 ![EyeEm Web](images/eyeem-web.jpg)
-<a href="http://eyeem.com" target="_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
+<a href="http://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-magazine.jpg)
-<a class="inline-link" href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-awards.jpg)
-<a href="https://www.eyeem.com/awards" target="_blank">eyeem.com/awards<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-creative-trends.jpg)
-<a href="https://creativetrends.eyeem.com/" target="_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>

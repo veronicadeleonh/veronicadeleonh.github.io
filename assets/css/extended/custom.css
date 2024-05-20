@@ -2,18 +2,10 @@ body {
     zoom: 85%;
 }
 
-:root {
-    --link-color: var(--primary);
-    --link-hover-color: #573eaa;
-    --link-underline-shadow: none;
-    --link-hover-underline-color: #573eaa;
-    --link-hover-underline-shadow: none;
-  }
 
 sup {
     display: none;
 }
-
 
 .post-content hr {
     height: 1px;
@@ -43,7 +35,7 @@ sup {
 }
 
 .post-entry:hover {
-    background-color: #e7ecef;
+    background-color: #f1f4f5;
 }
 
 .post-entry img {
@@ -115,9 +107,22 @@ sup {
     }
 }
 
-.card-background:hover {
-    background-color: #e7ecef;
+.post-content a:hover {
+    color: #000;
 }
+
+.card-background:hover {
+    background-color: #f1f4f5;
+}
+
+.card-background:hover .card-title .fi {
+    transition: all 150ms;
+}
+
+.card-background:hover .card-title .fi {
+    transform: translateX(4px);
+}
+
 
 .card-background img {
     transition: all 300ms;
@@ -190,9 +195,8 @@ sup {
 
 .btn-connect {
     display: flex;
-    border: 1px solid #dadbdc;
     border-radius: 300px;
-    transition: border 300ms;  
+    transition: all 150ms;  
 }
 
 .rounded {
@@ -208,21 +212,13 @@ sup {
 }
 
 .btn-connect:hover {
-    border: 1px solid #afb0b1;
+    background-color: #f2f4f5 ;
 }
 
 .photo-footnote {
     text-align: end;
     font-size: 14px;
     margin-top: -16px;
-}
-
-.post-content a:hover {
-    color: black;
-}
-
-#menu .active {
-    box-shadow: none;
 }
 
 .about-links {
@@ -251,7 +247,8 @@ sup {
 }
 
 .inline-link:hover {
-    color: #2f80ed;
+    color: #778ca3;
+    filter: invert(53%) sepia(14%) saturate(637%) hue-rotate(171deg) brightness(99%) contrast(82%)
 }
 
 .inline-link span {
@@ -260,12 +257,16 @@ sup {
 
 .inline-link:hover span {
     transform: translateX(4px);
-    filter: invert(64%) sepia(60%) saturate(7492%) hue-rotate(200deg) brightness(97%) contrast(91%);
 }
 
 #menu a {
-    color: #8f9396;
+    color:#8f9396;
     font-weight: 400;
+    transition: all 150ms;
+}
+
+#menu .active {
+    box-shadow: none;
 }
 
 .footer, .top-link {

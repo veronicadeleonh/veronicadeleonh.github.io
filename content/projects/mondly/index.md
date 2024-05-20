@@ -33,7 +33,7 @@ Before I joined the team, the product designers put in place a detailed Design S
 
 ![Offer page](images/styleguide-components.png)
 
-<p class="photo-footnote">Glimpse to the Offer Page redesign</p>
+<p class="photo-footnote">View of the Styleguide components built in Figma</p>
 
 ### Mondly Web & Marketing
 
@@ -46,7 +46,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 ![App Store Images](images/app-store-images-dark.png)
 ![App Store Images](images/app-store-images-light.png)
 
-<p class="photo-footnote"> Screenshot from the light and dark version of the App Store images for iPhone 10</p>
+<p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 <div class="box-notes orange">
   Light mode was introduced based on a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several Design Team workshops to develop a light version of our new brand, that we could include on the A/B Testing.
@@ -67,4 +67,4 @@ One major ongoing marketing campaign involved creating an onboarding flow with a
 ![W2W Screens](images/w2w-screens.png)
 ![W2W Screens](images/w2w-components.png)
 
-<p class="photo-footnote">Figma screenshot from the W2W campaing mockups</p>
+<p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
