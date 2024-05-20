@@ -17,6 +17,15 @@ cover:
   hiddenInSingle: false
 ---
 
+<div class="intro-info">
+
+<p class="intro-description">Working on a variety of tasks, bringing product design expertise into the close collaboration with marketeers, User Acquisiton and Growth specialists, website dvelopers and data scientists.</p>
+  <p class="intro-details no-margin-bottom">Location: Full remote</p>
+  <p class="intro-details no-margin-bottom">Years: 2023 - 2024</p>
+  <p class="intro-details no-margin-bottom">Title: Senior Product Designer</p>
+
+</div>
+
 ![Mondly](images/mondly-thumb.jpg)
 
 ### About Mondly

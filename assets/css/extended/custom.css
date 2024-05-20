@@ -52,7 +52,7 @@ sup {
 }
 
 .first-entry .entry-content {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -317,4 +317,9 @@ sup {
 
 .no-margin-bottom {
     margin-bottom: 0 !important;
+}
+
+.intro-description {
+    font-size: 24px;
+    color: #8f9396;
 }

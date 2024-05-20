@@ -17,6 +17,15 @@ cover:
   hiddenInSingle: false
 ---
 
+<div class="intro-info">
+
+<p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the documentation of the platform in Confluence</p>
+  <p class="intro-details no-margin-bottom">Location: Berlin</p>
+  <p class="intro-details no-margin-bottom">Years: 2017 - 2020</p>
+  <p class="intro-details no-margin-bottom">Title: UX/UI Designer</p>
+
+</div>
+
 ![BaseCase](images/basecase-thumb.jpg)
 
 #### About BaseCase
