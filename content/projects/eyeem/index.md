@@ -2,7 +2,7 @@
 title: "EyeEm"
 layout: "eyeem"
 url: "/eyeem/"
-summary: 2023, Berlin
+summary: 2021 - 2023
 weight: 2
 ShowToc: true
 TocOpen: true

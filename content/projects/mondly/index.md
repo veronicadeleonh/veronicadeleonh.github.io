@@ -2,7 +2,7 @@
 title: "Mondly"
 layout: "mondly"
 url: "/mondly"
-summary: 2024, Berlin
+summary: 2023 - 2024
 weight: 1
 ShowToc: true
 TocOpen: true
