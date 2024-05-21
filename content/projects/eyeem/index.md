@@ -42,7 +42,7 @@ EyeEm is a browser-based platform for photographers to get discovered and for br
 
 #### EyEem's Cart & Checkout Flow
 
-Our Product Design team worked closely with data analysts and developers. In the case of the Cart & Checkout re-vamp, I reviewed the data research and report made by the team on the previous months, to then create a descriptive analysis and map the pain points of the flow.
+Our Product Design team worked closely with project managers, data analysts, developers. In the case of the Cart & Checkout re-vamp, I reviewed the data research and report made by the team on the previous months, to then create a descriptive analysis and map the pain points of the flow.
 
 <<IMAGE OF ALL FLOW WITH PAINPOINTS AND DATA TAKE-AWAYS>>
 

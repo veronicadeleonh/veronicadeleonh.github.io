@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
     zoom: 85%;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
 }
-
 
 sup {
     display: none;
@@ -52,14 +55,22 @@ sup {
 }
 
 .first-entry .entry-content {
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
 
 .entry-content {
+    font-family: "IBM Plex Mono", monospace;
     font-size: 17px;
     font-weight: 400;
     color: #8f9396;
+}
+
+.card-year {
+    font-family: "IBM Plex Mono", monospace;
+    color: #8f9396;
+    font-weight: 400;
 }
 
 .card-background {
@@ -263,6 +274,7 @@ sup {
     color:#8f9396;
     font-weight: 400;
     transition: all 150ms;
+    font-size: 17px;
 }
 
 #menu .active {
@@ -326,4 +338,5 @@ sup {
 .intro-description {
     font-size: 24px;
     color: #8f9396;
+    line-height: 1.6em;
 }
