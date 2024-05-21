@@ -19,7 +19,7 @@ cover:
 
 <div class="intro-info">
 
-<p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints</p>
+<p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
   <p class="intro-details no-margin-bottom">Location: Full remote</p>
   <p class="intro-details no-margin-bottom">Years: 2023 - 2024</p>
   <p class="intro-details no-margin-bottom">Title: Senior Product Designer</p>
@@ -42,7 +42,7 @@ Before I joined the team, the product designers put in place a detailed Design S
 
 ![Offer page](images/styleguide-components.png)
 
-<p class="photo-footnote">View of the Styleguide components built in Figma</p>
+<p class="photo-footnote">View of some of the components built for the Styleguide components in Figma</p>
 
 ### Mondly Web & Marketing
 
