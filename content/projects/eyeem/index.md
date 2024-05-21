@@ -20,9 +20,11 @@ cover:
 <div class="intro-info">
 
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
-  <p class="intro-details no-margin-bottom">Location: Berlin, Hybrid</p>
-  <p class="intro-details no-margin-bottom">Years: 2021 - 2023</p>
-  <p class="intro-details no-margin-bottom">Title: Product Designer</p>
+  <div class="intro-details-wrapper">
+    <p class="intro-details no-margin-bottom">LOCATION: Berlin, Hybrid</p>
+    <p class="intro-details no-margin-bottom">YEARS: 2021 - 2023</p>
+    <p class="intro-details no-margin-bottom">TITLE: Product Designer</p>
+  </div>
 
 </div>
 

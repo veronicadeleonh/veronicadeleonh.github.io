@@ -20,10 +20,11 @@ cover:
 <div class="intro-info">
 
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
-  <p class="intro-details no-margin-bottom">Location: Full remote</p>
-  <p class="intro-details no-margin-bottom">Years: 2023 - 2024</p>
-  <p class="intro-details no-margin-bottom">Title: Senior Product Designer</p>
-
+  <div class="intro-details-wrapper">
+      <p class="intro-details no-margin-bottom">TITLE: Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom">YEARS: 2023 - 2024</p>
+      <p class="intro-details no-margin-bottom">LOCATION: Full remote</p>
+  </div>
 </div>
 
 ![Mondly](images/mondly-thumb.jpg)
