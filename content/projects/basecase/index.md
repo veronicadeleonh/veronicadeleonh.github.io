@@ -2,7 +2,7 @@
 title: "BaseCase"
 layout: "BaseCase"
 url: "/basecase"
-summary: 2017 - 2020
+summary: My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.
 weight: 3
 ShowToc: true
 TocOpen: true

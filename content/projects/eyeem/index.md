@@ -2,7 +2,7 @@
 title: "EyeEm"
 layout: "eyeem"
 url: "/eyeem/"
-summary: 2021 - 2023
+summary: I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.
 weight: 2
 ShowToc: true
 TocOpen: true
