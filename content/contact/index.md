@@ -6,4 +6,4 @@
 
 You can reach me via email or connect with me on the web.
 
-<a class="inline-link" style="font-weight:600" href="mailto:v.dleon@gmail.com">hello@veronicadeleon.de</a>
+<a style="font-weight:600" href="mailto:v.dleon@gmail.com">hello@veronicadeleon.de</a>

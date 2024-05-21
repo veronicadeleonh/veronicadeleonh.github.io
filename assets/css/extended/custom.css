@@ -212,7 +212,8 @@ sup {
 
 .rounded {
     gap: 8px;   
-    padding: 1% 2%;   
+    padding: 1% 2%;
+    font-size: 17px;   
     font-weight: 400 !important;    
 }
 
@@ -224,6 +225,14 @@ sup {
 
 .btn-connect:hover {
     background-color: #f2f4f5 ;
+}
+
+.arrow span {
+    transition: all 150ms;
+}
+
+.arrow:hover span {
+    transform: translateX(4px);
 }
 
 .photo-footnote {
@@ -250,25 +259,6 @@ sup {
 
 .first-entry {
     min-height: 280px;
-}
-
-.inline-link {
-    font-size: 17px;
-    transition: color 150ms;
-    border-radius: 300px;
-    padding: 1% 2%;
-}
-
-.inline-link:hover {
-    background-color: #f2f4f5;
-}
-
-.inline-link span {
-    transition: all 150ms;
-}
-
-.inline-link:hover span {
-    transform: translateX(4px);
 }
 
 #menu a {
@@ -350,4 +340,8 @@ sup {
 .intro-details-wrapper {
     padding: 2% 0;
     margin-bottom: 32px;
+}
+
+.post-content a {
+    font-weight: 600;
 }
