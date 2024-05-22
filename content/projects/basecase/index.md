@@ -45,30 +45,34 @@ My collaboration began with assisting the Marketing team on the design of digita
 
 This library was a collection of tools that supported BaseCase documentation, illustrating everything from basic functionalities to complex features, along with product updates and use case tutorials. I was fully responsible for the ideation, design (or redesign), and implementation of these tools.
 
+<hr>
+
 ![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
 
-<<UPDATE WORKFLOW IMAGE>>
+<hr>
 
 <strong style="text-transform: uppercase">Process creating the tools</strong>
 
 <div class="numbering">
-  <div class="numbers">1</div><span style="width:95%">Identifying the scope and usage of the demo</span>
+  <div class="numbers">1</div><span class="numbers-label">Identifying the scope and usage of the demo based on brief</span>
 </div>
 <div class="numbering">
-  <div class="numbers">2</div><span style="width:95%">Create low-fi mockups in Sketch and put all the ideation into place</span>
+  <div class="numbers">2</div><span class="numbers-label">Create low-fi mockups in Sketch and put all the ideation into place</span>
 </div>
 <div class="numbering">
-  <div class="numbers">3</div><span style="width:95%">Create an imaginary healthcare brand, choosing colors, fonts and logo</span>
+  <div class="numbers">3</div><span class="numbers-label">Create an imaginary healthcare brand, choosing colors, fonts and logo</span>
 </div>
 <div class="numbering">
-  <div class="numbers">4</div><span style="width:95%">Implement the design and functionalities using the BaseCase platform</span>
+  <div class="numbers">4</div><span class="numbers-label">Implement the design and functionalities using the BaseCase platform</span>
 </div>
 <div class="numbering">
-  <div class="numbers">5</div><span style="width:95%">Test the app internally ensuring its full performance</span>
+  <div class="numbers">5</div><span class="numbers-label">Test the app internally ensuring its full performance</span>
 </div>
 <div class="numbering">
-  <div class="numbers">6</div><span style="width:95%">Send the tool to QA</span>
+  <div class="numbers">6</div><span class="numbers-label">Send the tool to QA</span>
 </div>
+
+<hr>
 
 ![BC Demo Apps](images/basecase-detailed-demo.png)
 

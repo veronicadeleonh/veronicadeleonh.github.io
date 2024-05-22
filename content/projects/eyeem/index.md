@@ -42,39 +42,23 @@ During my role at EyeEm, I was part of the Product Desgin team collaborating on 
 
 EyeEm is a browser-based platform for photographers to get discovered and for brands to access a curated selection of images, dividing the user base into two main groups: the creators and the buyers.
 
-#### EyEem's Cart & Checkout Flow
+#### The Product Team
 
-Our Product Design team worked closely with project managers, data analysts, developers. In the case of the Cart & Checkout re-vamp, I reviewed the data research and report made by the team on the previous months, to then create a descriptive analysis and map the pain points of the flow.
+Our Product Design team worked closely with project managers, data analysts and developers. With regular meetings and sync-ups, we united forces to work on the continuous development of the platform. We would start by gathering the relevant numbers so ensure we would be working on data-driven solutions.
+
+In the case of the redesign of the Cart & Checkout process, I reviewed the data research and report made by the team on the previous months, and then created a descriptive analysis mapping the pain points of the flow.
 
 ![EyeEm Hi-fi](images/eyeem-user-flow.png)
 
-<p class="photo-footnote">Identifying Data take-awys and pain points on the flow</p>
+<p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 
-These were the take-aways we got from identifying all pain points in the flow:
+This part of the process was crucial to identify the Quick Wins and Long-term fixes. I noticed that the drops on the flow could be related to inconsistencies in the background color along the flow, TAX calculation being done too soon during the process and wrong implementation of the SSO with Google and Facebook for logged out users. 
 
-<div class="box-notes green">
-  <strong>Quick fixes</strong>
-    <ul class="no-margin-bottom">
-      <li>Inconsistency in bg color</li>
-      <li>Calculate Tax (VAT) after users log in and only one step ahead from the purchase</li>
-      <li>Remind users during the authentication that they are performing a purchase</li>
-      <li>Adjust the flow for users authenticating with Google and Facebook</li>
-      <li>Pre-save billing and payment details / Make billing address to be optional</li>
-      <li>Add licensing fields</li>
-    </ul>
-</div>
-<br>
-<div class="box-notes orange">
-<strong>Long-term fixes</strong> (becoming relevant after the first test rounds)
-    <ul class="no-margin-bottom">
-      <li>Introduce guest checkout</li>
-      <li>Apply single-click sign up</li>
-    </ul>
-</div>
+During the checkout, I had to involve the legal team to make sure we could go full-in with major changes during Checkout like pre-saving the billing information and payment details.
 
 #### Low-fi & Prototype
 
-We iterate different possible solutions in Figma, coming out with a solution that ticked all the Quick fixes boxes and at the same time took in consideration the constraints from the legal team and the capacity of the developers.
+I moved then into creating the first prototypes to be discussed with the Data and Front-End team. This sessions were very useful to get their insights, gather their feedback and understand the capacity of the developers. After a couple of iterations, we came up with a solution that ticked all boxes from the our Quick wins list.
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
@@ -85,15 +69,14 @@ We iterate different possible solutions in Figma, coming out with a solution tha
 
 #### Hi-fi & Redesigned screens
 
-![EyeEm Hi-fi](images/eyeem-hifi.png)
-
-The high-resolutions screens were built usign EyeEm's Design system to ensure consistency with the rest of the platform and offer the user a smooth experience.
+The final step at EyeEm would be to prepare the High-Fidelity mockups usign the library with the Design system. This to ensure consistency with the rest of the platform and to be in sync with the UI Kit the Fron-End developers were using.
 
 ![EyeEm Hi-fi](images/eyeem-auth.png)
 
 ![EyeEm Hi-fi](images/eyeem-thank-you.png)
 
 <p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a section of the Thank you screen at the end of the purchase.</p>
+
 
 #### EyeEm's Web presence
 

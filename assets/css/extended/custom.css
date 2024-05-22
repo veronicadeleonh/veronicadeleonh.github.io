@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
 }
 
@@ -75,13 +73,11 @@ p {
 .first-entry .entry-content {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 20px;
-    font-weight: 400;
     line-height: 1.4em;
 }
 
 .entry-content {
     font-size: 16px;
-    font-weight: 400;
     color: #8f9396;
 }
 
@@ -230,8 +226,7 @@ p {
 .rounded {
     gap: 8px;   
     padding: 1% 2%;
-    font-size: 16px;   
-    font-weight: 400 !important;    
+    font-size: 16px;    
 }
 
 .circled {
@@ -280,7 +275,7 @@ p {
 
 #menu a {
     color:#8f9396;
-    font-weight: 400;
+    font-weight: 300;
     transition: all 150ms;
     font-size: 16px;
 }
@@ -290,6 +285,11 @@ p {
 }
 
 .footer a {
+    box-shadow: none;
+}
+
+.footer a:hover {
+    color: #8f9396;
     box-shadow: none;
 }
 
@@ -339,6 +339,11 @@ p {
     font-weight: 700;
 }
 
+.numbers-label {
+    width: 95%;
+    font-size: 16px;
+}
+
 .no-margin-bottom {
     margin-bottom: 0 !important;
 }
@@ -346,11 +351,12 @@ p {
 .intro-description {
     font-size: 20px;
     line-height: 1.4em;
+    color: #919191;
 }
 
 .intro-details {
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
 }
 
