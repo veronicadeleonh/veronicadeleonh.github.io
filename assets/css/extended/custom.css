@@ -78,7 +78,7 @@ p {
 
 .entry-content {
     font-size: 16px;
-    color: #8f9396;
+    color: #9b9fa0;
 }
 
 .card-year {
@@ -155,7 +155,7 @@ p {
 
 .card-paragraph {
     margin: 0 0 !important;
-    color: #8f9396;
+    color: #9b9fa0;
     font-size: 16px;
 }
 
@@ -275,7 +275,7 @@ p {
 }
 
 #menu a {
-    color:#8f9396;
+    color:#9b9fa0;
     font-weight: 300;
     transition: all 150ms;
     font-size: 16px;
@@ -296,7 +296,7 @@ p {
 
 .footer, .top-link {
     font-size: 12px;
-    color: #8f9396;
+    color: #9b9fa0;
 }
 
 .box-notes {
@@ -353,7 +353,7 @@ p {
 .intro-description {
     font-size: 20px;
     line-height: 1.4em;
-    color: #919191;
+    color: #9b9fa0;
 }
 
 .intro-details {
@@ -373,4 +373,9 @@ p {
 
 .toc.side {
     font-size: 14px;
+}
+
+.toc {
+    background: #f1f4f5;
+    border: 1px solid #e2e7e9;
 }
