@@ -77,7 +77,7 @@ These were the take-aways we got from identifying all pain points in the flow:
 We iterate different possible solutions in Figma, coming out with a solution that ticked all the Quick fixes boxes and at the same time took in consideration the constraints from the legal team and the capacity of the developers.
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
-" target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+" target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
 ![Checkout Prototyoing phase](images/cart-protoyping-phase.png)
 
