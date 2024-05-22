@@ -33,7 +33,7 @@ cover:
 
 #### About BaseCase
 
-BaseCase is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content, tailored for the healthcare and medical science business.
+**BaseCase** is a no-code platform that allows the users to translate spreadsheets into interactive & data-driven content, tailored for the healthcare and medical science business.
 
 #### My role at Basecase
 

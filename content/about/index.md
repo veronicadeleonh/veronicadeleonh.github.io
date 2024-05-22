@@ -6,7 +6,7 @@ I'm **Verónica**, a **Product Designer** based in Berlin with experience collab
     <a class="btn-connect circled" href="https://linkedin.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
     <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
     <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></span></a>
-    <a class="btn-connect rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)"></span><p style="margin:0!important">read.cv</p></a>
+    <a class="btn-connect rounded" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/document.svg)"></span><p style="margin:0!important; font-weight: 400;">read.cv</p></a>
 </div>
 
 <hr>
