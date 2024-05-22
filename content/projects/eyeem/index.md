@@ -82,7 +82,7 @@ The final step at EyeEm would be to prepare the High-Fidelity mockups usign the 
 
 <a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of Webflow with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining these areas of the site.
 
-In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation and design of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow, sharing account control with the Front-End team.
+In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation and design of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow.
 
 Here are some live examples:
 
