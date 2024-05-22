@@ -3,10 +3,23 @@
 body {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
+    font-size: 16px;
+}
+
+.logo a {
+    font-size: 20px;
 }
 
 sup {
     display: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
 }
 
 .post-content hr {
@@ -51,17 +64,18 @@ sup {
 
 .entry-header {
     padding-top: 2%;
+    font-size: 16px;
 }
 
 .first-entry .entry-content {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.4em;
 }
 
 .entry-content {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: #8f9396;
 }
@@ -145,11 +159,13 @@ sup {
 .card-paragraph {
     margin: 0 0 !important;
     color: #8f9396;
+    font-size: 16px;
 }
 
 .card-title {
     font-weight: 600;
     margin: 0 0 !important;
+    font-size: 16px;
 }
 
 .card-icon {
@@ -212,7 +228,7 @@ sup {
 .rounded {
     gap: 8px;   
     padding: 1% 2%;
-    font-size: 17px;   
+    font-size: 16px;   
     font-weight: 400 !important;    
 }
 
@@ -264,7 +280,7 @@ sup {
     color:#8f9396;
     font-weight: 400;
     transition: all 150ms;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #menu .active {
@@ -276,7 +292,7 @@ sup {
 }
 
 .footer, .top-link {
-    font-size: 14px;
+    font-size: 12px;
     color: #8f9396;
 }
 
@@ -326,14 +342,14 @@ sup {
 }
 
 .intro-description {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.4em;
 }
 
 .intro-details {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .intro-details-wrapper {
@@ -343,4 +359,8 @@ sup {
 
 .post-content a {
     font-weight: 600;
+}
+
+.toc.side {
+    font-size: 14px;
 }

@@ -29,7 +29,7 @@ cover:
 
 </div>
 
-![BaseCase](images/basecase-thumb.jpg)
+![BaseCase](images/basecase-intro.jpg)
 
 #### About BaseCase
 

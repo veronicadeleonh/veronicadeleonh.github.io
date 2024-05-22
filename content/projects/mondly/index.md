@@ -27,7 +27,7 @@ cover:
   </div>
 </div>
 
-![Mondly](images/mondly-thumb.jpg)
+![Mondly](images/mondly-intro.jpg)
 
 ### About Mondly
 

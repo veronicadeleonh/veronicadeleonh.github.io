@@ -28,7 +28,7 @@ cover:
 
 </div>
 
-![EyeEm](images/eyeem-thumb.jpg)
+![EyeEm](images/eyeem-intro.jpg)
 
 #### About EyeEm
 
