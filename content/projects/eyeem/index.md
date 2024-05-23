@@ -40,9 +40,9 @@ During my role at EyeEm I was one of Designers inside the Product team, specific
 
 #### The Product Team
 
-Our Product Design team worked closely with project managers, data analysts and developers. With regular meetings and sync-ups, we united forces to work on the continuous development of the platform. We would start by gathering the relevant numbers to ensure we would be working on **data-driven** solutions.
+Our Product Design team worked closely with project managers, data analysts and developers. We united forces to work on the continuous development of the platform with regular meetings and feedback sessions.
 
-On 2022, EyeEm decided to review the Cart & Process after noticing that considerably high numbers of users were abandonning the flow before compliting the purchase.
+On 2022, EyeEm decided to review the Cart & Process after noticing that a considerably high number of users were abandonning the flow before compliting the purchase.
 
 I reviewed the data report made by the team on the previous months, and created a descriptive analysis mapping the pain points of the flow based on it.
 
