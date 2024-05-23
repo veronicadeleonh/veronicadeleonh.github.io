@@ -38,49 +38,45 @@ cover:
 
 During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application. 
 
-#### The Product Team
+#### How we worked
 
-Our Product Design team worked closely with project managers, data analysts and developers. We united forces to work on the continuous development of the platform with regular meetings and feedback sessions.
+Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked toegether on the continuos development of the platform and set up regular meetings and feedback sessions. 
 
-On 2022, EyeEm decided to review the Cart & Process after noticing that a considerably high number of users were abandonning the flow before compliting the purchase.
-
-I reviewed the data report made by the team on the previous months, and created a descriptive analysis mapping the pain points of the flow based on it.
+For the redesign of the Cart & Checkout process, I analyzed **data reports**, identified **pain points**, and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, remature tax calculations, and issues with SSO implementation for logged-out users. I also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details. 
 
 ![EyeEm Hi-fi](images/eyeem-user-flow.png)
 
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 
- I listed all posible **Quick wins**, noticing the drops on the flow could be related to inconsistencies in the background color along the flow, TAX calculation being done too soon during the process and wrong implementation of the SSO with Google and Facebook for logged out users. 
-
-I involved more stakeholders from the Legal Team to make sure we could go full-in with major changes during Checkout, like pre-saving the billing information and the payment details.
 
 #### Low-fi & Prototype
 
-I then moved to Figma to create the **prototypes** to share with the PM and the Data and Front-End team. We shared insights and discussed the solutions during feedback sessions. After a couple of iterations, we came up with a solution that ticked all boxes from our Quick wins list.
+I created initial **prototypes** and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins. 
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
-![Checkout Prototyping phase](images/cart-protoyping-phase.png)
+![Checkout Prototyping phase](images/eyeem-low-fi-dropdown.png)
 
-<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart phase, marking UI and interaction issues</p>
+<p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
 
 #### Hi-fi & Redesigned screens
 
-The final step at EyeEm would be to prepare the High-Fidelity file for the developers, making use of EyeEm's **Design system**.
+The final step involved preparing high-fidelity mockups using our **design system**, ensuring consistency across the platform and alignment with the front-end developers' UI kit.
 
 ![EyeEm Hi-fi](images/eyeem-auth.png)
 
-![EyeEm Hi-fi](images/eyeem-thank-you.png)
+![EyeEm Hi-fi](images/eyeem-hifi-modals.png)
 
-<p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a section of the Thank you screen at the end of the purchase.</p>
+![EyeEm Hi-fi](images/eyeem-hifi.png)
+
+<p class="photo-footnote">Glimpse to redesigned elements and screens</p>
 
 
 #### EyeEm's Web presence
 
-<a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining these areas of the site.
+<a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
 
-In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation and design of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow.
 
 Here are some live examples:
 
