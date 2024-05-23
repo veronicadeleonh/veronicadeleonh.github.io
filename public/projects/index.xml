@@ -47,28 +47,25 @@
 <p><strong>EyeEm</strong> is as a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.</p>
 <h4 id="my-role-at-eyeem">My role at EyeEm</h4>
 <p>During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application.</p>
-<h4 id="the-product-team">The Product Team</h4>
-<p>Our Product Design team worked closely with project managers, data analysts and developers. We united forces to work on the continuous development of the platform with regular meetings and feedback sessions.</p>
-<p>On 2022, EyeEm decided to review the Cart &amp; Process after noticing that a considerably high number of users were abandonning the flow before compliting the purchase.</p>
-<p>I reviewed the data report made by the team on the previous months, and created a descriptive analysis mapping the pain points of the flow based on it.</p>
+<h4 id="how-we-worked">How we worked</h4>
+<p>Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked toegether on the continuos development of the platform and set up regular meetings and feedback sessions.</p>
+<p>For the redesign of the Cart &amp; Checkout process, I analyzed <strong>data reports</strong>, identified <strong>pain points</strong>, and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, remature tax calculations, and issues with SSO implementation for logged-out users. I also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-user-flow.png" type="" alt="EyeEm Hi-fi"  /></p>
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
-<p>I listed all posible <strong>Quick wins</strong>, noticing the drops on the flow could be related to inconsistencies in the background color along the flow, TAX calculation being done too soon during the process and wrong implementation of the SSO with Google and Facebook for logged out users.</p>
-<p>I involved more stakeholders from the Legal Team to make sure we could go full-in with major changes during Checkout, like pre-saving the billing information and the payment details.</p>
 <h4 id="low-fi--prototype">Low-fi &amp; Prototype</h4>
-<p>I then moved to Figma to create the <strong>prototypes</strong> to share with the PM and the Data and Front-End team. We shared insights and discussed the solutions during feedback sessions. After a couple of iterations, we came up with a solution that ticked all boxes from our Quick wins list.</p>
+<p>I created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
-<p><img loading="lazy" src="/eyeem/images/cart-protoyping-phase.png" type="" alt="Checkout Prototyping phase"  /></p>
-<p class="photo-footnote">Figma screenshot from the Low-fi Prototype on the Cart phase, marking UI and interaction issues</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-low-fi-dropdown.png" type="" alt="Checkout Prototyping phase"  /></p>
+<p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
 <h4 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h4>
-<p>The final step at EyeEm would be to prepare the High-Fidelity file for the developers, making use of EyeEm&rsquo;s <strong>Design system</strong>.</p>
+<p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-thank-you.png" type="" alt="EyeEm Hi-fi"  /></p>
-<p class="photo-footnote">Close-up to the Hi-fi redesigned screens. On top, the Cart view with the Authentication screen in overlay. Below, a section of the Thank you screen at the end of the purchase.</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-hifi-modals.png" type="" alt="EyeEm Hi-fi"  /></p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-hifi.png" type="" alt="EyeEm Hi-fi"  /></p>
+<p class="photo-footnote">Glimpse to redesigned elements and screens</p>
 <h4 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h4>
-<p><a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. During my time at EyeEm, I was responsible for maintaining these areas of the site.</p>
-<p>In addition to the main webpage, EyeEm frequently launched landing pages to support ongoing marketing campaigns. Collaborating closely with the Marketing and Innovation teams, I was involved in the ideation and design of these sites. I then took full responsibility for the implementation and final release of these web projects using Webflow.</p>
+<p><a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
 <p>Here are some live examples:</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-web.jpg" type="" alt="EyeEm Web"  />
 <a href="http://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
