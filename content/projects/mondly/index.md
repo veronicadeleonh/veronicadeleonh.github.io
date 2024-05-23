@@ -43,7 +43,7 @@ Before I joined the team, the product designers put in place a detailed **Design
 
 ![Offer page](images/styleguide-components.png)
 
-<p class="photo-footnote">View of some of the components built for the Styleguide components in Figma</p>
+<p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 
 ### Mondly Web & Marketing
 
@@ -59,7 +59,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 <p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 <div class="box-notes orange">
-  Light mode was introduced after benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B Testing.
+  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B Testing.
 </div>
 
 ### Mondly Growth

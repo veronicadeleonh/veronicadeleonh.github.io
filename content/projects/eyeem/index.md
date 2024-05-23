@@ -36,29 +36,27 @@ cover:
 
 #### My role at EyeEm
 
-During my role at EyeEm, I was part of the Product Design team collaborating on platform maintenance, conducting research, designing new features, prototyping, and testing solutions.
-
-#### The Platform
-
-EyeEm is a browser-based platform for photographers to get discovered and for brands to access a curated selection of images, dividing the user base into two main groups: the creators and the buyers.
+During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application. 
 
 #### The Product Team
 
-Our Product Design team worked closely with project managers, data analysts and developers. With regular meetings and sync-ups, we united forces to work on the continuous development of the platform. We would start by gathering the relevant numbers so ensure we would be working on **data-driven** solutions.
+Our Product Design team worked closely with project managers, data analysts and developers. With regular meetings and sync-ups, we united forces to work on the continuous development of the platform. We would start by gathering the relevant numbers to ensure we would be working on **data-driven** solutions.
 
-In the case of the redesign of the Cart & Checkout process, I reviewed the numberd and the data report made by the team on the previous months, and then created a descriptive analysis mapping the pain points of the flow.
+On 2022, EyeEm decided to review the Cart & Process after noticing that considerably high numbers of users were abandonning the flow before compliting the purchase.
+
+I reviewed the data report made by the team on the previous months, and created a descriptive analysis mapping the pain points of the flow based on it.
 
 ![EyeEm Hi-fi](images/eyeem-user-flow.png)
 
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 
-This part of the process was crucial to identify the Quick Wins and Long-term fixes. I noticed that the drops on the flow could mostly be related to inconsistencies in the background color along the flow, TAX calculation being done too soon during the process and wrong implementation of the SSO with Google and Facebook for logged out users. 
+ I listed all posible **Quick wins**, noticing the drops on the flow could be related to inconsistencies in the background color along the flow, TAX calculation being done too soon during the process and wrong implementation of the SSO with Google and Facebook for logged out users. 
 
-During the checkout, I had to involve the legal team to make sure we could go full-in with major changes during Checkout, like pre-saving the billing information and the payment details.
+I involved more stakeholders from the Legal Team to make sure we could go full-in with major changes during Checkout, like pre-saving the billing information and the payment details.
 
 #### Low-fi & Prototype
 
-I moved then into creating the first **prototypes** to be discussed with the Data and Front-End team. This sessions were very useful to get their insights, gather their feedback and understand the capacity of the developers. After a couple of iterations, we came up with a solution that ticked all boxes from the our Quick wins list.
+I then moved to Figma to create the **prototypes** to share with the PM and the Data and Front-End team. We shared insights and discussed the solutions during feedback sessions. After a couple of iterations, we came up with a solution that ticked all boxes from our Quick wins list.
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
@@ -69,7 +67,7 @@ I moved then into creating the first **prototypes** to be discussed with the Dat
 
 #### Hi-fi & Redesigned screens
 
-The final step at EyeEm would be to prepare the High-Fidelity mockups usign the library making use of the **Design system**. This would ensure consistency with the rest of the platform and to be in sync with the UI Kit the Fron-End developers were using.
+The final step at EyeEm would be to prepare the High-Fidelity file for the developers, making use of EyeEm's **Design system**.
 
 ![EyeEm Hi-fi](images/eyeem-auth.png)
 
