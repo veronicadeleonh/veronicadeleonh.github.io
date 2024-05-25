@@ -39,7 +39,7 @@ On 2022 Mondly got acquired by Pearson, giving the Product team a chance for a b
 
 During my stay at Mondly, making **A/B Tests** about the performance of the Old vs. the New Design was important to validate with data the development of the rebrand and plan the marketing strategies for this design transition.
 
-Before I joined the team, the product designers put in place a detailed **Design System** that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a **Styleguide** in Notion, were we documented the details of the New Mondly Brand and its usage.
+Before I joined the team, the product designers put in place a detailed **Design System** that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a **style guide** in Notion, were we documented the details of the New Mondly Brand and its usage.
 
 ![Offer page](images/styleguide-components.png)
 
