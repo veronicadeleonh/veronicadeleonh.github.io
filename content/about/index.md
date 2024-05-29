@@ -58,7 +58,7 @@ I'm **Verónica**, a **Product Designer** based in Berlin with experience collab
         </div>
         <div class="card-description">
         <a href="https://basecase.com/" target="_blank">
-            <p class="card-title">Basecase<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+            <p class="card-title">BaseCase<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
         </a>
             <p class="card-paragraph">Marketing & UX/UI Designer</p>
         </div>
