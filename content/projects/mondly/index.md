@@ -68,7 +68,7 @@ The Growth team initiated several **A/B tests** aimed at increasing Premium Subs
 
 ![Seasonal Promos](images/seasonal-campaigns.png)
 
-<p class="photo-footnote">New layout for the in-App adds created for the Spring Campaign. Both version where subject of an A/B test on the background images. Both images were generated using Midjourney</p>
+<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. Both versions were the subject of an A/B test on the background images. The images were generated using Midjourney.</p>
 
 ### Marketing Campaigns
 
