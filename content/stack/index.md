@@ -1,6 +1,9 @@
 # Stack
 
-### Main
+<hr>
+
+<h3 class="stack-title">Main</h3>
+The favourite and most used
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -63,7 +66,10 @@
     </div>
 </div>
 
-### Secondary
+<hr>
+
+<h3 class="stack-title">Secondary</h3>
+These often become useful
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -126,7 +132,10 @@
     </div>
 </div>
 
-### Improving
+<hr>
+
+<h3 class="stack-title">Improving</h3>
+Learning or getting better at these
 
 <div class="flex-grid">
     <div class="card-background col">
