@@ -47,7 +47,7 @@ I'm **Verónica**, a **Product Designer** based in Berlin with experience collab
         </div>
     </div>
     <div class="card-year">
-        2021 - 2022
+        2021 - 2023
     </div>
 </div>
 
