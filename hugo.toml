@@ -18,6 +18,12 @@ title = 'Verónica De León Hernández'
 [params.homeInfoParams]
     Content = "I'm **Verónica**, a **Product Designer** based in Berlin. I have focused my career on creating functional mobile apps and websites, combining design skills with technical knowledge."
 
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+
 [menu]
 
 [[menu.main]]
