@@ -1,6 +1,11 @@
 # About me
 
-I'm **Verónica**, a **Product Designer** based in Berlin with experience collaborating on remote teams. I enjoy crafting interfaces for mobile apps and websites mixing design with technical skills. On my free time I like to snap analog photos and exploring new places.
+<p>I'm <strong>Verónica</strong>, a <strong>Product Designer</strong> based in Berlin. I enjoy creating data-driven interfaces and combining my design skills with a bit of coding. During my career, I have also worked closely in the areas of Marketing and Growth. </p>
+
+<p>I enjoy being surrounded by talented people who push me to keep learning and help build an awesome team culture.</p>
+
+<p>When I’m not working, I’m usually snapping analog photos, exploring new places, diving into science and nature books, or staying active with some sports.</p>
+
 
 <div class="about-links">
     <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
