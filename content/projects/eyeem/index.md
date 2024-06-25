@@ -42,7 +42,7 @@ During my role at EyeEm I was one of Designers inside the Product team, specific
 
 Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked toegether on the continuos development of the platform and set up regular meetings and feedback sessions. 
 
-For the redesign of the Cart & Checkout process, I analyzed **data reports**, identified **pain points**, and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, remature tax calculations, and issues with SSO implementation for logged-out users. I also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details. 
+For the redesign of the Cart & Checkout process, I analyzed **data reports**, identified **pain points**, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, remature tax calculations, and issues with SSO implementation for logged-out users. I also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details. 
 
 ![EyeEm Hi-fi](images/eyeem-user-flow.png)
 
