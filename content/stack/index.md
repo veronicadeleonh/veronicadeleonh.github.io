@@ -157,7 +157,7 @@ Learning or getting better at these
         </div>
     </div>
 </div>
-<div class="flex-grid">
+<div class="flex-grid" style="display:none">
     <div class="card-background col">
         <div class="card-icon">
             <img src="images/stack-framer.svg">
