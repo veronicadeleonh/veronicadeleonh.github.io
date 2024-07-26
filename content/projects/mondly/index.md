@@ -47,7 +47,7 @@ Before I joined the team, the product designers put in place a detailed **design
 
 ### Mondly Web & Marketing
 
-Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an increase of almost 3% of App Store downloads with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
+Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an **increase of almost 3% of App Store downloads** with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
 
 ![Offer page](images/mondly-offer-page.png)
 
