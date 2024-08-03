@@ -19,6 +19,8 @@ cover:
 
 <div class="intro-info">
 
+<span class="tag orange">e-commerce</span>
+
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Product Designer</p>

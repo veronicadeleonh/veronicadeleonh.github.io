@@ -19,6 +19,8 @@ cover:
 
 <div class="intro-info">
 
+<span class="tag blue">e-learning</span>
+
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
   <div class="intro-details-wrapper">
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Senior Product Designer</p>

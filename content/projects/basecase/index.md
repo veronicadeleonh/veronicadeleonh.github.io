@@ -19,11 +19,14 @@ cover:
 
 <div class="intro-info">
 
+<span class="tag green">Saas</span>
+
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> UX/UI Designer</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/location.svg)"></span> Berlin</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span> 2017 - 2020</p>
+    
 
   </div>
 

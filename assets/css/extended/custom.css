@@ -306,19 +306,30 @@ p {
     font-size: 16px;
 }
 
+.tag {
+    padding: 0.5% 1.5%;
+    font-size: 14px;
+    display: inline;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
 .green {
-    background-color: #20bf6b0f;
-    border-color: #20bf6b;
+    background-color: #bbdc5860;
+    border-color: #6ab04c;
+    color: #6ab04c;
 }
 
 .orange {
-    background-color: #f7b7310f;
-    border-color: #f7b731;
+    background-color: #ffbe7660;
+    border-color: #f0932b;
+    color:#f0932b;
 }
 
 .blue {
-    background-color: #3867d60f;
-    border-color: #3867d6;
+    background-color: #686de060;
+    border-color: #4834d4;
+    color: #4834d4;
 }
 
 .numbering {

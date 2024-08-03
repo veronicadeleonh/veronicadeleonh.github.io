@@ -16,7 +16,7 @@
 <p><img loading="lazy" src="/mondly/images/styleguide-components.png" type="" alt="Offer page"  /></p>
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 <h3 id="mondly-web--marketing">Mondly Web &amp; Marketing</h3>
-<p>Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an increase of almost 3% of App Store downloads with Mondly&rsquo;s dark theme version, meeting our team OKR&rsquo;s for Q1 in 2024.</p>
+<p>Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an <strong>increase of almost 3% of App Store downloads</strong> with Mondly&rsquo;s dark theme version, meeting our team OKR&rsquo;s for Q1 in 2024.</p>
 <p><img loading="lazy" src="/mondly/images/mondly-offer-page.png" type="" alt="Offer page"  /></p>
 <p class="photo-footnote">Glimpse to the Offer Page redesign</p>
 <p><img loading="lazy" src="/mondly/images/app-store-images-dark.png" type="" alt="App Store Images"  />
@@ -81,6 +81,7 @@
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> UX/UI Designer</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/location.svg)"></span> Berlin</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span> 2017 - 2020</p>
+    <span class="tag green">Saas</span>
   </div>
 </div>
 <p><img loading="lazy" src="/basecase/images/basecase-intro.jpg" type="" alt="BaseCase"  /></p>
