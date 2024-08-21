@@ -332,6 +332,11 @@ p {
     color: #4834d4;
 }
 
+.yellow {
+    background-color: #f6e58d60;
+    border-color: #f9ca24;
+}
+
 .numbering {
     display: flex;
     gap: 8px;

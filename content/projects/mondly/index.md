@@ -61,7 +61,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 
 <p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
-<div class="box-notes orange">
+<div class="box-notes yellow">
   Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B testing.
 </div>
 

@@ -23,7 +23,7 @@
 <p><img loading="lazy" src="/mondly/images/app-store-images-dark.png" type="" alt="App Store Images"  />
 <img loading="lazy" src="/mondly/images/app-store-images-light.png" type="" alt="App Store Images"  /></p>
 <p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
-<div class="box-notes orange">
+<div class="box-notes yellow">
   Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B testing.
 </div>
 <h3 id="mondly-growth">Mondly Growth</h3>
@@ -78,7 +78,7 @@
 <p><img loading="lazy" src="/eyeem/images/eyeem-creative-trends.jpg" type="" alt="EyeEm Web"  />
 <a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p></p>
 ]]></content:encoded></item><item><title>BaseCase</title><link>http://localhost:1313/basecase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/basecase/</guid><description>My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</description><content:encoded><![CDATA[<div class="intro-info">
-<p><span class="tag green">Saas</span></p>
+<p><span class="tag green">SaaS</span></p>
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> UX/UI Designer</p>
