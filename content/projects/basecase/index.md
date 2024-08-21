@@ -19,7 +19,7 @@ cover:
 
 <div class="intro-info">
 
-<span class="tag green">Saas</span>
+<span class="tag green">SaaS</span>
 
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
