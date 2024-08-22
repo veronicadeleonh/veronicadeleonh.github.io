@@ -160,20 +160,20 @@ Learning or getting better at these
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-hugo.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Hugo</p>
-            <p class="card-paragraph">Web Framework</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-tailwindcss.svg">
         </div>
         <div class="card-description">
             <p class="card-title">Tailwind CSS</p>
             <p class="card-paragraph">CSS Framework</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-hugo.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Hugo</p>
+            <p class="card-paragraph">Web Framework</p>
         </div>
     </div>
 </div>
