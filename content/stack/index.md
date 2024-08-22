@@ -118,7 +118,7 @@ These often become useful
         </div>
         <div class="card-description">
             <p class="card-title">Affinity Designer</p>
-            <p class="card-paragraph">Editorial Design</p>
+            <p class="card-paragraph">Graphic Design</p>
         </div>
     </div>
     <div class="card-background col">
