@@ -52,7 +52,7 @@ The favourite and most used
         </div>
         <div class="card-description">
             <p class="card-title">HTML</p>
-            <p class="card-paragraph">Web Development</p>
+            <p class="card-paragraph">Markup Language</p>
         </div>
     </div>
     <div class="card-background col">
@@ -61,7 +61,7 @@ The favourite and most used
         </div>
         <div class="card-description">
             <p class="card-title">CSS</p>
-            <p class="card-paragraph">Web Development</p>
+            <p class="card-paragraph">Style Sheet Language</p>
         </div>
     </div>
 </div>
@@ -78,7 +78,7 @@ These often become useful
         </div>
         <div class="card-description">
             <p class="card-title">Github</p>
-            <p class="card-paragraph">Web Development</p>
+            <p class="card-paragraph">Collaborative Coding</p>
         </div>
     </div>
     <div class="card-background col">
@@ -87,7 +87,7 @@ These often become useful
         </div>
         <div class="card-description">
             <p class="card-title">Visual Studio Code</p>
-            <p class="card-paragraph">Web Development</p>
+            <p class="card-paragraph">Code Editor</p>
         </div>
     </div>
 </div>
@@ -143,8 +143,8 @@ Learning or getting better at these
             <img src="images/stack-react.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">React</p>
-            <p class="card-paragraph">Web Development</p>
+            <p class="card-title">ReactJS</p>
+            <p class="card-paragraph">FE library</p>
         </div>
     </div>
     <div class="card-background col">
@@ -153,7 +153,27 @@ Learning or getting better at these
         </div>
         <div class="card-description">
             <p class="card-title">Javascript</p>
-            <p class="card-paragraph">Front-End Web </p>
+            <p class="card-paragraph">Programming Language</p>
+        </div>
+    </div>
+</div>
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-hugo.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Hugo</p>
+            <p class="card-paragraph">Web Framework</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-tailwindcss.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Tailwind CSS</p>
+            <p class="card-paragraph">CSS Framework</p>
         </div>
     </div>
 </div>
