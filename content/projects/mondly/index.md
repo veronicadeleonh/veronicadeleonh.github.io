@@ -25,7 +25,7 @@ cover:
 
   <div class="intro-details-wrapper">
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Senior Product Designer</p>
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/globe.svg)"></span> Full remote</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/globe.svg)"></span> Fully remote</p>
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span>  2023 - 2024</p>
   </div>
 </div>
