@@ -166,7 +166,7 @@
 
 ### Other Web
 
-<p>I designed and built a website to collect the best pictures I've taken on my trips. This was a passion project using modern FE tools.</p>
+<p>I designed and built a website to collect the best pictures I've taken on my trips. This was a passion project using modern FE tools such as ReactJS, TailwindCSS, Contentful and Vercel.</p>
 
 <div class="card-link flex-grid">
     <img class="image-thumb" src="images/analog-web-preview.png">
