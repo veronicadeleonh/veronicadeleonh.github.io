@@ -164,7 +164,14 @@
 
 <hr>
 
+### Other Web
+
+<p>I designed and built a website to collect the best pictures I've taken on my trips. This was a passion project using modern FE tools.</p>
+
 <div class="card-link flex-grid">
-    <p class="no-margin-bottom"><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded white arrow" href="http://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
+    <img style="max-width:320px; margin:0!important" src="images/analog-web-preview.png">
+    <div>
+    <p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded btn-white arrow" href="http://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
+    </div>
 </div>
