@@ -110,6 +110,16 @@ strong {
     gap: 16px
 }
 
+.image-thumb {
+    transition: all 300ms;
+    max-width: 320px;
+    margin: 0 !important
+}
+
+.image-thumb:hover {
+    transform: translateY(-4px);
+}
+
 @media screen and (max-width: 500px) {
     .card-background, .card-connect {
         margin: 16px -6px;
