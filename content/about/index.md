@@ -6,7 +6,6 @@
 
 <p>When I’m not working, I’m usually snapping analog photos, exploring new places, diving into science and nature books, or staying active with some sports.</p>
 
-
 <div class="about-links">
     <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
     <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></span></a>
@@ -161,4 +160,11 @@
     <div class="card-year">
         Beginner
     </div>
+</div>
+
+<hr>
+
+<div class="card-link flex-grid">
+    <p class="no-margin-bottom"><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded white arrow" href="http://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
 </div>

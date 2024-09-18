@@ -25,6 +25,10 @@ p {
     font-size: 16px;
 }
 
+strong {
+    font-weight: 600;
+}
+
 .post-content hr {
     height: 1px;
     background: transparent;
@@ -96,6 +100,14 @@ p {
     gap: 16px;
     background-color: transparent;
     transition: background-color 300ms;
+}
+
+.card-link {
+    padding: 2% 2%;
+    border-radius: 8px;
+    margin: 16px -15px;
+    background-color: #f1f4f5;
+    align-items: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -223,11 +235,16 @@ p {
     line-height: 35px; 
 }
 
+.white {
+    background-color: #fff;
+}
+
 .rounded {
     gap: 8px;   
     padding: 1% 2%;
     font-size: 16px;
-    font-weight: 400;    
+    font-weight: 400;
+    border-radius: 4px;    
 }
 
 .circled {
@@ -239,6 +256,11 @@ p {
 .btn-connect:hover {
     background-color: #f2f4f5 ;
 }
+
+.white:hover {
+    background-color: #fff;
+}
+
 
 .arrow span {
     transition: all 150ms;
