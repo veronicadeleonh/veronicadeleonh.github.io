@@ -149,7 +149,7 @@
         <p class="card-title">German <span class="fi" style="background-image: url(images/de.svg)"></span></p>
     </div>
     <div class="card-year">
-        Upper intermidiate
+        Upper intermediate
     </div>
 </div>
 
