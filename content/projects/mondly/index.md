@@ -50,7 +50,7 @@ Before I joined the team, the product designers put in place a detailed **design
 
 ### Mondly Web & Marketing
 
-Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an **increase of almost 3% of App Store downloads** with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
+Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of **average time on page and the unique pageviews on the Offer page**, and an **increase of almost 3% of App Store downloads** with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
 
 ![Offer page](images/mondly-offer-page.png)
 
@@ -62,7 +62,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
 <p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 
 <div class="box-notes yellow">
-  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B testing.
+  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the <strong>A/B testing.</strong>
 </div>
 
 ### Mondly Growth
@@ -71,7 +71,9 @@ The Growth team initiated several **A/B tests** aimed at increasing Premium Subs
 
 ![Seasonal Promos](images/seasonal-campaigns.png)
 
-<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. Both versions were the subject of an A/B test on the background images. The images were generated using Midjourney.</p>
+<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. The images were generated using Midjourney.</p>
+
+For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. The goal of these ads was to convert Free-Trial users into Premium users. We launched both versions and ran an **A/B/C test** alongside the current fallback. The results showed a **slight difference of 7% more 'Activate' taps between A and B**, with version B performing better. Close to **2% of users** who reached the Subscription screen **converted to Premium accounts**.
 
 ### Marketing Campaigns
 

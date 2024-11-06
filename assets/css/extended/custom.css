@@ -259,7 +259,7 @@ strong {
     padding: 1% 2%;
     font-size: 16px;
     font-weight: 400;
-    border-radius: 4px;    
+    border-radius: 8px;    
 }
 
 .circled {
@@ -337,9 +337,9 @@ strong {
 }
 
 .box-notes {
-    border: 2px solid;
-    border-radius: 4px;
-    padding: 2% 2%;
+    /* border: 2px solid; */
+    border-radius: 8px;
+    padding: 3%;
     font-size: 16px;
 }
 
@@ -348,7 +348,7 @@ strong {
     font-size: 14px;
     display: inline;
     font-weight: 500;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .green {
@@ -422,6 +422,14 @@ strong {
 
 .post-content a {
     font-weight: 600;
+}
+
+.post-content h5 {
+    font-size: 16px;
+}
+
+.post-content img {
+    border-radius: 8px;
 }
 
 .toc.side {

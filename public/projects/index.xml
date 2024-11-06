@@ -17,19 +17,20 @@
 <p><img loading="lazy" src="/mondly/images/styleguide-components.png" type="" alt="Offer page"  /></p>
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 <h3 id="mondly-web--marketing">Mondly Web &amp; Marketing</h3>
-<p>Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of average time on page and the unique pageviews on the Offer page, and an <strong>increase of almost 3% of App Store downloads</strong> with Mondly&rsquo;s dark theme version, meeting our team OKR&rsquo;s for Q1 in 2024.</p>
+<p>Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of <strong>average time on page and the unique pageviews on the Offer page</strong>, and an <strong>increase of almost 3% of App Store downloads</strong> with Mondly&rsquo;s dark theme version, meeting our team OKR&rsquo;s for Q1 in 2024.</p>
 <p><img loading="lazy" src="/mondly/images/mondly-offer-page.png" type="" alt="Offer page"  /></p>
 <p class="photo-footnote">Glimpse to the Offer Page redesign</p>
 <p><img loading="lazy" src="/mondly/images/app-store-images-dark.png" type="" alt="App Store Images"  />
 <img loading="lazy" src="/mondly/images/app-store-images-light.png" type="" alt="App Store Images"  /></p>
 <p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
 <div class="box-notes yellow">
-  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the A/B testing.
+  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the <strong>A/B testing.</strong>
 </div>
 <h3 id="mondly-growth">Mondly Growth</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <p><img loading="lazy" src="/mondly/images/seasonal-campaigns.png" type="" alt="Seasonal Promos"  /></p>
-<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. Both versions were the subject of an A/B test on the background images. The images were generated using Midjourney.</p>
+<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. The images were generated using Midjourney.</p>
+<p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. The goal of these ads was to convert Free-Trial users into Premium users. We launched both versions and ran an <strong>A/B/C test</strong> alongside the current fallback. The results showed a <strong>slight difference of 7% more &lsquo;Activate&rsquo; taps between A and B</strong>, with version B performing better. Close to <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts</strong>.</p>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
 <p><img loading="lazy" src="/mondly/images/w2w-screens.png" type="" alt="W2W Screens"  />
@@ -45,28 +46,53 @@
   </div>
 </div>
 <p><img loading="lazy" src="/eyeem/images/eyeem-intro.jpg" type="" alt="EyeEm"  /></p>
-<h4 id="about-eyeem">About EyeEm</h4>
+<h3 id="about-eyeem">About EyeEm</h3>
 <p><strong>EyeEm</strong> is as a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.</p>
-<h4 id="my-role-at-eyeem">My role at EyeEm</h4>
+<h3 id="my-role-at-eyeem">My role at EyeEm</h3>
 <p>During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application.</p>
-<h4 id="how-we-worked">How we worked</h4>
+<h3 id="how-we-worked">How we worked</h3>
 <p>Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked together on the continuos development of the platform and set up regular meetings and feedback sessions.</p>
-<p>For the redesign of the Cart &amp; Checkout process, I analyzed <strong>data reports</strong>, identified <strong>pain points</strong>, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, remature tax calculations, and issues with SSO implementation for logged-out users. I also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.</p>
-<p></p>
+<p>For the redesign of the Cart &amp; Checkout process, we analyzed <strong>data reports</strong>, identified <strong>pain points</strong>, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, premature tax calculations, and issues with SSO implementation for logged-out users. We also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-user-flow.png" type="" alt="EyeEm Hi-fi"  /></p>
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
-<h4 id="low-fi--prototype">Low-fi &amp; Prototype</h4>
-<p>I created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
+<h3 id="ux-exploration">UX Exploration</h3>
+<h4 id="cart-page">Cart Page</h4>
+<p>With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</p>
+<h5 id="top-navigation">Top Navigation</h5>
+<p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
+<h5 id="vat-calculations">VAT Calculations</h5>
+<p>VAT calculations were appearing <strong>too early in the cart flow</strong>. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.</p>
+<h4 id="authentication-for-logged-out-users">Authentication for logged out users</h4>
+<p><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</p>
+<h5 id="authentication-modal">Authentication Modal</h5>
+<p>To create a more seamless experience, we moved authentication to a modal, allowing users to keep their Cart in view while logging in or signing up.</p>
+<h5 id="ux-writing">UX writing</h5>
+<p>To keep users engaged, we explored updating our UX copy with clearer instructions, gently reminding users they were in the middle of a purchas</p>
+<h5 id="guest-checkout-long-term-goals">Guest Checkout: Long-term goals</h5>
+<p>We also discussed the potential for a Guest Checkout, allowing users to skip authentication until later stages. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
+<h4 id="checkout-page">Checkout Page</h4>
+<p><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</p>
+<h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
+<p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We standardized the Cart preview by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging quicker decision-making.</p>
+<h5 id="optional-billing-info">Optional billing info</h5>
+<p>Since our product didn’t require a shipping address and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
+<h5 id="transfer-licensing">Transfer Licensing</h5>
+<p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we streamlined the process and responded to a frequent user need.</p>
+<h5 id="introducing-more-payment-methods---long-term-goals">Introducing more payment methods - Long term goals</h5>
+<p>We discussed the idea of introducing more one click payment options like Apple Pa and Google Pay in the future.</p>
+<h3 id="low-fi--prototype">Low-fi &amp; Prototype</h3>
+<p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-low-fi-dropdown.png" type="" alt="Checkout Prototyping phase"  /></p>
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
-<h4 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h4>
+<h3 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h3>
 <p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-hifi-modals.png" type="" alt="EyeEm Hi-fi"  /></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-hifi.png" type="" alt="EyeEm Hi-fi"  /></p>
 <p class="photo-footnote">Glimpse to redesigned elements and screens</p>
-<h4 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h4>
+<h3 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h3>
 <p><a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
 <p>Here are some live examples:</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-web.jpg" type="" alt="EyeEm Web"  />
