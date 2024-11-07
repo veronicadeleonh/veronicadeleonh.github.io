@@ -19,7 +19,7 @@ cover:
 
 <div class="intro-info">
 
-<span class="tag blue">e-learning</span>
+<span class="tag blue text-blue">e-learning</span>
 
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
 
@@ -65,7 +65,7 @@ Some of the tests we made included the redesign of the Offer page and the App an
   Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the <strong>A/B testing.</strong>
 </div>
 
-### Mondly Growth
+### Mondly Growth & Monetization
 
 The Growth team initiated several **A/B tests** aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
 

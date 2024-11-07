@@ -337,7 +337,7 @@ strong {
 }
 
 .box-notes {
-    /* border: 2px solid; */
+    border: 2px solid;
     border-radius: 8px;
     padding: 3%;
     font-size: 16px;
@@ -354,19 +354,32 @@ strong {
 .green {
     background-color: #bbdc5860;
     border-color: #6ab04c;
+}
+
+.text-green {
     color: #6ab04c;
 }
 
 .orange {
     background-color: #ffbe7660;
     border-color: #f0932b;
-    color:#f0932b;
+}
+
+.text-orange {
+    color: #f0932b;
 }
 
 .blue {
     background-color: #686de060;
     border-color: #4834d4;
+}
+
+.text-blue {
     color: #4834d4;
+}
+
+.purple {
+    border-color:#964DF6;
 }
 
 .yellow {

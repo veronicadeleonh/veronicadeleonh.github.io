@@ -19,7 +19,7 @@ cover:
 
 <div class="intro-info">
 
-<span class="tag orange">e-commerce</span>
+<span class="tag green text-green">e-commerce</span>
 
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
   <div class="intro-details-wrapper">
@@ -54,7 +54,9 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
 
 #### Cart Page
 
-With a **60% drop-off rate** among **logged-out users** before reaching the authentication step, we wanted to identify the main pain points on the Cart page.
+![EyeEm Hi-fi](images/eyeem-ux-cart.png)
+
+<div class="box-notes purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 
 ##### Top Navigation
 
@@ -66,7 +68,9 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 #### Authentication for logged out users
 
-**Approximately 15% of users were dropping off** on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.
+![EyeEm Hi-fi](images/eyeem-ux-auth.png)
+
+<div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 
 ##### Authentication Modal
 
@@ -82,7 +86,9 @@ We also discussed the potential for a Guest Checkout, allowing users to skip aut
 
 #### Checkout Page
 
-**Only 10% of users** who reached the Checkout page **completed their purchase**, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.
+![EyeEm Hi-fi](images/eyeem-ux-checkout.png)
+
+<div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
 ##### Cart Preview, Pay Now & One-click Paypal payment
 
@@ -96,9 +102,9 @@ Since our product didn’t require a shipping address and billing details were o
 
 Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we streamlined the process and responded to a frequent user need.
 
-##### Introducing more payment methods - Long term goals
+##### Introducing more payment methods: Long term goals
 
-We discussed the idea of introducing more one click payment options like Apple Pa and Google Pay in the future.
+To enhance convenience, we considered adding more one-click payment options, such as Apple Pay and Google Pay, in future iterations.
 
 ### Low-fi & Prototype
 

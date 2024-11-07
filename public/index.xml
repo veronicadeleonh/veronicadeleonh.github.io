@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Verónica De León Hernández</title><link>http://localhost:1313/</link><description>Recent content on Verónica De León Hernández</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Mondly</title><link>http://localhost:1313/mondly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/mondly/</guid><description>My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly&amp;rsquo;s rebrand across all touchpoints.</description><content:encoded><![CDATA[<div class="intro-info">
-<p><span class="tag blue">e-learning</span></p>
+<p><span class="tag blue text-blue">e-learning</span></p>
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
   <div class="intro-details-wrapper">
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Senior Product Designer</p>
@@ -26,7 +26,7 @@
 <div class="box-notes yellow">
   Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the <strong>A/B testing.</strong>
 </div>
-<h3 id="mondly-growth">Mondly Growth</h3>
+<h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <p><img loading="lazy" src="/mondly/images/seasonal-campaigns.png" type="" alt="Seasonal Promos"  /></p>
 <p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. The images were generated using Midjourney.</p>
@@ -37,7 +37,7 @@
 <img loading="lazy" src="/mondly/images/w2w-components.png" type="" alt="W2W Screens"  /></p>
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
 ]]></content:encoded></item><item><title>EyeEm</title><link>http://localhost:1313/eyeem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/eyeem/</guid><description>I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</description><content:encoded><![CDATA[<div class="intro-info">
-<p><span class="tag orange">e-commerce</span></p>
+<p><span class="tag green text-green">e-commerce</span></p>
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Product Designer</p>
@@ -57,13 +57,15 @@
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 <h3 id="ux-exploration">UX Exploration</h3>
 <h4 id="cart-page">Cart Page</h4>
-<p>With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-ux-cart.png" type="" alt="EyeEm Hi-fi"  /></p>
+<div class="box-notes purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 <h5 id="top-navigation">Top Navigation</h5>
 <p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
 <h5 id="vat-calculations">VAT Calculations</h5>
 <p>VAT calculations were appearing <strong>too early in the cart flow</strong>. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.</p>
 <h4 id="authentication-for-logged-out-users">Authentication for logged out users</h4>
-<p><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-ux-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
+<div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
 <p>To create a more seamless experience, we moved authentication to a modal, allowing users to keep their Cart in view while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
@@ -71,15 +73,16 @@
 <h5 id="guest-checkout-long-term-goals">Guest Checkout: Long-term goals</h5>
 <p>We also discussed the potential for a Guest Checkout, allowing users to skip authentication until later stages. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
 <h4 id="checkout-page">Checkout Page</h4>
-<p><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</p>
+<p><img loading="lazy" src="/eyeem/images/eyeem-ux-checkout.png" type="" alt="EyeEm Hi-fi"  /></p>
+<div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We standardized the Cart preview by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging quicker decision-making.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
 <p>Since our product didn’t require a shipping address and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
 <h5 id="transfer-licensing">Transfer Licensing</h5>
 <p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we streamlined the process and responded to a frequent user need.</p>
-<h5 id="introducing-more-payment-methods---long-term-goals">Introducing more payment methods - Long term goals</h5>
-<p>We discussed the idea of introducing more one click payment options like Apple Pa and Google Pay in the future.</p>
+<h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
+<p>To enhance convenience, we considered adding more one-click payment options, such as Apple Pay and Google Pay, in future iterations.</p>
 <h3 id="low-fi--prototype">Low-fi &amp; Prototype</h3>
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
@@ -104,7 +107,7 @@
 <p><img loading="lazy" src="/eyeem/images/eyeem-creative-trends.jpg" type="" alt="EyeEm Web"  />
 <a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p></p>
 ]]></content:encoded></item><item><title>BaseCase</title><link>http://localhost:1313/basecase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/basecase/</guid><description>My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</description><content:encoded><![CDATA[<div class="intro-info">
-<p><span class="tag green">SaaS</span></p>
+<p><span class="tag orange text-orange">SaaS</span></p>
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> UX/UI Designer</p>
