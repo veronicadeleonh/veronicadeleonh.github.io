@@ -50,34 +50,43 @@ Before I joined the team, the product designers put in place a detailed **design
 
 ### Mondly Web & Marketing
 
-Some of the tests we made included the redesign of the Offer page and the App and Google Store images, resulting on a increase of **average time on page and the unique pageviews on the Offer page**, and an **increase of almost 3% of App Store downloads** with Mondly's dark theme version, meeting our team OKR's for Q1 in 2024.
+With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of **A/B tests** to compare the performance of the **new design versus the old one**, ensuring a positive impact on user engagement.
+
+Some of these tests included redesigning the Offer page and updating the App and Google Store images, resulting in an increase in **average time on page** and **unique pageviews** for the **Offer page**, along with a **nearly 3% increase in App Store downloads** with **Mondly's dark theme** version—meeting our team's **Q1 OKRs** for 2024.
 
 ![Offer page](images/mondly-offer-page.png)
 
-<p class="photo-footnote">Glimpse to the Offer Page redesign</p>
+<p class="photo-footnote">Preview of the Offer Page redesign</p>
+
+<div class="box-notes purple" style="margin-bottom:40px">
+ The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
 
 ![App Store Images](images/app-store-images-dark.png)
 ![App Store Images](images/app-store-images-light.png)
 
-<p class="photo-footnote">Screenshot from the light and dark version of the App Store images for iPhone 10</p>
+<p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
 
-<div class="box-notes yellow">
-  Light mode was introduced after a benchmark research that showed competitors choosing light backgrounds on their app store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, that we could include on the <strong>A/B testing.</strong>
-</div>
+<div class="box-notes purple" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's dark theme</strong> version compared to the control and light theme variants. </div>
+
+Light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
 
 ### Mondly Growth & Monetization
 
-The Growth team initiated several **A/B tests** aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
+The Growth team initiated several **A/B tests** to **increase Premium Subscriptions**. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
 
 ![Free Trial and LTO](images/mondly-growth.png)
 
-<p class="photo-footnote">Glimpse to Limited Time Offer Banner and Free Trial Screen variants for testing</p>
+<p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
 
 ![Seasonal Promos](images/seasonal-campaigns.png)
 
-<p class="photo-footnote">In-app ads layout created for the Spring Campaign. The images were generated using Midjourney</p>
+<p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 
-For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. The goal of these ads was to convert Free-Trial users into Premium users. We launched both versions and ran an **A/B/C test** alongside the current fallback. The results showed a **slight difference of 7% more 'Activate' taps between A and B**, with version B performing better. Close to **2% of users** who reached the Subscription screen **converted to Premium accounts**.
+For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. The objective of these ads was to convert Free-Trial users into Premium users. We launched both variants and conducted an **A/B/C test** alongside the current fallback.
+
+<div class="box-notes purple" style="margin-bottom:40px">
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts.</strong></strong>
+</div>
 
 ### Marketing Campaigns
 
