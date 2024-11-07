@@ -29,8 +29,10 @@
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> aimed at increasing Premium Subscriptions. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <p><img loading="lazy" src="/mondly/images/seasonal-campaigns.png" type="" alt="Seasonal Promos"  /></p>
-<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. The images were generated using Midjourney.</p>
+<p class="photo-footnote">In-app ads layout created for the Spring Campaign. The images were generated using Midjourney</p>
 <p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. The goal of these ads was to convert Free-Trial users into Premium users. We launched both versions and ran an <strong>A/B/C test</strong> alongside the current fallback. The results showed a <strong>slight difference of 7% more &lsquo;Activate&rsquo; taps between A and B</strong>, with version B performing better. Close to <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts</strong>.</p>
+<p><img loading="lazy" src="/mondly/images/mondly-growth.png" type="" alt="Free Trial and LTO"  /></p>
+<p class="photo-footnote">Glimpse to Limited Time Offer Banner and Free Trial Screen variants for testing</p>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
 <p><img loading="lazy" src="/mondly/images/w2w-screens.png" type="" alt="W2W Screens"  />

@@ -71,9 +71,13 @@ The Growth team initiated several **A/B tests** aimed at increasing Premium Subs
 
 ![Seasonal Promos](images/seasonal-campaigns.png)
 
-<p class="photo-footnote">New layout for the in-app ads created for the Spring Campaign. The images were generated using Midjourney.</p>
+<p class="photo-footnote">In-app ads layout created for the Spring Campaign. The images were generated using Midjourney</p>
 
 For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. The goal of these ads was to convert Free-Trial users into Premium users. We launched both versions and ran an **A/B/C test** alongside the current fallback. The results showed a **slight difference of 7% more 'Activate' taps between A and B**, with version B performing better. Close to **2% of users** who reached the Subscription screen **converted to Premium accounts**.
+
+![Free Trial and LTO](images/mondly-growth.png)
+
+<p class="photo-footnote">Glimpse to Limited Time Offer Banner and Free Trial Screen variants for testing</p>
 
 ### Marketing Campaigns
 
