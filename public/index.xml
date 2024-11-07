@@ -67,22 +67,22 @@
 <p><img loading="lazy" src="/eyeem/images/eyeem-ux-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
 <div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
-<p>To create a more seamless experience, we moved authentication to a modal, allowing users to keep their Cart in view while logging in or signing up.</p>
+<p>To create a more seamless experience, we moved authentication to a modal, <strong>allowing users to keep their Cart in view</strong> while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
-<p>To keep users engaged, we explored updating our UX copy with clearer instructions, gently reminding users they were in the middle of a purchas</p>
+<p>To keep users engaged, we explored updating our UX copy with <strong>clearer instructions</strong>, gently reminding users they were in the middle of a purchase.</p>
 <h5 id="guest-checkout-long-term-goals">Guest Checkout: Long-term goals</h5>
-<p>We also discussed the potential for a Guest Checkout, allowing users to skip authentication until later stages. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
+<p>We also discussed the potential for a Guest Checkout, allowing users to <strong>skip authentication until later stages</strong>. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
 <h4 id="checkout-page">Checkout Page</h4>
 <p><img loading="lazy" src="/eyeem/images/eyeem-ux-checkout.png" type="" alt="EyeEm Hi-fi"  /></p>
 <div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
-<p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We standardized the Cart preview by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging quicker decision-making.</p>
+<p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
-<p>Since our product didn’t require a shipping address and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
+<p>Since our product <strong>didn’t require a shipping address</strong> and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
 <h5 id="transfer-licensing">Transfer Licensing</h5>
-<p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we streamlined the process and responded to a frequent user need.</p>
+<p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we <strong>streamlined the process</strong> and responded to a frequent user need.</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
-<p>To enhance convenience, we considered adding more one-click payment options, such as Apple Pay and Google Pay, in future iterations.</p>
+<p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as Apple Pay and Google Pay, in future iterations.</p>
 <h3 id="low-fi--prototype">Low-fi &amp; Prototype</h3>
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1

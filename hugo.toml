@@ -27,18 +27,18 @@ apple_touch_icon = "/apple-touch-icon.png"
 [menu]
 
 [[menu.main]]
-name = "About"
-url = "/about/"
-weight = 1
-
-[[menu.main]]
 name = "Projects"
 url = "/projects/"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "Stack"
 url = "/stack/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
 weight = 3
 
 [[menu.main]]

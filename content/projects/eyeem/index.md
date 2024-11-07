@@ -74,15 +74,15 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 ##### Authentication Modal
 
-To create a more seamless experience, we moved authentication to a modal, allowing users to keep their Cart in view while logging in or signing up.
+To create a more seamless experience, we moved authentication to a modal, **allowing users to keep their Cart in view** while logging in or signing up.
 
 ##### UX writing
 
-To keep users engaged, we explored updating our UX copy with clearer instructions, gently reminding users they were in the middle of a purchas
+To keep users engaged, we explored updating our UX copy with **clearer instructions**, gently reminding users they were in the middle of a purchase.
 
 ##### Guest Checkout: Long-term goals
 
-We also discussed the potential for a Guest Checkout, allowing users to skip authentication until later stages. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.
+We also discussed the potential for a Guest Checkout, allowing users to **skip authentication until later stages**. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.
 
 #### Checkout Page
 
@@ -92,19 +92,19 @@ We also discussed the potential for a Guest Checkout, allowing users to skip aut
 
 ##### Cart Preview, Pay Now & One-click Paypal payment
 
-Previously, the "Pay Now" action was hidden in the second step and often inaccessible with longer Cart lists. We standardized the Cart preview by grouping items by license type, which kept the "Pay Now" and one-click PayPal options in view, encouraging quicker decision-making.
+Previously, the "Pay Now" action was hidden in the second step and often inaccessible with longer Cart lists. We **standardized the Cart preview** by grouping items by license type, which kept the "Pay Now" and one-click PayPal options in view, encouraging **quicker decision-making**.
 
 ##### Optional billing info
 
-Since our product didn’t require a shipping address and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.
+Since our product **didn’t require a shipping address** and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.
 
 ##### Transfer Licensing
 
-Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we streamlined the process and responded to a frequent user need.
+Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we **streamlined the process** and responded to a frequent user need.
 
 ##### Introducing more payment methods: Long term goals
 
-To enhance convenience, we considered adding more one-click payment options, such as Apple Pay and Google Pay, in future iterations.
+To enhance convenience, we considered adding **more one-click payment options**, such as Apple Pay and Google Pay, in future iterations.
 
 ### Low-fi & Prototype
 
