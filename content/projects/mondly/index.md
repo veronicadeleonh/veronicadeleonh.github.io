@@ -44,7 +44,9 @@ During my stay at Mondly, making **A/B tests** about the performance of the Old 
 
 Before I joined the team, the product designers put in place a detailed **design system** that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a **style guide** in Notion, were we documented the details of the New Mondly Brand and its usage.
 
-![Offer page](images/styleguide-components.png)
+<a href="images/styleguide-components.png" class="lightbox">
+  <img src="images/styleguide-components.png" alt="Mondly Style Guide Components">
+</a>
 
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 
@@ -54,15 +56,22 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 Some of these tests included redesigning the Offer page and updating the App and Google Store images, resulting in an increase in **average time on page** and **unique pageviews** for the **Offer page**, along with a **nearly 3% increase in App Store downloads** with **Mondly's dark theme** version—meeting our team's **Q1 OKRs** for 2024.
 
-![Offer page](images/mondly-offer-page.png)
+<a href="images/mondly-offer-page.png" class="lightbox">
+  <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
+</a>
 
 <p class="photo-footnote">Preview of the Offer Page redesign</p>
 
 <div class="box-notes purple" style="margin-bottom:40px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
 
-![App Store Images](images/app-store-images-dark.png)
-![App Store Images](images/app-store-images-light.png)
+ <a href="images/app-store-images-dark.png" class="lightbox">
+   <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
+ </a>
+
+ <a href="images/app-store-images-light.png" class="lightbox">
+   <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
+ </a>
 
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
 
@@ -74,11 +83,15 @@ Light mode was introduced after benchmarking research showed competitors favorin
 
 The Growth team initiated several **A/B tests** to **increase Premium Subscriptions**. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
 
-![Free Trial and LTO](images/mondly-growth.png)
+<a href="images/mondly-growth.png" class="lightbox">
+  <img src="images/mondly-growth.png" alt="Mondly Free Trial and LTO">
+</a>
 
 <p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
 
-![Seasonal Promos](images/seasonal-campaigns.png)
+<a href="images/seasonal-campaigns.png" class="lightbox">
+  <img src="images/seasonal-campaigns.png" alt="Mondly Seasonal Promos">
+</a>
 
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 
@@ -92,7 +105,12 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
 
 One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.
 
-![W2W Screens](images/w2w-screens.png)
-![W2W Screens](images/w2w-components.png)
+<a href="images/w2w-screens.png" class="lightbox">
+  <img src="images/w2w-screens.png" alt="Mondly W2W Screens">
+</a>
+
+<a href="images/w2w-components.png" class="lightbox">
+  <img src="images/w2w-components.png" alt="Mondly W2W Screens">
+</a>
 
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>

@@ -43,13 +43,17 @@ My collaboration began with assisting the Marketing team on the design of digita
 
 #### The Demo App Library
 
-![BaseCase Demo App](images/demo-apps.jpg)
+<a href="images/demo-apps.jpg" class="lightbox">
+  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
+</a>
 
 This library was a collection of tools that supported BaseCase documentation, illustrating everything from basic functionalities to complex features, along with product updates and use case tutorials. I was fully responsible for the ideation, design (or redesign), and implementation of these tools.
 
 <hr>
 
-![BC Demo Apps Brief](images/bc-demo-apps-brief.svg)
+<a href="images/bc-demo-apps-brief.svg" class="lightbox">
+  <img src="images/bc-demo-apps-brief.svg" alt="BaseCase Demo Apps Brief">
+</a>
 
 <hr>
 
@@ -76,7 +80,9 @@ This library was a collection of tools that supported BaseCase documentation, il
 
 <hr>
 
-![BC Demo Apps](images/basecase-detailed-demo.png)
+<a href="images/basecase-detailed-demo.png" class="lightbox">
+  <img src="images/basecase-detailed-demo.png" alt="Basecase Demo Apps">
+</a>
 
 <p class="photo-footnote">Close-ups to some of the tools that made part of the Demo App Library</p>
 
@@ -84,6 +90,8 @@ This library was a collection of tools that supported BaseCase documentation, il
 
 To support BaseCase's online presence, we developed a series of images for marketing campaigns, ranging from new feature launches to company participation in fairs. I was also responsible for creating images for the BaseCase website, many of which are still live under each category on <a href="https://basecase.com/features" target="_blank">BaseCase Features<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> page.
 
-![BaseCase Features](images/basecase-features.png)
+<a href="images/basecase-features.png" class="lightbox">
+  <img src="images/basecase-features.png" alt="BaseCase Features">
+</a>
 
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>

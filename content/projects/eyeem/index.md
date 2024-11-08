@@ -46,7 +46,9 @@ Our Product Design team collaborated closely with project managers, data analyst
 
 For the redesign of the Cart & Checkout process, we analyzed **data reports**, identified **pain points**, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, premature tax calculations, and issues with SSO implementation for logged-out users. We also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.
 
-![EyeEm Hi-fi](images/eyeem-user-flow.png)
+<a href="images/eyeem-user-flow.png" class="lightbox">
+  <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
+</a>
 
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 
@@ -54,7 +56,9 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
 
 #### Cart Page
 
-![EyeEm Hi-fi](images/eyeem-ux-cart.png)
+<a href="images/eyeem-ux-cart.png" class="lightbox">
+  <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
+</a>
 
 <div class="box-notes purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 
@@ -68,7 +72,9 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 #### Authentication for logged out users
 
-![EyeEm Hi-fi](images/eyeem-ux-auth.png)
+<a href="images/eyeem-ux-auth.png" class="lightbox">
+  <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
+</a>
 
 <div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 
@@ -86,7 +92,9 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
 
 #### Checkout Page
 
-![EyeEm Hi-fi](images/eyeem-ux-checkout.png)
+<a href="images/eyeem-ux-checkout.png" class="lightbox">
+  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
+</a>
 
 <div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
@@ -121,11 +129,17 @@ We created initial **prototypes** and discussed them with the Data and Front-End
 
 The final step involved preparing high-fidelity mockups using our **design system**, ensuring consistency across the platform and alignment with the front-end developers' UI kit.
 
-![EyeEm Hi-fi](images/eyeem-auth.png)
+<a href="images/eyeem-auth.png" class="lightbox">
+  <img src="images/eyeem-auth.png" alt="EyeEm Hifi Authentication">
+</a>
 
-![EyeEm Hi-fi](images/eyeem-hifi-modals.png)
+<a href="images/eyeem-hifi-modals.png" class="lightbox">
+  <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
+</a>
 
-![EyeEm Hi-fi](images/eyeem-hifi.png)
+<a href="images/eyeem-hifi.png" class="lightbox">
+  <img src="images/eyeem-hifi.png" alt="EyeEm Hifi Screens">
+</a>
 
 <p class="photo-footnote">Glimpse to redesigned elements and screens</p>
 
