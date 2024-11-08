@@ -463,19 +463,7 @@ strong {
 
 /* Lightbox */
 
-.goverlay {
-    background: rgba(0, 0, 0, .4) !important;
+.glightbox-styled .goverlay {
+    background-color: rgba(0, 0, 0, .4);
 }
 
-@media (min-width: 769px) {
-    .goverlay {
-        background: rgba(0, 0, 0, .4) !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .glightbox-clean .gslide-media {
-        -webkit-box-shadow: none !important; 
-        box-shadow: none !important;
-    }
-}
