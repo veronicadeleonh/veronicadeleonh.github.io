@@ -56,14 +56,22 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 Some of these tests included redesigning the Offer page and updating the App and Google Store images, resulting in an increase in **average time on page** and **unique pageviews** for the **Offer page**, along with a **nearly 3% increase in App Store downloads** with **Mondly's dark theme** version—meeting our team's **Q1 OKRs** for 2024.
 
+#### Redesigned Offer page
+
+For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
+
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
 
-<p class="photo-footnote">Preview of the Offer Page redesign</p>
+<p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
 
-<div class="box-notes purple" style="margin-bottom:40px">
+<div class="box-notes purple" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
+
+#### App Store & Google Play images
+
+The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
 
  <a href="images/app-store-images-dark.png" class="lightbox">
    <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
@@ -76,8 +84,6 @@ Some of these tests included redesigning the Offer page and updating the App and
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
 
 <div class="box-notes purple" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's dark theme</strong> version compared to the control and light theme variants. </div>
-
-Light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
 
 ### Mondly Growth & Monetization
 
