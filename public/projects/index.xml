@@ -20,14 +20,13 @@
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 <h3 id="mondly-web--marketing">Mondly Web &amp; Marketing</h3>
 <p>With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of <strong>A/B tests</strong> to compare the performance of the <strong>new design versus the old one</strong>, ensuring a positive impact on user engagement.</p>
-<p>Some of these tests included redesigning the Offer page and updating the App and Google Store images, resulting in an increase in <strong>average time on page</strong> and <strong>unique pageviews</strong> for the <strong>Offer page</strong>, along with a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly&rsquo;s dark theme</strong> version—meeting our team&rsquo;s <strong>Q1 OKRs</strong> for 2024.</p>
 <h4 id="redesigned-offer-page">Redesigned Offer page</h4>
 <p>For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a <strong>scalable design system</strong> tailored to <strong>web marketing materials</strong>, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.</p>
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
 <p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
-<div class="box-notes purple" style="margin-bottom:20px">
+<div class="box-notes orange" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
 <h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
 <p>The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
@@ -38,19 +37,28 @@
    <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
  </a>
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
-<div class="box-notes purple" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's dark theme</strong> version compared to the control and light theme variants. </div>
+<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and light theme variants. With this percentage we met our OKRs for Q1 2024</div>
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> to <strong>increase Premium Subscriptions</strong>. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <a href="images/mondly-growth.png" class="lightbox">
   <img src="images/mondly-growth.png" alt="Mondly Free Trial and LTO">
 </a>
 <p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
-<a href="images/seasonal-campaigns.png" class="lightbox">
-  <img src="images/seasonal-campaigns.png" alt="Mondly Seasonal Promos">
+<a href="images/seasonal-campaigns-redesign.png" class="lightbox">
+  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
 </a>
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 <p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. The objective of these ads was to convert Free-Trial users into Premium users. We launched both variants and conducted an <strong>A/B/C test</strong> alongside the current fallback.</p>
-<div class="box-notes purple" style="margin-bottom:40px">
+<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
+  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
+</a>
+<a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
+  <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
+</a>
+<a href="images/seasonal-campaigns-test-result.png" class="lightbox">
+  <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
+</a>
+<div class="box-notes orange" style="margin-bottom:40px">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts.</strong></strong>
 </div>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
@@ -88,7 +96,7 @@
 <a href="images/eyeem-ux-cart.png" class="lightbox">
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
-<div class="box-notes purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes box-border border-purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 <h5 id="top-navigation">Top Navigation</h5>
 <p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
 <h5 id="vat-calculations">VAT Calculations</h5>
@@ -97,7 +105,7 @@
 <a href="images/eyeem-ux-auth.png" class="lightbox">
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
-<div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes box-border border-purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
 <p>To create a more seamless experience, we moved authentication to a modal, <strong>allowing users to keep their Cart in view</strong> while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
@@ -108,7 +116,7 @@
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
-<div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes box-border border-purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
