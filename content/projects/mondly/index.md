@@ -87,11 +87,13 @@ The light mode was introduced after benchmarking research showed competitors fav
 
 The Growth team initiated several **A/B tests** to **increase Premium Subscriptions**. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
 
-<a href="images/mondly-growth.png" class="lightbox">
-  <img src="images/mondly-growth.png" alt="Mondly Free Trial and LTO">
+<a href="images/mondly-lto.png" class="lightbox">
+  <img src="images/mondly-lto.png" alt="Mondly LTO">
 </a>
 
-<p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
+<p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
+
+#### Seasonal Campaigns
 
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">

@@ -40,10 +40,11 @@
 <div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and light theme variants. With this percentage we met our OKRs for Q1 2024</div>
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> to <strong>increase Premium Subscriptions</strong>. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
-<a href="images/mondly-growth.png" class="lightbox">
-  <img src="images/mondly-growth.png" alt="Mondly Free Trial and LTO">
+<a href="images/mondly-lto.png" class="lightbox">
+  <img src="images/mondly-lto.png" alt="Mondly LTO">
 </a>
-<p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
+<p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
+<h4 id="seasonal-campaigns">Seasonal Campaigns</h4>
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
 </a>
@@ -121,11 +122,12 @@
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
 <p>Since our product <strong>didn’t require a shipping address</strong> and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
-<h5 id="transfer-licensing">Transfer Licensing</h5>
+<h5 id="transfer-licensing-long-term-goals">Transfer Licensing: Long term goals</h5>
 <p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we <strong>streamlined the process</strong> and responded to a frequent user need.</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
 <p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as Apple Pay and Google Pay, in future iterations.</p>
-<h3 id="low-fi--prototype">Low-fi &amp; Prototype</h3>
+<div style="display:none">
+### Low-fi & Prototype
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
@@ -133,6 +135,7 @@
   <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
 </a>
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
+</div>
 <h3 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h3>
 <p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
 <a href="images/eyeem-auth.png" class="lightbox">

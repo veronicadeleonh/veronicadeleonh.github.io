@@ -14,34 +14,62 @@
 <h3 id="my-role-at-mondly">My Role at Mondly</h3>
 <p>During my stay at Mondly, making <strong>A/B tests</strong> about the performance of the Old vs. the New Design was important to validate with data the development of the rebrand and plan the marketing strategies for this design transition.</p>
 <p>Before I joined the team, the product designers put in place a detailed <strong>design system</strong> that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a <strong>style guide</strong> in Notion, were we documented the details of the New Mondly Brand and its usage.</p>
-<p><img loading="lazy" src="/mondly/images/styleguide-components.png" type="" alt="Offer page"  /></p>
+<a href="images/styleguide-components.png" class="lightbox">
+  <img src="images/styleguide-components.png" alt="Mondly Style Guide Components">
+</a>
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
 <h3 id="mondly-web--marketing">Mondly Web &amp; Marketing</h3>
 <p>With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of <strong>A/B tests</strong> to compare the performance of the <strong>new design versus the old one</strong>, ensuring a positive impact on user engagement.</p>
-<p>Some of these tests included redesigning the Offer page and updating the App and Google Store images, resulting in an increase in <strong>average time on page</strong> and <strong>unique pageviews</strong> for the <strong>Offer page</strong>, along with a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly&rsquo;s dark theme</strong> version—meeting our team&rsquo;s <strong>Q1 OKRs</strong> for 2024.</p>
-<p><img loading="lazy" src="/mondly/images/mondly-offer-page.png" type="" alt="Offer page"  /></p>
-<p class="photo-footnote">Preview of the Offer Page redesign</p>
-<div class="box-notes purple" style="margin-bottom:40px">
+<h4 id="redesigned-offer-page">Redesigned Offer page</h4>
+<p>For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a <strong>scalable design system</strong> tailored to <strong>web marketing materials</strong>, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.</p>
+<a href="images/mondly-offer-page.png" class="lightbox">
+  <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
+</a>
+<p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
+<div class="box-notes orange" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
-<p><img loading="lazy" src="/mondly/images/app-store-images-dark.png" type="" alt="App Store Images"  />
-<img loading="lazy" src="/mondly/images/app-store-images-light.png" type="" alt="App Store Images"  /></p>
+<h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
+<p>The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
+ <a href="images/app-store-images-dark.png" class="lightbox">
+   <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
+ </a>
+ <a href="images/app-store-images-light.png" class="lightbox">
+   <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
+ </a>
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
-<div class="box-notes purple" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's dark theme</strong> version compared to the control and light theme variants. </div>
-<p>Light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
+<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and light theme variants. With this percentage we met our OKRs for Q1 2024</div>
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> to <strong>increase Premium Subscriptions</strong>. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
-<p><img loading="lazy" src="/mondly/images/mondly-growth.png" type="" alt="Free Trial and LTO"  /></p>
-<p class="photo-footnote">Preview of the Limited Time Offer Banner and Free Trial Screen variants for testing</p>
-<p><img loading="lazy" src="/mondly/images/seasonal-campaigns.png" type="" alt="Seasonal Promos"  /></p>
+<a href="images/mondly-lto.png" class="lightbox">
+  <img src="images/mondly-lto.png" alt="Mondly LTO">
+</a>
+<p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
+<h4 id="seasonal-campaign">Seasonal Campaign</h4>
+<a href="images/seasonal-campaigns-redesign.png" class="lightbox">
+  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
+</a>
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 <p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. The objective of these ads was to convert Free-Trial users into Premium users. We launched both variants and conducted an <strong>A/B/C test</strong> alongside the current fallback.</p>
-<div class="box-notes purple" style="margin-bottom:40px">
+<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
+  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
+</a>
+<a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
+  <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
+</a>
+<a href="images/seasonal-campaigns-test-result.png" class="lightbox">
+  <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
+</a>
+<div class="box-notes orange" style="margin-bottom:40px">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts.</strong></strong>
 </div>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
-<p><img loading="lazy" src="/mondly/images/w2w-screens.png" type="" alt="W2W Screens"  />
-<img loading="lazy" src="/mondly/images/w2w-components.png" type="" alt="W2W Screens"  /></p>
+<a href="images/w2w-screens.png" class="lightbox">
+  <img src="images/w2w-screens.png" alt="Mondly W2W Screens">
+</a>
+<a href="images/w2w-components.png" class="lightbox">
+  <img src="images/w2w-components.png" alt="Mondly W2W Screens">
+</a>
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
 ]]></content:encoded></item><item><title>EyeEm</title><link>http://localhost:1313/eyeem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/eyeem/</guid><description>I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag green text-green">e-commerce</span></p>
@@ -60,19 +88,25 @@
 <h3 id="how-we-worked">How we worked</h3>
 <p>Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked together on the continuos development of the platform and set up regular meetings and feedback sessions.</p>
 <p>For the redesign of the Cart &amp; Checkout process, we analyzed <strong>data reports</strong>, identified <strong>pain points</strong>, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, premature tax calculations, and issues with SSO implementation for logged-out users. We also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.</p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-user-flow.png" type="" alt="EyeEm Hi-fi"  /></p>
+<a href="images/eyeem-user-flow.png" class="lightbox">
+  <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
+</a>
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 <h3 id="ux-exploration">UX Exploration</h3>
 <h4 id="cart-page">Cart Page</h4>
-<p><img loading="lazy" src="/eyeem/images/eyeem-ux-cart.png" type="" alt="EyeEm Hi-fi"  /></p>
-<div class="box-notes purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<a href="images/eyeem-ux-cart.png" class="lightbox">
+  <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
+</a>
+<div class="box-notes box-border border-purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 <h5 id="top-navigation">Top Navigation</h5>
 <p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
 <h5 id="vat-calculations">VAT Calculations</h5>
 <p>VAT calculations were appearing <strong>too early in the cart flow</strong>. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.</p>
 <h4 id="authentication-for-logged-out-users">Authentication for logged out users</h4>
-<p><img loading="lazy" src="/eyeem/images/eyeem-ux-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
-<div class="box-notes purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<a href="images/eyeem-ux-auth.png" class="lightbox">
+  <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
+</a>
+<div class="box-notes box-border border-purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
 <p>To create a more seamless experience, we moved authentication to a modal, <strong>allowing users to keep their Cart in view</strong> while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
@@ -80,28 +114,40 @@
 <h5 id="guest-checkout-long-term-goals">Guest Checkout: Long-term goals</h5>
 <p>We also discussed the potential for a Guest Checkout, allowing users to <strong>skip authentication until later stages</strong>. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
 <h4 id="checkout-page">Checkout Page</h4>
-<p><img loading="lazy" src="/eyeem/images/eyeem-ux-checkout.png" type="" alt="EyeEm Hi-fi"  /></p>
-<div class="box-notes purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<a href="images/eyeem-ux-checkout.png" class="lightbox">
+  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
+</a>
+<div class="box-notes box-border border-purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
 <p>Since our product <strong>didn’t require a shipping address</strong> and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
-<h5 id="transfer-licensing">Transfer Licensing</h5>
+<h5 id="transfer-licensing-long-term-goals">Transfer Licensing: Long term goals</h5>
 <p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we <strong>streamlined the process</strong> and responded to a frequent user need.</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
 <p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as Apple Pay and Google Pay, in future iterations.</p>
-<h3 id="low-fi--prototype">Low-fi &amp; Prototype</h3>
+<div style="display:none">
+### Low-fi & Prototype
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-low-fi-dropdown.png" type="" alt="Checkout Prototyping phase"  /></p>
+<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
+  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
+</a>
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
+</div>
 <h3 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h3>
 <p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-auth.png" type="" alt="EyeEm Hi-fi"  /></p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-hifi-modals.png" type="" alt="EyeEm Hi-fi"  /></p>
-<p><img loading="lazy" src="/eyeem/images/eyeem-hifi.png" type="" alt="EyeEm Hi-fi"  /></p>
-<p class="photo-footnote">Glimpse to redesigned elements and screens</p>
+<a href="images/eyeem-auth.png" class="lightbox">
+  <img src="images/eyeem-auth.png" alt="EyeEm Hifi Authentication">
+</a>
+<a href="images/eyeem-hifi-modals.png" class="lightbox">
+  <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
+</a>
+<a href="images/eyeem-hifi.png" class="lightbox">
+  <img src="images/eyeem-hifi.png" alt="EyeEm Hifi Screens">
+</a>
+<p class="photo-footnote">View of redesigned elements and screens</p>
 <h3 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h3>
 <p><a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
 <p>Here are some live examples:</p>
@@ -128,10 +174,14 @@
 <h4 id="my-role-at-basecase">My role at Basecase</h4>
 <p>My collaboration began with assisting the Marketing team on the design of digital and physical brochures, along with the necessary images for the web and recurring social media campaigns. After expressing interest in building my own BaseCase apps, I became involved in the production of client-facing tools and responsible for the BaseCase Apps Library.</p>
 <h4 id="the-demo-app-library">The Demo App Library</h4>
-<p><img loading="lazy" src="/basecase/images/demo-apps.jpg" type="" alt="BaseCase Demo App"  /></p>
+<a href="images/demo-apps.jpg" class="lightbox">
+  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
+</a>
 <p>This library was a collection of tools that supported BaseCase documentation, illustrating everything from basic functionalities to complex features, along with product updates and use case tutorials. I was fully responsible for the ideation, design (or redesign), and implementation of these tools.</p>
 <hr>
-<p><img loading="lazy" src="/basecase/images/bc-demo-apps-brief.svg" type="" alt="BC Demo Apps Brief"  /></p>
+<a href="images/bc-demo-apps-brief.svg" class="lightbox">
+  <img src="images/bc-demo-apps-brief.svg" alt="BaseCase Demo Apps Brief">
+</a>
 <hr>
 <p><strong style="text-transform: uppercase">Process creating the tools</strong></p>
 <div class="numbering">
@@ -153,10 +203,14 @@
   <div class="numbers">6</div><span class="numbers-label">Send the tool to QA</span>
 </div>
 <hr>
-<p><img loading="lazy" src="/basecase/images/basecase-detailed-demo.png" type="" alt="BC Demo Apps"  /></p>
+<a href="images/basecase-detailed-demo.png" class="lightbox">
+  <img src="images/basecase-detailed-demo.png" alt="Basecase Demo Apps">
+</a>
 <p class="photo-footnote">Close-ups to some of the tools that made part of the Demo App Library</p>
 <h4 id="marketing-assets">Marketing Assets</h4>
 <p>To support BaseCase&rsquo;s online presence, we developed a series of images for marketing campaigns, ranging from new feature launches to company participation in fairs. I was also responsible for creating images for the BaseCase website, many of which are still live under each category on <a href="https://basecase.com/features" target="_blank">BaseCase Features<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> page.</p>
-<p><img loading="lazy" src="/basecase/images/basecase-features.png" type="" alt="BaseCase Features"  /></p>
+<a href="images/basecase-features.png" class="lightbox">
+  <img src="images/basecase-features.png" alt="BaseCase Features">
+</a>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
 ]]></content:encoded></item></channel></rss>

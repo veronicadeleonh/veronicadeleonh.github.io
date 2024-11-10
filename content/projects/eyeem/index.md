@@ -106,7 +106,7 @@ Previously, the "Pay Now" action was hidden in the second step and often inacces
 
 Since our product **didn’t require a shipping address** and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.
 
-##### Transfer Licensing
+##### Transfer Licensing: Long term goals
 
 Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we **streamlined the process** and responded to a frequent user need.
 
@@ -114,6 +114,7 @@ Many of our users—often designers or agencies buying for clients—needed an o
 
 To enhance convenience, we considered adding **more one-click payment options**, such as Apple Pay and Google Pay, in future iterations.
 
+<div style="display:none">
 ### Low-fi & Prototype
 
 We created initial **prototypes** and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.
@@ -126,6 +127,8 @@ We created initial **prototypes** and discussed them with the Data and Front-End
 </a>
 
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
+
+</div>
 
 ### Hi-fi & Redesigned screens
 
