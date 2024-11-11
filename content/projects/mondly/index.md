@@ -79,7 +79,7 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
    <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
  </a>
 
-<p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
+<p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
 
 <div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
