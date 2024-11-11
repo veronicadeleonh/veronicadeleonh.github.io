@@ -29,7 +29,7 @@
 <div class="box-notes orange" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
 <h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
-<p>The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
+<p>In order to test the impact of the rebranding on the Stores, we initiated a project to extend the new brand to these images. The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
  <a href="images/app-store-images-dark.png" class="lightbox">
    <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
  </a>
@@ -37,22 +37,25 @@
    <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
  </a>
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
-<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and light theme variants. With this percentage we met our OKRs for Q1 2024</div>
+<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> to <strong>increase Premium Subscriptions</strong>. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <a href="images/mondly-lto.png" class="lightbox">
   <img src="images/mondly-lto.png" alt="Mondly LTO">
 </a>
 <p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
-<h4 id="seasonal-campaign">Seasonal Campaign</h4>
+<h4 id="seasonal-campaigns">Seasonal Campaigns</h4>
+<p>One of our user acquisiton strategies was the implementation of full-screen in-app ads that would lead the Free Trial Users to the the Subscription screen, giving them the oportunity to activate their Premium account.</p>
+<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
+  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
+</a>
+<p class="photo-footnote">User conversion through in-app ads flow</p>
+<p>Our strategy consisted in having a default layout version of the ad running for all free users, but we would adapt the layout of the screen accordingly to the seasonal sale. This made us create a template that we could adapt to the seasonal theme by adapting key elements like colors and imaginery.</p>
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
 </a>
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
-<p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. The objective of these ads was to convert Free-Trial users into Premium users. We launched both variants and conducted an <strong>A/B/C test</strong> alongside the current fallback.</p>
-<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
-  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
-</a>
+<p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. We launched both variants and conducted an <strong>A/B/C test</strong> alongside the current fallback.</p>
 <a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
   <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
 </a>
@@ -60,7 +63,7 @@
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 <div class="box-notes orange" style="margin-bottom:40px">
- Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts.</strong></strong>
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>reached the App Strore Drawer</strong></strong>
 </div>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
@@ -144,8 +147,11 @@
 <a href="images/eyeem-hifi-modals.png" class="lightbox">
   <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
 </a>
-<a href="images/eyeem-hifi.png" class="lightbox">
-  <img src="images/eyeem-hifi.png" alt="EyeEm Hifi Screens">
+<a href="images/eyeem-hifi-1.png" class="lightbox">
+  <img src="images/eyeem-hifi-1.png" alt="EyeEm Hifi Screens">
+</a>
+<a href="images/eyeem-hifi-2.png" class="lightbox">
+  <img src="images/eyeem-hifi-2.png" alt="EyeEm Hifi Screens">
 </a>
 <p class="photo-footnote">View of redesigned elements and screens</p>
 <h3 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h3>

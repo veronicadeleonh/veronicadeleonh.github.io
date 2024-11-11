@@ -69,7 +69,7 @@ For this project, we adapted the app’s design system for use on a marketing la
 
 #### App Store & Google Play images
 
-The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
+In order to test the impact of the rebranding on the Stores, we initiated a project to extend the new brand to these images. The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
 
  <a href="images/app-store-images-dark.png" class="lightbox">
    <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
@@ -81,7 +81,7 @@ The light mode was introduced after benchmarking research showed competitors fav
 
 <p class="photo-footnote">Screenshots of the light and dark versions of the App Store images for iPhone X</p>
 
-<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and light theme variants. With this percentage we met our OKRs for Q1 2024</div>
+<div class="box-notes orange" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
 ### Mondly Growth & Monetization
 
@@ -95,17 +95,22 @@ The Growth team initiated several **A/B tests** to **increase Premium Subscripti
 
 #### Seasonal Campaigns
 
+One of our user acquisiton strategies was the implementation of full-screen in-app ads that would lead the Free Trial Users to the the Subscription screen, giving them the oportunity to activate their Premium account.
+
+<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
+  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
+</a>
+<p class="photo-footnote">User conversion through in-app ads flow</p>
+
+Our strategy consisted in having a default layout version of the ad running for all free users, but we would adapt the layout of the screen accordingly to the seasonal sale. This made us create a template that we could adapt to the seasonal theme by adapting key elements like colors and imaginery.
+
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
 </a>
 
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 
-For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. The objective of these ads was to convert Free-Trial users into Premium users. We launched both variants and conducted an **A/B/C test** alongside the current fallback.
-
-<a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
-  <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
-</a>
+For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. We launched both variants and conducted an **A/B/C test** alongside the current fallback.
 
 <a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
   <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
@@ -116,7 +121,7 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
 </a>
 
 <div class="box-notes orange" style="margin-bottom:40px">
- Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>converted to Premium accounts.</strong></strong>
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>reached the App Strore Drawer</strong></strong>
 </div>
 
 ### Marketing Campaigns

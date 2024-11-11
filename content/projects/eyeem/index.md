@@ -142,8 +142,12 @@ The final step involved preparing high-fidelity mockups using our **design syste
   <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
 </a>
 
-<a href="images/eyeem-hifi.png" class="lightbox">
-  <img src="images/eyeem-hifi.png" alt="EyeEm Hifi Screens">
+<a href="images/eyeem-hifi-1.png" class="lightbox">
+  <img src="images/eyeem-hifi-1.png" alt="EyeEm Hifi Screens">
+</a>
+
+<a href="images/eyeem-hifi-2.png" class="lightbox">
+  <img src="images/eyeem-hifi-2.png" alt="EyeEm Hifi Screens">
 </a>
 
 <p class="photo-footnote">View of redesigned elements and screens</p>
