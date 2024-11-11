@@ -116,7 +116,7 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 
-<div class="box-notes orange" style="margin-bottom:40px">
+<div class="box-notes orange" style="margin-bottom:20px">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 

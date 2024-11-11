@@ -60,7 +60,7 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
 
-<div class="box-notes box-border border-purple">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes orange" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 
 ##### Top Navigation
 
@@ -80,7 +80,7 @@ Based on research, we applied EyeEm’s dark theme to the Cart Page, along with 
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
 
-<div class="box-notes box-border border-purple"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes orange" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 
 ##### Authentication Modal
 
@@ -100,7 +100,7 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
 
-<div class="box-notes box-border border-purple"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes orange" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
 ##### Cart Preview, Pay Now & One-click Paypal payment
 
