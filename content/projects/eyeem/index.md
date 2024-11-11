@@ -70,6 +70,10 @@ The Cart page **lacked EyeEm's familiar top navigation**, which could make users
 
 VAT calculations were appearing **too early in the cart flow**. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.
 
+##### Dark Theme vs. Light Theme
+
+Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to **maintain visual consistency** and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.
+
 #### Authentication for logged out users
 
 <a href="images/eyeem-ux-auth.png" class="lightbox">
@@ -106,9 +110,13 @@ Previously, the "Pay Now" action was hidden in the second step and often inacces
 
 Since our product **didn’t require a shipping address** and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.
 
-##### Transfer Licensing: Long term goals
+##### Transfer Licensing: Ongoing discussion
 
 Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we **streamlined the process** and responded to a frequent user need.
+
+##### Pre-save payment and billing information: Long term goals
+
+To streamline the purchase process, we considered **pre-saving user data**, such as cart details and billing information. However, due to capacity and alignment with the legal team, we decided to prioritize this feature for future iterations
 
 ##### Introducing more payment methods: Long term goals
 

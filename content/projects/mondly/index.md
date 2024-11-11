@@ -65,7 +65,7 @@ For this project, we adapted the app’s design system for use on a marketing la
 <p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
 
 <div class="box-notes orange" style="margin-bottom:20px">
- The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and the <strong>unique pageviews</strong> compared to the original control version.</div>
+ The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 
 #### App Store & Google Play images
 
@@ -117,7 +117,7 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
 </a>
 
 <div class="box-notes orange" style="margin-bottom:40px">
- Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong>with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 
 ### Marketing Campaigns
