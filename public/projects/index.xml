@@ -97,7 +97,7 @@
 <a href="images/eyeem-ux-cart.png" class="lightbox">
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
-<div class="box-notes orange" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes yellow" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 <h5 id="top-navigation">Top Navigation</h5>
 <p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
 <h5 id="vat-calculations">VAT Calculations</h5>
@@ -108,7 +108,7 @@
 <a href="images/eyeem-ux-auth.png" class="lightbox">
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
-<div class="box-notes orange" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes yellow" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
 <p>To create a more seamless experience, we moved authentication to a modal, <strong>allowing users to keep their Cart in view</strong> while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
@@ -119,7 +119,7 @@
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
-<div class="box-notes orange" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes yellow" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
