@@ -95,14 +95,14 @@ The Growth team initiated several **A/B tests** to **increase Premium Subscripti
 
 #### Seasonal Campaigns
 
-One of our user acquisiton strategies was the implementation of full-screen in-app ads that would lead the Free Trial Users to the the Subscription screen, giving them the oportunity to activate their Premium account.
+Our user acquisition strategy used full-screen in-app ads to guide Free Trial users to the Subscription screen, offering them the opportunity to **activate a Premium account**.
 
 <a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
   <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
 </a>
 <p class="photo-footnote">User conversion through in-app ads flow</p>
 
-Our strategy consisted in having a default layout version of the ad running for all free users, but we would adapt the layout of the screen accordingly to the seasonal sale. This made us create a template that we could adapt to the seasonal theme by adapting key elements like colors and imaginery.
+Our strategy used a default ad layout for all free users, which we then **customized for each seasonal sale**. This approach allowed us to create a flexible template, easily adapting key elements like colors and imagery to fit the seasonal theme.
 
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
@@ -112,16 +112,12 @@ Our strategy consisted in having a default layout version of the ad running for 
 
 For the **Spring Campaign 2024**, we developed a new layout for the in-app ad and proposed two different background images. We launched both variants and conducted an **A/B/C test** alongside the current fallback.
 
-<a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
-  <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
-</a>
-
 <a href="images/seasonal-campaigns-test-result.png" class="lightbox">
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 
 <div class="box-notes orange" style="margin-bottom:40px">
- Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>reached the App Strore Drawer</strong></strong>
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 
 ### Marketing Campaigns

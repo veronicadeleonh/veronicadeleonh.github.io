@@ -45,25 +45,22 @@
 </a>
 <p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
 <h4 id="seasonal-campaigns">Seasonal Campaigns</h4>
-<p>One of our user acquisiton strategies was the implementation of full-screen in-app ads that would lead the Free Trial Users to the the Subscription screen, giving them the oportunity to activate their Premium account.</p>
+<p>Our user acquisition strategy used full-screen in-app ads to guide Free Trial users to the Subscription screen, offering them the opportunity to <strong>activate a Premium account</strong>.</p>
 <a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
   <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
 </a>
 <p class="photo-footnote">User conversion through in-app ads flow</p>
-<p>Our strategy consisted in having a default layout version of the ad running for all free users, but we would adapt the layout of the screen accordingly to the seasonal sale. This made us create a template that we could adapt to the seasonal theme by adapting key elements like colors and imaginery.</p>
+<p>Our strategy used a default ad layout for all free users, which we then <strong>customized for each seasonal sale</strong>. This approach allowed us to create a flexible template, easily adapting key elements like colors and imagery to fit the seasonal theme.</p>
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
   <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign">
 </a>
 <p class="photo-footnote">In-app ad layout created for the Spring Campaign. Images generated with Midjourney</p>
 <p>For the <strong>Spring Campaign 2024</strong>, we developed a new layout for the in-app ad and proposed two different background images. We launched both variants and conducted an <strong>A/B/C test</strong> alongside the current fallback.</p>
-<a href="images/seasonal-campaigns-test-versions.png" class="lightbox">
-  <img src="images/seasonal-campaigns-test-versions.png" alt="Mondly Seasonal Campaign Test Versions">
-</a>
 <a href="images/seasonal-campaigns-test-result.png" class="lightbox">
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 <div class="box-notes orange" style="margin-bottom:40px">
- Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen <strong>reached the App Strore Drawer</strong></strong>
+ Results showed a slight increase of <strong>7% more 'Activate' taps</strong> between variants A and B, with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
