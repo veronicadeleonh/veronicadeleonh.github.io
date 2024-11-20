@@ -94,4 +94,21 @@ To support BaseCase's online presence, we developed a series of images for marke
   <img src="images/basecase-features.png" alt="BaseCase Features">
 </a>
 
+<div style="display:none">
+<a href="images/basecase-content-creation.png" class="lightbox">
+  <img src="images/basecase-content-creation.png" alt="BaseCase Features Content Creation">
+</a>
+
+<a href="images/basecase-spreadsheets.png" class="lightbox">
+  <img src="images/basecase-features-spreadsheets.png" alt="BaseCase Features Spreadsheets">
+</a>
+
+<a href="images/basecase-knowledge-base.png" class="lightbox">
+  <img src="images/basecase-knowledge-base.png" alt="BaseCase Features Knowledge Base">
+</a>
+
+<a href="images/basecase-success.png" class="lightbox">
+  <img src="images/basecase-success.png" alt="BaseCase Features Success">
+</a>
+</div>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>

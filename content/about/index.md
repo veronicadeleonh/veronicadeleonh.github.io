@@ -79,6 +79,18 @@
 <div class="card-background flex-grid">
     <div class="card-description">
     <a href="https://www.ironhack.com/" target="_blank">
+        <p class="card-title">Bootcamp - Data Analytics<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+    </a>
+        <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
+    </div>
+    <div class="card-year">
+        2024 - current
+    </div>
+</div>
+
+<div class="card-background flex-grid">
+    <div class="card-description">
+    <a href="https://www.ironhack.com/" target="_blank">
         <p class="card-title">Bootcamp - Full-Stack Web Development<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
     </a>
         <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
@@ -166,7 +178,7 @@
 
 ### Other Web
 
-<p>I designed and built a website to collect the best pictures I've taken on my trips. This was a passion project using modern FE tools such as ReactJS, TailwindCSS, Contentful and Vercel.</p>
+<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
 
 <div class="card-link flex-grid">
     <img class="image-thumb" src="images/analog-web-preview.png">
