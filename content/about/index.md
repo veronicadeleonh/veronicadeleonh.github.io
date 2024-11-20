@@ -84,7 +84,7 @@
         <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
     <div class="card-year">
-        2024 - current
+        current
     </div>
 </div>
 
