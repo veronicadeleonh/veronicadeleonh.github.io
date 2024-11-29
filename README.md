@@ -12,4 +12,4 @@ When I’m not working, I’m usually snapping analog photos, exploring new plac
 
 When I'm not traveling, I design and build interfaces. I recently created a website to showcase my work as a Product Designer, highlighting key projects and milestones.
 
-![Verónica De León Hernández](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Verónica De León Hernández](content/about/images/portfolio-web-preview.png)
