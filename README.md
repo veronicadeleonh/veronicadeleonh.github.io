@@ -1,10 +1,14 @@
 # Product Design UXUI Portfolio
 
-I'm Verónica, an analog photography enthusiast and female solo traveler based in Berlin. Since my first solo trip to Cuba in 2018, I’ve been drawn to bringing at least one analog camera with me in all my journeys.
+## About me
 
-Using analog cameras helps me disconnect from the digital world, creating space for deeper connections with the places I visit and the people I meet.
+I'm Verónica, a Product Designer based in Berlin. I enjoy creating data-driven interfaces and combining my design skills with a bit of coding. During my career, I have also worked closely in the areas of Marketing and Growth.
 
-I plan to continue exploring and visiting more amazing islands and coasts!
+I enjoy being surrounded by talented people who push me to keep learning and help build an awesome team culture.
+
+When I’m not working, I’m usually snapping analog photos, exploring new places, diving into science and nature books, or staying active with some sports.
+
+## About this Web
 
 When I'm not traveling, I design and build interfaces. I recently created a website to showcase my work as a Product Designer, highlighting key projects and milestones.
 
