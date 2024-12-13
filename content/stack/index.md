@@ -68,8 +68,8 @@ The favourite and most used
 
 <hr>
 
-<h3 class="stack-title">Secondary</h3>
-These often become useful
+<h3 class="stack-title">Improving</h3>
+Learning or getting better at these
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -83,59 +83,14 @@ These often become useful
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-visual-studio-code.svg">
+            <img src="images/stack-python.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">Visual Studio Code</p>
-            <p class="card-paragraph">Code Editor</p>
+            <p class="card-title">Python</p>
+            <p class="card-paragraph">Data & Automation</p>
         </div>
     </div>
 </div>
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-photoshop.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Photoshop</p>
-            <p class="card-paragraph">Graphic Design</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-indesign.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">InDesign</p>
-            <p class="card-paragraph">Editorial Design</p>
-        </div>
-    </div>
-</div>
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-affinity-designer.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Affinity Designer</p>
-            <p class="card-paragraph">Graphic Design</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-affinity-publisher.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Affinity Publisher</p>
-            <p class="card-paragraph">Editorial Design</p>
-        </div>
-    </div>
-</div>
-
-<hr>
-
-<h3 class="stack-title">Improving</h3>
-Learning or getting better at these
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -214,6 +169,52 @@ Learning or getting better at these
         <div class="card-description">
             <p class="card-title">ChatGPT</p>
             <p class="card-paragraph">AI</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<h3 class="stack-title">Secondary</h3>
+These also become useful
+
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-photoshop.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Photoshop</p>
+            <p class="card-paragraph">Graphic Design</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-indesign.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">InDesign</p>
+            <p class="card-paragraph">Editorial Design</p>
+        </div>
+    </div>
+</div>
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-affinity-designer.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Affinity Designer</p>
+            <p class="card-paragraph">Graphic Design</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-affinity-publisher.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Affinity Publisher</p>
+            <p class="card-paragraph">Editorial Design</p>
         </div>
     </div>
 </div>
