@@ -8,26 +8,6 @@ The favourite and most used
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-figma.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Figma</pp>
-            <p class="card-paragraph">Interface Design</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-webflow.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Webflow</p>
-            <p class="card-paragraph">Web Design</p>
-        </div>
-    </div>
-</div>
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-slack.svg">
         </div>
         <div class="card-description">
@@ -45,6 +25,28 @@ The favourite and most used
         </div>
     </div>          
 </div>
+
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-figma.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Figma</pp>
+            <p class="card-paragraph">Interface Design</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-webflow.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Webflow</p>
+            <p class="card-paragraph">Web Design</p>
+        </div>
+    </div>
+</div>
+
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -66,6 +68,27 @@ The favourite and most used
     </div>
 </div>
 
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-midjourney.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Midjourney</p>
+            <p class="card-paragraph">AI Tool</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-chatgpt.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">ChatGPT</p>
+            <p class="card-paragraph">AI</p>
+        </div>
+    </div>
+</div>
+
 <hr>
 
 <h3 class="stack-title">Improving</h3>
@@ -83,11 +106,11 @@ Learning or getting better at these
     </div>
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-python.svg">
+            <img src="images/stack-visual-studio-code.svg">
         </div>
         <div class="card-description">
-            <p class="card-title">Python</p>
-            <p class="card-paragraph">Data & Automation</p>
+            <p class="card-title">VS Code</p>
+            <p class="card-paragraph">Code Editor</p>
         </div>
     </div>
 </div>
@@ -112,6 +135,7 @@ Learning or getting better at these
         </div>
     </div>
 </div>
+
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
@@ -132,50 +156,10 @@ Learning or getting better at these
         </div>
     </div>
 </div>
-<div class="flex-grid" style="display:none">
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-framer.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Framer</p>
-            <p class="card-paragraph">Web Design</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-bubble.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Bubble</p>
-            <p class="card-paragraph">Product Design</p>
-        </div>
-    </div>
-</div>
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-midjourney.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Midjourney</p>
-            <p class="card-paragraph">AI Tool</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-chatgpt.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">ChatGPT</p>
-            <p class="card-paragraph">AI</p>
-        </div>
-    </div>
-</div>
 
 <hr>
 
-<h3 class="stack-title">Secondary</h3>
+<h3 class="stack-title">Other tools</h3>
 These also become useful
 
 <div class="flex-grid">
