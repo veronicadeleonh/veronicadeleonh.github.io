@@ -71,32 +71,6 @@ The favourite and most used
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-midjourney.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Midjourney</p>
-            <p class="card-paragraph">AI Tool</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-chatgpt.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">ChatGPT</p>
-            <p class="card-paragraph">AI</p>
-        </div>
-    </div>
-</div>
-
-<hr>
-
-<h3 class="stack-title">Improving</h3>
-Learning or getting better at these
-
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-github.svg">
         </div>
         <div class="card-description">
@@ -114,6 +88,11 @@ Learning or getting better at these
         </div>
     </div>
 </div>
+
+<hr>
+
+<h3 class="stack-title">Improving</h3>
+Learning or getting better at these
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -152,6 +131,27 @@ Learning or getting better at these
         </div>
         <div class="card-description">
             <p class="card-title">Hugo</p>
+            <p class="card-paragraph">Web Framework</p>
+        </div>
+    </div>
+</div>
+
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-python.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Python</p>
+            <p class="card-paragraph">CSS Framework</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-tableau.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Tableau</p>
             <p class="card-paragraph">Web Framework</p>
         </div>
     </div>
