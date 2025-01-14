@@ -2,7 +2,7 @@
 
 <hr>
 
-<h3 class="stack-title">Main</h3>
+<h3 class="stack-title">Core Tools</h3>
 The favourite and most used
 
 <div class="flex-grid">
@@ -91,7 +91,7 @@ The favourite and most used
 
 <hr>
 
-<h3 class="stack-title">Improving</h3>
+<h3 class="stack-title">Learning & Exploring</h3>
 Learning or getting better at these
 
 <div class="flex-grid">
@@ -143,7 +143,7 @@ Learning or getting better at these
         </div>
         <div class="card-description">
             <p class="card-title">Python</p>
-            <p class="card-paragraph">CSS Framework</p>
+            <p class="card-paragraph">Data Automation</p>
         </div>
     </div>
     <div class="card-background col">
@@ -152,14 +152,14 @@ Learning or getting better at these
         </div>
         <div class="card-description">
             <p class="card-title">Tableau</p>
-            <p class="card-paragraph">Web Framework</p>
+            <p class="card-paragraph">Visual analytics</p>
         </div>
     </div>
 </div>
 
 <hr>
 
-<h3 class="stack-title">Other tools</h3>
+<h3 class="stack-title">Creative Tools</h3>
 These also become useful
 
 <div class="flex-grid">
