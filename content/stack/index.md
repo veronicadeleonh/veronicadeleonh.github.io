@@ -2,6 +2,32 @@
 
 <hr>
 
+<h3 class="stack-title">Productivity Tools</h3>
+Streamlining teamwork and organizations
+
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-slack.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Slack</p>
+            <p class="card-paragraph">Team Communication</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-notion.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Notion</p>
+            <p class="card-paragraph">Documentation</p>
+        </div>
+    </div>          
+</div>
+
+<hr>
+
 <h3 class="stack-title">Core Tools</h3>
 The favourite and most used
 
@@ -66,27 +92,6 @@ The favourite and most used
             <p class="card-paragraph">Code Editor</p>
         </div>
     </div>
-</div>
-
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-slack.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Slack</p>
-            <p class="card-paragraph">Team Communication</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-notion.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Notion</p>
-            <p class="card-paragraph">Documentation</p>
-        </div>
-    </div>          
 </div>
 
 <hr>
