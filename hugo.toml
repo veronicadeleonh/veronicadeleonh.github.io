@@ -1,7 +1,7 @@
 baseURL = 'http://veronicadeleon.de/'
 languageCode = 'en-us'
 title = 'Verónica De León Hernández'
-googleAnalytics = "G-1234567890"
+googleAnalytics = "G-LQZ77WLF6C"
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
