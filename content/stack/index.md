@@ -8,27 +8,6 @@ The favourite and most used
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-slack.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Slack</p>
-            <p class="card-paragraph">Team Communication</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-notion.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Notion</p>
-            <p class="card-paragraph">Documentation</p>
-        </div>
-    </div>          
-</div>
-
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-figma.svg">
         </div>
         <div class="card-description">
@@ -89,6 +68,27 @@ The favourite and most used
     </div>
 </div>
 
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-slack.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Slack</p>
+            <p class="card-paragraph">Team Communication</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-notion.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Notion</p>
+            <p class="card-paragraph">Documentation</p>
+        </div>
+    </div>          
+</div>
+
 <hr>
 
 <h3 class="stack-title">Learning & Exploring</h3>
@@ -131,7 +131,7 @@ Learning or getting better at these
         </div>
         <div class="card-description">
             <p class="card-title">Tableau</p>
-            <p class="card-paragraph">Visual analytics</p>
+            <p class="card-paragraph">Visual Analytics</p>
         </div>
     </div>
 </div>
