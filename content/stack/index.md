@@ -55,27 +55,6 @@ The favourite and most used
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-html5.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">HTML</p>
-            <p class="card-paragraph">Markup Language</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-css3.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">CSS</p>
-            <p class="card-paragraph">Style Sheet Language</p>
-        </div>
-    </div>
-</div>
-
-<div class="flex-grid">
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-github.svg">
         </div>
         <div class="card-description">
@@ -90,6 +69,27 @@ The favourite and most used
         <div class="card-description">
             <p class="card-title">VS Code</p>
             <p class="card-paragraph">Code Editor</p>
+        </div>
+    </div>
+</div>
+
+<div class="flex-grid">
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-html5.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">HTML</p>
+            <p class="card-paragraph">Markup Language</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-css3.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">CSS</p>
+            <p class="card-paragraph">Style Sheet Language</p>
         </div>
     </div>
 </div>
