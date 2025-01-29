@@ -9,7 +9,6 @@
 <div class="about-links">
     <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
     <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></span></a>
-    <a class="btn-connect circled" href="https://read.cv/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/readcv.svg)"></span></a>
     <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
 </div>
 
