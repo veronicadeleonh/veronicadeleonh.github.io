@@ -100,6 +100,15 @@ The favourite and most used
 Learning or getting better at these
 
 <div class="flex-grid">
+   <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-javascript.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Javascript</p>
+            <p class="card-paragraph">Programming Language</p>
+        </div>
+    </div>
     <div class="card-background col">
         <div class="card-icon">
             <img src="images/stack-react.svg">
@@ -107,15 +116,6 @@ Learning or getting better at these
         <div class="card-description">
             <p class="card-title">ReactJS</p>
             <p class="card-paragraph">FE library</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
-            <img src="images/stack-javascript.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Javascript</p>
-            <p class="card-paragraph">Programming Language</p>
         </div>
     </div>
 </div>
