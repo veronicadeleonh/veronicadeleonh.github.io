@@ -123,20 +123,20 @@ Learning or getting better at these
 <div class="flex-grid">
     <div class="card-background col">
         <div class="card-icon">
-            <img src="images/stack-python.svg">
-        </div>
-        <div class="card-description">
-            <p class="card-title">Python</p>
-            <p class="card-paragraph">Data Automation</p>
-        </div>
-    </div>
-    <div class="card-background col">
-        <div class="card-icon">
             <img src="images/stack-tableau.svg">
         </div>
         <div class="card-description">
             <p class="card-title">Tableau</p>
             <p class="card-paragraph">Visual Analytics</p>
+        </div>
+    </div>
+    <div class="card-background col">
+        <div class="card-icon">
+            <img src="images/stack-python.svg">
+        </div>
+        <div class="card-description">
+            <p class="card-title">Python</p>
+            <p class="card-paragraph">Data Automation</p>
         </div>
     </div>
 </div>
