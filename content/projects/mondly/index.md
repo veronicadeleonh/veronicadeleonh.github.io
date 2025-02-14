@@ -64,7 +64,7 @@ For this project, we adapted the app’s design system for use on a marketing la
 
 <p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
 
-<div class="box-notes yellow" style="margin-bottom:20px">
+<div class="box-notes yellow-background" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 
 #### App Store & Google Play images
@@ -81,7 +81,7 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 <p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
 
-<div class="box-notes yellow" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
+<div class="box-notes yellow-background" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
 ### Mondly Growth & Monetization
 
@@ -116,7 +116,7 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 
-<div class="box-notes yellow" style="margin-bottom:20px">
+<div class="box-notes yellow-background" style="margin-bottom:20px">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 

@@ -21,7 +21,7 @@
 ### Work Experience
 
 <div class="card-background flex-grid">
-    <div class="card-icon-and-description">
+    <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-mondly.svg">
         </div>
@@ -38,7 +38,7 @@
 </div>
 
 <div class="card-background flex-grid">
-    <div class="card-icon-and-description">
+    <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-eyeem.svg">
         </div>
@@ -55,7 +55,7 @@
 </div>
 
 <div class="card-background flex-grid">
-    <div class="card-icon-and-description">
+    <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-basecase.svg">
         </div>
@@ -132,8 +132,17 @@
     <div class="card-description">
         <p class="card-title">Spanish <span class="fi" style="background-image: url(images/ve.svg)"></span></p>
     </div>
-    <div class="card-year">
-        Native
+    <div class="language-and-dot-container">
+        <div class="card-year">
+            Native
+        </div>
+        <div class="dot-container">
+                <span class="dot yellow-dot"></span>
+                <span class="dot yellow-dot"></span>
+                <span class="dot yellow-dot"></span>
+                <span class="dot yellow-dot"></span>
+                <span class="dot yellow-dot"></span>
+            </div>
     </div>
 </div>
 
@@ -141,8 +150,17 @@
     <div class="card-description">
         <p class="card-title">English <span class="fi" style="background-image: url(images/gb.svg)"></span></p>
     </div>
-    <div class="card-year">
-        Proficient
+    <div class="language-and-dot-container">
+        <div class="card-year">
+            Proficient
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
     </div>
 </div>
 
@@ -150,8 +168,17 @@
     <div class="card-description">
         <p class="card-title">Italian <span class="fi" style="background-image: url(images/it.svg)"></span></p>
     </div>
-    <div class="card-year">
-        Proficient
+    <div class="language-and-dot-container">
+        <div class="card-year">
+            Proficient
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
     </div>
 </div>
 
@@ -159,8 +186,17 @@
     <div class="card-description">
         <p class="card-title">German <span class="fi" style="background-image: url(images/de.svg)"></span></p>
     </div>
-    <div class="card-year">
-        Upper intermediate
+    <div class="language-and-dot-container">
+        <div class="card-year">
+            Upper intermediate
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
     </div>
 </div>
 
@@ -168,8 +204,17 @@
     <div class="card-description">
         <p class="card-title">Portuguese <span class="fi" style="background-image: url(images/br.svg)"></span></p>
     </div>
-    <div class="card-year">
-        Beginner
+    <div class="language-and-dot-container">
+        <div class="card-year">
+            Beginner
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
     </div>
 </div>
 

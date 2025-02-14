@@ -97,9 +97,14 @@ strong {
     margin: 16px -15px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: space-between;
     background-color: transparent;
     transition: background-color 300ms;
+}
+
+
+.card-small-margin {
+    margin: 8px -15px;
 }
 
 .card-link {
@@ -170,7 +175,6 @@ strong {
     transform: translateX(4px);
 }
 
-
 .card-background img {
     transition: all 300ms;
 }
@@ -192,19 +196,26 @@ strong {
 }
 
 .card-icon {
-    width: 50px;
+    width: 40px;
     filter: drop-shadow(rgb(0, 0, 0, 0.15) 0px 4px 2px);
 }
 
-.card-icon-and-description {
+.card-icon-and-title {
     display:flex; 
-    gap: 16px; 
+    gap: 8px; 
     align-items: center
+}
+
+.card-icon-title-and-description {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .flex-grid {
     display: flex;
     justify-content: space-between;
+    gap: 16%;
   }
 
 .col {
@@ -398,7 +409,7 @@ strong {
     border-color: #964DF6;
 }
 
-.yellow {
+.yellow-background {
     background-color: #f6e58d60;
 }
 
@@ -483,3 +494,28 @@ strong {
     background-color: rgba(0, 0, 0, .4);
 }
 
+/* dot */
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.yellow-dot {
+    background-color: #f9ca24;
+}
+
+.gray-dot {
+    background-color: #e4e6e7;
+}
+
+.dot-container, .language-and-dot-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.language-and-dot-container {
+    gap: 16px;
+}
