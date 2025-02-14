@@ -1,4 +1,4 @@
-# Product Design UXUI Portfolio
+# Product Design UXUI
 
 ## About me
 
