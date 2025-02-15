@@ -2,8 +2,7 @@
 
 <hr>
 
-<h3 class="stack-title">Productivity</h3>
-Streamlining teamwork and organizations
+<h4 class="stack-title">Productivity</h4>
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -40,8 +39,7 @@ Streamlining teamwork and organizations
 
 <hr>
 
-<h3 class="stack-title">Core Tools</h3>
-The favourite and most used
+<h4 class="stack-title">Core Tools</h4>
 
 <div class="flex-grid">
     <div class="card-background col">
@@ -144,8 +142,7 @@ The favourite and most used
 
 <hr>
 
-<h3 class="stack-title">Learning & Exploring</h3>
-Learning or getting better at these
+<h4 class="stack-title">Learning & Exploring</h4>
 
 <div class="flex-grid">
     <div class="card-background card-small-margin col">
@@ -248,8 +245,7 @@ Learning or getting better at these
 
 <hr>
 
-<h3 class="stack-title">Creative Tools</h3>
-These also become useful
+<h4 class="stack-title">Creative Tools</h4>
 
 <div class="flex-grid">
     <div class="card-background card-small-margin col">

@@ -91,10 +91,8 @@ strong {
     font-size: 16px;
 }
 
-.card-background {
-    padding: 1% 2%;
+.card-background {   
     border-radius: 8px;
-    margin: 16px -15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,8 +100,14 @@ strong {
     transition: background-color 300ms;
 }
 
+.card-big-margin {
+    padding: 1% 2%;
+    margin: 16px -15px;
+}
+
 
 .card-small-margin {
+    padding: 0 2%;
     margin: 8px -15px;
 }
 

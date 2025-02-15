@@ -20,7 +20,7 @@
 
 ### Work Experience
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-mondly.svg">
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-eyeem.svg">
@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-icon-title-and-description">
         <div class="card-icon">
             <img src="images/work-basecase.svg">
@@ -75,7 +75,7 @@
 
 ### Education
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://www.ironhack.com/" target="_blank">
         <p class="card-title">Bootcamp - Data Analytics<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
@@ -87,7 +87,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://www.ironhack.com/" target="_blank">
         <p class="card-title">Bootcamp - Full-Stack Web Development<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
@@ -99,7 +99,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://www.adbk.de/" target="_blank">
         <p class="card-title">
@@ -112,7 +112,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://abaroma.it/" target="_blank">
         <p class="card-title">Diploma - Grafica Editoriale<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
@@ -128,7 +128,7 @@
 
 ### Languages
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
         <p class="card-title">Spanish <span class="fi" style="background-image: url(images/ve.svg)"></span></p>
     </div>
@@ -146,7 +146,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
         <p class="card-title">English <span class="fi" style="background-image: url(images/gb.svg)"></span></p>
     </div>
@@ -164,7 +164,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
         <p class="card-title">Italian <span class="fi" style="background-image: url(images/it.svg)"></span></p>
     </div>
@@ -182,7 +182,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
         <p class="card-title">German <span class="fi" style="background-image: url(images/de.svg)"></span></p>
     </div>
@@ -200,7 +200,7 @@
     </div>
 </div>
 
-<div class="card-background flex-grid">
+<div class="card-background card-big-margin flex-grid">
     <div class="card-description">
         <p class="card-title">Portuguese <span class="fi" style="background-image: url(images/br.svg)"></span></p>
     </div>
