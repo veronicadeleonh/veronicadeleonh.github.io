@@ -5,7 +5,7 @@
 <h4 class="stack-title">Productivity</h4>
 
 <div class="flex-grid">
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-slack.svg">
@@ -20,7 +20,7 @@
             <span class="dot yellow-dot"></span>
         </div>
     </div>
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-notion.svg">
@@ -42,7 +42,7 @@
 <h4 class="stack-title">Core Tools</h4>
 
 <div class="flex-grid">
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-figma.svg">
@@ -57,7 +57,7 @@
             <span class="dot yellow-dot"></span>
         </div>
     </div>
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-webflow.svg">
@@ -75,7 +75,7 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-github.svg">
@@ -90,7 +90,7 @@
             <span class="dot gray-dot"></span>
         </div>
     </div>
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-visual-studio-code.svg">
@@ -108,7 +108,7 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-html5.svg">
@@ -123,7 +123,7 @@
             <span class="dot yellow-dot"></span>
         </div>
     </div>
-    <div class="card-background col">
+    <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-css3.svg">

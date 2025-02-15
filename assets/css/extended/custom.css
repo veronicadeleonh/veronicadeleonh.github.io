@@ -91,7 +91,8 @@ strong {
     font-size: 16px;
 }
 
-.card-background {   
+.card-background {
+   
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -219,7 +220,6 @@ strong {
 .flex-grid {
     display: flex;
     justify-content: space-between;
-    gap: 16%;
   }
 
 .col {
