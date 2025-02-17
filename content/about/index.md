@@ -43,7 +43,7 @@
             <img src="images/work-eyeem.svg">
         </div>
         <div class="card-description">
-        <a href="http://eyeem.com" target="_blank">
+        <a href="https://eyeem.com" target="_blank">
             <p class="card-title">EyeEm<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
         </a>
             <p class="card-paragraph">Product Designer</p>
@@ -228,6 +228,6 @@
     <img class="image-thumb" src="images/analog-web-preview.png">
     <div>
     <p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="http://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
     </div>
 </div>
