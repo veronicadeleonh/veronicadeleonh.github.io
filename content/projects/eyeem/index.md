@@ -162,12 +162,12 @@ The final step involved preparing high-fidelity mockups using our **design syste
 
 ### EyeEm's Web presence
 
-<a href="http://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
+<a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
 
 Here are some live examples:
 
 ![EyeEm Web](images/eyeem-web.jpg)
-<a href="http://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
+<a href="https://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-magazine.jpg)
 <a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
