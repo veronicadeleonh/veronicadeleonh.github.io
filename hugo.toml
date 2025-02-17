@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = 'Verónica De León Hernández'
 googleAnalytics = "G-LQZ77WLF6C"
 
-relativeURLs = false
-canonifyURLs = true
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
@@ -23,10 +21,10 @@ canonifyURLs = true
     Content = "I'm **Verónica**, a **Product Designer** based in Berlin. I enjoy creating data-driven interfaces and combining my design skills with a bit of coding. During my career, I have also worked closely in the areas of Marketing and Growth."
 
 [params.assets]
-favicon = "https://veronicadeleonh.github.io/favicon.ico"
-favicon16x16 = "https://veronicadeleonh.github.io/favicon-16x16.png"
-favicon32x32 = "https://veronicadeleonh.github.io/favicon-32x32.png"
-apple_touch_icon = "https://veronicadeleonh.github.io/apple-touch-icon.png"
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
 
 [menu]
 
