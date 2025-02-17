@@ -16,7 +16,7 @@
 
 ![VDLH - Tarifa 2024](images/vdlh-tarifa.jpg)
 
-<p class="photo-footnote">Tarifa, Spain  2024</p>
+<p class="photo-footnote">Tarifa, Spain - 2024</p>
 
 ### Work Experience
 
