@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Verónica De León Hernández'
 googleAnalytics = "G-LQZ77WLF6C"
 
+relativeURLs = false
+canonifyURLs = true
+
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
 
