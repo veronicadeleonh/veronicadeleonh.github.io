@@ -76,7 +76,7 @@ strong {
 
 .first-entry .entry-content {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.4em;
 }
 
@@ -242,6 +242,11 @@ strong {
 .fi:before {
     content: " ";
 }
+
+.fib:after {
+    content: " ";
+}
+
   
 .fi.fis {
     width: 0.8em;

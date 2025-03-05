@@ -1,15 +1,19 @@
 # About me
 
-<p>I'm <strong>Verónica</strong>, a <strong>Product Designer</strong> based in Berlin. I enjoy creating data-driven interfaces and combining my design skills with a bit of coding. During my career, I have also worked closely in the areas of Marketing and Growth. </p>
+<p>I’m  <strong>Verónica</strong>, a <strong>Generalist Product Designer</strong> in Berlin, passionate about creating intuitive, data-driven interfaces. With experience collaborating across Marketing and Growth teams, and a curiosity for Front-end Development, Data Analytics and AI agents, I bring a unique, horizontal perspective to solving user problems.</p>
 
 <p>I enjoy being surrounded by talented people who push me to keep learning and help build an awesome team culture.</p>
 
 <p>When I’m not working, I’m usually snapping analog photos, exploring new places, diving into science and nature books, or staying active with some sports.</p>
 
-<div class="about-links">
-    <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(images/linkedin.svg)"></span></a>
-    <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/github.svg)"></span></a>
-    <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
+<div class="home-about-links">
+      <div class="about-links">
+            <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(/images/linkedin.svg)"></span></a>
+            <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
+            <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
+      </div>
+      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download CV</a>
+      <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
 </div>
 
 <hr>
