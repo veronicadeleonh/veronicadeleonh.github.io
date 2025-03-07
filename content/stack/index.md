@@ -181,14 +181,47 @@
     <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
-                <img src="images/stack-tableau.svg">
+                <img src="images/stack-tailwindcss.svg">
             </div>
-            <p class="card-title">Tableau</p>
+            <p class="card-title">Tailwind CSS</p>
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
+    </div>
+    <div class="card-background card-small-margin col">
+        <div class="card-icon-and-title">
+            <div class="card-icon">
+                <img src="images/stack-hugo.svg">
+            </div>
+            <p class="card-title">Hugo</p>
         </div>
         <div class="dot-container">
             <span class="dot yellow-dot"></span>
             <span class="dot yellow-dot"></span>
             <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+            <span class="dot gray-dot"></span>
+        </div>
+    </div>         
+</div>
+
+<div class="flex-grid">
+    <div class="card-background card-small-margin col">
+        <div class="card-icon-and-title">
+            <div class="card-icon">
+                <img src="images/stack-pandas.svg">
+            </div>
+            <p class="card-title">Pandas</p>
+        </div>
+        <div class="dot-container">
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
+            <span class="dot yellow-dot"></span>
             <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
         </div>
@@ -214,9 +247,9 @@
     <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
-                <img src="images/stack-tailwindcss.svg">
+                <img src="images/stack-mysql-blue.svg">
             </div>
-            <p class="card-title">Tailwind CSS</p>
+            <p class="card-title">MySQL</p>
         </div>
         <div class="dot-container">
             <span class="dot yellow-dot"></span>
@@ -229,14 +262,14 @@
     <div class="card-background card-small-margin col">
         <div class="card-icon-and-title">
             <div class="card-icon">
-                <img src="images/stack-hugo.svg">
+                <img src="images/stack-flask.svg">
             </div>
-            <p class="card-title">Hugo</p>
+            <p class="card-title">Flask</p>
         </div>
         <div class="dot-container">
             <span class="dot yellow-dot"></span>
             <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
+            <span class="dot yellow-dot"></span>
             <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
         </div>
