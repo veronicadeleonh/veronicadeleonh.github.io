@@ -269,7 +269,7 @@
         <div class="dot-container">
             <span class="dot yellow-dot"></span>
             <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
+            <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
         </div>
