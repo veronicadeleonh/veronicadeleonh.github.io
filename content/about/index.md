@@ -1,6 +1,6 @@
 # About me
 
-<p>I’m  <strong>Verónica</strong>, a <strong>Generalist Product Designer</strong> in Berlin, passionate about creating intuitive, data-driven interfaces. With experience collaborating across Marketing and Growth teams, and a curiosity for Front-end Development, Data Analytics and AI agents, I bring a unique, horizontal perspective to solving user problems.</p>
+<p>I’m  <strong>Verónica</strong>, a <strong>Multidisciplinary Product Designer</strong> with 7+ years of experience building intuitive and impactful experiences. My profile bridges design, development, and strategy—utilizing JavaScript, Python, and modern web technologies to solve technical challenges while driving business growth through marketing strategies. I thrive on problem-solving, transforming complex ideas into seamless solutions.</p>
 
 <p>I enjoy being surrounded by talented people who push me to keep learning and help build an awesome team culture.</p>
 
