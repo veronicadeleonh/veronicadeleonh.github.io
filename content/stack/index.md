@@ -282,7 +282,7 @@
 
 <div class="flex-grid">
     <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">VDLH - CV.pdf
+        <div class="card-icon-and-title">
             <div class="card-icon">
                 <img src="images/stack-photoshop.svg">
             </div>
