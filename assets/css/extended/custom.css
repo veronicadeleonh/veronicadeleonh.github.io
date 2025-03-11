@@ -92,11 +92,9 @@ strong {
 }
 
 .card-background {
-   
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: transparent;
     transition: background-color 300ms;
 }
@@ -201,7 +199,7 @@ strong {
 }
 
 .card-icon {
-    width: 40px;
+    width: 32px;
     filter: drop-shadow(rgb(0, 0, 0, 0.15) 0px 4px 2px);
 }
 
@@ -224,6 +222,10 @@ strong {
 
 .col {
     width: 50%; 
+}
+
+.col-3 {
+    width: 33%;
 }
 
 .fib, .fi {
@@ -525,6 +527,26 @@ strong {
     align-items: center;
 }
 
-.language-and-dot-container {
+.gap-16 {
     gap: 16px;
+}
+
+.label-yellow {
+    font-size: 14px;
+    color: #9F8032;
+    background-color: #FFF8E7;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 150ms;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.label-yellow:hover {
+    background-color: #fdefcf;
 }

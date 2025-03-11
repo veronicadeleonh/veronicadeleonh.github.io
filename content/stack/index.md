@@ -1,346 +1,123 @@
 # Stack
 
-<hr>
-
-<h4 class="stack-title">Productivity</h4>
-
 <div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-slack.svg">
-            </div>
-            <p class="card-title">Slack</p>
+    <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-slack.svg">
         </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <p class="card-title">Slack</p>
+    </div>  
+    <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-notion.svg">
             </div>
             <p class="card-title">Notion</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
+    </div>
+        <div class="card-background card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-jira.svg">
+            </div>
+            <p class="card-title">Jira</p>
+    </div>       
 </div>
 
-<hr>
-
-<h4 class="stack-title">Core Tools</h4>
-
 <div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+    <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-figma.svg">
+        </div>
+        <p class="card-title">Figma</p>
+    </div>  
+    <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
-                <img src="images/stack-figma.svg">
+                <img src="images/stack-sketch.svg">
             </div>
-            <p class="card-title">Figma</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-        </div>
+            <p class="card-title">Sketch</p>
     </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-webflow.svg">
             </div>
             <p class="card-title">Webflow</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
+    </div>       
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-github.svg">
-            </div>
-            <p class="card-title">Github</p>
+    <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-visual-studio-code.svg">
         </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-visual-studio-code.svg">
-            </div>
-            <p class="card-title">VS Code</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
-</div>
-
-<div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <p class="card-title">VSCode</p>
+    </div>  
+    <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-html5.svg">
             </div>
             <p class="card-title">HTML</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-        </div>
     </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-css3.svg">
             </div>
             <p class="card-title">CSS</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
+    </div>       
 </div>
 
-<hr>
-
-<h4 class="stack-title">Learning & Exploring</h4>
-
 <div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-javascript.svg">
-            </div>
-            <p class="card-title">Javascript</p>
+    <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-javascript.svg">
         </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <p class="card-title">Javascript</p>
+    </div>  
+    <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-react.svg">
             </div>
             <p class="card-title">ReactJS</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
-</div>
-
-<div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+    </div>
+        <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-tailwindcss.svg">
             </div>
-            <p class="card-title">Tailwind CSS</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-hugo.svg">
-            </div>
-            <p class="card-title">Hugo</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
+            <p class="card-title">TailwindCSS</p>
+    </div>       
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+    <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-python.svg">
+        </div>
+        <p class="card-title">Python</p>
+    </div>  
+    <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-pandas.svg">
             </div>
             <p class="card-title">Pandas</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
     </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-python.svg">
-            </div>
-            <p class="card-title">Python</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
-</div>
-
-<div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
+        <div class="card-background card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-mysql-blue.svg">
             </div>
             <p class="card-title">MySQL</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-flask.svg">
-            </div>
-            <p class="card-title">Flask</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray -dot"></span>
-            <span class="dot gray-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>         
+    </div>       
 </div>
 
-<hr>
+### Skills and competences
 
-<h4 class="stack-title">Creative Tools</h4>
-
-<div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-photoshop.svg">
-            </div>
-            <p class="card-title">Photoshop</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-indesign.svg">
-            </div>
-            <p class="card-title">InDesign</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-        </div>
-    </div>         
-</div>
-<div class="flex-grid">
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-affinity-designer.svg">
-            </div>
-            <p class="card-title">Affinity Designer</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
-        </div>
-    </div>
-    <div class="card-background card-small-margin col">
-        <div class="card-icon-and-title">
-            <div class="card-icon">
-                <img src="images/stack-affinity-publisher.svg">
-            </div>
-            <p class="card-title">Affinity Publisher</p>
-        </div>
-        <div class="dot-container">
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-            <span class="dot yellow-dot"></span>
-        </div>
-    </div>         
+<div class="flex-wrap">
+    <div class="label-yellow transition transform-grow">User-centered design</div>
+    <div class="label-yellow">Problem-solving</div>
+    <div class="label-yellow">Accessibility</div>
+    <div class="label-yellow">UX research</div>
+    <div class="label-yellow">Usability testing</div>
+    <div class="label-yellow">Web libraries</div>
+    <div class="label-yellow">Backend & data processing</div>
+    <div class="label-yellow">API integration</div>
+    <div class="label-yellow">Automation</div>
+    <div class="label-yellow">Data-driven decision-making</div>
+    <div class="label-yellow">Analytics</div>
+    <div class="label-yellow">Cross-functional collaboration</div>
 </div>
