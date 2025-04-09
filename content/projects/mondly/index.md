@@ -34,7 +34,7 @@ cover:
 
 ### About Mondly
 
-**Mondly** is a language learning app that aims to make language learning fun and easy through technological innovation and multiple lanaguage combinations.
+**Mondly** is a language learning app that aims to make language learning fun and easy through technological innovation and multiple language combinations.
 
 On 2022 Mondly got acquired by Pearson, giving the Product team a chance for a big redesign of Mondly's platform and web presence.
 
@@ -57,6 +57,8 @@ With a major rebranding underway, we created brand guidelines based on our desig
 #### Redesigned Offer page
 
 For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
+
+If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_src=src-go-brand-ww-en-exact-bf24" target="\_blank">Mondly's Offer page with Old design<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> for comparison.
 
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">

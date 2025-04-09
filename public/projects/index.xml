@@ -9,7 +9,7 @@
 </div>
 <p><img loading="lazy" src="/mondly/images/mondly-intro.jpg" type="" alt="Mondly"  /></p>
 <h3 id="about-mondly">About Mondly</h3>
-<p><strong>Mondly</strong> is a language learning app that aims to make language learning fun and easy through technological innovation and multiple lanaguage combinations.</p>
+<p><strong>Mondly</strong> is a language learning app that aims to make language learning fun and easy through technological innovation and multiple language combinations.</p>
 <p>On 2022 Mondly got acquired by Pearson, giving the Product team a chance for a big redesign of Mondly&rsquo;s platform and web presence.</p>
 <h3 id="my-role-at-mondly">My Role at Mondly</h3>
 <p>During my stay at Mondly, making <strong>A/B tests</strong> about the performance of the Old vs. the New Design was important to validate with data the development of the rebrand and plan the marketing strategies for this design transition.</p>
@@ -22,6 +22,7 @@
 <p>With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of <strong>A/B tests</strong> to compare the performance of the <strong>new design versus the old one</strong>, ensuring a positive impact on user engagement.</p>
 <h4 id="redesigned-offer-page">Redesigned Offer page</h4>
 <p>For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a <strong>scalable design system</strong> tailored to <strong>web marketing materials</strong>, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.</p>
+<p>If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_src=src-go-brand-ww-en-exact-bf24" target="\_blank">Mondly&rsquo;s Offer page with Old design<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> for comparison.</p>
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
