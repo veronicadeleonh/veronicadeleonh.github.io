@@ -232,6 +232,6 @@
     <img class="image-thumb" src="images/analog-web-preview.png">
     <div>
     <p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleon.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
     </div>
 </div>
