@@ -18,7 +18,7 @@ googleAnalytics = "G-LQZ77WLF6C"
 
 
 [params.homeInfoParams]
-    Content = """I am **Verónica**, a **Multidisciplinary Product Designer** with 7+ years of experience creating intuitive, impactful experiences. I bridge design, development, and strategy, using JavaScript, Python, and modern web technologies to solve challenges and drive business growth."""
+    Content = """I am **Verónica**, a **Multidisciplinary Product Designer** with 7+ years of experience creating intuitive, impactful experiences. I bring together design, code, and strategy to turn ideas into real, meaningful products — using tools like JavaScript, Python, and modern web tech."""
 
 
 [params.assets]
