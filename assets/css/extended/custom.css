@@ -91,13 +91,14 @@ strong {
     font-size: 16px;
 }
 
-.card-background {
+.card-background, .card-background-stack {
     border-radius: 8px;
     display: flex;
     align-items: center;
     background-color: transparent;
     transition: background-color 300ms;
 }
+
 
 .card-big-margin {
     padding: 1% 2%;
@@ -129,8 +130,12 @@ strong {
 }
 
 @media screen and (max-width: 500px) {
-    .card-background, .card-connect {
+    .card-background, .card-background-stack, .card-connect {
         margin: 16px -6px;
+    }
+
+    .card-background-stack {
+        flex-direction: column;
     }
 
     .col {

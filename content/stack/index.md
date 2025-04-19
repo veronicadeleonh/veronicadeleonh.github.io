@@ -1,19 +1,19 @@
 # Stack
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-slack.svg">
         </div>
         <p class="card-title">Slack</p>
     </div>  
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-notion.svg">
             </div>
             <p class="card-title">Notion</p>
     </div>
-        <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-jira.svg">
             </div>
@@ -22,19 +22,19 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-figma.svg">
         </div>
         <p class="card-title">Figma</p>
     </div>  
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-sketch.svg">
             </div>
             <p class="card-title">Sketch</p>
     </div>
-        <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-webflow.svg">
             </div>
@@ -43,19 +43,19 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-visual-studio-code.svg">
         </div>
         <p class="card-title">VSCode</p>
     </div>  
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-html5.svg">
             </div>
             <p class="card-title">HTML</p>
     </div>
-        <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-css3.svg">
             </div>
@@ -64,19 +64,19 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-javascript.svg">
         </div>
         <p class="card-title">Javascript</p>
     </div>  
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-react.svg">
             </div>
             <p class="card-title">ReactJS</p>
     </div>
-        <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-tailwindcss.svg">
             </div>
@@ -85,19 +85,19 @@
 </div>
 
 <div class="flex-grid">
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-python.svg">
         </div>
         <p class="card-title">Python</p>
     </div>  
-    <div class="card-background card-small-margin col-3 gap-16">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-pandas.svg">
             </div>
             <p class="card-title">Pandas</p>
     </div>
-        <div class="card-background card-small-margin col-3 gap-16">
+        <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-mysql-blue.svg">
             </div>
