@@ -365,12 +365,9 @@ strong {
 
 .box-notes {
     border-radius: 8px;
+    border: 1px solid;
     padding: 3%;
     font-size: 16px;
-}
-
-.box-border {
-    border: 2px solid;
 }
 
 .tag {
@@ -426,7 +423,7 @@ strong {
 }
 
 .yellow-background {
-    background-color: #f6e58d60;
+    background-color: #f6e58d40;
 }
 
 .yellow-border {

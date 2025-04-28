@@ -27,7 +27,7 @@
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
 <p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
-<div class="box-notes yellow-background" style="margin-bottom:20px">
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 <h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
 <p>In order to test the impact of the rebranding on the Stores, we initiated a project to extend the new brand to these images. The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several <strong>Design Team workshops</strong> to develop a light version of our new brand, allowing us to include it in the <strong>A/B testing.</strong></p>
@@ -38,7 +38,7 @@
    <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
  </a>
 <p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
-<div class="box-notes yellow-background" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 <h3 id="mondly-growth--monetization">Mondly Growth &amp; Monetization</h3>
 <p>The Growth team initiated several <strong>A/B tests</strong> to <strong>increase Premium Subscriptions</strong>. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.</p>
 <a href="images/mondly-lto.png" class="lightbox">
@@ -60,7 +60,7 @@
 <a href="images/seasonal-campaigns-test-result.png" class="lightbox">
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
-<div class="box-notes yellow-background" style="margin-bottom:20px">
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
@@ -93,12 +93,16 @@
   <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
 </a>
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
+<a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
+  <img src="images/eyeem-user-flow-figma-study.png" alt="EyeEm User Flow in Figma">
+</a>
+<p class="photo-footnote">Screenshot from the user flow analysis in Figma</p>
 <h3 id="ux-exploration">UX Exploration</h3>
 <h4 id="cart-page">Cart Page</h4>
 <a href="images/eyeem-ux-cart.png" class="lightbox">
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
-<div class="box-notes yellow" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 <h5 id="top-navigation">Top Navigation</h5>
 <p>The Cart page <strong>lacked EyeEm&rsquo;s familiar top navigation</strong>, which could make users feel as though they’d left our site, potentially impacting trust. We hypothesized that reintroducing the top navigation might improve user confidence and retention.</p>
 <h5 id="vat-calculations">VAT Calculations</h5>
@@ -109,7 +113,7 @@
 <a href="images/eyeem-ux-auth.png" class="lightbox">
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
-<div class="box-notes yellow" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 <h5 id="authentication-modal">Authentication Modal</h5>
 <p>To create a more seamless experience, we moved authentication to a modal, <strong>allowing users to keep their Cart in view</strong> while logging in or signing up.</p>
 <h5 id="ux-writing">UX writing</h5>
@@ -120,7 +124,7 @@
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
-<div class="box-notes yellow" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview-pay-now--one-click-paypal-payment">Cart Preview, Pay Now &amp; One-click Paypal payment</h5>
 <p>Previously, the &ldquo;Pay Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Pay Now&rdquo; and one-click PayPal options in view, encouraging <strong>quicker decision-making</strong>.</p>
 <h5 id="optional-billing-info">Optional billing info</h5>
@@ -136,8 +140,8 @@
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
 <p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a></p>
-<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
-  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
+<a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
+  <img src="images/eyeem-user-flow-figma-study.png" alt="Checkout Prototyping phase">
 </a>
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
 </div>

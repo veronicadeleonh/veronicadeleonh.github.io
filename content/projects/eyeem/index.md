@@ -49,8 +49,12 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
 <a href="images/eyeem-user-flow.png" class="lightbox">
   <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
 </a>
-
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
+
+<a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
+  <img src="images/eyeem-user-flow-figma-study.png" alt="EyeEm User Flow in Figma">
+</a>
+<p class="photo-footnote">Screenshot from the user flow analysis in Figma</p>
 
 ### UX Exploration
 
@@ -60,7 +64,7 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
 
-<div class="box-notes yellow" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 
 ##### Top Navigation
 
@@ -80,7 +84,7 @@ Based on research, we applied EyeEm’s dark theme to the Cart Page, along with 
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
 
-<div class="box-notes yellow" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 
 ##### Authentication Modal
 
@@ -100,7 +104,7 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
 
-<div class="box-notes yellow" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
 ##### Cart Preview, Pay Now & One-click Paypal payment
 
@@ -130,8 +134,8 @@ We created initial **prototypes** and discussed them with the Data and Front-End
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
-<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
-  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
+<a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
+  <img src="images/eyeem-user-flow-figma-study.png" alt="Checkout Prototyping phase">
 </a>
 
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
