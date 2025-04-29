@@ -52,7 +52,7 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
 <p class="photo-footnote">Identifying Data take-aways and UI pain points on the Cart & Checkout flow</p>
 
 <a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
-  <img src="images/eyeem-user-flow-figma-study.png" alt="EyeEm User Flow in Figma">
+  <img src="images/eyeem-user-flow-figma-study.png" alt="EyeEm User Flow for logged out in Figma">
 </a>
 <p class="photo-footnote">Screenshot from the user flow analysis in Figma</p>
 
