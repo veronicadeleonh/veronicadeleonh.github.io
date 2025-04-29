@@ -134,8 +134,8 @@ We created initial **prototypes** and discussed them with the Data and Front-End
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
 " target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
 
-<a href="images/eyeem-user-flow-figma-study.png" class="lightbox">
-  <img src="images/eyeem-user-flow-figma-study.png" alt="Checkout Prototyping phase">
+<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
+  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
 </a>
 
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
