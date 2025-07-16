@@ -16,9 +16,9 @@ googleAnalytics = "G-LQZ77WLF6C"
     responsiveImages = false
     linkFullImages = true
 
-
 [params.homeInfoParams]
-    Content = """I am **Verónica**, a **Multidisciplinary Product Designer** with 7+ years of experience creating intuitive, impactful experiences. I bring together design, code, and strategy to turn ideas into real, meaningful products — using tools like JavaScript, Python, and modern web tech."""
+Content = """**I am a designer who codes, a lifelong learner, and curious mind turning ideas into meaningful products.**  
+<span class="subtext">🌿 I like exploring new places, diving into science books, and collecting analog snapshots from my travels.</span>"""
 
 
 [params.assets]

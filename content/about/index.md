@@ -1,10 +1,17 @@
 # About me
 
-<p>I’m  <strong>Verónica</strong>, a <strong>Multidisciplinary Product Designer</strong> with 7+ years of experience building intuitive and impactful experiences. My profile bridges design, development, and strategy—utilizing JavaScript, Python, and modern web technologies to solve technical challenges while driving business growth through marketing strategies. I thrive on problem-solving, transforming complex ideas into seamless solutions.</p>
+<h4 style="margin:0"> Multidisciplinary Product Designer</h4>
+<p class="subtext">Exploring tech, design, and nature</p>
 
-<p>I enjoy being surrounded by talented people who push me to keep learning and help build an awesome team culture.</p>
+My strength lies in blending design with code and strategy to turn ideas into seamless, human-centered experiences. I am passionate about problem-solving and collaborating with talented teams.
 
-<p>When I’m not working, I’m usually snapping analog photos, exploring new places, diving into science and nature books, or staying active with some sports.</p>
+<ul>
+    <li>What sets me apart is my ability to <strong>move fluidly between design and code</strong>, allowing me to collaborate closely with frontend teams and make a real impact on Design Systems.</li>
+    <li>I love <strong>building with JavaScript, Python, and modern web technologies</strong> — especially when solving real, data-driven challenges.</li>
+    <li>I’ve contributed to rebuilding design teams by supporting hiring efforts and championing strong collaboration and team culture.</li>
+</ul>
+
+🌿 Outside of work, I dive into science and nature books, collect analog snapshots from my travels, and stay active through sport and movement.
 
 <div class="home-about-links">
       <div class="about-links">
@@ -124,7 +131,7 @@
         <p class="card-paragraph">Accademia di Belle Arti di Roma <span class="fi" style="background-image: url(images/it.svg)"></p>
     </div>
     <div class="card-year">
-        2008 - 2012
+        2008 - 2011
     </div>
 </div>
 
