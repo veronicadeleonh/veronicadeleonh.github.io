@@ -328,7 +328,7 @@ strong {
 
 .photo-footnote {
     text-align: end;
-    font-size: 14px;
+    font-size: 13px !important;
     margin-top: -16px;
 }
 

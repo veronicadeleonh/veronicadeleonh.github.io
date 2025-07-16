@@ -1,5 +1,9 @@
 # About me
 
+![Self-portrait](images/vdlh-selfportrait.JPEG)
+
+<p class="photo-footnote">Berlin, Germany - 2018</p>
+
 <h4 style="margin:0"> Multidisciplinary Product Designer</h4>
 <p class="subtext">Exploring tech, design, and nature</p>
 
