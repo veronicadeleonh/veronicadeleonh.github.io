@@ -4,7 +4,7 @@
 
 <p class="photo-footnote">Berlin, Germany - 2018</p>
 
-<h4 style="margin:0"> Multidisciplinary Product Designer</h4>
+<h4 style="margin:0">Multidisciplinary Product Designer</h4>
 <p class="subtext">Exploring tech, design, and nature</p>
 
 My strength lies in blending design with code and strategy to turn ideas into seamless, human-centered experiences. I am passionate about problem-solving and collaborating with talented teams.
@@ -12,7 +12,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 <ul>
     <li>What sets me apart is my ability to <strong>move fluidly between design and code</strong>, allowing me to collaborate closely with frontend teams and make a real impact on Design Systems.</li>
     <li>I love <strong>building with JavaScript, Python, and modern web technologies</strong> — especially when solving real, data-driven challenges.</li>
-    <li>I’ve contributed to rebuilding design teams by supporting hiring efforts and championing strong collaboration and team culture.</li>
+    <li>I’ve contributed to rebuilding design teams by supporting hiring efforts and championing open collaboration and shared learning.</li>
 </ul>
 
 🌿 Outside of work, I dive into science and nature books, collect analog snapshots from my travels, and stay active through sport and movement.
@@ -23,7 +23,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
             <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
             <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
       </div>
-      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download CV</a>
+      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download my CV</a>
       <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
 </div>
 
@@ -33,6 +33,92 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
 
+#### A bit about my path
+
+I grew up on a small Caribbean island, fascinated by computers, creativity, and crafts. That curiosity guided me toward design, code, and systems thinking — eventually shaping my path into Product Design.
+
+- My curiosity led me to explore design, code, and visual storytelling — starting with Dreamweaver and Flash courses way back 😅.
+
+- I studied **Editorial Design** in Italy, with an ERASMUS year at **ADBK Munich** that sparked my passion for photography and connected me with the art world.
+
+- After freelancing and co-founding a GbR, I moved to Berlin and joined **BaseCase**, where I transitioned from marketing design into **UX/UI** on a SaaS software team.
+
+- I later designed for **EyeEm** and **Mondly (Pearson)**, collaborating with cross-functional teams on global products in photography, language learning, and growth.
+
+- Along the way, I completed bootcamps in **Full-Stack Web Development** and **Data Analytics** — blending design with code and data has become where I thrive.
+
+- I keep building tools for fun: often driven by curiosity and a love for learning.
+
+<hr>
+
+#### Analog web
+
+<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
+
+<div class="card-link flex-grid">
+    <img class="image-thumb" src="images/analog-web-preview.png">
+    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
+    </div>
+</div>
+
+<hr>
+
+#### Built with Curiosity
+
+<p>Outside of work, I’ve been exploring how design, data, and automation can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="https://github.com/veronicadeleonh/earthquakes-volcanoes" target="_blank">
+            <p class="card-title"><strong>🌋 Volcano & Earthquake Dashboard</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Pandas</div>
+            <div class="label-grey">Streamlit</div>
+            <div class="label-grey">Folium</div>
+            <div class="label-grey">Plotly</div>
+        </div>
+        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</strong>.</p>
+     </div>
+</div>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="hhttps://github.com/veronicadeleonh/solo-traveler-survey" target="_blank">
+            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Pandas</div>
+            <div class="label-grey">Flask</div>
+            <div class="label-grey">TailwindCSS</div>
+            <div class="label-grey">Chart.js</div>
+        </div>
+        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions through an engaging visual narrative.</p>
+     </div>
+</div>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="https://github.com/veronicadeleonh/travel-wishes-bot" target="_blank">
+            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Pandas</div>
+            <div class="label-grey">Flask</div>
+            <div class="label-grey">TailwindCSS</div>
+            <div class="label-grey">Chart.js</div>
+        </div>
+        <p>A conversational travel assistant that helps users discover destinations and save ideas — turning wanderlust into wishlist, one message at a time.</p>
+     </div>
+</div>
+
+<hr>
+
+<div style="display:none">
 ### Work Experience
 
 <div class="card-background card-big-margin flex-grid">
@@ -235,14 +321,4 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <hr>
 
-### Other Web
-
-<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
-
-<div class="card-link flex-grid">
-    <img class="image-thumb" src="images/analog-web-preview.png">
-    <div>
-    <p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image: url(/images/arrow-right.svg)"></a>
-    </div>
 </div>

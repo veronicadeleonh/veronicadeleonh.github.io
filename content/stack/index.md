@@ -121,3 +121,24 @@
     <div class="label-yellow">Analytics</div>
     <div class="label-yellow">Cross-functional collaboration</div>
 </div>
+
+<div class="flex-grid" style="display:none">
+    <div class="col-3">
+        <div>User-centered design</div>
+        <div>Problem-solving</div>
+        <div>Accessibility</div>
+        <div>UX research</div>
+        </div>
+    <div class="col-3">
+        <div>Usability testing</div>
+        <div>Web libraries</div>
+        <div>Backend & data processing</div>
+        <div>API integration</div>
+        </div>
+    <div class="col-3">
+        <div>Automation</div>
+        <div>Data-driven decision-making</div>
+        <div>Analytics</div>
+        <div>Cross-functional collaboration</div>
+        </div>
+</div>
