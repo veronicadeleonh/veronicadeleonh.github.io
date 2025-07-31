@@ -40,7 +40,7 @@ url = "/about/"
 weight = 2
 
 [[menu.main]]
-name = "Get in touch"
+name = "Contact"
 url = "/contact/"
 weight = 3
 
