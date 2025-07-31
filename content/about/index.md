@@ -235,23 +235,25 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <hr>
 
-#### A bit about my path
+<div style="display:none">
+    #### A bit about my path
 
-I grew up on a small Caribbean island, fascinated by computers, creativity, and crafts. That curiosity guided me toward design, code, and systems thinking — eventually shaping my path into Product Design.
+    I grew up on a small Caribbean island, fascinated by computers, creativity, and crafts. That curiosity guided me toward design, code, and systems thinking — eventually shaping my path into Product Design.
 
-- My curiosity led me to explore design, code, and visual storytelling — starting with Dreamweaver and Flash courses way back 😅.
+    - My curiosity led me to explore design, code, and visual storytelling — starting with Dreamweaver and Flash courses way back 😅.
 
-- I studied **Editorial Design** in Italy, with an ERASMUS year at **ADBK Munich** that sparked my passion for photography and connected me with the art world.
+    - I studied **Editorial Design** in Italy, with an ERASMUS year at **ADBK Munich** that sparked my passion for photography and connected me with the art world.
 
-- After freelancing and co-founding a GbR, I moved to Berlin and joined **BaseCase**, where I transitioned from marketing design into **UX/UI** on a SaaS software team.
+    - After freelancing and co-founding a GbR, I moved to Berlin and joined **BaseCase**, where I transitioned from marketing design into **UX/UI** on a SaaS software team.
 
-- I later designed for **EyeEm** and **Mondly (Pearson)**, collaborating with cross-functional teams on global products in photography, language learning, and growth.
+    - I later designed for **EyeEm** and **Mondly (Pearson)**, collaborating with cross-functional teams on global products in photography, language learning, and growth.
 
-- Along the way, I completed bootcamps in **Full-Stack Web Development** and **Data Analytics** — blending design with code and data has become where I thrive.
+    - Along the way, I completed bootcamps in **Full-Stack Web Development** and **Data Analytics** — blending design with code and data has become where I thrive.
 
-- I keep building tools for fun: often driven by curiosity and a love for learning.
+    - I keep building tools for fun: often driven by curiosity and a love for learning.
 
 <hr>
+</div>
 
 #### Film x Frontend
 
