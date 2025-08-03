@@ -30,8 +30,8 @@ apple_touch_icon = "/apple-touch-icon.png"
 [menu]
 
 [[menu.main]]
-name = "Stack"
-url = "/stack/"
+name = "Work"
+url = "/"
 weight = 1
 
 [[menu.main]]

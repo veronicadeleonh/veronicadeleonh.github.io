@@ -33,7 +33,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
 
-### Work Experience
+#### Work Experience
 
 <div class="card-background card-big-margin flex-grid">
     <div class="card-icon-title-and-description">
@@ -88,7 +88,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <hr>
 
-### Education
+#### Education
 
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
@@ -141,7 +141,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <hr>
 
-### Languages
+#### Languages
 
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
@@ -311,12 +311,12 @@ My strength lies in blending design with code and strategy to turn ideas into se
         </a>
         <div class="flex-wrap">
             <div class="label-grey">Python</div>
-            <div class="label-grey">Pandas</div>
-            <div class="label-grey">Flask</div>
-            <div class="label-grey">TailwindCSS</div>
-            <div class="label-grey">Chart.js</div>
+            <div class="label-grey">Telegram Bot API</div>
+            <div class="label-grey">Tavily</div>
+            <div class="label-grey">OpenAI</div>
+            <div class="label-grey">Notion API</div>
         </div>
-        <p>A conversational travel assistant that helps users discover destinations and save ideas — turning wanderlust into wishlist, one message at a time.</p>
+        <p>A conversational travel assistant that helps users explore destinations, discover travel tips via real-time search, and save favorites to Notion.</p>
      </div>
 </div>
 
@@ -378,7 +378,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <hr>
 
-### Education
+#### Education
 
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
@@ -515,7 +515,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
         </div>
         <div class="dot-container">
             <span class="dot yellow-dot"></span>
-            <span class="dot gray-dot"></span>
+            <span class="dot yellow-dot"></span>
             <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
             <span class="dot gray-dot"></span>
@@ -523,4 +523,113 @@ My strength lies in blending design with code and strategy to turn ideas into se
     </div>
 </div>
 
+</div>
+
+#### Tools I use
+
+A snapshot of the design, code, and data tools in my toolkit
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-slack.svg">
+        </div>
+        <p class="card-title">Slack</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-notion.svg">
+            </div>
+            <p class="card-title">Notion</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-jira.svg">
+            </div>
+            <p class="card-title">Jira</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-figma.svg">
+        </div>
+        <p class="card-title">Figma</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-sketch.svg">
+            </div>
+            <p class="card-title">Sketch</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-webflow.svg">
+            </div>
+            <p class="card-title">Webflow</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-visual-studio-code.svg">
+        </div>
+        <p class="card-title">VSCode</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-html5.svg">
+            </div>
+            <p class="card-title">HTML</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-css3.svg">
+            </div>
+            <p class="card-title">CSS</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-javascript.svg">
+        </div>
+        <p class="card-title">Javascript</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-react.svg">
+            </div>
+            <p class="card-title">ReactJS</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-tailwindcss.svg">
+            </div>
+            <p class="card-title">TailwindCSS</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-python.svg">
+        </div>
+        <p class="card-title">Python</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-pandas.svg">
+            </div>
+            <p class="card-title">Pandas</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-mysql-blue.svg">
+            </div>
+            <p class="card-title">MySQL</p>
+    </div>       
 </div>
