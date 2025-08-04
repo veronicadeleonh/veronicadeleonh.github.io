@@ -33,6 +33,7 @@ apple_touch_icon = "/apple-touch-icon.png"
 name = "Work"
 url = "/"
 weight = 1
+exact = true
 
 [[menu.main]]
 name = "About"
