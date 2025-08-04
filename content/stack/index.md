@@ -122,7 +122,7 @@
     <div class="label-yellow">Cross-functional collaboration</div>
 </div>
 
-<div class="flex-grid" style="display:none">
+<div class="flex-grid">
     <div class="col-3">
         <div>User-centered design</div>
         <div>Problem-solving</div>
