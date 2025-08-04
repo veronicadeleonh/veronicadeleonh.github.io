@@ -323,7 +323,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 #### Tools I use
 
-A snapshot of the design, code, and data tools in my toolkit
+A snapshot of the design, code, and data tools in my toolkit.
 
 <div class="flex-grid">
     <div class="card-background-stack card-small-margin col-3 gap-16">
@@ -427,5 +427,26 @@ A snapshot of the design, code, and data tools in my toolkit
                 <img src="images/stack-mysql-blue.svg">
             </div>
             <p class="card-title">MySQL</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-chatgpt.svg">
+            </div>
+            <p class="card-title">ChatGPT</p>
+    </div>
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-claude.svg">
+        </div>
+        <p class="card-title">Claude</p>
+    </div>  
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-cursor.svg">
+            </div>
+            <p class="card-title">Cursor</p>
     </div>       
 </div>
