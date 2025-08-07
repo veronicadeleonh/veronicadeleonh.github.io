@@ -348,12 +348,6 @@ A snapshot of the design, code, and data tools in my toolkit.
 
 <div class="flex-grid">
     <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-visual-studio-code.svg">
-        </div>
-        <p class="card-title">VSCode</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
                 <img src="images/stack-html5.svg">
             </div>
@@ -364,15 +358,21 @@ A snapshot of the design, code, and data tools in my toolkit.
                 <img src="images/stack-css3.svg">
             </div>
             <p class="card-title">CSS</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
+    </div>
     <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
             <img src="images/stack-javascript.svg">
         </div>
         <p class="card-title">Javascript</p>
+    </div>         
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-visual-studio-code.svg">
+        </div>
+        <p class="card-title">VSCode</p>
     </div>  
     <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
