@@ -592,5 +592,56 @@ strong {
     gap: 16px;
 }
 
+.image-comparison-slider {
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
 
+.img-comparison-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.66%;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 42px;
+}
+
+.fade-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.checkout-slider .img-comparison-container {
+    aspect-ratio: 720 / 702;
+}
+
+.fade-img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.controls button {
+    background-color: #f1f4f5;
+    border: none;
+    padding: 4px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+    border-radius: 8px;
+    width: 74px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-before:hover, .btn-after:hover {
+    background-color: #e2e6e7;
+}
+
+.controls button.active {
+    background-color: #d1d5d6;
+}
 

@@ -78,6 +78,19 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to **maintain visual consistency** and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.
 
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-cart-view-before.png" class="fade-img active">
+    <img src="images/eyeem-cart-view-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
+
+<hr>
+
 #### Authentication for logged out users
 
 <a href="images/eyeem-ux-auth.png" class="lightbox">
@@ -97,6 +110,19 @@ To keep users engaged, we explored updating our UX copy with **clearer instructi
 ##### Guest Checkout: Long-term goals
 
 We also discussed the potential for a Guest Checkout, allowing users to **skip authentication until later stages**. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.
+
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-auth-modal-before.png" class="fade-img active">
+    <img src="images/eyeem-auth-modal-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
+
+<hr>
 
 #### Checkout Page
 
@@ -126,6 +152,40 @@ To streamline the purchase process, we considered **pre-saving user data**, such
 
 To enhance convenience, we considered adding **more one-click payment options**, such as Apple Pay and Google Pay, in future iterations.
 
+<div class="image-comparison-slider checkout-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-checkout-before.png" class="fade-img active">
+    <img src="images/eyeem-checkout-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
+
+<hr>
+
+#### Thank you Page
+
+<a href="images/eyeem-ux-thank-you.png" class="lightbox">
+  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkput Page">
+</a>
+
+##### Dark Theme Consistency
+
+To maintain a cohesive user experience, we applied EyeEm’s dark theme to the Thank You page as well. This ensured visual continuity throughout the checkout journey, reinforcing a sense of familiarity and completion. Introducing a light theme at this final stage could have disrupted the flow and made the experience feel disconnected from the rest of the platform.
+
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-thank-you-before.png" class="fade-img active">
+    <img src="images/eyeem-thank-you-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
+
 <div style="display:none">
 ### Low-fi & Prototype
 
@@ -139,8 +199,6 @@ We created initial **prototypes** and discussed them with the Data and Front-End
 </a>
 
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
-
-</div>
 
 ### Hi-fi & Redesigned screens
 
@@ -164,6 +222,10 @@ The final step involved preparing high-fidelity mockups using our **design syste
 
 <p class="photo-footnote">View of redesigned elements and screens</p>
 
+</div>
+
+<hr>
+
 ### EyeEm's Web presence
 
 <a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
@@ -181,3 +243,27 @@ Here are some live examples:
 
 ![EyeEm Web](images/eyeem-creative-trends.jpg)
 <a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+
+<script>
+document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.fade-img');
+  const btnBefore = slider.querySelector('.btn-before');
+  const btnAfter = slider.querySelector('.btn-after');
+
+  btnBefore.addEventListener('click', () => {
+    imgs[0].classList.add('active');
+    imgs[1].classList.remove('active');
+
+    btnBefore.classList.add('active');
+    btnAfter.classList.remove('active');
+  });
+
+  btnAfter.addEventListener('click', () => {
+    imgs[0].classList.remove('active');
+    imgs[1].classList.add('active');
+
+    btnAfter.classList.add('active');
+    btnBefore.classList.remove('active');
+  });
+});
+</script>

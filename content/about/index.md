@@ -283,7 +283,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
             <div class="label-grey">Folium</div>
             <div class="label-grey">Plotly</div>
         </div>
-        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</strong>.</p>
+        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</p>
      </div>
 </div>
 
@@ -328,36 +328,15 @@ A snapshot of the design, code, and data tools in my toolkit.
 <div class="flex-grid">
     <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
-            <img src="images/stack-slack.svg">
-        </div>
-        <p class="card-title">Slack</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-notion.svg">
-            </div>
-            <p class="card-title">Notion</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-jira.svg">
-            </div>
-            <p class="card-title">Jira</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
             <img src="images/stack-figma.svg">
         </div>
         <p class="card-title">Figma</p>
     </div>  
     <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">
-                <img src="images/stack-sketch.svg">
+                <img src="images/stack-notion.svg">
             </div>
-            <p class="card-title">Sketch</p>
+            <p class="card-title">Notion</p>
     </div>
         <div class="card-background-stack card-small-margin col-3 gap-16">
             <div class="card-icon">

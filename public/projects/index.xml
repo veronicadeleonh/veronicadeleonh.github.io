@@ -109,6 +109,16 @@
 <p>VAT calculations were appearing <strong>too early in the cart flow</strong>. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.</p>
 <h5 id="dark-theme-vs-light-theme">Dark Theme vs. Light Theme</h5>
 <p>Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to <strong>maintain visual consistency</strong> and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.</p>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-cart-view-before.png" class="fade-img active">
+    <img src="images/eyeem-cart-view-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
 <h4 id="authentication-for-logged-out-users">Authentication for logged out users</h4>
 <a href="images/eyeem-ux-auth.png" class="lightbox">
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
@@ -120,6 +130,16 @@
 <p>To keep users engaged, we explored updating our UX copy with <strong>clearer instructions</strong>, gently reminding users they were in the middle of a purchase.</p>
 <h5 id="guest-checkout-long-term-goals">Guest Checkout: Long-term goals</h5>
 <p>We also discussed the potential for a Guest Checkout, allowing users to <strong>skip authentication until later stages</strong>. While this feature wasn’t implemented in this iteration, it remains a consideration for the future.</p>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-auth-modal-before.png" class="fade-img active">
+    <img src="images/eyeem-auth-modal-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
 <h4 id="checkout-page">Checkout Page</h4>
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
@@ -135,6 +155,16 @@
 <p>To streamline the purchase process, we considered <strong>pre-saving user data</strong>, such as cart details and billing information. However, due to capacity and alignment with the legal team, we decided to prioritize this feature for future iterations</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
 <p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as Apple Pay and Google Pay, in future iterations.</p>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-checkout-before.png" class="fade-img active">
+    <img src="images/eyeem-checkout-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
 <div style="display:none">
 ### Low-fi & Prototype
 <p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
@@ -171,6 +201,29 @@
 <a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-creative-trends.jpg" type="" alt="EyeEm Web"  />
 <a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p></p>
+<script>
+document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.fade-img');
+  const btnBefore = slider.querySelector('.btn-before');
+  const btnAfter = slider.querySelector('.btn-after');
+
+  btnBefore.addEventListener('click', () => {
+    imgs[0].classList.add('active');
+    imgs[1].classList.remove('active');
+
+    btnBefore.classList.add('active');
+    btnAfter.classList.remove('active');
+  });
+
+  btnAfter.addEventListener('click', () => {
+    imgs[0].classList.remove('active');
+    imgs[1].classList.add('active');
+
+    btnAfter.classList.add('active');
+    btnBefore.classList.remove('active');
+  });
+});
+</script>
 ]]></content:encoded></item><item><title>BaseCase</title><link>http://localhost:1313/basecase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/basecase/</guid><description>My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag orange text-orange">SaaS</span></p>
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
