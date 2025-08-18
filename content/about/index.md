@@ -10,8 +10,8 @@
 My strength lies in blending design with code and strategy to turn ideas into seamless, human-centered experiences. I am passionate about problem-solving and collaborating with talented teams.
 
 <ul>
-    <li>What sets me apart is my ability to <strong>move fluidly between design and code</strong>, allowing me to collaborate closely with frontend teams and make a real impact on Design Systems.</li>
-    <li>I love <strong>building with JavaScript, Python, and modern web technologies</strong> — especially when solving real, data-driven challenges.</li>
+    <li>What sets me apart is my ability to <strong>move between design and code</strong>, allowing me to have a better overview during the crafting process.</li>
+    <li>I enjoy <strong>building with JavaScript, Python and AI tools</strong>, especially when solving real, data-driven challenges.</li>
     <li>I’ve contributed to rebuilding design teams by supporting hiring efforts and championing open collaboration and shared learning.</li>
 </ul>
 
@@ -33,6 +33,185 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
 
+<hr>
+
+#### Tiny Data Adventures
+
+<p>Outside of work, I’ve been exploring how design, data, and automation can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="https://github.com/veronicadeleonh/earthquakes-volcanoes" target="_blank">
+            <p class="card-title"><strong>🌋 Volcano & Earthquake Dashboard</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Pandas</div>
+            <div class="label-grey">Streamlit</div>
+            <div class="label-grey">Folium</div>
+            <div class="label-grey">Plotly</div>
+        </div>
+        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</p>
+     </div>
+</div>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="hhttps://github.com/veronicadeleonh/solo-traveler-survey" target="_blank">
+            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Pandas</div>
+            <div class="label-grey">Flask</div>
+            <div class="label-grey">TailwindCSS</div>
+            <div class="label-grey">Chart.js</div>
+        </div>
+        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions through an engaging visual narrative.</p>
+     </div>
+</div>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="https://github.com/veronicadeleonh/travel-wishes-bot" target="_blank">
+            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Python</div>
+            <div class="label-grey">Telegram API</div>
+            <div class="label-grey">Notion API</div>
+            <div class="label-grey">OpenAI</div>
+            <div class="label-grey">Tavily API</div>
+        </div>
+        <p>A conversational travel assistant that helps users explore destinations, discover travel tips via real-time search, and save favorites to Notion.</p>
+     </div>
+</div>
+
+<hr>
+
+#### Film x Frontend
+
+<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
+
+<div class="card-link flex-grid">
+    <img class="image-thumb" src="images/analog-web-preview.png">
+    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
+    </div>
+</div>
+
+<hr>
+
+#### Tools I use
+
+A snapshot of the design, code, and data tools in my toolkit.
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-figma.svg">
+        </div>
+        <p class="card-title">Figma</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-notion.svg">
+            </div>
+            <p class="card-title">Notion</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-webflow.svg">
+            </div>
+            <p class="card-title">Webflow</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-html5.svg">
+            </div>
+            <p class="card-title">HTML</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-css3.svg">
+            </div>
+            <p class="card-title">CSS</p>
+    </div>
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-javascript.svg">
+        </div>
+        <p class="card-title">Javascript</p>
+    </div>         
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-visual-studio-code.svg">
+        </div>
+        <p class="card-title">VSCode</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-react.svg">
+            </div>
+            <p class="card-title">ReactJS</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-tailwindcss.svg">
+            </div>
+            <p class="card-title">TailwindCSS</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-python.svg">
+        </div>
+        <p class="card-title">Python</p>
+    </div>  
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-pandas.svg">
+            </div>
+            <p class="card-title">Pandas</p>
+    </div>
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-mysql-blue.svg">
+            </div>
+            <p class="card-title">MySQL</p>
+    </div>       
+</div>
+
+<div class="flex-grid">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-chatgpt.svg">
+            </div>
+            <p class="card-title">ChatGPT</p>
+    </div>
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-claude.svg">
+        </div>
+        <p class="card-title">Claude</p>
+    </div>  
+        <div class="card-background-stack card-small-margin col-3 gap-16">
+            <div class="card-icon">
+                <img src="images/stack-cursor.svg">
+            </div>
+            <p class="card-title">Cursor</p>
+    </div>       
+</div>
+
+<div style="display:none">
 #### Work Experience
 
 <div class="card-background card-big-margin flex-grid">
@@ -233,199 +412,20 @@ My strength lies in blending design with code and strategy to turn ideas into se
     </div>
 </div>
 
-<div style="display:none">
-    #### A bit about my path
+#### A bit about my path
 
-    I grew up on a small Caribbean island, fascinated by computers, creativity, and crafts. That curiosity guided me toward design, code, and systems thinking — eventually shaping my path into Product Design.
+I grew up on a small Caribbean island, fascinated by computers, creativity, and crafts. That curiosity guided me toward design, code, and systems thinking — eventually shaping my path into Product Design.
 
-    - My curiosity led me to explore design, code, and visual storytelling — starting with Dreamweaver and Flash courses way back 😅.
+- My curiosity led me to explore design, code, and visual storytelling — starting with Dreamweaver and Flash courses way back 😅.
 
-    - I studied **Editorial Design** in Italy, with an ERASMUS year at **ADBK Munich** that sparked my passion for photography and connected me with the art world.
+- I studied **Editorial Design** in Italy, with an ERASMUS year at **ADBK Munich** that sparked my passion for photography and connected me with the art world.
 
-    - After freelancing and co-founding a GbR, I moved to Berlin and joined **BaseCase**, where I transitioned from marketing design into **UX/UI** on a SaaS software team.
+- After freelancing and co-founding a GbR, I moved to Berlin and joined **BaseCase**, where I transitioned from marketing design into **UX/UI** on a SaaS software team.
 
-    - I later designed for **EyeEm** and **Mondly (Pearson)**, collaborating with cross-functional teams on global products in photography, language learning, and growth.
+- I later designed for **EyeEm** and **Mondly (Pearson)**, collaborating with cross-functional teams on global products in photography, language learning, and growth.
 
-    - Along the way, I completed bootcamps in **Full-Stack Web Development** and **Data Analytics** — blending design with code and data has become where I thrive.
+- Along the way, I completed bootcamps in **Full-Stack Web Development** and **Data Analytics** — blending design with code and data has become where I thrive.
 
-    - I keep building tools for fun: often driven by curiosity and a love for learning.
+- I keep building tools for fun: often driven by curiosity and a love for learning.
 
-</div>
-
-<hr>
-
-#### Film x Frontend
-
-<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
-
-<div class="card-link flex-grid">
-    <img class="image-thumb" src="images/analog-web-preview.png">
-    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
-    </div>
-</div>
-
-<hr>
-
-#### Tiny Data Adventures
-
-<p>Outside of work, I’ve been exploring how design, data, and automation can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
-
-<div class="card-background card-big-margin">
-    <div class="flex-column gap-8">
-        <a href="https://github.com/veronicadeleonh/earthquakes-volcanoes" target="_blank">
-            <p class="card-title"><strong>🌋 Volcano & Earthquake Dashboard</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
-        </a>
-        <div class="flex-wrap">
-            <div class="label-grey">Python</div>
-            <div class="label-grey">Pandas</div>
-            <div class="label-grey">Streamlit</div>
-            <div class="label-grey">Folium</div>
-            <div class="label-grey">Plotly</div>
-        </div>
-        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</p>
-     </div>
-</div>
-
-<div class="card-background card-big-margin">
-    <div class="flex-column gap-8">
-        <a href="hhttps://github.com/veronicadeleonh/solo-traveler-survey" target="_blank">
-            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
-        </a>
-        <div class="flex-wrap">
-            <div class="label-grey">Python</div>
-            <div class="label-grey">Pandas</div>
-            <div class="label-grey">Flask</div>
-            <div class="label-grey">TailwindCSS</div>
-            <div class="label-grey">Chart.js</div>
-        </div>
-        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions through an engaging visual narrative.</p>
-     </div>
-</div>
-
-<div class="card-background card-big-margin">
-    <div class="flex-column gap-8">
-        <a href="https://github.com/veronicadeleonh/travel-wishes-bot" target="_blank">
-            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
-        </a>
-        <div class="flex-wrap">
-            <div class="label-grey">Python</div>
-            <div class="label-grey">Telegram API</div>
-            <div class="label-grey">Notion API</div>
-            <div class="label-grey">OpenAI</div>
-            <div class="label-grey">Tavily API</div>
-        </div>
-        <p>A conversational travel assistant that helps users explore destinations, discover travel tips via real-time search, and save favorites to Notion.</p>
-     </div>
-</div>
-
-<hr>
-
-#### Tools I use
-
-A snapshot of the design, code, and data tools in my toolkit.
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-figma.svg">
-        </div>
-        <p class="card-title">Figma</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-notion.svg">
-            </div>
-            <p class="card-title">Notion</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-webflow.svg">
-            </div>
-            <p class="card-title">Webflow</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-html5.svg">
-            </div>
-            <p class="card-title">HTML</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-css3.svg">
-            </div>
-            <p class="card-title">CSS</p>
-    </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-javascript.svg">
-        </div>
-        <p class="card-title">Javascript</p>
-    </div>         
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-visual-studio-code.svg">
-        </div>
-        <p class="card-title">VSCode</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-react.svg">
-            </div>
-            <p class="card-title">ReactJS</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-tailwindcss.svg">
-            </div>
-            <p class="card-title">TailwindCSS</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-python.svg">
-        </div>
-        <p class="card-title">Python</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-pandas.svg">
-            </div>
-            <p class="card-title">Pandas</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-mysql-blue.svg">
-            </div>
-            <p class="card-title">MySQL</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-chatgpt.svg">
-            </div>
-            <p class="card-title">ChatGPT</p>
-    </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-claude.svg">
-        </div>
-        <p class="card-title">Claude</p>
-    </div>  
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-cursor.svg">
-            </div>
-            <p class="card-title">Cursor</p>
-    </div>       
 </div>

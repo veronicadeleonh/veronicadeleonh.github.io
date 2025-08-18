@@ -119,6 +119,7 @@
     <button class="btn-after">After</button>
   </div>
 </div>
+<hr>
 <h4 id="authentication-for-logged-out-users">Authentication for logged out users</h4>
 <a href="images/eyeem-ux-auth.png" class="lightbox">
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
@@ -140,6 +141,7 @@
     <button class="btn-after">After</button>
   </div>
 </div>
+<hr>
 <h4 id="checkout-page">Checkout Page</h4>
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
@@ -155,10 +157,27 @@
 <p>To streamline the purchase process, we considered <strong>pre-saving user data</strong>, such as cart details and billing information. However, due to capacity and alignment with the legal team, we decided to prioritize this feature for future iterations</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
 <p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as Apple Pay and Google Pay, in future iterations.</p>
-<div class="image-comparison-slider">
+<div class="image-comparison-slider checkout-slider">
   <div class="img-comparison-container">
     <img src="images/eyeem-checkout-before.png" class="fade-img active">
     <img src="images/eyeem-checkout-after.png" class="fade-img">
+  </div>
+  <div class="controls">
+    <button class="btn-before active">Before</button>
+    <button class="btn-after">After</button>
+  </div>
+</div>
+<hr>
+<h4 id="thank-you-page">Thank you Page</h4>
+<a href="images/eyeem-ux-thank-you.png" class="lightbox">
+  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkput Page">
+</a>
+<h5 id="dark-theme-consistency">Dark Theme Consistency</h5>
+<p>To maintain a cohesive user experience, we applied EyeEm’s dark theme to the Thank You page as well. This ensured visual continuity throughout the checkout journey, reinforcing a sense of familiarity and completion. Introducing a light theme at this final stage could have disrupted the flow and made the experience feel disconnected from the rest of the platform.</p>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/eyeem-thank-you-before.png" class="fade-img active">
+    <img src="images/eyeem-thank-you-after.png" class="fade-img">
   </div>
   <div class="controls">
     <button class="btn-before active">Before</button>
@@ -174,7 +193,6 @@
   <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
 </a>
 <p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
-</div>
 <h3 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h3>
 <p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
 <a href="images/eyeem-auth.png" class="lightbox">
@@ -190,6 +208,8 @@
   <img src="images/eyeem-hifi-2.png" alt="EyeEm Hifi Screens">
 </a>
 <p class="photo-footnote">View of redesigned elements and screens</p>
+</div>
+<hr>
 <h3 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h3>
 <p><a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
 <p>Here are some live examples:</p>
