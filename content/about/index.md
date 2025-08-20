@@ -23,7 +23,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
             <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
             <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
       </div>
-      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download my CV</a>
+      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download CV</a>
       <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
 </div>
 
