@@ -614,6 +614,7 @@ strong {
     left: 0;
     opacity: 0;
     transition: opacity 0.6s ease;
+    border: 1px solid #e7eaeb;
 }
 
 .checkout-slider .img-comparison-container {
