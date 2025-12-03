@@ -7,15 +7,15 @@
 <h4 style="margin:0">Multidisciplinary Product Designer</h4>
 <p class="subtext">Exploring tech, design, and nature</p>
 
-My strength lies in blending design with code and strategy to turn ideas into seamless, human-centered experiences. I am passionate about problem-solving and collaborating with talented teams.
+I am a multidisciplinary Product Designer who blends creativity, analytical thinking and curiosity to solve complex problems.
 
 <ul>
-    <li>What sets me apart is my ability to <strong>move between design and code</strong>, allowing me to have a better overview during the crafting process.</li>
-    <li>I enjoy <strong>building with JavaScript, Python and AI tools</strong>, especially when solving real, data-driven challenges.</li>
-    <li>I’ve contributed to rebuilding design teams by supporting hiring efforts and championing open collaboration and shared learning.</li>
+    <li>I move easily between <strong>design and code</strong>, having a more thoughful crafting process.</li>
+    <li>I enjoy working in <strong>collaborative, high performing</strong> product teams where ideas can evolve.</li>
+    <li>I am a <strong>curious mind</strong> who is always expanding her technical knowledge.</li>
 </ul>
 
-🌿 Outside of work, I dive into science and nature books, collect analog snapshots from my travels, and stay active through sport and movement.
+🌿 I also enjoy draw and write on paper, collect analog snapshots from my travels and stay active through sport and movement.
 
 <div class="home-about-links">
       <div class="about-links">
@@ -37,7 +37,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
 
 #### Tiny Data Adventures
 
-<p>Outside of work, I’ve been exploring how design, data, and automation can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
+<p>Lately I’ve been exploring how design and data can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
@@ -51,7 +51,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
             <div class="label-grey">Folium</div>
             <div class="label-grey">Plotly</div>
         </div>
-        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns beneath the surface.</p>
+        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns aroud the globe.</p>
      </div>
 </div>
 
@@ -67,7 +67,7 @@ My strength lies in blending design with code and strategy to turn ideas into se
             <div class="label-grey">TailwindCSS</div>
             <div class="label-grey">Chart.js</div>
         </div>
-        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions through an engaging visual narrative.</p>
+        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions after collecting user's data thourgh a survey.</p>
      </div>
 </div>
 
