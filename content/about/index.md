@@ -5,7 +5,7 @@
 <p class="photo-footnote">Berlin, Germany - 2018</p>
 
 <h4 style="margin:0">Multidisciplinary Product Designer</h4>
-<p class="subtext">Exploring tech, design, and nature</p>
+<p class="subtext">Exploring design & tech</p>
 
 I am a multidisciplinary Product Designer who blends creativity, analytical thinking and curiosity to solve complex problems.
 
@@ -32,6 +32,19 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
 ![VDLH - Tarifa 2024](images/vdlh-tarifa.jpg)
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
+
+<hr>
+
+#### Film x Frontend
+
+<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
+
+<div class="card-link flex-grid">
+    <img class="image-thumb" src="images/analog-web-preview.png">
+    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
+    </div>
+</div>
 
 <hr>
 
@@ -85,19 +98,6 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
         </div>
         <p>A conversational travel assistant that helps users explore destinations, discover travel tips via real-time search, and save favorites to Notion.</p>
      </div>
-</div>
-
-<hr>
-
-#### Film x Frontend
-
-<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
-
-<div class="card-link flex-grid">
-    <img class="image-thumb" src="images/analog-web-preview.png">
-    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
-    </div>
 </div>
 
 <hr>
