@@ -78,6 +78,10 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to **maintain visual consistency** and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.
 
+##### Introducing more payment methods: Long term goals
+
+To enhance convenience, we considered adding **more one-click payment options**, such as PayPal, Apple Pay and Google Pay, in future iterations.
+
 <div class="image-comparison-slider">
   <div class="img-comparison-container">
     <img src="images/eyeem-cart-view-before.png" class="fade-img active">
@@ -132,25 +136,17 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
-##### Cart Preview, Pay Now & One-click Paypal payment
+##### Cart Preview & Buy Now button
 
-Previously, the "Pay Now" action was hidden in the second step and often inaccessible with longer Cart lists. We **standardized the Cart preview** by grouping items by license type, which kept the "Pay Now" and one-click PayPal options in view, encouraging **quicker decision-making**.
+Previously, the "Buy Now" action was hidden in the second step and often inaccessible with longer Cart lists. We **standardized the Cart preview** by grouping items by license type, which kept the "Buy Now" option in view, encouraging **quicker decision-making**.
 
-##### Optional billing info
-
-Since our product **didn’t require a shipping address** and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.
-
-##### Transfer Licensing: Ongoing discussion
+##### Transfer Licensing
 
 Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we **streamlined the process** and responded to a frequent user need.
 
 ##### Pre-save payment and billing information: Long term goals
 
 To streamline the purchase process, we considered **pre-saving user data**, such as cart details and billing information. However, due to capacity and alignment with the legal team, we decided to prioritize this feature for future iterations
-
-##### Introducing more payment methods: Long term goals
-
-To enhance convenience, we considered adding **more one-click payment options**, such as Apple Pay and Google Pay, in future iterations.
 
 <div class="image-comparison-slider checkout-slider">
   <div class="img-comparison-container">
