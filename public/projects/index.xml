@@ -151,9 +151,7 @@
 <div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview--buy-now-button">Cart Preview &amp; Buy Now button</h5>
 <p>Previously, the &ldquo;Buy Now&rdquo; action was hidden in the second step and often inaccessible with longer Cart lists. We <strong>standardized the Cart preview</strong> by grouping items by license type, which kept the &ldquo;Buy Now&rdquo; option in view, encouraging <strong>quicker decision-making</strong>.</p>
-<h5 id="optional-billing-info">Optional billing info</h5>
-<p>Since our product <strong>didn’t require a shipping address</strong> and billing details were often unnecessary for users paying with PayPal, we considered making these fields optional to streamline the checkout experience.</p>
-<h5 id="transfer-licensing-ongoing-discussion">Transfer Licensing: Ongoing discussion</h5>
+<h5 id="transfer-licensing">Transfer Licensing</h5>
 <p>Many of our users—often designers or agencies buying for clients—needed an option to transfer licensing directly to their clients. Previously, they had to call Support to complete this transaction. By adding this feature to the redesign, we <strong>streamlined the process</strong> and responded to a frequent user need.</p>
 <h5 id="pre-save-payment-and-billing-information-long-term-goals">Pre-save payment and billing information: Long term goals</h5>
 <p>To streamline the purchase process, we considered <strong>pre-saving user data</strong>, such as cart details and billing information. However, due to capacity and alignment with the legal team, we decided to prioritize this feature for future iterations</p>
