@@ -7,6 +7,7 @@ body {
 :root {
 --main-width: 620px;
 --post-width: 620px;
+--radius: 0px
 }
 
 .logo a {
@@ -69,7 +70,7 @@ strong {
 }
 
 .post-entry:hover img {
-    transform: translateY(-4px);
+    transform: scale(1.01, 1.01);
 }
 
 .entry-cover {
@@ -83,7 +84,7 @@ strong {
 
 .first-entry .entry-content {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.4em;
 }
 
@@ -93,9 +94,10 @@ strong {
 }
 
 .subtext {
-    font-size: 0.9rem;
+    font-size: 16px;
     display: block;
-    margin-top: 0.5em;
+    margin-top: 1em;
+    line-height: 26px;
     color: #9b9fa0;
 }
 
@@ -106,7 +108,6 @@ strong {
 }
 
 .card-background, .card-background-stack {
-    border-radius: 8px;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -127,7 +128,6 @@ strong {
 
 .card-link {
     padding: 3%;
-    border-radius: 8px;
     background-color: #f1f4f5;
     align-items: center;
     gap: 16px
@@ -304,7 +304,7 @@ strong {
     padding: 1% 2%;
     font-size: 15px;
     font-weight: 400;
-    border-radius: 8px;    
+    border-radius: 0px;    
 }
 
 .circled {
@@ -382,7 +382,6 @@ strong {
 }
 
 .box-notes {
-    border-radius: 8px;
     border: 1px solid;
     padding: 3%;
     font-size: 16px;
@@ -393,7 +392,6 @@ strong {
     font-size: 14px;
     display: inline;
     font-weight: 500;
-    border-radius: 8px;
 }
 
 .green {
@@ -499,7 +497,7 @@ strong {
 }
 
 .post-content img {
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .toc.side {
@@ -543,28 +541,12 @@ strong {
     align-items: center;
 }
 
-
-.label-yellow {
-    font-size: 14px;
-    color: #9F8032;
-    background-color: #FFF8E7;
-    width: fit-content;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transition: all 150ms;
-}
-
-.label-yellow:hover {
-    background-color: #fdefcf;
-}
-
 .label-grey {
     font-size: 14px;
     color: #777e7f;
     background-color: #f1f4f5;
     width: fit-content;
     padding: 4px 8px;
-    border-radius: 4px;
     transition: all 150ms;
 }
 
@@ -633,7 +615,7 @@ strong {
     cursor: pointer;
     font-size: 14px;
     margin-top: 8px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     width: 74px;
     transition: background 0.3s, color 0.3s;
 }
@@ -644,5 +626,6 @@ strong {
 
 .controls button.active {
     background-color: #d1d5d6;
+    font-weight: 400;
 }
 
