@@ -23,9 +23,9 @@ cover:
 
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
   <div class="intro-details-wrapper">
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Product Designer</p>
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/location.svg)"></span> Berlin, Hybrid</p>
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span> 2021 - 2023</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Product Designer</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/location.svg)"></span> Berlin, Hybrid</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2021 - 2023</p>
   </div>
 
 </div>
@@ -64,7 +64,7 @@ For the redesign of the Cart & Checkout process, we analyzed **data reports**, i
   <img src="images/eyeem-ux-cart.png" alt="EyeEm UX Cart">
 </a>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">With a <strong>60% drop-off rate</strong> among <strong>logged-out users</strong> before reaching the authentication step, we wanted to identify the main pain points on the Cart page.</div>
 
 ##### Top Navigation
 
@@ -101,7 +101,7 @@ To enhance convenience, we considered adding **more one-click payment options**,
   <img src="images/eyeem-ux-auth.png" alt="EyeEm UX Authentication for logged out users">
 </a>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"><strong>Approximately 15% of users were dropping off</strong> on the Authentication screen. We required logged-out users to log in or create an account before proceeding, but this interruption often disrupted their flow.</div>
 
 ##### Authentication Modal
 
@@ -134,7 +134,7 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
   <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
 </a>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 
 ##### Cart Preview & Buy Now button
 
@@ -188,7 +188,7 @@ To maintain a cohesive user experience, we applied EyeEm’s dark theme to the T
 We created initial **prototypes** and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.
 
 <a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
-" target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
+" target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
 
 <a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
   <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
@@ -224,21 +224,21 @@ The final step involved preparing high-fidelity mockups using our **design syste
 
 ### EyeEm's Web presence
 
-<a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
+<a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
 
 Here are some live examples:
 
 ![EyeEm Web](images/eyeem-web.jpg)
-<a href="https://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a>
+<a href="https://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-magazine.jpg)
-<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-awards.jpg)
-<a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
 
 ![EyeEm Web](images/eyeem-creative-trends.jpg)
-<a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+<a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
 
 <script>
 document.querySelectorAll('.image-comparison-slider').forEach(slider => {

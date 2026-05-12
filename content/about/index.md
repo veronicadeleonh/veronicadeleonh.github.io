@@ -21,7 +21,7 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
       <div class="about-links">
             <a class="btn-connect circled" href="https://www.linkedin.com/in/veronicadeleonh/" target=_blank><span class="fip" style="background-image: url(/images/linkedin.svg)"></span></a>
             <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
-            <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(images/instagram.svg)"></span></a>
+            <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/instagram.svg)"></span></a>
       </div>
       <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download CV</a>
       <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
@@ -55,7 +55,7 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
         <a href="https://github.com/veronicadeleonh/earthquakes-volcanoes" target="_blank">
-            <p class="card-title"><strong>🌋 Volcano & Earthquake Dashboard</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+            <p class="card-title"><strong>🌋 Volcano & Earthquake Dashboard</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
             <div class="label-grey">Python</div>
@@ -71,7 +71,7 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
         <a href="hhttps://github.com/veronicadeleonh/solo-traveler-survey" target="_blank">
-            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
             <div class="label-grey">Python</div>
@@ -87,7 +87,7 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
         <a href="https://github.com/veronicadeleonh/travel-wishes-bot" target="_blank">
-            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
             <div class="label-grey">Python</div>
@@ -221,7 +221,7 @@ A snapshot of the design, code, and data tools in my toolkit.
         </div>
         <div class="card-description">
         <a href="https://mondly.com/" target="_blank">
-            <p class="card-title">Mondly<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+            <p class="card-title">Mondly<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
         </a>
             <p class="card-paragraph">Growth & Senior Product Designer</p>
         </div>
@@ -238,7 +238,7 @@ A snapshot of the design, code, and data tools in my toolkit.
         </div>
         <div class="card-description">
         <a href="https://eyeem.com" target="_blank">
-            <p class="card-title">EyeEm<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+            <p class="card-title">EyeEm<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
         </a>
             <p class="card-paragraph">Product Designer</p>
         </div>
@@ -255,7 +255,7 @@ A snapshot of the design, code, and data tools in my toolkit.
         </div>
         <div class="card-description">
         <a href="https://basecase.com/" target="_blank">
-            <p class="card-title">BaseCase<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+            <p class="card-title">BaseCase<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
         </a>
             <p class="card-paragraph">Marketing & UX/UI Designer</p>
         </div>
@@ -272,7 +272,7 @@ A snapshot of the design, code, and data tools in my toolkit.
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://www.ironhack.com/" target="_blank">
-        <p class="card-title">Bootcamp - Data Analytics<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+        <p class="card-title">Bootcamp - Data Analytics<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
     </a>
         <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
@@ -284,7 +284,7 @@ A snapshot of the design, code, and data tools in my toolkit.
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://www.ironhack.com/" target="_blank">
-        <p class="card-title">Bootcamp - Full-Stack Web Development<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+        <p class="card-title">Bootcamp - Full-Stack Web Development<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
     </a>
         <p class="card-paragraph">Ironhack Berlin <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
@@ -297,7 +297,7 @@ A snapshot of the design, code, and data tools in my toolkit.
     <div class="card-description">
     <a href="https://www.adbk.de/" target="_blank">
         <p class="card-title">
-            Erasmus - Fotografie und Neuen Medien<span class="fi" style="background-image: url(images/ext-link.svg)"></span></p>
+            Erasmus - Fotografie und Neuen Medien<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
     </a>
         <p class="card-paragraph">Akademie der Bildenden Künste München <span class="fi" style="background-image: url(images/de.svg)"></p>
     </div>
@@ -309,7 +309,7 @@ A snapshot of the design, code, and data tools in my toolkit.
 <div class="card-background card-big-margin flex-grid">
     <div class="card-description">
     <a href="https://abaroma.it/" target="_blank">
-        <p class="card-title">Diploma - Grafica Editoriale<span class="fi" style="background-image: url(images/ext-link.svg)"></p>
+        <p class="card-title">Diploma - Grafica Editoriale<span class="fi" style="background-image: url(/images/ext-link.svg)"></p>
     </a>
         <p class="card-paragraph">Accademia di Belle Arti di Roma <span class="fi" style="background-image: url(images/it.svg)"></p>
     </div>

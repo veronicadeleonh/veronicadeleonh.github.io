@@ -24,9 +24,9 @@ cover:
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
 
   <div class="intro-details-wrapper">
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> Senior Product Designer</p>
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/globe.svg)"></span> Fully remote</p>
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span>  2023 - 2024</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Fully remote</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span>  2023 - 2024</p>
   </div>
 </div>
 
@@ -58,7 +58,7 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
 
-If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_src=src-go-brand-ww-en-exact-bf24" target="\_blank">Mondly's Offer page with Old design<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> for comparison.
+If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_src=src-go-brand-ww-en-exact-bf24" target="\_blank">Mondly's Offer page with Old design<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> for comparison.
 
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
@@ -66,7 +66,7 @@ If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_s
 
 <p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 
 #### App Store & Google Play images
@@ -83,7 +83,7 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 <p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
 ### Mondly Growth & Monetization
 
@@ -118,7 +118,7 @@ For the **Spring Campaign 2024**, we developed a new layout for the in-app ad an
   <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results">
 </a>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom:20px">
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
  Results showed a slight increase of <strong>7% more 'Activate' taps</strong> with <strong>variant B performing better</strong>. Nearly <strong>2% of users</strong> who reached the Subscription screen proceeded with the<strong> App Store Drawer,</strong> moving further down the conversion funnel.
 </div>
 

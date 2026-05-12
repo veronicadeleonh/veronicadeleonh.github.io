@@ -23,9 +23,9 @@ cover:
 
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/mouse.svg)"></span> UX/UI Designer</p>
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/location.svg)"></span> Berlin</p>
-    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(images/calendar.svg)"></span> 2017 - 2020</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> UX/UI Designer</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/location.svg)"></span> Berlin</p>
+    <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2017 - 2020</p>
 
   </div>
 
@@ -88,7 +88,7 @@ This library was a collection of tools that supported BaseCase documentation, il
 
 #### Marketing Assets
 
-To support BaseCase's online presence, we developed a series of images for marketing campaigns, ranging from new feature launches to company participation in fairs. I was also responsible for creating images for the BaseCase website, many of which are still live under each category on <a href="https://basecase.com/features" target="_blank">BaseCase Features<span class="fi" style="background-image: url(images/ext-link.svg)"></span></a> page.
+To support BaseCase's online presence, we developed a series of images for marketing campaigns, ranging from new feature launches to company participation in fairs. I was also responsible for creating images for the BaseCase website, many of which are still live under each category on <a href="https://basecase.com/features" target="_blank">BaseCase Features<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> page.
 
 <a href="images/basecase-features.png" class="lightbox">
   <img src="images/basecase-features.png" alt="BaseCase Features">
