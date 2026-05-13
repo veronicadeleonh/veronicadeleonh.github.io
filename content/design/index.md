@@ -115,26 +115,15 @@ url: "/design/"
 
 ### Weights
 
-<div class="ds-row">
-<span class="ds-token" style="width:160px">--font-weight-light</span>
-<span style="width:40px; font-size: var(--font-size-base); color: var(--color-text-secondary)">300</span>
-<span style="font-weight: var(--font-weight-light); font-size: var(--font-size-md)">Light — body text, nav</span>
-</div>
-<div class="ds-row">
-<span class="ds-token" style="width:160px">--font-weight-regular</span>
-<span style="width:40px; font-size: var(--font-size-base); color: var(--color-text-secondary)">400</span>
-<span style="font-weight: var(--font-weight-regular); font-size: var(--font-size-md)">Regular — mono elements</span>
-</div>
-<div class="ds-row">
-<span class="ds-token" style="width:160px">--font-weight-medium</span>
-<span style="width:40px; font-size: var(--font-size-base); color: var(--color-text-secondary)">500</span>
-<span style="font-weight: var(--font-weight-medium); font-size: var(--font-size-md)">Medium — headings, links</span>
-</div>
-<div class="ds-row">
-<span class="ds-token" style="width:160px">--font-weight-bold</span>
-<span style="width:40px; font-size: var(--font-size-base); color: var(--color-text-secondary)">700</span>
-<span style="font-weight: var(--font-weight-bold); font-size: var(--font-size-md)">Bold — numbered labels</span>
-</div>
+<table class="ds-table">
+<thead><tr><th>Token</th><th>Value</th><th>Preview</th><th>Usage</th></tr></thead>
+<tbody>
+<tr><td><span class="ds-token">--font-weight-light</span></td><td><span style="font-size: var(--font-size-base); color: var(--color-text-secondary)">300</span></td><td><span style="font-weight: var(--font-weight-light); font-size: var(--font-size-md)">The quick brown fox</span></td><td><span class="ds-token">body text, nav</span></td></tr>
+<tr><td><span class="ds-token">--font-weight-regular</span></td><td><span style="font-size: var(--font-size-base); color: var(--color-text-secondary)">400</span></td><td><span style="font-weight: var(--font-weight-regular); font-size: var(--font-size-md)">The quick brown fox</span></td><td><span class="ds-token">mono elements</span></td></tr>
+<tr><td><span class="ds-token">--font-weight-medium</span></td><td><span style="font-size: var(--font-size-base); color: var(--color-text-secondary)">500</span></td><td><span style="font-weight: var(--font-weight-medium); font-size: var(--font-size-md)">The quick brown fox</span></td><td><span class="ds-token">headings, links</span></td></tr>
+<tr><td><span class="ds-token">--font-weight-bold</span></td><td><span style="font-size: var(--font-size-base); color: var(--color-text-secondary)">700</span></td><td><span style="font-weight: var(--font-weight-bold); font-size: var(--font-size-md)">The quick brown fox</span></td><td><span class="ds-token">numbered labels</span></td></tr>
+</tbody>
+</table>
 
 ---
 
