@@ -1,8 +1,8 @@
 ---
-title: "EyeEm"
+title: "Improving ecommerce flows at EyeEm"
 layout: "eyeem"
 url: "/eyeem/"
-summary: I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.
+summary: EyeEm · Product Design
 weight: 2
 ShowToc: true
 TocOpen: true
@@ -40,7 +40,7 @@ cover:
 
 During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application.
 
-### How we worked
+### Reducing friction in the purchase journey
 
 Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked together on the continuos development of the platform and set up regular meetings and feedback sessions.
 

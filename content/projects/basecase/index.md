@@ -1,8 +1,8 @@
 ---
-title: "BaseCase"
+title: "From marketing to product design at Basecase"
 layout: "BaseCase"
 url: "/basecase"
-summary: My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.
+summary: Basecase · UX/UI Design
 weight: 3
 ShowToc: true
 TocOpen: true

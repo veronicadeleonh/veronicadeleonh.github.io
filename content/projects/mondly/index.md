@@ -1,8 +1,8 @@
 ---
-title: "Mondly"
+title: "Designing growth experiences at Mondly"
 layout: "mondly"
 url: "/mondly"
-summary: My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.
+summary: Mondly · Product Design
 weight: 1
 ShowToc: true
 TocOpen: true
