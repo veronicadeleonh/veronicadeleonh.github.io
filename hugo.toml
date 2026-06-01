@@ -17,8 +17,8 @@ googleAnalytics = "G-LQZ77WLF6C"
     linkFullImages = true
 
 [params.homeInfoParams]
-Content = """**I am a designer who codes, a lifelong learner, and curious mind turning ideas into meaningful products.**  
-<span class="subtext">🌿 I like exploring new places, diving into science books, and collecting analog snapshots from my travels.</span>"""
+Content = """**Product Designer with technical curiosity and systems thinking.**  
+<span class="subtext">🌿 Interested in travel, science, analog photography and visual exploration.</span>"""
 
 
 [params.assets]
