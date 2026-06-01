@@ -2,6 +2,7 @@ baseURL = 'https://veronicadeleonh.github.io/'
 languageCode = 'en-us'
 title = 'Verónica De León Hernández'
 googleAnalytics = "G-LQZ77WLF6C"
+theme = "hugo-PaperModX"
 
 
 [markup.goldmark.renderer]
@@ -17,8 +18,8 @@ googleAnalytics = "G-LQZ77WLF6C"
     linkFullImages = true
 
 [params.homeInfoParams]
-Content = """**Product Designer with technical curiosity and systems thinking.**  
-<span class="subtext">🌿 Interested in travel, science, analog photography and visual exploration.</span>"""
+Content = """**Product Designer <br>with <span class="hover-curiosity">technical curiosity</span> & <span class="hover-systems">systems thinking</span>.**
+<span class="subtext">🌿 Interested in <span class="hl">travel</span>, <span class="hl">science</span>, <span class="hl">analog photography</span> and <span class="hl">visual exploration</span>.</span>"""
 
 
 [params.assets]

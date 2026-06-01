@@ -695,3 +695,29 @@ strong {
     background-color: var(--color-surface-active);
     font-weight: var(--font-weight-regular);
 }
+
+/* Subtext word highlights */
+
+.hl {
+    transition: color var(--transition-fast) ease;
+}
+
+.hl:hover { color: var(--color-text); }
+
+/* Hero text hover — V2: color + letter-spacing */
+
+.hover-curiosity,
+.hover-systems {
+    transition: color var(--transition-base) ease, letter-spacing var(--transition-base) ease;
+}
+
+.hover-curiosity:hover {
+    color: var(--color-blue);
+    letter-spacing: 0.03em;
+}
+
+.hover-systems:hover {
+    color: var(--color-green);
+    letter-spacing: 0.03em;
+}
+
