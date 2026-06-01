@@ -4,18 +4,15 @@
 
 <p class="photo-footnote">Berlin, Germany - 2018</p>
 
-<h4 style="margin:0">Multidisciplinary Product Designer</h4>
-<p class="subtext">Exploring design & tech</p>
+<h4 style="margin:0">Product Designer exploring systems, visuals and code</h4>
+<p class="subtext">Exploring thoughtful digital experiences through curiosity, systems and experimentation
+</p>
 
-I am a multidisciplinary Product Designer who blends creativity, analytical thinking and curiosity to solve complex problems.
+<p>Over the past few years, I’ve been exploring how coding can expand the way I design, prototype and solve problems. This curiosity has led me to build projects around geospatial data, climate exploration, frontend experiments and design systems.</p>
 
-<ul>
-    <li>I move easily between <strong>design and code</strong>, having a more thoughful crafting process.</li>
-    <li>I enjoy working in <strong>collaborative, high performing</strong> product teams where ideas can evolve.</li>
-    <li>I am a <strong>curious mind</strong> who is always expanding her technical knowledge.</li>
-</ul>
+<p>I enjoy moving between design and code, using both as tools to explore ideas, systems and visual storytelling.</p>
 
-🌿 I also enjoy draw and write on paper, collect analog snapshots from my travels and stay active through sport and movement.
+<p>🌿 Outside of work, I draw and write on paper, collect analog snapshots from my travels and stay active through sport and movement.</p>
 
 <div class="home-about-links">
       <div class="about-links">
@@ -35,22 +32,9 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
 
 <hr>
 
-#### Film x Frontend
-
-<p>I designed and built a website to showcase the best analog photographs from my travels. This passion project came to life with modern front-end tools like ReactJS, TailwindCSS, Contentful, and Vercel.</p>
-
-<div class="card-link flex-grid">
-    <img class="image-thumb" src="images/analog-web-preview.png">
-    <div><p><strong>Want to see more of my analog pics?</strong> Check out my analog web</p>
-    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
-    </div>
-</div>
-
-<hr>
-
 #### Tiny Data Adventures
 
-<p>Lately I’ve been exploring how design and data can come together in small, playful projects. Here are a few I’ve built in the past year:</p>
+<p>A growing collection of projects shaped by curiosity for data, systems, geography and visual exploration.</p>
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
@@ -64,47 +48,76 @@ I am a multidisciplinary Product Designer who blends creativity, analytical thin
             <div class="label-grey">Folium</div>
             <div class="label-grey">Plotly</div>
         </div>
-        <p>An interactive dashboard that visualizes seismic and volcanic activity worldwide. It combines real-time data with historical trends to explore patterns aroud the globe.</p>
+        <p>Exploring seismic and volcanic activity through real-time geospatial visualization and interactive mapping. The dashboard combines live earthquake data, volcanic eruptions and tectonic plate layers to uncover patterns across the globe.</p>
      </div>
 </div>
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
-        <a href="hhttps://github.com/veronicadeleonh/solo-traveler-survey" target="_blank">
-            <p class="card-title"><strong>🎒 Solo Traveler Survey</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+        <a href="https://github.com/veronicadeleonh/volcano-explorer" target="_blank">
+            <p class="card-title"><strong>🌋 Volcano Explorer</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
+            <div class="label-grey">Vibecode</div>
             <div class="label-grey">Python</div>
-            <div class="label-grey">Pandas</div>
-            <div class="label-grey">Flask</div>
-            <div class="label-grey">TailwindCSS</div>
-            <div class="label-grey">Chart.js</div>
+            <div class="label-grey">Streamlit</div>
+            <div class="label-grey">Geospatial Data</div>
         </div>
-        <p>A data-driven look into why people travel alone. This dashboard uncovers insights across age groups and regions after collecting user's data thourgh a survey.</p>
+        <p>A visual exploration of volcanoes around the world, built from a long-standing curiosity for natural systems and Earth science. The project experiments with geospatial interfaces, mapping and data storytelling.</p>
      </div>
 </div>
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
-        <a href="https://github.com/veronicadeleonh/travel-wishes-bot" target="_blank">
-            <p class="card-title"><strong>🗺️ TravelWishesBot</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+        <a href="https://github.com/veronicadeleonh/coral-bleaching-model" target="_blank">
+            <p class="card-title"><strong>🪸 Coral Bleaching Monitor</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
+            <div class="label-grey">Vibecode</div>
             <div class="label-grey">Python</div>
-            <div class="label-grey">Telegram API</div>
-            <div class="label-grey">Notion API</div>
-            <div class="label-grey">OpenAI</div>
-            <div class="label-grey">Tavily API</div>
+            <div class="label-grey">Data Visualization</div>
+            <div class="label-grey">Climate Data</div>
         </div>
-        <p>A conversational travel assistant that helps users explore destinations, discover travel tips via real-time search, and save favorites to Notion.</p>
+        <p>An exploratory project focused on coral bleaching and climate-related datasets. Built as a way to better understand environmental patterns through visualization, interaction and data exploration.</p>
      </div>
+</div>
+
+<div class="card-background card-big-margin">
+    <div class="flex-column gap-8">
+        <a href="https://github.com/veronicadeleonh/mathwave" target="_blank">
+            <p class="card-title"><strong>〜 MathWave</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+        </a>
+        <div class="flex-wrap">
+            <div class="label-grey">Vibecode</div>
+            <div class="label-grey">HTML</div>
+            <div class="label-grey">Canvas</div>
+            <div class="label-grey">Web Audio API</div>
+            <div class="label-grey">Creative Coding</div>
+        </div>
+        <p>A browser-based audio playground where mathematical functions become melodies. Built as a single HTML file using Canvas and the Web Audio API, exploring the relationship between curves, sound and interaction.</p>
+     </div>
+</div>
+
+<hr>
+
+#### Film x Frontend
+
+<p>An analog photography project built from years of collecting quiet moments, landscapes and visual fragments during my travels.</p>
+
+<p>Designed and developed using React, TailwindCSS, Contentful and Vercel.</p>
+
+<div class="card-link flex-grid">
+    <img class="image-thumb" src="images/analog-web-preview.png">
+    <div><p><strong>Want to explore more from the analog archive?</strong> Check out my analog web</p>
+    <a class="btn-connect rounded btn-white arrow" href="https://analog.veronicadeleonh.de">Let's go! <span class="fi" style="background-image:url(/images/arrow-right.svg)"></span></a>
+    </div>
 </div>
 
 <hr>
 
 #### Tools I use
 
-A snapshot of the design, code, and data tools in my toolkit.
+A mix of design, frontend, data and AI tools I use across projects and experiments.
 
 <div class="flex-grid">
     <div class="card-background-stack card-small-margin col-3 gap-16">
@@ -112,19 +125,14 @@ A snapshot of the design, code, and data tools in my toolkit.
             <img src="images/stack-figma.svg">
         </div>
         <p class="card-title">Figma</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-notion.svg">
-            </div>
-            <p class="card-title">Notion</p>
     </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-webflow.svg">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+        <div class="card-icon">
+            <img src="images/stack-webflow.svg">
             </div>
             <p class="card-title">Webflow</p>
-    </div>       
+    </div>
+    <div class="col-3 card-small-margin"></div>
 </div>
 
 <div class="flex-grid">
@@ -175,19 +183,14 @@ A snapshot of the design, code, and data tools in my toolkit.
             <img src="images/stack-python.svg">
         </div>
         <p class="card-title">Python</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-pandas.svg">
-            </div>
-            <p class="card-title">Pandas</p>
     </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
+    <div class="card-background-stack card-small-margin col-3 gap-16">
+         <div class="card-icon">
                 <img src="images/stack-mysql-blue.svg">
-            </div>
-            <p class="card-title">MySQL</p>
-    </div>       
+        </div>
+        <p class="card-title">MySQL</p>
+    </div>
+    <div class="col-3 card-small-margin"></div>
 </div>
 
 <div class="flex-grid">
@@ -199,16 +202,11 @@ A snapshot of the design, code, and data tools in my toolkit.
     </div>
     <div class="card-background-stack card-small-margin col-3 gap-16">
         <div class="card-icon">
-            <img src="images/stack-claude.svg">
+            <img src="images/stack-claude-code.svg">
         </div>
-        <p class="card-title">Claude</p>
-    </div>  
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-cursor.svg">
-            </div>
-            <p class="card-title">Cursor</p>
-    </div>       
+        <p class="card-title">Claude Code</p>
+    </div>
+    <div class="col-3 card-small-margin"></div>
 </div>
 
 <div style="display:none">
