@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f1f4f5"/>
+  <rect x="1" y="1" width="1198" height="798" fill="none" stroke="#e7eaeb" stroke-width="2"/>
+  <text x="600" y="390" font-family="IBM Plex Mono, monospace" font-size="18" fill="#9b9fa0" text-anchor="middle">placeholder image</text>
+  <text x="600" y="420" font-family="IBM Plex Mono, monospace" font-size="14" fill="#9b9fa0" text-anchor="middle">1200 × 800</text>
+</svg>

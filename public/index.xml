@@ -1,19 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Verónica De León Hernández</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Verónica De León Hernández</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Designing growth experiences at Mondly</title>
-      <link>http://localhost:1313/mondly/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/mondly/</guid>
-      <description>Mondly · Product Design</description>
-      <content:encoded><![CDATA[<div class="intro-info">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Verónica De León Hernández</title><link>http://localhost:1313/</link><description>Recent content on Verónica De León Hernández</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>From Help Center article to decision-making experience</title><link>http://localhost:1313/skoove/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/skoove/</guid><description>Skoove · Freelance Product Design</description><content:encoded><![CDATA[<div class="intro-info">
+<p><span class="tag blue text-blue">e-learning</span></p>
+<p class="intro-description">Working closely with marketing stakeholders, I helped transform pricing information into a dedicated decision-making experience for future learners, balancing discoverability, content strategy and conversion goals.</p>
+  <div class="intro-details-wrapper">
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Freelance Project</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2026</p>
+  </div>
+</div>
+<p><img loading="lazy" src="/skoove/images/skoove-placeholder.svg" type="" alt="Skoove"  /></p>
+<h3 id="context">Context</h3>
+<p>As part of a freelance project for Skoove, I worked on designing a dedicated pricing experience for web visitors. At the time, pricing information for logged-out users was primarily accessible through a Help Center article. While existing customers could view subscription options after signing in, prospective users had limited visibility into plans, pricing and subscription benefits directly on the website.</p>
+<p>This created an interesting gap between discovery and decision-making. Users could find Skoove through search engines, articles and marketing pages, but understanding the value of a subscription often required additional steps before reaching the actual purchase flow.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Side-by-side comparison of the Help Center pricing article (logged-out experience) and the existing pricing page available to logged-in users without a premium subscription.</p>
+<hr>
+<h3 id="observation-1-pricing-existed-but-the-pricing-experience-didnt">Observation 1: Pricing existed, but the pricing experience didn&rsquo;t</h3>
+<p>One of the first things I mapped was the journey for non-premium users. Accessing subscription plans required creating an account, signing in and navigating through several screens before reaching the pricing interface.</p>
+<p>At the same time, many visitors arriving from Google were landing on a Help Center article listing prices as plain text. The information was technically available, but the experience lacked context, comparison, trust signals and clear paths forward.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Current user flow showing how non-premium users navigated from landing page to subscription purchase.</p>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
+💡 One of the most impactful changes was also one of the simplest: introducing a dedicated Pricing entry in the website navigation, making subscription information accessible without requiring users to create an account first.
+</div>
+<hr>
+<h3 id="designing-for-discovery-and-decision-making">Designing for discovery and decision-making</h3>
+<p>The goal was not simply to create a pricing page. The page needed to serve multiple purposes at once:</p>
+<ul>
+  <li>Help visitors understand Skoove's plans and subscription options.</li>
+  <li>Communicate value beyond price alone.</li>
+  <li>Answer common objections before purchase.</li>
+  <li>Improve discoverability through SEO and emerging AI-powered search experiences.</li>
+  <li>Create a clearer path from interest to trial.</li>
+</ul>
+<p>This shifted the project from being a pricing exercise into a broader information architecture challenge.</p>
+<hr>
+<h3 id="a-pricing-page-is-more-than-pricing">A pricing page is more than pricing</h3>
+<p>Many of the design decisions focused on reducing uncertainty.</p>
+<p>Plan comparisons were presented side by side to make differences easier to understand. Benefit-oriented content helped explain what learners would gain beyond access to lessons. Social proof, FAQs and free-trial messaging were introduced to address common questions before they became blockers.</p>
+<p>The page became less about displaying subscription tiers and more about helping visitors make an informed decision.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Screenshot: Early layout explorations, marketing proposals and annotated design iterations showing how the page structure evolved.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Screenshot: Final pricing page design highlighting plan comparison, benefits, FAQs and conversion-focused sections.</p>
+<hr>
+<h3 id="extending-the-design-system">Extending the design system</h3>
+<p>The project introduced several new web components and required updates to existing navigation patterns. These changes were later incorporated into the Web UI Kit, helping establish more consistent experiences across marketing and product-related pages.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Screenshot: New components created for the project and later integrated into the Web UI Kit.</p>
+<hr>
+<h3 id="notes">Notes</h3>
+<p>One of the most interesting aspects of this project was seeing how closely content, discoverability and product design intersect. The challenge wasn&rsquo;t creating a new subscription system, but making an existing one easier to find, understand and trust.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Before-and-after view of the website navigation showing the introduction of the Pricing entry.</p>
+<p>Sometimes the challenge is not designing a new feature. It&rsquo;s making an existing experience easier to find, understand and trust.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Screenshot: Final responsive designs (desktop, tablet and mobile) ready for development.</p>
+]]></content:encoded></item><item><title>Designing growth experiences at Mondly</title><link>http://localhost:1313/mondly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/mondly/</guid><description>Mondly · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag blue text-blue">e-learning</span></p>
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
   <div class="intro-details-wrapper">
@@ -87,17 +143,7 @@
   <img src="images/w2w-components.png" alt="Mondly W2W Screens">
 </a>
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Improving ecommerce flows at EyeEm</title>
-      <link>http://localhost:1313/eyeem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/eyeem/</guid>
-      <description>EyeEm · Product Design</description>
-      <content:encoded><![CDATA[<div class="intro-info">
+]]></content:encoded></item><item><title>Improving ecommerce flows at EyeEm</title><link>http://localhost:1313/eyeem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/eyeem/</guid><description>EyeEm · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag green text-green">e-commerce</span></p>
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
   <div class="intro-details-wrapper">
@@ -267,17 +313,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   });
 });
 </script>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>From marketing to product design at Basecase</title>
-      <link>http://localhost:1313/basecase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/basecase/</guid>
-      <description>Basecase · UX/UI Design</description>
-      <content:encoded><![CDATA[<div class="intro-info">
+]]></content:encoded></item><item><title>From marketing to product design at Basecase</title><link>http://localhost:1313/basecase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/basecase/</guid><description>Basecase · UX/UI Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag orange text-orange">SaaS</span></p>
 <p class="intro-description">My first role at BaseCase started designing for web and Marketing but quickly transitioned into having a majority of UXUI tasks. Our small Design team worked closely to developers and copywriters on the client-facing documentation of the platform.</p>
   <div class="intro-details-wrapper">
@@ -345,8 +381,4 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </a>
 </div>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>
