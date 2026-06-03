@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Projects on Verónica De León Hernández</title><link>http://localhost:1313/projects/</link><description>Recent content in Projects on Verónica De León Hernández</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Designing growth experiences at Mondly</title><link>http://localhost:1313/mondly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/mondly/</guid><description>Mondly · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Projects on Verónica De León Hernández</title><link>http://localhost:1313/projects/</link><description>Recent content in Projects on Verónica De León Hernández</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>From Help Center article to decision-making experience</title><link>http://localhost:1313/skoove/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/skoove/</guid><description>Skoove · Freelance Product Design</description><content:encoded><![CDATA[<div class="intro-info">
+<p><span class="tag blue text-blue">e-learning</span></p>
+<p class="intro-description">Working closely with marketing stakeholders, I helped transform pricing information into a dedicated decision-making experience for future learners, balancing discoverability, content strategy and conversion goals.</p>
+  <div class="intro-details-wrapper">
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Freelance Project</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2026</p>
+  </div>
+</div>
+<p><img loading="lazy" src="/skoove/images/skoove-intro.png" type="" alt="Skoove"  /></p>
+<h3 id="context">Context</h3>
+<p>As part of a freelance project for Skoove, I worked on designing a dedicated pricing experience for web visitors. At the time, pricing information for <strong>logged-out users</strong> was primarily accessible through a <strong>Help Center article</strong>. While existing customers could view subscription options after signing in, prospective users had limited visibility into plans, pricing and subscription benefits directly on the website.</p>
+<p>This created an interesting gap between <strong>discovery</strong> and <strong>decision-making</strong>. Users could find Skoove through search engines, articles and marketing pages, but understanding the value of a subscription often required additional steps before reaching the actual purchase flow.</p>
+<a href="images/skoove-context.png" class="lightbox">
+  <img src="images/skoove-context.png" alt="Placeholder">
+</a>
+<p class="photo-footnote">Side-by-side comparison of the existing pricing page available to logged-in users without a premium subscription and the Help Center pricing article (logged-out experience).</p>
+<hr>
+<h3>Pricing existed,</br>but the pricing experience didn't</h3>
+<p>One of the first things I mapped was the journey for non-premium users. Accessing subscription plans required <strong>creating an account, signing in</strong> and navigating through several screens before reaching the pricing interface.</p>
+<p>At the same time, many visitors arriving from Google were landing on a Help Center article listing prices as plain text. The information was technically available, but the experience lacked <strong>context, comparison, trust signals</strong> and clear paths forward.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Current user flow showing how non-premium users navigated from landing page to subscription purchase.</p>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
+One of the most impactful changes was also one of the simplest: introducing a dedicated <strong>Pricing entry</strong> in the <strong>website navigation</strong>, making subscription information accessible without requiring users to create an account first.
+</div>
+<hr>
+<h3 id="designing-for-discovery-and-decision-making">Designing for discovery and decision-making</h3>
+<p>The goal was not simply to create a pricing page. The page needed to serve multiple purposes at once:</p>
+<ul>
+  <li>Help visitors understand Skoove's plans and subscription options.</li>
+  <li>Communicate value beyond price alone.</li>
+  <li>Answer common objections before purchase.</li>
+  <li>Improve discoverability through SEO and emerging AI-powered search experiences.</li>
+  <li>Create a clearer path from interest to trial.</li>
+</ul>
+<p>This shifted the project from being a <strong>pricing exercise</strong> into a broader <strong>information architecture challenge</strong>.</p>
+<hr>
+<h3 id="a-pricing-page-is-more-than-pricing">A pricing page is more than pricing</h3>
+<p>Many of the design decisions focused on <strong>reducing uncertainty</strong>.</p>
+<p><strong>Plan comparisons, benefit-oriented content, social proof</strong> and <strong>FAQs</strong> were introduced to address common questions before they became blockers.</p>
+<p>The page became less about displaying subscription tiers and more about helping visitors make an informed decision.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Early layout explorations, marketing proposals and annotated design iterations showing how the page structure evolved.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Final pricing page design highlighting plan comparison, benefits, FAQs and conversion-focused sections.</p>
+<hr>
+<h3 id="extending-the-design-system">Extending the design system</h3>
+<p>The project introduced several <strong>new web components</strong> and required updates to existing navigation patterns. These changes were later incorporated into the <strong>Web UI Kit</strong>, helping establish more consistent experiences across marketing and product-related pages.</p>
+<a href="images/skoove-web-ui-kit.png" class="lightbox">
+  <img src="images/skoove-web-ui-kit.png" alt="Placeholder">
+</a>
+<p class="photo-footnote">New components created for the project and later integrated into the Web UI Kit.</p>
+<hr>
+<h3 id="notes">Notes</h3>
+<p>One of the most interesting aspects of this project was seeing how closely content, <strong>discoverability</strong> and <strong>product design</strong> intersect. The challenge wasn&rsquo;t creating a new subscription system, but making an existing one easier to find, understand and trust.</p>
+<a href="images/skoove-navigation.png" class="lightbox">
+  <img src="images/skoove-navigation.png" alt="Placeholder">
+</a>
+<p class="photo-footnote">Before-and-after view of the website navigation showing the introduction of the Pricing entry.</p>
+<p>Sometimes the challenge is not designing a new feature. It&rsquo;s making an existing experience easier to find, understand and trust.</p>
+<a href="images/skoove-placeholder.svg" class="lightbox">
+  <img src="images/skoove-placeholder.svg" alt="Placeholder">
+</a>
+<p class="photo-footnote">Final responsive designs (desktop, tablet and mobile) ready for development.</p>
+]]></content:encoded></item><item><title>Designing growth experiences at Mondly</title><link>http://localhost:1313/mondly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/mondly/</guid><description>Mondly · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag blue text-blue">e-learning</span></p>
 <p class="intro-description">My role at Mondly involved a variety of tasks, collaborating closely with designers, marketers, User Acquisition and Growth specialists, website developers, and data scientists to consolidate Mondly's rebrand across all touchpoints.</p>
   <div class="intro-details-wrapper">
@@ -310,39 +381,4 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </a>
 </div>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
-]]></content:encoded></item><item><title>From Help Center article to decision-making experience</title><link>http://localhost:1313/skoove/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/skoove/</guid><description>Skoove · Freelance Product Design</description><content:encoded><![CDATA[<div class="intro-info">
-<p><span class="tag blue text-blue">e-learning</span></p>
-<p class="intro-description">Placeholder — brief description of your role and impact at Skoove. 1–2 sentences summarizing the project scope.</p>
-  <div class="intro-details-wrapper">
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Freelance</p>
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2026</p>
-  </div>
-</div>
-<p><img loading="lazy" src="/skoove/images/skoove-placeholder.svg" type="" alt="Skoove"  /></p>
-<h3 id="about-skoove">About Skoove</h3>
-<p><strong>Skoove</strong> is — placeholder. Brief company description.</p>
-<h3 id="my-role-at-skoove">My Role at Skoove</h3>
-<p>Placeholder — describe your responsibilities and the team you worked with.</p>
-<a href="images/skoove-placeholder.svg" class="lightbox">
-  <img src="images/skoove-placeholder.svg" alt="Placeholder">
-</a>
-<p class="photo-footnote">Placeholder caption</p>
-<hr>
-<h3 id="section-title">Section Title</h3>
-<p>Placeholder — describe a key project or initiative.</p>
-<a href="images/skoove-placeholder.svg" class="lightbox">
-  <img src="images/skoove-placeholder.svg" alt="Placeholder">
-</a>
-<p class="photo-footnote">Placeholder caption</p>
-<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
-Placeholder — key result or metric from this initiative.
-</div>
-<hr>
-<h3 id="section-title-1">Section Title</h3>
-<p>Placeholder — describe another project or initiative.</p>
-<a href="images/skoove-placeholder.svg" class="lightbox">
-  <img src="images/skoove-placeholder.svg" alt="Placeholder">
-</a>
-<p class="photo-footnote">Placeholder caption</p>
 ]]></content:encoded></item></channel></rss>
