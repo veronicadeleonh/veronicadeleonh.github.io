@@ -3,7 +3,7 @@ title: "Improving ecommerce flows at EyeEm"
 layout: "eyeem"
 url: "/eyeem/"
 summary: EyeEm · Product Design
-weight: 2
+weight: 3
 ShowToc: true
 TocOpen: true
 ShowPostNavLinks: true

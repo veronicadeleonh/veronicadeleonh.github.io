@@ -1,9 +1,9 @@
 ---
-title: "From marketing to product design at Basecase"
+title: "Building interactive product experiences for life sciences"
 layout: "BaseCase"
 url: "/basecase"
 summary: Basecase · UX/UI Design
-weight: 3
+weight: 4
 ShowToc: true
 TocOpen: true
 ShowPostNavLinks: true
