@@ -124,6 +124,6 @@ One of the most interesting aspects of this project was seeing how closely conte
   <img src="images/skoove-navigation.png" alt="Before-and-after comparison of the website navigation showing the new Pricing entry">
 </a>
 
-<p class="photo-footnote">Before-and-after view of the website navigation showing the introduction of the Pricing entry.</p>
+<p class="photo-footnote">Adding Pricing to the main navigation made subscription information easier to discover before sign-up.</p>
 
 Sometimes the challenge is not designing a new feature. It's making an existing experience easier to find, understand and trust.
