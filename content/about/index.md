@@ -119,94 +119,39 @@
 
 A mix of design, frontend, data and AI tools I use across projects and experiments.
 
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-figma.svg">
-        </div>
+<div class="stack-grid">
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-figma.svg"></div>
         <p class="card-title">Figma</p>
     </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-webflow.svg">
-            </div>
-            <p class="card-title">Webflow</p>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-html-css.svg"></div>
+        <p class="card-title">HTML/CSS</p>
     </div>
-    <div class="col-3 card-small-margin"></div>
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-html5.svg">
-            </div>
-            <p class="card-title">HTML</p>
-    </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-css3.svg">
-            </div>
-            <p class="card-title">CSS</p>
-    </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-javascript.svg">
-        </div>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-javascript.svg"></div>
         <p class="card-title">Javascript</p>
-    </div>         
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-visual-studio-code.svg">
-        </div>
-        <p class="card-title">VSCode</p>
-    </div>  
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-react.svg">
-            </div>
-            <p class="card-title">ReactJS</p>
     </div>
-        <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-tailwindcss.svg">
-            </div>
-            <p class="card-title">TailwindCSS</p>
-    </div>       
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-python.svg">
-        </div>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-react.svg"></div>
+        <p class="card-title">ReactJS</p>
+    </div>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-python.svg"></div>
         <p class="card-title">Python</p>
     </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-         <div class="card-icon">
-                <img src="images/stack-mysql-blue.svg">
-        </div>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-mysql-blue.svg"></div>
         <p class="card-title">MySQL</p>
     </div>
-    <div class="col-3 card-small-margin"></div>
-</div>
-
-<div class="flex-grid">
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-            <div class="card-icon">
-                <img src="images/stack-chatgpt.svg">
-            </div>
-            <p class="card-title">ChatGPT</p>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-chatgpt.svg"></div>
+        <p class="card-title">ChatGPT</p>
     </div>
-    <div class="card-background-stack card-small-margin col-3 gap-16">
-        <div class="card-icon">
-            <img src="images/stack-claude-code.svg">
-        </div>
+    <div class="card-background-stack gap-8">
+        <div class="card-icon"><img src="images/stack-claude-code.svg"></div>
         <p class="card-title">Claude Code</p>
     </div>
-    <div class="col-3 card-small-margin"></div>
 </div>
 
 <div style="display:none">
