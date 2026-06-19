@@ -1,0 +1,36 @@
+{{- with site.Data.personal_projects }}
+<section class="personal-projects">
+  <h2 class="personal-projects-heading">Tiny Data Adventures</h2>
+  <p class="personal-projects-subtext">Small experiments exploring data, maps, science and AI.</p>
+  <div class="personal-projects-grid">
+    {{- range .projects }}
+    <div class="project-card">
+      <div class="project-card-image{{- if not .thumbnail }} project-card-image--placeholder{{- end }}">
+        {{- if .thumbnail }}
+        <img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy">
+        {{- end }}
+      </div>
+      <div class="project-card-body">
+        <div class="project-card-meta">
+          <p class="card-title">
+            <a class="project-card-main-link" href="{{ .url }}" target="_blank" rel="noopener">
+              {{ .title }}<span class="fi" style="background-image: url(/images/ext-link.svg)"></span>
+            </a>
+          </p>
+          {{- if .github }}
+          <a class="project-card-github" href="{{ .github }}" target="_blank" rel="noopener">
+            <span class="fip" style="background-image: url(/images/github.svg)"></span>
+          </a>
+          {{- end }}
+        </div>
+<div class="flex-wrap">
+          {{- range .tags }}
+          <div class="label-grey">{{ . }}</div>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}

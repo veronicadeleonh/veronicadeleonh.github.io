@@ -1,0 +1,20 @@
+projects:
+  - title: "🪸 Coral Bleaching Monitor"
+    description: "Data analysis and visualization of global coral bleaching events."
+    url: "https://coral-bleaching-model.vercel.app/"
+    github: "https://github.com/veronicadeleonh/coral-bleaching-model"
+    thumbnail: "/images/project-coral-bleaching.png"
+    tags:
+      - Python
+      - Data Analysis
+      - Climate Data
+
+  - title: "🌋 Volcano Explorer"
+    description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
+    url: "https://volcano-explorer-iota.vercel.app/"
+    github: "https://github.com/veronicadeleonh/volcano-explorer"
+    thumbnail: "/images/project-volcano-explorer.png"
+    tags:
+      - React
+      - Mapbox
+      - Geospatial

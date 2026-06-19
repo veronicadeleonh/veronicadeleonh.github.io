@@ -54,7 +54,7 @@
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
-        <a href="https://github.com/veronicadeleonh/volcano-explorer" target="_blank">
+        <a href="https://volcano-explorer-iota.vercel.app/" target="_blank">
             <p class="card-title"><strong>🌋 Volcano Explorer</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
@@ -69,7 +69,7 @@
 
 <div class="card-background card-big-margin">
     <div class="flex-column gap-8">
-        <a href="https://github.com/veronicadeleonh/coral-bleaching-model" target="_blank">
+        <a href="https://coral-bleaching-model.vercel.app/" target="_blank">
             <p class="card-title"><strong>🪸 Coral Bleaching Monitor</strong><span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
         </a>
         <div class="flex-wrap">
