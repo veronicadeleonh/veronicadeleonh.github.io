@@ -30,6 +30,7 @@
 
 <p class="photo-footnote">Tarifa, Spain - 2024</p>
 
+<div style="display:none">
 <hr>
 
 #### Tiny Data Adventures
@@ -99,6 +100,7 @@
 </div>
 
 <hr>
+</div>
 
 #### Film x Frontend
 
