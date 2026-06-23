@@ -869,8 +869,9 @@ strong {
     }
 
     .project-card-image {
-        margin: var(--space-2) var(--space-2) 0;
+        margin: var(--space-2) 0 0;
         aspect-ratio: 16 / 9;
+        width: 100%;
     }
 
     .project-card-body {
