@@ -849,9 +849,32 @@ strong {
     box-shadow: none;
 }
 
+@media screen and (max-width: 768px) {
+    .personal-projects-grid {
+        gap: var(--space-2);
+    }
+
+    .project-card-image {
+        margin: var(--space-1) var(--space-1) 0;
+    }
+
+    .project-card-body {
+        padding: var(--space-1) var(--space-2) var(--space-2);
+    }
+}
+
 @media screen and (max-width: 500px) {
     .personal-projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card-image {
+        margin: var(--space-2) var(--space-2) 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .project-card-body {
+        padding: var(--space-2);
     }
 }
 
