@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 ShowPostNavLinks: true
 cover:
-  image: images/eyeem-thumb.jpg
+  image: images/eyeem-thumb.png
   alt: "EyeEm"
   caption: "EyeEm"
   relative: true
@@ -30,7 +30,7 @@ cover:
 
 </div>
 
-![EyeEm](images/eyeem-intro.jpg)
+![EyeEm](images/eyeem-intro.png)
 
 ### About EyeEm
 
