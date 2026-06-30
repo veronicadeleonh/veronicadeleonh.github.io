@@ -319,7 +319,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2017 - 2020</p>
   </div>
 </div>
-<p><img loading="lazy" src="/basecase/images/basecase-intro.jpg" type="" alt="BaseCase"  /></p>
+<p><img loading="lazy" src="/basecase/images/basecase-intro.png" type="" alt="BaseCase"  /></p>
 <h4 id="about-basecase">About BaseCase</h4>
 <p><strong>BaseCase</strong> is a no-code platform used by life sciences companies to transform spreadsheets into digital applications for medical communication, product education, and sales enablement.</p>
 <h4 id="my-role-at-basecase">My role at Basecase</h4>
@@ -329,8 +329,8 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </div>
 <h4 id="the-demo-app-library">The Demo App Library</h4>
 <p>My main responsibility was building a growing library of interactive demo applications used to communicate complex product capabilities and healthcare workflows.</p>
-<a href="images/demo-apps.jpg" class="lightbox">
-  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
+<a href="images/demo-apps.png" class="lightbox">
+  <img src="images/demo-apps.png" alt="BaseCase Demo Apps Library">
 </a>
 <p>The Demo App Library was a growing collection of interactive applications showcasing BaseCase&rsquo;s capabilities—from onboarding and feature walkthroughs to complex healthcare use cases.</p>
 <p>I owned the end-to-end process, from understanding the brief and designing the experience to building the applications inside the BaseCase platform.</p>

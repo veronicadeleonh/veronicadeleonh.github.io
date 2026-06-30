@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 ShowPostNavLinks: true
 cover:
-  image: images/basecase-thumb.jpg
+  image: images/basecase-thumb.png
   alt: "BaseCase"
   caption: "BaseCase"
   relative: true
@@ -31,7 +31,7 @@ cover:
 
 </div>
 
-![BaseCase](images/basecase-intro.jpg)
+![BaseCase](images/basecase-intro.png)
 
 #### About BaseCase
 
@@ -49,8 +49,8 @@ Working in a small cross-functional design team, I contributed across marketing,
 
 My main responsibility was building a growing library of interactive demo applications used to communicate complex product capabilities and healthcare workflows.
 
-<a href="images/demo-apps.jpg" class="lightbox">
-  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
+<a href="images/demo-apps.png" class="lightbox">
+  <img src="images/demo-apps.png" alt="BaseCase Demo Apps Library">
 </a>
 
 The Demo App Library was a growing collection of interactive applications showcasing BaseCase's capabilities—from onboarding and feature walkthroughs to complex healthcare use cases.
