@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 ShowPostNavLinks: true
 cover:
-  image: images/mondly-thumb.jpg
+  image: images/mondly-thumb.png
   alt: "Mondly"
   caption: "Mondly"
   relative: true
@@ -30,7 +30,7 @@ cover:
   </div>
 </div>
 
-![Mondly](images/mondly-intro.jpg)
+![Mondly](images/mondly-intro.png)
 
 ### About Mondly
 
