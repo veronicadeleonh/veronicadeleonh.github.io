@@ -93,11 +93,10 @@ One of the most impactful changes was also one of the simplest: introducing a de
 <a href="images/mondly-offer-page-old.png" class="lightbox">
   <img src="images/mondly-offer-page-old.png" alt="Mondly Offer Page">
 </a>
-<p class="photo-footnote">Mondly's Offer page before applying the extended design system created for web.</p>
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
-<p class="photo-footnote">Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
+<p class="photo-footnote">Top: Mondly's old Offer page design.</br>Bottom: Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 <h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
