@@ -87,7 +87,7 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
-### Balancing Growth with Brand Experience
+#### Balancing Growth with Brand Experience
 
 One of the recurring challenges at Mondly was **balancing short-term acquisition goals with the long-term product experience.**
 
