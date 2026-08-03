@@ -56,7 +56,7 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 #### Redesigned Offer page
 
-For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
+For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideatio.n
 
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
