@@ -87,9 +87,15 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
 
-### Mondly Growth & Monetization
+### Balancing Growth with Brand Experience
 
-The Growth team initiated several **A/B tests** to **increase Premium Subscriptions**. We tested various strategies, including designing new banners, creating templates for seasonal campaigns, and making UX improvements to the Free Trial screen.
+One of the recurring challenges at Mondly was **balancing short-term acquisition goals with the long-term product experience.**
+
+The User Acquisition team often looked at high-converting products such as **Temu** or **AliExpress** for inspiration. These platforms rely heavily on **urgency**, **promotional messaging** and **visually dense interfaces** to maximise conversions.
+
+While those patterns were clearly effective, the Product Design team felt they didn't fully align with **Mondly's learning experience** and **long-term brand trust.**
+
+My role was to translate those conversion principles into solutions that supported business goals while remaining consistent with Mondly's product experience.
 
 <a href="images/mondly-lto.png" class="lightbox">
   <img src="images/mondly-lto.png" alt="Mondly LTO">
