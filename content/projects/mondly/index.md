@@ -58,8 +58,6 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
 
-If curious, here is <a href="https://www.mondly.com/offer/lifetime-en?avangate_src=src-go-brand-ww-en-exact-bf24" target="\_blank">Mondly's Offer page with Old design<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> for comparison.
-
 <a href="images/mondly-offer-page.png" class="lightbox">
   <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
 </a>
