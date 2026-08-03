@@ -97,6 +97,12 @@ While those patterns were clearly effective, the Product Design team felt they d
 
 My role was to translate those conversion principles into solutions that supported business goals while remaining consistent with Mondly's product experience.
 
+<a href="images/mondly-lto-process.png" class="lightbox">
+  <img src="images/mondly-lto-process.png" alt="Mondly LTO">
+</a>
+
+<p class="photo-footnote">Translating high-conversion patterns into a solution aligned with Mondly's brand and user experience.</p>
+
 <a href="images/mondly-lto.png" class="lightbox">
   <img src="images/mondly-lto.png" alt="Mondly LTO">
 </a>
