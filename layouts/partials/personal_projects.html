@@ -9,13 +9,20 @@
         {{- if .thumbnail }}
         <img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy">
         {{- end }}
+        {{- if .new }}
+        <span class="project-card-badge">NEW</span>
+        {{- end }}
       </div>
       <div class="project-card-body">
         <div class="project-card-meta">
           <p class="card-title">
+            {{- if .url }}
             <a class="project-card-main-link" href="{{ .url }}" target="_blank" rel="noopener">
               {{ .title }}<span class="fi" style="background-image: url(/images/ext-link.svg)"></span>
             </a>
+            {{- else }}
+            {{ .title }}
+            {{- end }}
           </p>
           {{- if .github }}
           <a class="project-card-github" href="{{ .github }}" target="_blank" rel="noopener">

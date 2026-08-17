@@ -1,4 +1,15 @@
 projects:
+  - title: "🏛️ Tracing Origins"
+    description: "Exploring the colonial histories of museum collections through data."
+    url: "https://tracing-origins-lac.vercel.app/"
+    github: "https://github.com/veronicadeleonh/tracing-origins"
+    thumbnail: "/images/project-tracing-origins.png"
+    new: true
+    tags:
+      - React
+      - Pipeline
+      - Colonial History
+
   - title: "🪸 Coral Bleaching Monitor"
     description: "Data analysis and visualization of global coral bleaching events."
     url: "https://coral-bleaching-model.vercel.app/"
@@ -6,7 +17,7 @@ projects:
     thumbnail: "/images/project-coral-bleaching.png"
     tags:
       - Python
-      - Data Analysis
+      - Analysis
       - Climate Data
 
   - title: "🌋 Volcano Explorer"
