@@ -90,13 +90,17 @@ One of the most impactful changes was also one of the simplest: introducing a de
 <p>With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of <strong>A/B tests</strong> to compare the performance of the <strong>new design versus the old one</strong>, ensuring a positive impact on user engagement.</p>
 <h4 id="redesigned-offer-page">Redesigned Offer page</h4>
 <p>For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a <strong>scalable design system</strong> tailored to <strong>web marketing materials</strong>, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.</p>
-<a href="images/mondly-offer-page-old.png" class="lightbox">
-  <img src="images/mondly-offer-page-old.png" alt="Mondly Offer Page">
-</a>
-<a href="images/mondly-offer-page.png" class="lightbox">
-  <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
-</a>
-<p class="photo-footnote">Top: Mondly's old Offer page design.</br>Bottom: Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/mondly-offer-page-old.png" class="fade-img">
+    <img src="images/mondly-offer-page.png" class="fade-img active">
+  </div>
+  <div class="controls">
+    <button class="btn-before">Before</button>
+    <button class="btn-after active">After</button>
+  </div>
+</div>
+<p class="photo-footnote">Before: Mondly's old Offer page design. After: Redesigned Offer Page on iPad&nbsp;mini and iPhone&nbsp;SE</p>
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
 <h4 id="app-store--google-play-images">App Store &amp; Google Play images</h4>
@@ -163,6 +167,29 @@ One of the most impactful changes was also one of the simplest: introducing a de
   <img src="images/w2w-components.png" alt="Mondly W2W Screens">
 </a>
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
+<script>
+document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.fade-img');
+  const btnBefore = slider.querySelector('.btn-before');
+  const btnAfter = slider.querySelector('.btn-after');
+
+  btnBefore.addEventListener('click', () => {
+    imgs[0].classList.add('active');
+    imgs[1].classList.remove('active');
+
+    btnBefore.classList.add('active');
+    btnAfter.classList.remove('active');
+  });
+
+  btnAfter.addEventListener('click', () => {
+    imgs[0].classList.remove('active');
+    imgs[1].classList.add('active');
+
+    btnAfter.classList.add('active');
+    btnBefore.classList.remove('active');
+  });
+});
+</script>
 ]]></content:encoded></item><item><title>Improving ecommerce flows at EyeEm</title><link>http://localhost:1313/eyeem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/eyeem/</guid><description>EyeEm · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag green text-green">e-commerce</span></p>
 <p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>

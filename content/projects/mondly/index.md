@@ -58,15 +58,18 @@ With a major rebranding underway, we created brand guidelines based on our desig
 
 For this project, we adapted the app’s design system for use on a marketing landing page for the first time. This laid the foundation for a **scalable design system** tailored to **web marketing materials**, evolving with the team’s needs. It also enabled us to expand the style guide specifically for marketing designers, who would use it in areas such as social media campaign ideation.
 
-<a href="images/mondly-offer-page-old.png" class="lightbox">
-  <img src="images/mondly-offer-page-old.png" alt="Mondly Offer Page">
-</a>
+<div class="image-comparison-slider">
+  <div class="img-comparison-container">
+    <img src="images/mondly-offer-page-old.png" class="fade-img">
+    <img src="images/mondly-offer-page.png" class="fade-img active">
+  </div>
+  <div class="controls">
+    <button class="btn-before">Before</button>
+    <button class="btn-after active">After</button>
+  </div>
+</div>
 
-<a href="images/mondly-offer-page.png" class="lightbox">
-  <img src="images/mondly-offer-page.png" alt="Mondly Offer Page">
-</a>
-
-<p class="photo-footnote">Top: Mondly's old Offer page design.</br>Bottom: Preview of the Offer Page redesign on iPad mini and iPhone SE</p>
+<p class="photo-footnote">Before: Mondly's old Offer page design. After: Redesigned Offer Page on iPad&nbsp;mini and iPhone&nbsp;SE</p>
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
  The redesigned Offer page resulted in an increase in <strong>average time on page</strong> and a lower <strong>bounce rate</strong> compared to the original control version.</div>
@@ -173,3 +176,27 @@ One major ongoing marketing campaign involved creating an onboarding flow with a
 </a>
 
 <p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
+
+<script>
+document.querySelectorAll('.image-comparison-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.fade-img');
+  const btnBefore = slider.querySelector('.btn-before');
+  const btnAfter = slider.querySelector('.btn-after');
+
+  btnBefore.addEventListener('click', () => {
+    imgs[0].classList.add('active');
+    imgs[1].classList.remove('active');
+
+    btnBefore.classList.add('active');
+    btnAfter.classList.remove('active');
+  });
+
+  btnAfter.addEventListener('click', () => {
+    imgs[0].classList.remove('active');
+    imgs[1].classList.add('active');
+
+    btnAfter.classList.add('active');
+    btnBefore.classList.remove('active');
+  });
+});
+</script>
