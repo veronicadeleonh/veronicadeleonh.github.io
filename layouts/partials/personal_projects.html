@@ -4,7 +4,7 @@
   <p class="personal-projects-subtext">Small experiments exploring data, maps, science and AI.</p>
   <div class="personal-projects-grid">
     {{- range .projects }}
-    <div class="project-card">
+    <div class="project-card" data-project-title="{{ .title }}">
       <div class="project-card-image{{- if not .thumbnail }} project-card-image--placeholder{{- end }}">
         {{- if .thumbnail }}
         <img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy">
@@ -40,4 +40,15 @@
     {{- end }}
   </div>
 </section>
+
+<script>
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const title = card.dataset.projectTitle;
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'project_click', { project_name: title });
+    }
+  });
+});
+</script>
 {{- end }}
