@@ -9,8 +9,8 @@
         {{- if .thumbnail }}
         <img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy">
         {{- end }}
-        {{- if .new }}
-        <span class="project-card-badge">NEW</span>
+        {{- if .badge }}
+        <span class="project-card-badge project-card-badge--{{ .badge | lower | replaceRE "[^a-z0-9]" "" }}">{{ .badge }}</span>
         {{- end }}
       </div>
       <div class="project-card-body">

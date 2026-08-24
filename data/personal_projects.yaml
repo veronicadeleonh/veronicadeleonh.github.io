@@ -4,11 +4,22 @@ projects:
     url: "https://tracing-origins-lac.vercel.app/"
     github: "https://github.com/veronicadeleonh/tracing-origins"
     thumbnail: "/images/project-tracing-origins.png"
-    new: true
+    badge: "NEW"
     tags:
       - React
       - Pipeline
       - Colonial History
+
+  - title: "🌋 Volcano Explorer"
+    description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
+    url: "https://volcano-explorer-iota.vercel.app/"
+    github: "https://github.com/veronicadeleonh/volcano-explorer"
+    thumbnail: "/images/project-volcano-explorer.png"
+    badge: "v2"
+    tags:
+      - React
+      - Mapbox
+      - Geospatial
 
   - title: "🪸 Coral Bleaching Monitor"
     description: "Data analysis and visualization of global coral bleaching events."
@@ -19,13 +30,3 @@ projects:
       - Python
       - Analysis
       - Climate Data
-
-  - title: "🌋 Volcano Explorer"
-    description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
-    url: "https://volcano-explorer-iota.vercel.app/"
-    github: "https://github.com/veronicadeleonh/volcano-explorer"
-    thumbnail: "/images/project-volcano-explorer.png"
-    tags:
-      - React
-      - Mapbox
-      - Geospatial

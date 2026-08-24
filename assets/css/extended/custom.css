@@ -880,6 +880,10 @@ strong {
     z-index: 1;
 }
 
+.project-card-badge--v2 {
+    background-color: var(--color-purple);
+}
+
 @media screen and (max-width: 768px) {
     .personal-projects-grid {
         gap: var(--space-2);
