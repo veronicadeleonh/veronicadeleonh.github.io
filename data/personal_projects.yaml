@@ -7,7 +7,7 @@ projects:
     badge: "NEW"
     tags:
       - React
-      - Pipeline
+      - Sourcing
       - Colonial History
 
   - title: "🌋 Volcano Explorer"
@@ -28,5 +28,5 @@ projects:
     thumbnail: "/images/project-coral-bleaching.png"
     tags:
       - Python
-      - Analysis
+      - Geospatial
       - Climate Data
