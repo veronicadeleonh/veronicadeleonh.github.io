@@ -4,7 +4,7 @@
 
 <p class="photo-footnote">Berlin, Germany - 2018</p>
 
-<h4 style="margin:0">Product Designer exploring systems, visuals and code</h4>
+<h4 style="margin:0">Senior Product Designer exploring systems, visual, code and AI</h4>
 <p class="subtext">Exploring thoughtful digital experiences through curiosity, systems and experimentation
 </p>
 
@@ -20,7 +20,7 @@
             <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
             <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/instagram.svg)"></span></a>
       </div>
-      <a class="btn-connect rounded arrow" href="images/vdlh-cv.pdf">Download CV</a>
+      <a class="btn-connect rounded arrow" href="images/Veronica_De_Leon_Product_Designer_CV.pdf">Download CV</a>
       <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
 </div>
 
