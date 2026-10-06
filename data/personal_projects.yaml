@@ -1,25 +1,35 @@
 projects:
-  - title: "🏛️ Tracing Origins"
-    description: "Exploring the colonial histories of museum collections through data."
-    url: "https://tracing-origins-lac.vercel.app/"
-    github: "https://github.com/veronicadeleonh/tracing-origins"
-    thumbnail: "/images/project-tracing-origins.png"
+  - title: "🦕 Deep Lineages"
+    description: "186 million years of dinosaur evolution — explore species, family trees, and fossil discoveries on a paleomap."
+    url: "https://deep-lineages.vercel.app/"
+    github: "https://github.com/veronicadeleonh/deep-lineages"
+    thumbnail: "/images/project-deep-lineages.png"
     badge: "NEW"
     tags:
       - React
-      - Sourcing
-      - Colonial History
+      - D3
+      - Paleontology
 
   - title: "🌋 Volcano Explorer"
     description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
     url: "https://volcano-explorer-iota.vercel.app/"
     github: "https://github.com/veronicadeleonh/volcano-explorer"
     thumbnail: "/images/project-volcano-explorer.png"
-    badge: "v2"
+    badge: "v3"
     tags:
       - React
       - Mapbox
       - Geospatial
+
+  - title: "🏛️ Tracing Origins"
+    description: "Exploring the colonial histories of museum collections through data."
+    url: "https://tracing-origins-lac.vercel.app/"
+    github: "https://github.com/veronicadeleonh/tracing-origins"
+    thumbnail: "/images/project-tracing-origins.png"
+    tags:
+      - React
+      - Sourcing
+      - Colonial History
 
   - title: "🪸 Coral Bleaching Monitor"
     description: "Data analysis and visualization of global coral bleaching events."
