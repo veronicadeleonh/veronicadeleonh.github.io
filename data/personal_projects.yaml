@@ -1,14 +1,14 @@
 projects:
-  - title: "🦕 Deep Lineages"
-    description: "186 million years of dinosaur evolution — explore species, family trees, and fossil discoveries on a paleomap."
-    url: "https://deep-lineages.vercel.app/"
-    github: "https://github.com/veronicadeleonh/deep-lineages"
-    thumbnail: "/images/project-deep-lineages.png"
-    badge: "NEW"
-    tags:
-      - React
-      - D3
-      - Paleontology
+  # - title: "🦕 Deep Lineages"
+  #   description: "186 million years of dinosaur evolution — explore species, family trees, and fossil discoveries on a paleomap."
+  #   url: "https://deep-lineages.vercel.app/"
+  #   github: "https://github.com/veronicadeleonh/deep-lineages"
+  #   thumbnail: "/images/project-deep-lineages.png"
+  #   badge: "NEW"
+  #   tags:
+  #     - React
+  #     - D3
+  #     - Paleontology
 
   - title: "🌋 Volcano Explorer"
     description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
@@ -26,6 +26,7 @@ projects:
     url: "https://tracing-origins-lac.vercel.app/"
     github: "https://github.com/veronicadeleonh/tracing-origins"
     thumbnail: "/images/project-tracing-origins.png"
+    badge: "v2"
     tags:
       - React
       - Sourcing
