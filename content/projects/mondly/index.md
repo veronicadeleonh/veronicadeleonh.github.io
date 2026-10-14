@@ -76,7 +76,7 @@ For this project, we adapted the app’s design system for use on a marketing la
 
 #### App Store & Google Play images
 
-In order to test the impact of the rebranding on the Stores, we initiated a project to extend the new brand to these images. The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing.**
+In order to test the impact of the rebranding on the Stores, we initiated a project to extend the new brand to these images. The light mode was introduced after benchmarking research showed competitors favoring light backgrounds in their App Store images. We organized several **Design Team workshops** to develop a light version of our new brand, allowing us to include it in the **A/B testing**.
 
  <a href="images/app-store-images-dark.png" class="lightbox">
    <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
@@ -92,76 +92,72 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 #### Balancing Growth with Brand Experience
 
-One of the recurring challenges at Mondly was **balancing short-term acquisition goals with the long-term product experience.**
+A recurring challenge at Mondly was **balancing short-term acquisition goals with the long-term product experience**.
 
-The User Acquisition team often looked at high-converting products such as **Temu** or **AliExpress** for inspiration. These platforms rely heavily on **urgency**, **promotional messaging** and **visually dense interfaces** to maximise conversions.
+The User Acquisition team often looked to high-converting apps like **Temu** or **AliExpress** for inspiration. These apps rely on **urgency, aggressive promotions** and **visually dense interfaces**. The patterns clearly worked for them, but we in the Product Design team felt they could **hurt trust in a learning product** and didn't fit Mondly's brand.
 
-While those patterns were clearly effective, the Product Design team felt they didn't fully align with **Mondly's learning experience** and **long-term brand trust.**
-
-My role was to translate those conversion principles into solutions that supported business goals while remaining consistent with Mondly's product experience.
+Instead of rejecting the requests, I looked at _why_ those patterns convert: **urgency, a clear offer and high visibility**. I then designed Limited Time Offer banners that used those principles within Mondly's design system.
 
 <a href="images/mondly-lto-process.png" class="lightbox">
-  <img src="images/mondly-lto-process.png" alt="Mondly LTO">
+  <img src="images/mondly-lto-process.png" alt="A Temu Valentine's sale banner next to Mondly's adapted banner, mapping urgency to a countdown timer, aggressive promotions to a clear discount, and dense interfaces to a contained card">
 </a>
 
-<p class="photo-footnote">Translating high-conversion patterns into a solution aligned with Mondly's brand and user experience.</p>
+<p class="photo-footnote">From inspiration to adaptation: keeping the conversion principles, leaving out the visual density.</p>
 
-<a href="images/mondly-lto.png" class="lightbox">
-  <img src="images/mondly-lto.png" alt="Mondly LTO">
+For the **Valentine's Day campaign**, this meant taking the energy of high-conversion promotions and translating it into Mondly's visual language. It took **several rounds of feedback** with Marketing, Growth and User Acquisition. I explored different versions, explained the trade-offs of each, kept what supported their goals and adjusted what compromised the brand.
+
+<a href="images/mondly-lto-versions.png" class="lightbox">
+  <img src="images/mondly-lto-versions.png" alt="Four versions of the Valentine's banner in the app: header timer, campaign-first, timer in pill, and the final version with a full-width CTA">
 </a>
 
-<p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
+<p class="photo-footnote">Explorations for the Valentine's banner: timer in a header vs. inside the card, offer-first vs. campaign-first, and the weight of the CTA. The final kept the timer inside the card with a full-width CTA.</p>
+
+The same approach shaped the **Limited Time Offer banners** that appeared in the app outside seasonal campaigns. Here, instead of debating which direction was right, we tested **three variants in an A/B/C test** and let user behaviour
 
 #### Seasonal Campaigns
 
-Seasonal campaigns were one of Mondly's **key growth initiatives**, encouraging free users to upgrade to Premium through limited-time offers such as Spring Sale, Valentine's Day and Black Friday.
-
-Our in-app campaigns followed a consistent conversion flow:
+Seasonal campaigns such as Spring Sale, Valentine’s Day and Black Friday were one of Mondly’s **key growth initiatives**. They encouraged free users to upgrade to Premium through limited-time offers, and they followed a consistent in-app conversion flow.
 
 <a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
   <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
 </a>
-<p class="photo-footnote">User conversion through in-app ads flow</p>
+<p class="photo-footnote">In-app conversion flow for seasonal campaigns.</p>
 
 ##### The Challenge
 
-3D illustrations were a **core part of Mondly's visual identity**. They were used throughout the product to represent courses, learning paths and key features, helping create a distinctive and playful brand experience.
+3D illustrations were a core part of Mondly’s visual identity. Each campaign needed a new illustration from an external 3D artist, followed by several rounds of stakeholder review.
 
-However, seasonal campaigns introduced a different challenge.
-
-Each campaign required a **brand-new illustration created by an external 3D artist**. While the quality was excellent, the process involved **multiple design iterations and stakeholder reviews**, making it difficult to **launch campaigns quickly** and explore different creative directions through experimentation.
-
-As growth initiatives became more frequent, we needed a workflow that could support **faster execution without compromising Mondly's visual identity**.
+The quality was excellent, but as campaigns became more frequent, this process **slowed down launches and made it hard to get new creative directions approved**.
 
 <a href="images/seasonal-campaigns-old.png" class="lightbox"> 
   <img src="images/seasonal-campaigns-old.png" alt="Mondly Seasonal Campaign - Old Design"> 
 </a> 
-<p class="photo-footnote">Previous campaign workflow relying on bespoke 3D illustrations created by an external partner.</p>
+<p class="photo-footnote">The previous workflow depended on a bespoke 3D illustration for every campaign.</p>
 
 ##### Rethinking the Approach
 
-While discussing the project with another Product Designer, we realised the bottleneck wasn't the campaign layout—it was our **dependency on creating a new 3D illustration for every seasonal promotion**.
+While designing the Spring Campaign, I discussed the workflow with the Design Lead. We realised the bottleneck wasn’t the layout, it was the dependency on a new 3D asset every time.
 
-Instead of asking "How can we design a better campaign?", we asked:
+So we changed the question:
 
-> **How can we preserve Mondly's visual identity while making seasonal campaigns faster to produce and easier to iterate?**
+> **How can we keep Mondly’s 3D visual identity while making campaigns faster to produce and easier to align on with stakeholders?**
 
-For the Spring Campaign, I redesigned the promotional layout around **AI-generated imagery** instead of bespoke 3D assets. The goal wasn't to replace Mondly's visual language, but to create a **more scalable campaign system** that maintained the brand while **significantly reducing production time**.
+I redesigned the campaign layout so the 3D look came from an **AI-generated background** instead of a bespoke illustration. The designer in charge could now produce the final asset in-house, without waiting on an external partner, while the campaign still felt unmistakably Mondly.
 
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign"> 
 </a> 
-<p class="photo-footnote">Spring Campaign redesign replacing bespoke 3D artwork with a scalable AI-assisted visual system.</p>
+<p class="photo-footnote">Spring Campaign redesign: an AI-assisted background keeps the 3D look without a bespoke illustration.</p>
 
 ##### Validation
 
-To validate the new approach, we launched **two redesigned variants** alongside the existing campaign and conducted an **A/B/C test**.
+We aligned with stakeholders to test **two variants with different backgrounds against the original campaign** in an **A/B/C test**.
 
 <a href="images/seasonal-campaigns-test-result.png" class="lightbox">
  <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results"> 
 </a>
 
-<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> The redesigned campaign generated <strong>7% more <em>Activate</em> taps</strong>, with <strong>Variant B performing best</strong>. Around <strong>2% of users</strong> who reached the Subscription screen continued to the <strong>App Store purchase flow</strong>, moving further down the conversion funnel. </div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> <strong>Variant B</strong> performed best, <strong>with 7% more Activate taps than the original campaign</strong>. The new layout showed that faster, in-house production could keep the brand experience and improve engagement at the same time.</br></br><strong>The new layout became the template for the following seasonal campaigns</strong>, so each new promotion could be produced in-house and tested without commissioning new 3D artwork.</div>
 
 ### Marketing Campaigns
 

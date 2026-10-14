@@ -127,37 +127,35 @@ One of the most impactful changes was also one of the simplest: introducing a de
 </a>
 <p class="photo-footnote">Preview of the Limited Time Offer Banner variants for testing</p>
 <h4 id="seasonal-campaigns">Seasonal Campaigns</h4>
-<p>Seasonal campaigns were one of Mondly&rsquo;s <strong>key growth initiatives</strong>, encouraging free users to upgrade to Premium through limited-time offers such as Spring Sale, Valentine&rsquo;s Day and Black Friday.</p>
-<p>Our in-app campaigns followed a consistent conversion flow:</p>
+<p>Seasonal campaigns such as Spring Sale, Valentine’s Day and Black Friday were one of Mondly’s <strong>key growth initiatives</strong>. They encouraged free users to upgrade to Premium through limited-time offers, and they followed a consistent in-app conversion flow.</p>
 <a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
   <img src="images/seasonal-campaigns-user-flow.png" alt="Mondly User Flow Seasonal Campaign">
 </a>
-<p class="photo-footnote">User conversion through in-app ads flow</p>
+<p class="photo-footnote">In-app conversion flow for seasonal campaigns.</p>
 <h5 id="the-challenge">The Challenge</h5>
-<p>3D illustrations were a <strong>core part of Mondly&rsquo;s visual identity</strong>. They were used throughout the product to represent courses, learning paths and key features, helping create a distinctive and playful brand experience.</p>
-<p>However, seasonal campaigns introduced a different challenge.</p>
-<p>Each campaign required a <strong>brand-new illustration created by an external 3D artist</strong>. While the quality was excellent, the process involved <strong>multiple design iterations and stakeholder reviews</strong>, making it difficult to <strong>launch campaigns quickly</strong> and explore different creative directions through experimentation.</p>
-<p>As growth initiatives became more frequent, we needed a workflow that could support <strong>faster execution without compromising Mondly&rsquo;s visual identity</strong>.</p>
+<p>3D illustrations were a core part of Mondly’s visual identity. Each campaign needed a new illustration from an external 3D artist, followed by several rounds of stakeholder review.</p>
+<p>The quality was excellent, but as campaigns became more frequent, this process <strong>slowed down launches and made it hard to get new creative directions approved.</strong></p>
 <a href="images/seasonal-campaigns-old.png" class="lightbox"> 
   <img src="images/seasonal-campaigns-old.png" alt="Mondly Seasonal Campaign - Old Design"> 
 </a> 
-<p class="photo-footnote">Previous campaign workflow relying on bespoke 3D illustrations created by an external partner.</p>
+<p class="photo-footnote">The previous workflow depended on a bespoke 3D illustration for every campaign.</p>
 <h5 id="rethinking-the-approach">Rethinking the Approach</h5>
-<p>While discussing the project with another Product Designer, we realised the bottleneck wasn&rsquo;t the campaign layout—it was our <strong>dependency on creating a new 3D illustration for every seasonal promotion</strong>.</p>
-<p>Instead of asking &ldquo;How can we design a better campaign?&rdquo;, we asked:</p>
+<p>While designing the Spring Campaign, I discussed the workflow with the Design Lead. We realised the bottleneck wasn’t the layout, it was the dependency on a new 3D asset every time.</p>
+<p>So we changed the question:</p>
 <blockquote>
-<p><strong>How can we preserve Mondly&rsquo;s visual identity while making seasonal campaigns faster to produce and easier to iterate?</strong></p></blockquote>
-<p>For the Spring Campaign, I redesigned the promotional layout around <strong>AI-generated imagery</strong> instead of bespoke 3D assets. The goal wasn&rsquo;t to replace Mondly&rsquo;s visual language, but to create a <strong>more scalable campaign system</strong> that maintained the brand while <strong>significantly reducing production time</strong>.</p>
+<p><strong>How can we keep Mondly’s 3D visual identity while making campaigns faster to produce and easier to align on with stakeholders?</strong></p></blockquote>
+<p>I redesigned the campaign layout so the 3D look came from an <strong>AI-generated background</strong> instead of a bespoke illustration. The designer in charge could now produce the final asset in-house, without waiting on an external partner, while the campaign still felt unmistakably Mondly.</p>
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign"> 
 </a> 
-<p class="photo-footnote">Spring Campaign redesign replacing bespoke 3D artwork with a scalable AI-assisted visual system.</p>
+<p class="photo-footnote">Spring Campaign redesign: an AI-assisted background keeps the 3D look without a bespoke illustration.</p>
 <h5 id="validation">Validation</h5>
-<p>To validate the new approach, we launched <strong>two redesigned variants</strong> alongside the existing campaign and conducted an <strong>A/B/C test</strong>.</p>
+<p>We aligned with stakeholders to test <strong>two variants with different backgrounds against the original campaign</strong> in an <strong>A/B/C test</strong>.</p>
 <a href="images/seasonal-campaigns-test-result.png" class="lightbox">
  <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results"> 
 </a>
-<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> The redesigned campaign generated <strong>7% more <em>Activate</em> taps</strong>, with <strong>Variant B performing best</strong>. Around <strong>2% of users</strong> who reached the Subscription screen continued to the <strong>App Store purchase flow</strong>, moving further down the conversion funnel. </div>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> <strong>Variant B performed best, with 7% more Activate taps than the original campaign.</strong> The new layout showed that faster, in-house production could keep the brand experience and improve engagement at the same time.
+<p>The new layout became the template for the following seasonal campaigns, so each new promotion could be produced in-house and tested without commissioning new 3D artwork.</div></p>
 <h3 id="marketing-campaigns">Marketing Campaigns</h3>
 <p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
 <a href="images/w2w-screens.png" class="lightbox">
