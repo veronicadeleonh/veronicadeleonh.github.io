@@ -94,7 +94,7 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
 
 A recurring challenge at Mondly was **balancing short-term acquisition goals with the long-term product experience**.
 
-The User Acquisition team often looked to high-converting apps like **Temu** or **AliExpress** for inspiration. These apps rely on **urgency, aggressive promotions** and **visually dense interfaces**. The patterns clearly worked for them, but we in the Product Design team felt they could **hurt trust in a learning product** and didn't fit Mondly's brand.
+The User Acquisition team often looked to high-converting apps like **Temu** or **AliExpress** for inspiration. These apps rely on urgency, aggressive promotions and visually dense interfaces. The patterns clearly worked for them, but we in the Product Design team felt they could **hurt trust in a learning product** and didn't fit Mondly's brand.
 
 Instead of rejecting the requests, I looked at _why_ those patterns convert: **urgency, a clear offer and high visibility**. I then designed Limited Time Offer banners that used those principles within Mondly's design system.
 
