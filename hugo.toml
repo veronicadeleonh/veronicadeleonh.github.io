@@ -43,7 +43,7 @@ weight = 2
 
 [[menu.main]]
 name = "Contact"
-url = "/contact/"
+url = "https://www.linkedin.com/in/veronicadeleonh/"
 weight = 3
 
 [[socialIcons]]
