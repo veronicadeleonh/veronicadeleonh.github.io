@@ -32,12 +32,12 @@ projects:
       - Sourcing
       - Colonial History
 
-  - title: "🪸 Coral Bleaching Monitor"
-    description: "Data analysis and visualization of global coral bleaching events."
-    url: "https://coral-bleaching-model.vercel.app/"
-    github: "https://github.com/veronicadeleonh/coral-bleaching-model"
-    thumbnail: "/images/project-coral-bleaching.png"
-    tags:
-      - Python
-      - Geospatial
-      - Climate Data
+  # - title: "🪸 Coral Bleaching Monitor"
+  #   description: "Data analysis and visualization of global coral bleaching events."
+  #   url: "https://coral-bleaching-model.vercel.app/"
+  #   github: "https://github.com/veronicadeleonh/coral-bleaching-model"
+  #   thumbnail: "/images/project-coral-bleaching.png"
+  #   tags:
+  #     - Python
+  #     - Geospatial
+  #     - Climate Data
