@@ -27,7 +27,7 @@ Source: `assets/css/extended/custom.css`
 | `--color-surface-active` | `#d1d5d6` | Active/pressed state of surface |
 | `--color-border` | `#e7eaeb` | Subtle borders |
 | `--color-text-secondary` | `#616768` | Secondary text, captions |
-| `--color-text-tertiary` | `#757c7d` | Tertiary text, nav, footer |
+| `--color-text-tertiary` | `#6d7475` | Tertiary text, nav, footer |
 
 ### Semantic
 
