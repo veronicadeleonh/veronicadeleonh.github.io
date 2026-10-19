@@ -130,9 +130,8 @@ function toggleThemeListener() {
             {{- $page_url:= $currentPage.Permalink }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
-                <a href="{{ $menu_item_url }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- if $is_search -}}data-no-instant{{- end -}}
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
+                <a href="{{ $menu_item_url }}"
+                {{- if $is_search }} title="{{ .Title | default .Name }} (Alt + /)" accesskey="/" data-no-instant{{- end }}
                 {{- if or (and (eq .URL "/") (eq $page_url ("/" | absURL))) (eq $page_url $menu_item_url) }} class="active" {{- end }}
                 {{- if .Params.External }} target="_blank" {{- end }}
                 >
