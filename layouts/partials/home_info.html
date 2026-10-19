@@ -1,8 +1,9 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
+  <h1 class="sr-only">{{ $.Site.Title }}</h1>
   {{- if .Title }}
   <header class="entry-header">
-    <h1>{{ .Title | markdownify }}</h1>
+    <h2>{{ .Title | markdownify }}</h2>
   </header>
   {{- end }}
   <section class="entry-content">

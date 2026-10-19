@@ -72,7 +72,7 @@ function toggleThemeListener() {
         <div class="logo">
             {{- $label_text := (site.Params.logo.text | default site.Title) }}
             {{- if site.Title }}
-            <a href="{{ "" | absURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+            <a href="{{ "" | absURL }}" title="{{ $label_text }}">
                 {{- if site.Params.logo.icon }}
                 {{- $img := resources.Get site.Params.logo.icon }}
                 {{- if $img }}
