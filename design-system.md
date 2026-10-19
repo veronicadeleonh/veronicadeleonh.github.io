@@ -26,8 +26,8 @@ Source: `assets/css/extended/custom.css`
 | `--color-surface-hover` | `#e2e6e7` | Hover state of surface |
 | `--color-surface-active` | `#d1d5d6` | Active/pressed state of surface |
 | `--color-border` | `#e7eaeb` | Subtle borders |
-| `--color-text-secondary` | `#777e7f` | Secondary text, captions |
-| `--color-text-tertiary` | `#9b9fa0` | Tertiary text, nav, footer |
+| `--color-text-secondary` | `#616768` | Secondary text, captions |
+| `--color-text-tertiary` | `#757c7d` | Tertiary text, nav, footer |
 
 ### Semantic
 
@@ -141,7 +141,7 @@ Used on project cards on the homepage to display project type.
 | Property | Value |
 |----------|-------|
 | `font-size` | 14px (`--font-size-tag`) |
-| `color` | `#777e7f` (`--color-text-secondary`) |
+| `color` | `#616768` (`--color-text-secondary`) |
 | `background-color` | `#f1f4f5` (`--color-surface`) |
 | `padding` | 4px 8px (`--space-1` `--space-2`) |
 | `width` | fit-content |
