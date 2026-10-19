@@ -33,7 +33,7 @@ Source: `assets/css/extended/custom.css`
 
 | Token | Hex (solid) | Background hex | Background opacity | Usage |
 |-------|-------------|----------------|--------------------|-------|
-| `--color-green` | `#3d7a26` | `--color-green-bg` `#bbdc58` | 17.6% (0x2d) | e-commerce tag |
+| `--color-green` | `#268826` | `--color-green-bg` `#bbdc58` | 17.6% (0x2d) | e-commerce tag |
 | `--color-orange` | `#f0932b` | `--color-orange-bg` `#ffbf76` | 17.6% (0x2d) | SaaS tag |
 | `--color-blue` | `#4834d4` | `--color-blue-bg` `#686ce0` | 17.6% (0x2d) | e-learning tag |
 | `--color-purple` | `#8843ea` | `--color-purple-bg` `#8843ea` | 14.9% (0x26) | Available, unused in content |
