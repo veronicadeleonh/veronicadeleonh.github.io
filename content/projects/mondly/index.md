@@ -2,7 +2,7 @@
 title: "Designing growth experiences at Mondly"
 layout: "mondly"
 url: "/mondly"
-summary: Mondly · Product Design
+summary: Mondly · Growth & Senior Product Designer
 weight: 2
 ShowToc: true
 TocOpen: true

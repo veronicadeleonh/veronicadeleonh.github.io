@@ -2,7 +2,7 @@
 title: "Designing Interactive Product Experiences for Life Sciences"
 layout: "BaseCase"
 url: "/basecase"
-summary: Basecase · UX/UI Design
+summary: Basecase · UX/UI & Marketing Designer
 weight: 4
 ShowToc: true
 TocOpen: true
