@@ -42,6 +42,48 @@ Source: `assets/css/extended/custom.css`
 > **8-digit hex format** (CSS Color Level 4 RRGGBBAA): last two digits are alpha in hex.
 > `2d` = 45/255 = 17.6% · `26` = 38/255 = 14.9% · `40` = 64/255 = 25.1%
 
+### Bright accents
+
+For dark surfaces; each passes AA at 8:1+ on `#0e1011`. Used by the dark theme and the accent light.
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `--color-blue-bright` | `#6cb6ff` | Dark theme blue; /how-i-build "Data & research" |
+| `--color-purple-bright` | `#c9a7ff` | Dark theme purple; /how-i-build "Claude Code" lane |
+| `--color-pink-bright` | `#ff7ad9` | Dark theme pink; /how-i-build "Tokens" |
+| `--color-orange-bright` | `#ff9e57` | Dark theme orange; /how-i-build "UI & features" |
+| `--color-yellow-bright` | `#ffd84d` | Dark theme yellow; /how-i-build "Me" lane |
+| `--color-green-bright` | `#4fe08c` | Dark theme green; /how-i-build "Accessibility" |
+| `--color-grey-bright` | `#b0b7b8` | Dark theme grey; /how-i-build "Docs & ship" |
+
+### Dark theme
+
+Opt-in per page: `pageTheme: dark` in front matter → `data-page-theme="dark"` on `<html>` (see `layouts/_default/baseof.html`). Redefines the base tokens, maps `--color-blue/purple/orange/yellow/green` to their `-bright` versions, adds `--color-pink` and `--color-grey`, and sets the PaperModX theme variables.
+
+| Token | Dark value |
+|-------|-----------|
+| `--color-bg` | `#0e1011` |
+| `--color-text` | `#f1f4f5` |
+| `--color-surface` | `#1a1d1f` |
+| `--color-surface-hover` | `#24282a` |
+| `--color-surface-active` | `#3a3f41` |
+| `--color-border` | `#2a2e30` |
+| `--color-text-secondary` | `#b4babb` |
+| `--color-text-tertiary` | `#8d9495` |
+
+### Accent light ("Mono + violet")
+
+| Token | Value |
+|-------|-------|
+| `--accent-light` | `#ffffff` |
+| `--accent-glow` | `var(--color-purple-bright)` |
+| `--gradient-aurora` | three radial lights: light · glow · light |
+
+Two uses, both overlays so the element never changes size; both stop under `prefers-reduced-motion`:
+
+- **Spotlight** (hover / focus): `radial-gradient(150px circle at var(--x) var(--y), var(--accent-light), var(--accent-glow) 40%, transparent 70%)` masked to a 1px border ring, plus a faint inner glow. A pointermove script sets `--x`/`--y`. Used on /how-i-build steps, legend, skills and links, and on the home "How I build these" hover (stays dark).
+- **Aurora** (active / selected): oversized `::before` (`inset: -40%`, `z-index: -1`, parent `overflow: hidden; isolation: isolate`) with `background: var(--gradient-aurora), <base>` and `@keyframes aurora-move` (6s ease-in-out infinite alternate). Used on the selected step and the lens thumb.
+
 ---
 
 ## Typography

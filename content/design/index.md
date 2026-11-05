@@ -60,6 +60,61 @@ url: "/design/"
 </tbody>
 </table>
 
+### Bright accents
+
+<p>For dark surfaces. Each one passes AA at 8:1 or more on the dark background. Used by the dark theme and by the accent light.</p>
+
+<table class="ds-table">
+<thead><tr><th></th><th>Name</th><th>Token</th><th>Hex</th></tr></thead>
+<tbody>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-blue-bright)"></div></td><td><span class="ds-color-name">blue-bright</span></td><td><span class="ds-color-var">--color-blue-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-blue-bright);border-color:var(--color-blue-bright)"></div><span class="ds-hex-value">#6cb6ff</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-purple-bright)"></div></td><td><span class="ds-color-name">purple-bright</span></td><td><span class="ds-color-var">--color-purple-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-purple-bright);border-color:var(--color-purple-bright)"></div><span class="ds-hex-value">#c9a7ff</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-pink-bright)"></div></td><td><span class="ds-color-name">pink-bright</span></td><td><span class="ds-color-var">--color-pink-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-pink-bright);border-color:var(--color-pink-bright)"></div><span class="ds-hex-value">#ff7ad9</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-orange-bright)"></div></td><td><span class="ds-color-name">orange-bright</span></td><td><span class="ds-color-var">--color-orange-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-orange-bright);border-color:var(--color-orange-bright)"></div><span class="ds-hex-value">#ff9e57</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-yellow-bright)"></div></td><td><span class="ds-color-name">yellow-bright</span></td><td><span class="ds-color-var">--color-yellow-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-yellow-bright);border-color:var(--color-yellow-bright)"></div><span class="ds-hex-value">#ffd84d</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-green-bright)"></div></td><td><span class="ds-color-name">green-bright</span></td><td><span class="ds-color-var">--color-green-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-green-bright);border-color:var(--color-green-bright)"></div><span class="ds-hex-value">#4fe08c</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--color-grey-bright)"></div></td><td><span class="ds-color-name">grey-bright</span></td><td><span class="ds-color-var">--color-grey-bright</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:var(--color-grey-bright);border-color:var(--color-grey-bright)"></div><span class="ds-hex-value">#b0b7b8</span></div></td></tr>
+</tbody>
+</table>
+
+### Dark theme
+
+<p>Opt-in per page with <code>pageTheme: dark</code> in the front matter (sets <code>data-page-theme="dark"</code> on <code>&lt;html&gt;</code>). It redefines the base tokens below and maps the semantic accents to their bright versions (<code>--color-blue</code> → <code>--color-blue-bright</code>, and so on, plus <code>--color-pink</code> and <code>--color-grey</code>). Used by <a href="/how-i-build/">How I build</a>.</p>
+
+<table class="ds-table">
+<thead><tr><th></th><th>Name</th><th>Token</th><th>Hex</th></tr></thead>
+<tbody>
+<tr><td><div class="ds-color-swatch" style="background:#0e1011"></div></td><td><span class="ds-color-name">bg</span></td><td><span class="ds-color-var">--color-bg</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#0e1011;border-color:#0e1011"></div><span class="ds-hex-value">#0e1011</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#f1f4f5"></div></td><td><span class="ds-color-name">text</span></td><td><span class="ds-color-var">--color-text</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#f1f4f5;border-color:#f1f4f5"></div><span class="ds-hex-value">#f1f4f5</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#1a1d1f"></div></td><td><span class="ds-color-name">surface</span></td><td><span class="ds-color-var">--color-surface</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#1a1d1f;border-color:#1a1d1f"></div><span class="ds-hex-value">#1a1d1f</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#24282a"></div></td><td><span class="ds-color-name">surface-hover</span></td><td><span class="ds-color-var">--color-surface-hover</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#24282a;border-color:#24282a"></div><span class="ds-hex-value">#24282a</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#3a3f41"></div></td><td><span class="ds-color-name">surface-active</span></td><td><span class="ds-color-var">--color-surface-active</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#3a3f41;border-color:#3a3f41"></div><span class="ds-hex-value">#3a3f41</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#2a2e30"></div></td><td><span class="ds-color-name">border</span></td><td><span class="ds-color-var">--color-border</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#2a2e30;border-color:#2a2e30"></div><span class="ds-hex-value">#2a2e30</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#b4babb"></div></td><td><span class="ds-color-name">text-secondary</span></td><td><span class="ds-color-var">--color-text-secondary</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#b4babb;border-color:#b4babb"></div><span class="ds-hex-value">#b4babb</span></div></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:#8d9495"></div></td><td><span class="ds-color-name">text-tertiary</span></td><td><span class="ds-color-var">--color-text-tertiary</span></td><td><div class="ds-color-hex"><div class="ds-color-dot" style="background:#8d9495;border-color:#8d9495"></div><span class="ds-hex-value">#8d9495</span></div></td></tr>
+</tbody>
+</table>
+
+### Accent light
+
+<table class="ds-table">
+<thead><tr><th></th><th>Name</th><th>Token</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td><div class="ds-color-swatch" style="background:var(--accent-light)"></div></td><td><span class="ds-color-name">accent-light</span></td><td><span class="ds-color-var">--accent-light</span></td><td><span class="ds-hex-value">#ffffff</span></td></tr>
+<tr><td><div class="ds-color-swatch" style="background:var(--accent-glow)"></div></td><td><span class="ds-color-name">accent-glow</span></td><td><span class="ds-color-var">--accent-glow</span></td><td><span class="ds-hex-value">var(--color-purple-bright)</span></td></tr>
+</tbody>
+</table>
+
+<div style="position:relative;overflow:hidden;height:56px;margin:16px 0 8px;border:1px solid var(--color-border)"><div style="position:absolute;inset:-40%;background:var(--gradient-aurora),#ffffff;animation:aurora-move 6s ease-in-out infinite alternate"></div></div>
+<p class="ds-token">--gradient-aurora · three soft radial lights (light · glow · light), animated with <code>aurora-move</code></p>
+
+<p>The "Mono + violet" accent light has two uses, both as overlays, so the element never changes size:</p>
+<ul>
+<li><strong>Spotlight</strong> (hover and keyboard focus): a radial light from <code>--accent-light</code> to <code>--accent-glow</code> follows the cursor along a 1px border ring, with a faint glow inside. A small script writes the cursor position to <code>--x</code> and <code>--y</code>. Also the hover of the home "How I build these" entry, which stays dark.</li>
+<li><strong>Aurora</strong> (active, selected elements): an oversized <code>::before</code> (<code>inset: -40%</code>) filled with <code>--gradient-aurora</code>, drifting with <code>aurora-move</code> (6s, ease-in-out, alternate).</li>
+</ul>
+<p>Both stop animating with <code>prefers-reduced-motion</code>.</p>
+
 ---
 
 ## Typography

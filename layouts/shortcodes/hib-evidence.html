@@ -1,0 +1,253 @@
+{{/* Evidence renderers for the loop panel: each project can replace a step's text with an artifact drawn
+     from its real data (data/how_i_build.yaml → projects[].evidence[step]). Types: versions, tokens, contrast.
+     The page script calls window.HIB_EV.render(evidence) and falls back to the text when a type is missing. */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&family=Schibsted+Grotesk:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+.ev { margin: var(--space-1) 0 var(--space-1); font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.ev-cap { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); }
+.ev-more { margin-top: var(--space-1); }
+.ev-more summary { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); cursor: pointer; width: fit-content; }
+.ev-more summary:hover { color: var(--color-text); }
+.ev-more p { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); margin-top: var(--space-1) !important; }
+.ev-label { color: var(--color-text-tertiary); margin-bottom: 6px; }
+
+/* versions: the app's own UI, drawn with each version's CSS */
+.ev-versions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); }
+.ev-ver-head { display: flex; flex-wrap: wrap; column-gap: 8px; justify-content: space-between; color: var(--color-text-tertiary); margin-bottom: 4px; }
+.ev-ver-head b { color: var(--color-text); font-weight: var(--font-weight-medium); }
+.ev-app { background: #0a0a16; padding: 12px 10px; border: 1px solid var(--color-border); }
+.ev-app .face { color: #fff; font-size: 20px; line-height: 1; margin-bottom: 2px; }
+.ev-app .fname { color: rgba(255,255,255,.5); font-size: 10px; margin-bottom: 10px; font-family: var(--font-mono); }
+.ev-chips { display: flex; gap: 6px; }
+.ev-chip { flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px; padding: 5px 8px; font-size: 11px; font-weight: 500; white-space: nowrap;
+  border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: rgba(255,255,255,.45); }
+.ev-chip i { width: 6px; height: 6px; border-radius: 50%; background: var(--cc); }
+.ev-chip { cursor: pointer; transition: all .18s; }
+.ev-chip:not(.on):hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.8); }
+.ev-chip.ctl:not(.on) { box-shadow: inset 0 0 0 1px rgba(255,255,255,.5); border-color: transparent; }
+.ev-chip.on { color: #fff; background: var(--on-bg); border-color: var(--on-edge); }
+.ev-chip:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
+.ev-light g { transition: opacity .15s; }
+.ev-light[data-hot] g { opacity: .15; }
+.ev-light[data-hot="0"] g[data-i="0"], .ev-light[data-hot="1"] g[data-i="1"], .ev-light[data-hot="2"] g[data-i="2"] { opacity: 1; }
+.ev-mus { cursor: default; transition: border-color .15s; }
+.ev-light[data-hot="0"] .ev-mus[data-i="0"], .ev-light[data-hot="1"] .ev-mus[data-i="1"], .ev-light[data-hot="2"] .ev-mus[data-i="2"] { border-color: #1a1a1a; }
+.ev-legend { display: flex; flex-direction: column; gap: 3px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.08); font-size: 10px; color: rgba(255,255,255,.6); }
+.ev-legend span { display: flex; align-items: center; gap: 6px; height: 12px; }
+.ev-legend i { width: 7px; height: 7px; border-radius: 50%; margin: 0 8px 0 7px; }
+.ev-light { border-color: #e5e2da; }
+.ev-muss { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.ev-mus { display: inline-flex; align-items: center; gap: 4px; font-family: system-ui, sans-serif; font-size: 10px; color: #1a1a1a; border: 1px solid #c9c4b8; border-radius: 20px; padding: 1px 6px; white-space: nowrap; }
+.ev-mus i { width: 6px; height: 6px; border-radius: 50%; }
+.ev-sws { display: flex; gap: 3px; margin-bottom: 10px; }
+.ev-sws i { width: 14px; height: 14px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+.ev-badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 9px; }
+.ev-diet { display: flex; gap: 10px; margin-top: 8px; font-size: 11px; }
+.ev-diet span, .ev-cvd-cell span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.ev-diet i, .ev-cvd-cell i { width: 11px; height: 11px; border-radius: 50%; border: 2px solid; }
+.ev-cvd { display: grid; grid-template-columns: minmax(0, 1.1fr) 1fr 14px 1fr; align-items: center; gap: 4px 8px; margin-top: var(--space-3); }
+.ev-cvd .tk { color: var(--color-text); font-size: var(--font-size-xs); }
+.ev-cvd .arrow { color: var(--color-text-tertiary); text-align: center; }
+.ev-cvd-cell { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 6px 8px; font-family: var(--font-sans); font-size: 11px; color: #18222b; }
+.ev-src { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+.ev-src b { font-weight: 400; color: var(--color-text-tertiary); align-self: center; }
+.ev-src span { border: 1px solid var(--color-border); padding: 2px 6px; color: var(--color-text); }
+.ev-stages { display: grid; gap: 6px; }
+.ev-stages:not(.is-funnel) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ev-stage { display: grid; grid-template-columns: 84px 1fr; column-gap: 10px; align-items: baseline; }
+.ev-stage .num { font-size: var(--font-size-lg); color: var(--color-text); text-align: right; font-variant-numeric: tabular-nums; }
+.ev-stage .lab b { font-weight: var(--font-weight-medium); color: var(--color-text); }
+.ev-stage .bar { grid-column: 2; height: 6px; margin-top: 3px; }
+.ev-stage .bar i { display: block; height: 100%; background: var(--color-text); }
+.ev-stage:first-child .bar i { background: var(--color-text-tertiary); }
+.ev-ver-what { margin-top: 6px; line-height: 1.4; }
+
+/* tokens: drift of hard-coded values, then the token set */
+.ev-drift { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-bottom: var(--space-3); }
+.ev-bars { display: grid; grid-template-columns: max-content 1fr 30px; align-items: center; gap: 4px 6px; }
+.ev-bars .b { height: 10px; background: var(--color-text-tertiary); }
+.ev-bars .b.last { background: var(--color-text); }
+.ev-bars .n { text-align: right; color: var(--color-text); }
+.ev-stack { display: flex; height: 14px; gap: 2px; margin-bottom: 6px; }
+.ev-stack span { background: var(--color-text); opacity: var(--o); }
+.ev-keys { display: flex; flex-wrap: wrap; gap: 2px 12px; }
+.ev-keys span { white-space: nowrap; }
+.ev-keys i { display: inline-block; width: 8px; height: 8px; margin-right: 5px; background: var(--color-text); opacity: var(--o); }
+
+/* contrast: real colors, ratios computed in the browser */
+.ev-cr { display: grid; grid-template-columns: minmax(0, 1.1fr) 1fr 14px 1fr; align-items: center; gap: 4px 8px; }
+.ev-cr .tk { color: var(--color-text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ev-cr .tk small { display: block; white-space: normal; color: var(--color-text-tertiary); font-size: 10px; }
+.ev-sw { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 5px 8px; }
+.ev-sw .aa { font-family: var(--font-sans); font-size: 15px; font-weight: 500; }
+.ev-sw .r { font-size: 10px; padding: 1px 5px; border: 1px solid currentColor; }
+.ev-sw .r.fail { color: var(--color-orange); background: var(--color-bg); }
+.ev-sw .r.pass { color: var(--color-green); background: var(--color-bg); }
+.ev-cr .arrow { color: var(--color-text-tertiary); text-align: center; }
+.ev-crit { display: flex; flex-wrap: wrap; gap: 4px; margin-top: var(--space-3); }
+.ev-crit span { border: 1px solid var(--color-border); padding: 2px 6px; color: var(--color-text); }
+.ev-crit .x { font-style: normal; color: var(--color-text-tertiary); margin-left: 4px; }
+
+@media (max-width: 600px) {
+  .ev-versions { grid-template-columns: 1fr; }
+  .ev-drift { grid-template-columns: 1fr; }
+  .ev-cr { grid-template-columns: 1fr 1fr 14px 1fr; }
+}
+</style>
+<script>
+window.HIB_EV = (function () {
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  // WCAG 2 contrast, with the foreground's alpha blended over the background
+  function rgba(c) {
+    var m = c.match(/rgba?\(([^)]+)\)/);
+    if (m) { var p = m[1].split(",").map(parseFloat); return [p[0], p[1], p[2], p.length > 3 ? p[3] : 1]; }
+    var h = c.replace("#", ""); return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16), 1];
+  }
+  function lum(c) { return c.slice(0, 3).reduce(function (s, v, i) { v /= 255; v = v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); return s + v * [0.2126, 0.7152, 0.0722][i]; }, 0); }
+  function ratio(fg, bg) {
+    var f = rgba(fg), b = rgba(bg), a = f[3], mix = [0, 1, 2].map(function (i) { return f[i] * a + b[i] * (1 - a); });
+    var l1 = lum(mix), l2 = lum(b), hi = Math.max(l1, l2), lo = Math.min(l1, l2);
+    return (hi + 0.05) / (lo + 0.05);
+  }
+
+  // plate-boundary legend as each version drew it: color dots, or line styles that work without color
+  function legend(l, family) {
+    if (!l) return "";
+    var names = ["Subduction", "Divergent", "Transform"], dash = { dashed: "5 3.5", dotted: "0.1 4.4" }, h = "";
+    for (var i = 0; i < 3; i++) {
+      var kind = l[i * 2], c = l[i * 2 + 1];
+      var mark = kind === "dot" ? '<i style="background:' + c + '"></i>' :
+        '<svg width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="' + c + '" stroke-width="' + (kind === "dashed" ? 2 : 2.5) + '" stroke-linecap="round"' + (dash[kind] ? ' stroke-dasharray="' + dash[kind] + '"' : "") + "/></svg>";
+      h += "<span>" + mark + names[i] + "</span>";
+    }
+    return '<div class="ev-legend" style="font-family:' + esc(family) + '">' + h + "</div>";
+  }
+
+  // color-vision simulation: Machado et al. 2009 deuteranopia (severity 1) in linear RGB, and grayscale by luminance
+  function lin(v) { v /= 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }
+  function gam(v) { v = Math.max(0, Math.min(1, v)); return Math.round(255 * (v <= 0.0031308 ? v * 12.92 : 1.055 * Math.pow(v, 1 / 2.4) - 0.055)); }
+  function sim(hex, mode) {
+    if (mode === "normal") return hex;
+    var c = rgba(hex).slice(0, 3).map(lin), o;
+    if (mode === "grey") { var y = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]; o = [y, y, y]; }
+    else { var M = [[0.367322, 0.860646, -0.227968], [0.280085, 0.672501, 0.047413], [-0.01182, 0.04294, 0.968881]];
+      o = M.map(function (m) { return m[0] * c[0] + m[1] * c[1] + m[2] * c[2]; }); }
+    return "rgb(" + o.map(gam).join(",") + ")";
+  }
+  function cvdBlock(c) {
+    var views = [["normal", "Normal vision"], ["deutan", "Red-green (deuteranopia)"], ["grey", "Grayscale"]];
+    function cell(set, mode) { return '<div class="ev-cvd-cell" style="background:' + c.bg + '">' + set.map(function (x) {
+      return '<span><i style="background:' + sim(x[1], mode) + ";border-color:" + sim(x[2], mode) + '"></i>' + esc(x[0]) + "</span>"; }).join("") + "</div>"; }
+    return '<div class="ev-cvd"><span class="ev-label">diet colors</span><span class="ev-label">before</span><span></span><span class="ev-label">after</span>' +
+      views.map(function (v) { return '<div class="tk">' + v[1] + "</div>" + cell(c.before, v[0]) + '<span class="arrow">→</span>' + cell(c.after, v[0]); }).join("") + "</div>";
+  }
+
+  var R = {
+    // data: sources, then each stage as a number; a funnel draws bars on a square-root scale so small stages stay visible
+    data: function (d) {
+      var max = d.stages[0][0];
+      var h = '<div class="ev-src' + (d.chain ? " is-chain" : "") + '">' + d.sources.map(function (x) { return "<span>" + esc(x) + "</span>"; }).join(d.chain ? '<b aria-hidden="true">→</b>' : "") + "</div>";
+      h += '<div class="ev-stages' + (d.funnel ? " is-funnel" : "") + '">' + d.stages.map(function (st, i) {
+        var w = d.funnel ? Math.max(1.5, Math.sqrt(st[0] / max) * 100) : 0;
+        return '<div class="ev-stage"><span class="num">' + Number(st[0]).toLocaleString("en-US") + '</span><span class="lab"><b>' + esc(st[1]) + "</b> " + esc(st[2] || "") + "</span>" +
+          (d.funnel ? '<span class="bar"><i style="width:' + w.toFixed(1) + '%"></i></span>' : "") + "</div>";
+      }).join("") + "</div>";
+      if (d.split) {
+        var tot = d.split.parts.reduce(function (a, p) { return a + p[1]; }, 0), n = d.split.parts.length;
+        var op = function (i) { return (1 - i * (0.75 / (n - 1))).toFixed(2); };
+        h += '<div class="ev-label" style="margin-top:12px">' + esc(d.split.label) + '</div><div class="ev-stack">' + d.split.parts.map(function (p, i) { return '<span style="flex:' + p[1] + ";--o:" + op(i) + '"></span>'; }).join("") +
+          '</div><div class="ev-keys">' + d.split.parts.map(function (p, i) { return '<span><i style="--o:' + op(i) + '"></i>' + esc(p[0]) + " " + p[1] + "</span>"; }).join("") + "</div>";
+      }
+      return h;
+    },
+    versions: function (d) {
+      return '<div class="ev-versions">' + d.items.map(function (v) {
+        // the chips are real buttons: click toggles them, hover uses the version's own rule (see the document listener below)
+        var st = "--on-bg:color-mix(in srgb,var(--cc) " + v.on_mix + "%,transparent);--on-edge:" + (v.on_border >= 100 ? "var(--cc)" : "color-mix(in srgb,var(--cc) " + v.on_border + "%,transparent)") + ";" +
+          "border-radius:" + v.radius + ";font-family:" + v.family + ";" + (v.min_height ? "min-height:" + v.min_height + ";" : "");
+        var cls = "ev-chip" + (v.control_border ? " ctl" : "");
+        var chip = function (label, color, on) { return '<button type="button" class="' + cls + (on ? " on" : "") + '" aria-pressed="' + on + '" style="--cc:' + color + ";" + st + '"><i></i>' + label + "</button>"; };
+        return '<div><div class="ev-ver-head"><b>' + esc(v.v) + "</b><span>" + esc(v.when) + '</span></div>' +
+          '<div class="ev-app"><div class="face" aria-hidden="true" style="font-family:' + esc(v.family) + '">Aa 78</div><div class="fname" aria-hidden="true">' + esc(v.font) + '</div>' +
+          '<div class="ev-chips" role="group" aria-label="' + esc(v.v) + ' volcano filters, try them">' + chip("Active", "#ff4422", true) + chip("Dormant", "#ffaa22", false) + "</div>" + legend(v.legend, v.family) + "</div>" +
+          '<div class="ev-ver-what">' + esc(v.what) + "</div></div>";
+      }).join("") + "</div>";
+    },
+    // iterations: the same small scene redrawn for each try of one decision
+    iterations: function (d) {
+      var chips = d.museums.map(function (m, i) { return '<span class="ev-mus" data-i="' + i + '"><i style="background:' + m[1] + '"></i>' + esc(m[0]) + "</span>"; }).join("");
+      return '<div class="ev-versions">' + d.items.map(function (it) {
+        var lines = d.museums.map(function (m, i) {
+          var y = 9 + i * 17;
+          return '<g data-i="' + i + '"><line x1="14" y1="' + y + '" x2="96%" y2="' + y + '" stroke="' + m[1] + '" stroke-width="1.5" opacity=".55"/><circle cx="14" cy="' + y + '" r="5.5" fill="' + it.marker[i] + '"/></g>';
+        }).join("");
+        return '<div><div class="ev-ver-head"><b>' + esc(it.label) + "</b></div>" +
+          '<div class="ev-app ev-light" style="background:' + d.bg + '" aria-hidden="true"><div class="ev-muss">' + chips + '</div><svg width="100%" height="54">' + lines + "</svg></div>" +
+          '<div class="ev-ver-what">' + esc(it.note) + "</div></div>";
+      }).join("") + "</div>";
+    },
+    // looks: one card per version with its real background, type, palette and one signature element
+    looks: function (d) {
+      return '<div class="ev-versions">' + d.items.map(function (v) {
+        var b = v.badge || [];
+        return '<div><div class="ev-ver-head"><b>' + esc(v.label) + "</b><span>" + esc(v.when || "") + "</span></div>" +
+          '<div class="ev-app" aria-hidden="true" style="background:' + v.bg + ";color:" + v.fg + ";border-color:" + v.border + '">' +
+          '<div class="face" style="color:' + v.fg + ";font-family:" + esc(v.family) + '">Aa 82%</div><div class="fname" style="color:' + v.fg + ';opacity:.6">' + esc(v.font) + "</div>" +
+          '<div class="ev-sws">' + v.swatches.map(function (c) { return '<i style="background:' + c + '"></i>'; }).join("") + "</div>" +
+          (v.diet ? '<div class="ev-diet" style="font-family:' + esc(v.family) + '">' + v.diet.map(function (x) { return '<span><i style="background:' + x[1] + ";border-color:" + x[2] + '"></i>' + esc(x[0]) + "</span>"; }).join("") + "</div>" : "") +
+          (b.length ? '<span class="ev-badge" style="background:' + b[1] + ";color:" + b[2] + ";border-radius:" + b[3] + ";font-family:" + esc(v.family) + '">' + esc(b[0]) + "</span>" : "") +
+          '</div><div class="ev-ver-what">' + esc(v.what) + "</div></div>";
+      }).join("") + "</div>";
+    },
+    tokens: function (d) {
+      function bars(title, col) {
+        var max = Math.max.apply(null, d.drift.map(function (r) { return r[col]; }));
+        return '<div><div class="ev-label">' + title + '</div><div class="ev-bars">' + d.drift.map(function (r, i) {
+          return "<span>" + r[0] + '</span><span class="b' + (i === d.drift.length - 1 ? " last" : "") + '" style="width:' + Math.max(2, r[col] / max * 100) + '%"></span><span class="n">' + r[col] + "</span>";
+        }).join("") + "</div></div>";
+      }
+      var n = d.groups.length, op = function (i) { return (1 - i * (0.75 / (n - 1))).toFixed(2); };
+      return '<div class="ev-drift">' + (d.bars || [["Hard-coded colors in the CSS", 1], ["Hard-coded radii", 2]]).map(function (b) { return bars(b[0], b[1]); }).join("") + "</div>" +
+        '<div class="ev-label">' + esc(d.drift[d.drift.length - 1][0]) + ": " + d.total + " tokens</div>" +
+        '<div class="ev-stack" aria-hidden="true">' + d.groups.map(function (g, i) { return '<span style="flex:' + g[1] + ";--o:" + op(i) + '"></span>'; }).join("") + "</div>" +
+        '<div class="ev-keys">' + d.groups.map(function (g, i) { return '<span><i style="--o:' + op(i) + '"></i>' + esc(g[0]) + " " + g[1] + "</span>"; }).join("") + "</div>";
+    },
+    contrast: function (d) {
+      function sw(fg, bg, min) {
+        var r = ratio(fg, bg), ok = r >= (min || 4.5);
+        return '<div class="ev-sw" style="background:' + bg + ";color:" + fg + '"><span class="aa">Aa</span><span class="r ' + (ok ? "pass" : "fail") + '">' + r.toFixed(2) + "</span></div>";
+      }
+      var rows = d.rows.map(function (r) {
+        var bg = r[4] ? r[4] : /on (#[0-9a-f]{6})/i.test(r[3]) ? r[3].match(/#[0-9a-f]{6}/i)[0] : d.bg;
+        return '<div class="tk">' + esc(r[0]) + (r[3] ? "<small>" + esc(r[3]) + "</small>" : "") + "</div>" + sw(r[1], bg, r[5]) + '<span class="arrow">→</span>' + sw(r[2], bg, r[5]);
+      }).join("");
+      return '<div class="ev-cr"><span class="ev-label">' + esc(d.head || "token") + '</span><span class="ev-label">before</span><span></span><span class="ev-label">after</span>' + rows + "</div>" + (d.cvd ? cvdBlock(d.cvd) : "") +
+        '<div class="ev-crit" aria-label="WCAG criteria named in commits">' + d.criteria.map(function (c) { return "<span>" + esc(c[0]) + (c[1] > 1 ? '<em class="x">×' + c[1] + "</em>" : "") + "</span>"; }).join("") + "</div>" +
+        '<div class="ev-label" style="margin-top:6px">' + d.criteria.length + " WCAG criteria " + (d.mapped ? "addressed by " : "named across ") + d.commits + " commits" + (d.mapped ? " (mapped from their messages)" : "") + "</div>";
+    }
+  };
+  // one listener for every rendered panel: chips toggle, museum chips and lines highlight their route
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".ev-chip"); if (!b) return;
+    var on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  document.addEventListener("mouseover", function (e) {
+    var box = e.target.closest && e.target.closest(".ev-light"); if (!box) return;
+    var t = e.target.closest("[data-i]"); if (t) box.setAttribute("data-hot", t.getAttribute("data-i")); else box.removeAttribute("data-hot");
+  });
+  document.addEventListener("mouseout", function (e) {
+    var box = e.target.closest && e.target.closest(".ev-light"); if (box && !box.contains(e.relatedTarget)) box.removeAttribute("data-hot");
+  });
+
+  return {
+    has: function (e) { return !!(e && R[e.type]); },
+    render: function (e, text) {
+      return '<div class="ev">' + R[e.type](e) + '</div><p class="ev-cap">' + esc(e.caption || "") + "</p>" +
+        (text ? '<details class="ev-more"><summary>The story</summary><p>' + esc(text) + "</p></details>" : "");
+    },
+    ratio: ratio
+  };
+})();
+</script>

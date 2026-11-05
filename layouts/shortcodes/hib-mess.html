@@ -1,0 +1,212 @@
+{{/* From mess to readable: real rows of one project's raw data morph into its final visualization.
+     Data: data/hib_mess.json (built from the project's repo). Prototype: Deep Lineages only. */}}
+<style>
+.mx { --mx-ease: cubic-bezier(.6, 0, .2, 1); --mx-theropoda: var(--color-orange); --mx-sauropodomorpha: var(--color-green); --mx-ornithischia: var(--color-blue); }
+.mx-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-2) var(--space-4); margin-bottom: var(--space-3); }
+.mx-steps { display: flex; gap: 0; border: 1px solid var(--color-text); }
+.mx-steps button { font-family: var(--font-mono); font-size: var(--font-size-sm); padding: 6px 12px; min-height: 32px; background: transparent; color: var(--color-text-secondary); border: 0; border-left: 1px solid var(--color-text); cursor: pointer; transition: background var(--transition-fast), color var(--transition-fast); }
+.mx-steps button:first-child { border-left: 0; }
+.mx-steps button:hover { background: var(--color-surface); color: var(--color-text); }
+.mx-steps button[aria-pressed="true"] { background: var(--color-text); color: var(--color-bg); }
+.mx-steps .n { color: var(--color-text-tertiary); margin-right: 6px; }
+.mx-steps button[aria-pressed="true"] .n { color: var(--color-surface-active); }
+.mx-count { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin: 0 !important; }
+.mx-count strong { font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); color: var(--color-text); margin-right: 6px; }
+.mx-stage { position: relative; height: 404px; overflow: hidden; }
+.mx-stage { -webkit-user-select: none; user-select: none; } /* it's a picture (role=img with a label); selecting its text only produced unreadable highlights */
+.mx-stage * { box-sizing: border-box; }
+.mx-move { position: absolute; transition: left .8s var(--mx-ease), top .8s var(--mx-ease), width .8s var(--mx-ease), height .8s var(--mx-ease), background-color .6s ease, box-shadow .6s ease, opacity .5s ease; }
+.mx-thead, .mx-cells { display: flex; overflow: hidden; white-space: nowrap; font-family: var(--font-mono); font-size: var(--font-size-xs); line-height: 26px; height: 26px; z-index: 2;
+  -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+.mx-thead { color: var(--color-text-tertiary); }
+.mx-cells { color: var(--color-text-secondary); }
+.mx-thead span, .mx-cells span { flex: 0 0 auto; padding: 0 10px; overflow: hidden; text-overflow: ellipsis; }
+.mx-cells .is-mess { color: var(--color-orange); text-decoration: underline dotted; text-underline-offset: 3px; }
+.mx-more { right: 0; top: 0; font-family: var(--font-mono); font-size: var(--font-size-xs); line-height: 26px; color: var(--color-text-tertiary); z-index: 3; padding-left: 8px; }
+.mx-bar { z-index: 1; }
+.mx-tag { z-index: 3; font-family: var(--font-mono); font-size: var(--font-size-xs); line-height: 18px; padding: 0 6px; white-space: nowrap; color: var(--color-text); background: var(--color-bg); border: 1px solid var(--color-border); pointer-events: none; }
+.mx-tag em { font-style: normal; color: var(--color-text-tertiary); }
+.mx-cloud { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; transition: opacity .7s ease .2s; }
+.mx-axis { position: absolute; left: 0; right: 0; bottom: 0; height: 44px; line-height: 16px; z-index: 2; transition: opacity .6s ease; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+.mx-axis .per { position: absolute; top: 4px; height: 14px; border-left: 1px solid var(--color-text-tertiary); padding-left: 6px; line-height: 14px; color: var(--color-text-secondary); }
+.mx-axis .tick { position: absolute; top: 22px; white-space: nowrap; transform: translateX(-50%); }
+.mx-axis .tick:last-child { transform: translateX(-100%); }
+.mx-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-4); margin-top: var(--space-3); }
+.mx-caption { font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0 !important; max-width: 560px; }
+.mx-legend { display: flex; gap: var(--space-3); font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); transition: opacity .5s ease; }
+.mx-legend { flex-wrap: wrap; } .mx-legend span { white-space: nowrap; }
+.mx-legend i { display: inline-block; width: 8px; height: 8px; margin-right: 6px; }
+.mx-app { position: absolute; inset: 0; z-index: 4; opacity: 0; pointer-events: none; transition: opacity .6s ease .3s; background: var(--color-bg); }
+.mx-app iframe { width: 100%; height: 100%; border: 1px solid var(--color-border); display: block; background: #eef2f4; }
+.mx-stage[data-state="raw"] { height: 244px; }
+.mx-stage[data-state="clean"] { height: 292px; }
+.mx-stage.is-app { height: 600px; }
+.mx-stage.is-app .mx-app { opacity: 1; pointer-events: auto; }
+.mx-stage { transition: height .6s var(--mx-ease); }
+.mx-open { font-family: var(--font-mono); font-size: var(--font-size-xs); white-space: nowrap; }
+.mx-readout { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); min-height: 1.4em; margin: var(--space-1) 0 0 !important; }
+@media (max-width: 560px) { .mx-steps { width: 100%; } .mx-steps button { flex: 1 1 auto; white-space: nowrap; padding: 6px 6px; } .mx-steps .n, .mx-long { display: none; } }
+@media (prefers-reduced-motion: reduce) { .mx-move, .mx-app, .mx-stage, .mx-cloud, .mx-axis, .mx-legend { transition: none !important; } }
+</style>
+
+<div class="mx" id="hib-mess">
+  <p class="hib-kicker">🦕 Deep Lineages · from the raw export to the app</p>
+  <div class="mx-head">
+    <div class="mx-steps" role="group" aria-label="From raw data to the visualization">
+      <button type="button" data-state="raw" aria-pressed="true"><span class="n">01</span>Raw</button>
+      <button type="button" data-state="clean" aria-pressed="false"><span class="n">02</span>Cleaned</button>
+      <button type="button" data-state="all" aria-pressed="false"><span class="n">03</span>All<span class="mx-long"> fossils</span></button>
+      <button type="button" data-state="app" aria-pressed="false"><span class="n">04</span>Designed</button>
+    </div>
+    <p class="mx-count" id="mx-count"></p>
+  </div>
+  <div class="mx-stage" id="mx-stage" role="img"></div>
+  <div class="mx-foot">
+    <p class="mx-caption" id="mx-caption" aria-live="polite"></p>
+    <a class="mx-open" id="mx-open" href="#" target="_blank" rel="noopener" hidden>Open it full screen ↗</a>
+    <div class="mx-legend" id="mx-legend" aria-hidden="true">
+      <span><i style="background:var(--mx-theropoda)"></i>Theropods</span>
+      <span><i style="background:var(--mx-sauropodomorpha)"></i>Sauropodomorphs</span>
+      <span><i style="background:var(--mx-ornithischia)"></i>Ornithischians</span>
+      <span class="mx-nofam"><i style="background:var(--color-text-tertiary)"></i>No family</span>
+    </div>
+  </div>
+</div>
+<script id="mx-data" type="application/json">{{ site.Data.hib_mess | jsonify | safeJS }}</script>
+
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("mx-data").textContent);
+  var root = document.getElementById("hib-mess"), stage = document.getElementById("mx-stage");
+  var countEl = document.getElementById("mx-count"), capEl = document.getElementById("mx-caption");
+  var legend = document.getElementById("mx-legend"), openEl = document.getElementById("mx-open");
+  var norm = function (v) { return v.replace(/^(cf\.|\?)\s*/, "").replace(/\s+(n\. gen\.\s*)?(n\. sp\.|sp\.)$/, ""); };
+  var fmt = function (n) { return n.toLocaleString("en-US"); };
+  var famIdx = {}; D.lanes.forEach(function (l, i) { famIdx[l.family] = i; });
+  var COLW = [240, 180, 130, 110, 64, 64, 180, 70, 70];
+  var LANE = 12, LTOP = 4, ROW = 34, RTOP = 34;
+
+  var TEXT = {
+    raw:   { count: "<strong>" + fmt(D.raw_rows) + "</strong>rows × " + D.raw_cols + " columns",
+             cap: "The Paleobiology Database export, as it comes. Renamed species, “n. gen. n. sp.”, “cf.” and “?”, empty fields, and families nobody filled in.",
+             alt: "Six real rows of the raw fossil table, with messy values highlighted." },
+    clean: { count: "<strong>6</strong>of " + fmt(D.kept) + " fossils, cleaned",
+             cap: "Cleaned in Python with Claude: every fossil reduced to a genus, a family and a time range. Which rules to trust was my call.",
+             alt: "The same six fossils as bars on a timeline." },
+    all:   { count: "<strong>" + fmt(D.kept) + "</strong>fossils on one timeline",
+             cap: "All 7,043 at once, one line per fossil, oldest at the top: accurate, and still unreadable. This is where the design work starts.",
+             alt: "All 7,043 fossils as thin lines sorted by age, forming a diagonal cloud, with the six sample fossils marked." },
+    app:   { count: "<strong>1</strong>animal followed · 4 views",
+             cap: "My design, live: follow one animal across story, timeline, family tree and map, because when, who and where are one question. Try it.",
+             alt: "The live Deep Lineages app, following Tyrannosaurus." }
+  };
+
+  // build static parts
+  var thead = el("div", "mx-thead mx-move"); D.columns.forEach(function (c, i) { var s = el("span"); s.style.width = COLW[i] + "px"; s.textContent = c; thead.appendChild(s); });
+  var more = el("div", "mx-more mx-move"); more.textContent = "+" + (D.raw_cols - D.columns.length) + " more columns";
+  var app = el("div", "mx-app"), frame = null;
+  var axis = el("div", "mx-axis"); axis.setAttribute("aria-hidden", "true");
+  var cloud = el("canvas", "mx-cloud"); cloud.setAttribute("aria-hidden", "true");
+  stage.appendChild(cloud); stage.appendChild(app); stage.appendChild(thead); stage.appendChild(more); stage.appendChild(axis);
+
+  var S = D.samples.map(function (s, i) {
+    var cells = el("div", "mx-cells mx-move"), bar = el("div", "mx-bar mx-move"), tag = el("div", "mx-tag mx-move");
+    s.raw.forEach(function (v, j) {
+      var sp = el("span"); sp.style.width = COLW[j] + "px";
+      var col = D.columns[j], mess = false;
+      if (v === "") { v = "—"; mess = true; }
+      if (/n\. (gen|sp)\.|^cf\.|^\?/.test(v)) mess = true;
+      if (v === "NO_FAMILY_SPECIFIED") mess = true;
+      if (col === "accepted_name" && norm(s.raw[0]) !== v) mess = true;
+      sp.textContent = v; if (mess) sp.className = "is-mess"; cells.appendChild(sp);
+    });
+    tag.innerHTML = s.genus + (s.family ? " <em>" + s.family + "</em>" : " <em>no family</em>");
+    [bar, cells, tag].forEach(function (n, k) { n.style.transitionDelay = (i * 0.06) + "s"; stage.appendChild(n); });
+    var lin = s.family != null && famIdx[s.family] != null ? D.lanes[famIdx[s.family]].lineage : null;
+    return { d: s, i: i, cells: cells, bar: bar, tag: tag, lin: lin };
+  });
+
+  var state = "raw", W = 0;
+  function el(t, c) { var n = document.createElement(t); if (c) n.className = c; return n; }
+  function x(ma) { return (D.from - ma) / (D.from - D.to) * W; }
+  function plotH() { return LTOP + D.lanes.length * LANE; }
+
+  function drawCloud() {
+    var dpr = window.devicePixelRatio || 1, H = plotH(), cs = getComputedStyle(root);
+    cloud.width = W * dpr; cloud.height = H * dpr; cloud.style.width = W + "px"; cloud.style.height = H + "px";
+    var c = cloud.getContext("2d"); c.scale(dpr, dpr); c.globalAlpha = 0.55;
+    var col = [cs.getPropertyValue("--color-text-tertiary"), cs.getPropertyValue("--color-orange"), cs.getPropertyValue("--color-green"), cs.getPropertyValue("--color-blue")];
+    var h = (H - LTOP) / D.kept, y = LTOP;
+    D.cloud.forEach(function (r) {   // [max_ma, min_ma, group 0-3, count], sorted oldest first
+      c.fillStyle = col[r[2]].trim(); c.fillRect(x(r[0]), y, Math.max(1, x(r[1]) - x(r[0])), Math.max(0.6, r[3] * h)); y += r[3] * h; });
+  }
+  function drawAxis() {
+    var h = "";
+    D.periods.forEach(function (p) { h += '<span class="per" style="left:' + x(p.start) + 'px;width:' + (x(p.end) - x(p.start)) + 'px">' + (x(p.end) - x(p.start) > 70 ? p.name : p.name.slice(0, 3) + ".") + "</span>"; });
+    [250, 200, 150, 100, 66].forEach(function (m) { h += '<span class="tick" style="left:' + x(m) + 'px">' + m + (m === 66 ? " Ma" : "") + "</span>"; });
+    axis.innerHTML = h;
+  }
+
+  function layout() {
+    W = stage.clientWidth;
+    drawAxis(); drawCloud();
+    var raw = state === "raw", read = state === "app", all = state === "all";
+    stage.dataset.state = state; stage.classList.toggle("is-app", read); openEl.hidden = !read; openEl.href = D.app.url;
+    // the live app loads only when this step is reached
+    if (read && !frame) { frame = document.createElement("iframe"); frame.src = D.app.url; frame.title = D.app.title; frame.loading = "lazy"; app.appendChild(frame); }
+    cloud.style.opacity = all ? 1 : 0;
+    // in "all", each sample sits at its place in the age-sorted cloud (kept at least 11px apart)
+    var allY = {}, lastY = -99;
+    S.slice().sort(function (a, b) { return a.d.rank - b.d.rank; }).forEach(function (s) {
+      var yy = Math.max(LTOP + s.d.rank * (plotH() - LTOP), lastY + 11); allY[s.i] = yy; lastY = yy; });
+    pos(thead, { left: 0, top: 0, width: W, opacity: raw ? 1 : 0 });
+    pos(more, { opacity: raw ? 1 : 0 });
+    axis.style.opacity = raw || read ? 0 : 1; legend.style.opacity = all ? 1 : 0; legend.lastElementChild.style.display = all ? "" : "none";
+    var tags = [];
+    S.forEach(function (s) {
+      var y = RTOP + s.i * ROW, x1 = x(s.d.max), x2 = x(s.d.min), lane = s.d.family != null ? famIdx[s.d.family] : null;
+      pos(s.cells, { left: 0, top: y, width: W, opacity: raw ? 1 : 0 });
+      var b, ty, tagOn = !raw;
+      if (raw) b = { left: 0, top: y, width: W, height: 26, background: "var(--color-surface)", boxShadow: "none", opacity: 1 };
+      else if (all) b = { left: x1, top: allY[s.i] - 2, width: Math.max(3, x2 - x1), height: 4, background: s.lin ? "var(--mx-" + s.lin + ")" : "var(--color-text-tertiary)", boxShadow: "0 0 0 2px var(--color-text)", opacity: 1 };
+      else if (!read) b = { left: x1, top: y + 8, width: Math.max(3, x2 - x1), height: 10, background: "var(--color-text)", boxShadow: "none", opacity: 1 };
+      else b = { left: x1, top: allY[s.i] - 2, width: Math.max(3, x2 - x1), height: 4, background: "var(--color-text)", boxShadow: "none", opacity: 0 };
+      pos(s.bar, b);
+      if (read) tagOn = false;
+      var tw = s.tag.offsetWidth || 160, right = x2 + 8 + tw < W;
+      tags.push({ s: s, top: b.top + b.height / 2 - 10, left: right ? x2 + 8 : Math.max(0, x1 - 8 - tw), w: tw, on: tagOn });
+    });
+    // labels that would overlap move up, starting from the lowest one
+    tags.sort(function (a, b) { return b.top - a.top; });
+    tags.forEach(function (t, i) {
+      for (var j = 0; j < i; j++) { var o = tags[j]; if (!o.on || !t.on) continue;
+        if (t.left < o.left + o.w && o.left < t.left + t.w && Math.abs(t.top - o.top) < 21) t.top = o.top - 21; }
+      pos(t.s.tag, { top: t.top, left: t.left, opacity: t.on ? 1 : 0 });
+    });
+    stage.setAttribute("aria-label", TEXT[state].alt);
+    countEl.innerHTML = TEXT[state].count; capEl.textContent = TEXT[state].cap;
+    root.querySelectorAll(".mx-steps button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.state === state ? "true" : "false"); });
+  }
+  function pos(n, o) { for (var k in o) n.style[k] = typeof o[k] === "number" && k !== "opacity" ? o[k] + "px" : o[k]; }
+
+  function go(s) { state = s; layout(); }
+  root.querySelector(".mx-steps").addEventListener("click", function (e) { var b = e.target.closest("[data-state]"); if (b) { stopAuto(); go(b.dataset.state); } });
+
+
+  // play once when it scrolls into view, unless the reader prefers reduced motion
+  var timers = [];
+  function stopAuto() { timers.forEach(clearTimeout); timers = []; }
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      if (!es[0].isIntersecting) return; io.disconnect();
+      timers.push(setTimeout(function () { go("clean"); }, 1600));
+      timers.push(setTimeout(function () { go("all"); }, 4200));
+      timers.push(setTimeout(function () { go("app"); }, 7400));
+    }, { threshold: 0.6 });
+    io.observe(stage);
+  }
+  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 120); });
+  layout();
+})();
+</script>

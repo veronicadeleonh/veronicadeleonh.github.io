@@ -56,6 +56,70 @@
     --transition-fast: 150ms;
     --transition-base: 300ms;
     --transition-slow: 0.6s;
+
+    /* Colors — bright accents, for dark surfaces (AA 8:1+ on #0e1011) */
+    --color-blue-bright: #6cb6ff;
+    --color-purple-bright: #c9a7ff;
+    --color-pink-bright: #ff7ad9;
+    --color-orange-bright: #ff9e57;
+    --color-yellow-bright: #ffd84d;
+    --color-green-bright: #4fe08c;
+    --color-grey-bright: #b0b7b8;
+
+    /* Accent light — "Mono + violet": the light used by Spotlight (hover) and Aurora (active) */
+    --accent-light: #ffffff;
+    --accent-glow: var(--color-purple-bright);
+    --gradient-aurora: radial-gradient(40% 50% at 30% 40%, var(--accent-light), transparent 70%),
+        radial-gradient(45% 55% at 70% 60%, var(--accent-glow), transparent 70%),
+        radial-gradient(35% 45% at 50% 20%, var(--accent-light), transparent 70%);
+}
+
+/* Aurora: a slow liquid light; use on an oversized ::before (inset: -40%) behind the content */
+@keyframes aurora-move {
+    from { transform: translate(-6%, -4%) rotate(0deg); }
+    to { transform: translate(6%, 5%) rotate(25deg); }
+}
+
+/* Dark theme — opt-in per page with `pageTheme: dark` in front matter (used by /how-i-build/) */
+:root[data-page-theme="dark"] {
+    color-scheme: dark;
+    --color-bg: #0e1011;
+    --color-text: #f1f4f5;
+    --color-surface: #1a1d1f;
+    --color-surface-hover: #24282a;
+    --color-surface-active: #3a3f41;
+    --color-border: #2a2e30;
+    --color-text-secondary: #b4babb;
+    --color-text-tertiary: #8d9495;
+    --color-blue: var(--color-blue-bright);
+    --color-purple: var(--color-purple-bright);
+    --color-pink: var(--color-pink-bright);
+    --color-orange: var(--color-orange-bright);
+    --color-yellow: var(--color-yellow-bright);
+    --color-green: var(--color-green-bright);
+    --color-grey: var(--color-grey-bright);
+    /* PaperModX theme variables (header, footer, links) */
+    --theme: #0e1011;
+    --entry: #1a1d1f;
+    --primary: #f1f4f5;
+    --primary-dim: #d1d5d6;
+    --secondary: #b4babb;
+    --tertiary: #8d9495;
+    --tertiary-bg: #2a2e30;
+    --content: #e2e6e7;
+    --code-bg: #1a1d1f;
+    --border: #2a2e30;
+    --link-color: #f1f4f5;
+}
+
+:root[data-page-theme="dark"] body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+:root[data-page-theme="dark"] ::selection {
+    background: var(--color-text);
+    color: var(--color-bg);
 }
 
 body {
@@ -930,3 +994,129 @@ strong {
     }
 }
 
+
+/* Tiny Data Adventures — role line + How I build entry */
+.project-card-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: var(--space-1) 0 var(--space-2) !important;
+    line-height: 1.4;
+}
+
+.project-card-role-label {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    margin-right: var(--space-1);
+}
+
+.hib-entry {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-4);
+    padding: var(--space-2) var(--space-3);
+    background: #0e1011;
+    border: 1px solid #0e1011;
+    color: #f1f4f5;
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+/* hover: Spotlight, the same effect as /how-i-build — the card stays dark, a violet light follows
+   the pointer around the border (::before) and glows faintly inside (::after). --x/--y come from JS. */
+.hib-entry { --x: 50%; --y: 50%; }
+
+.hib-entry::before,
+.hib-entry::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition-base) ease;
+}
+
+.hib-entry::before {
+    inset: 0;
+    padding: 1px;
+    background: radial-gradient(160px circle at var(--x) var(--y), var(--accent-light), var(--accent-glow) 40%, transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.hib-entry::after {
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(240px circle at var(--x) var(--y), color-mix(in srgb, var(--accent-glow) 22%, transparent), transparent 70%);
+}
+
+.hib-entry:hover::before,
+.hib-entry:focus-visible::before,
+.hib-entry:hover::after,
+.hib-entry:focus-visible::after {
+    opacity: 1;
+}
+
+/* icon: the two lanes of /how-i-build (me, Claude Code) with a step moving along them */
+.hib-entry-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+.hib-entry-lane {
+    stroke-width: 2;
+    transition: stroke var(--transition-fast);
+}
+
+.hib-entry-lane--me { stroke: var(--color-yellow-bright); }
+.hib-entry-lane--ai { stroke: var(--color-purple-bright); }
+
+.hib-entry-dot {
+    fill: currentColor;
+    animation: hib-entry-step 4s ease-in-out infinite;
+}
+
+@keyframes hib-entry-step {
+    0% { transform: translate(0, 0); }
+    45% { transform: translate(22px, 0); }
+    55% { transform: translate(22px, 17px); }
+    95%, 100% { transform: translate(0, 17px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hib-entry-dot { animation: none; }
+}
+
+.hib-entry-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.hib-entry-title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+}
+
+.hib-entry-sub {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    color: #8d9495;
+    transition: color var(--transition-fast);
+}
+
+.hib-entry-arrow {
+    margin-left: auto;
+    font-size: var(--font-size-lg);
+    transition: transform var(--transition-fast);
+}
+
+.hib-entry:hover .hib-entry-arrow {
+    transform: translateX(4px);
+}

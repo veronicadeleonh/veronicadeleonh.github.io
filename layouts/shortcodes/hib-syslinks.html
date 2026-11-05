@@ -1,0 +1,2 @@
+{{- $ps := site.Data.how_i_build.projects -}}
+<div class="hib-syslinks" style="--hib-n: {{ len $ps }}">{{ range $p := $ps }}{{ with $p.tokens }}<a href="{{ .url }}" target="_blank" rel="noopener"><span>{{ $p.emoji }} {{ $p.name }}</span><code>{{ .path }}</code></a>{{ else }}<div class="is-next"><span>{{ $p.emoji }} {{ $p.name }}</span><code>Next: a tokens page</code></div>{{ end }}{{ end }}</div>

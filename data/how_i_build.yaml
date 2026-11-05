@@ -1,0 +1,528 @@
+# Content for /how-i-build/ (rendered by layouts/shortcodes/hib-*.html and the page script).
+# To add a project: add a block under `projects` (same order as the home cards) (with a text for every step id) and an image in static/images/.
+# The commit chart reads each project's `github` repo live; `folder` is the sibling folder used by
+# scripts/build-how-i-build-data.py for the offline snapshot.
+# card.mess / card.access: the messy data and what made it accessible (one short line each).
+# Optional per project: `status` (a badge, e.g. In progress), `next` (step ids not done yet; their
+# text is shown as "Next"), `tokens` (url + path of its tokens page; omit if it doesn't exist yet).
+# `chart_note`: an optional line for the "About this data" box under the commit chart.
+# chart_from: commits before this date are counted but not drawn, so an old repo doesn't squeeze the chart.
+chart_from: '2026-04-01'
+steps:
+- id: question
+  num: '01'
+  label: Curiosity
+  title: Start from curiosity
+  text: 'An idea I can''t stop thinking about, turned into a question the data can answer.'
+  me: The question I can't stop thinking about
+  ai: Helps sharpen it into something data can answer
+- id: data
+  num: '02'
+  label: Datasets
+  title: Find data I can trust
+  text: 'Every source exposes its data differently. Claude researches and cleans it; I decide what to trust.'
+  me: Decide which sources to trust
+  ai: Researches datasets, writes fetch and clean scripts
+- id: design
+  num: '03'
+  label: Prototype
+  title: Iterate together
+  text: 'The versions happen in the running app: Claude brings code and ideas fast, I decide which one stays.'
+  me: References, direction, which version stays
+  ai: Code and visualization ideas, fast
+- id: ux
+  num: '04'
+  label: UX audit
+  title: Audit function and UX
+  text: 'Can someone who has never seen this data explore it? My eye finds what breaks; Claude changes the code.'
+  me: 'My eye: what breaks, what confuses'
+  ai: Proposes fixes, changes the code
+- id: polish
+  num: '05'
+  label: Polish
+  title: Polish and pull out the system
+  text: 'Repeated values become tokens, plus small tools to see the system.'
+  me: Criterion and manual review
+  ai: Refactors, tokens, tools like Token Lab
+- id: access
+  num: '06'
+  label: Access
+  title: Accessibility, which loops back
+  text: 'Keyboard, screen reader, no color needed: WCAG 2.2 AA. I run the tools, Claude explains each fix first, and it loops back into UX.'
+  me: Run Lighthouse, axe and WAVE; decide
+  ai: Explains each fix, then applies it
+- id: ship
+  num: '07'
+  label: Ship
+  title: Ship it, share it, start again
+  text: 'Deploy, share, listen. What friends say starts the next version.'
+  me: Vercel setup, SEO images; commit, push, share
+  ai: README, SEO tags and copy
+- id: context
+  num: CORE
+  label: CLAUDE.md
+  title: 'CLAUDE.md: memory for one repo'
+  text: 'Each repo''s CLAUDE.md holds commands, rules and decisions, so every session starts with context instead of guesses.'
+- id: skills
+  num: CORE
+  label: Skills
+  title: 'Skills: know-how that travels'
+  text: 'Reusable routines Claude loads when a task matches, written after explaining the same process in every project.'
+projects:
+- id: deep
+  name: Deep Lineages
+  short: Deep L.
+  emoji: 🦕
+  url: https://deep-lineages.vercel.app/
+  repo: https://github.com/veronicadeleonh/deep-lineages
+  github: deep-lineages
+  folder: deep-lineages
+  tokens:
+    url: https://deep-lineages.vercel.app/#tokens
+    path: /#tokens · Token Lab
+  meta: Since October 2026 · Python, React, TypeScript, D3
+  card:
+    img: /images/project-deep-lineages.png
+    mess: 7,043 fossil records over 186 million years
+    access: One animal you follow across story, timeline, tree and map
+    lesson: Visual exploration first; tokens and accessibility in the first sprint.
+    tags:
+    - Data pipeline
+    - Information design
+    - Token architecture
+    - Keyboard UX
+  story:
+  - label: The question
+    text: '186 million years of dinosaurs on maps of the world as it was.'
+  - label: The hard part
+    text: 'Time, family trees and geography, all at once.'
+  - label: My call
+    text: 'One followed animal that travels across story, timeline, tree and map.'
+  steps:
+    question: 'After Brusatte''s The Rise and Fall of the Dinosaurs: who lived when, who was related to whom, where their bones turned up.'
+    data: 'The Paleobiology Database as the main source: 7,043 fossils, turned in Python into 29 families and 531 genera. PhyloPic, Wikipedia and PALEOMAP fill in silhouettes, summaries and ancient coastlines.'
+    design: The only one with visual exploration first. Claude and I tried directions and palettes together using AI-generated images, then built it. In code I tried a vertical timeline and dropped it for a horizontal one with the family tree inside.
+    ux: 'A followed family with no fossils at that time drops out of the list, and where you are lives in the URL.'
+    polish: Primitives plus semantic roles with contrast per role, and Token Lab, a tool to see and tune the tokens live in the app.
+    access: 'The third audit, inside the first build sprint: timeline and family tree as keyboard trees, color-blind-safe diet colors, an APCA check, reflow at 320px.'
+    ship: 'Live within days: welcome screen, credits and analytics first, SEO and previews after.'
+    context: 'Written after launch: data rules, honest caveats and the big decisions.'
+    skills: 'The routines kicked in within the first sprint, not months later.'
+  evidence:
+    data:
+      type: data
+      funnel: true
+      sources: [Paleobiology Database, PhyloPic, Wikipedia, PALEOMAP]
+      stages:
+      - [9899, raw rows, 29 columns from the PBDB export]
+      - [7043, fossils kept, 'one genus, family and time range each']
+      - [3400, in the 29 families, the ones the story follows]
+      - [531, genera, inside those families]
+      caption: 'From the raw export to the family tree. Fossils outside the 29 families stay in the data.'
+    design:
+      type: looks
+      caption: 'Three looks in two weeks, in their real colors. The last one tells diets apart by lightness, not only hue.'
+      items:
+      - label: Prototype
+        when: 2 Oct
+        bg: '#f4f3ef'
+        fg: '#0b0b0b'
+        border: '#e2e0da'
+        font: System UI
+        family: 'ui-sans-serif, system-ui, sans-serif'
+        swatches: ['#2a78d6', '#eb6834', '#a3a29c', '#d03b3b', '#b7d3f6']
+        diet: [[Herbivore, '#2a78d6', '#2a78d6'], [Carnivore, '#eb6834', '#eb6834']]
+        what: D3 sketch, then React the same day
+      - label: Time machine
+        when: 5 Oct
+        bg: '#eef2f4'
+        fg: '#18222b'
+        border: '#dfe5e9'
+        font: IBM Plex Sans
+        family: "'IBM Plex Sans', sans-serif"
+        swatches: ['#14946e', '#e2582f', '#b87700', '#7d8a96', '#ffffff']
+        diet: [[Herbivore, '#14946e', '#14946e'], [Carnivore, '#e2582f', '#e2582f']]
+        what: New home view and a cooler light theme
+      - label: Tokens
+        when: 18 Oct
+        bg: '#eef2f4'
+        fg: '#18222b'
+        border: '#dfe5e9'
+        font: IBM Plex Sans
+        family: "'IBM Plex Sans', sans-serif"
+        swatches: ['#8fd3b0', '#0b6b50', '#c4461f', '#966100', '#5f6b76']
+        diet: [[Herbivore, '#8fd3b0', '#0b6b50'], [Carnivore, '#c4461f', '#c4461f']]
+        what: Diet colors that survive color blindness
+    polish:
+      type: tokens
+      caption: 'Variables from day one, so the work was structure: layered tokens and every radius in the scale.'
+      bars: [[CSS custom properties, 1], [Hard-coded radii, 2]]
+      drift:
+      - [9 Oct, 29, 10]
+      - [15 Oct, 65, 10]
+      - [18 Oct, 146, 0]
+      total: 146
+      groups:
+      - [Color palette, 30]
+      - [Color roles, 39]
+      - [Type, 32]
+      - [Space, 12]
+      - [Motion, 9]
+      - [Radius, 6]
+      - [Other, 18]
+    access:
+      type: contrast
+      caption: 'Contrast and color blindness computed live from the real colors. Criteria mapped from commit messages.'
+      bg: '#eef2f4'
+      head: color
+      mapped: true
+      rows:
+      - [text-3, '#7d8a96', '#5f6b76', on --bg]
+      - [period-tri, '#a99ee6', '#9284dc', 'graphic, on --surface', '#ffffff', 3]
+      cvd:
+        bg: '#ffffff'
+        before: [[Herbivore, '#14946e', '#14946e'], [Carnivore, '#e2582f', '#e2582f']]
+        after: [[Herbivore, '#8fd3b0', '#0b6b50'], [Carnivore, '#c4461f', '#c4461f']]
+      commits: 13
+      criteria:
+      - [1.4.1, 1]
+      - [1.4.3, 2]
+      - [1.4.4, 1]
+      - [1.4.10, 1]
+      - [2.1.1, 4]
+      - [2.3.3, 1]
+      - [2.4.1, 1]
+      - [2.4.7, 2]
+- id: volcano
+  name: Volcano Explorer
+  short: Volcano
+  emoji: 🌋
+  url: https://volcano-explorer-iota.vercel.app/
+  repo: https://github.com/veronicadeleonh/volcano-explorer
+  github: volcano-explorer
+  folder: volcano-explorer
+  tokens:
+    url: https://volcano-explorer-iota.vercel.app/styleguide
+    path: /styleguide
+  chart_note: starts with few data commits because its data groundwork was done a year earlier in another project, seismic-agent (Streamlit, spring 2025).
+  meta: Since May 2026 · 3 versions so far · React, Mapbox GL
+  card:
+    img: /images/project-volcano-explorer.png
+    mess: Earthquakes, scraped eruption reports and plate boundaries
+    access: One globe, readable without color
+    lesson: Built on data from an earlier Streamlit project, straight to code, redesigned along the way.
+    tags:
+    - Geospatial UI
+    - Redesign
+    - Tokens
+    - WCAG 2.2 AA
+  story:
+  - label: The question
+    text: 'The world''s volcanoes on a 3D globe, with their eruptions and the plates underneath.'
+  - label: The hard part
+    text: 'Contrast math from tokens doesn''t tell you how text reads over a moving satellite map.'
+  - label: My call
+    text: 'The data lives on the globe, not in lists: if the map already shows it, a panel doesn''t repeat it.'
+  steps:
+    question: 'What does the world''s volcanic activity look like on one globe, and what moves underneath it?'
+    data: 'Most of the data work happened a year earlier, in seismic-agent, a Streamlit dashboard from spring 2025: USGS earthquakes, eruption reports scraped from the Smithsonian Global Volcanism Program, and the PB2002 plate boundaries. Volcano Explorer reused that groundwork and curated 78 volcanoes on top.'
+    design: 'The first of the three, and straight to code: the one fixed idea was a 3D globe. The look changed along the way. v2 brought a redesign inspired by live seismic dashboards, a monospace font and a rotating globe. v3 added synthesized sound.'
+    ux: 'A false "erupted recently" badge, a seam on the Pacific Plate, and filters that now switch off when they don''t apply.'
+    polish: 'A token pipeline: one tokens.json becomes the CSS and a JS module for Mapbox and the charts, plus a /styleguide page. It can also write a Figma-ready file, not used yet.'
+    access: The second audit, with a full audit doc. Claude's first pass said "not yet verified in a browser", so I verified it. Volcano status and plate boundaries now read without color.
+    ship: 'Live since May. v2 and v3 shipped once the site started getting traffic.'
+    context: 'Written after v3: stack, token and accessibility rules, and every deferred decision.'
+    skills: 'Where wcag-audit-learning and design-tokens-system took shape.'
+  # evidence: rendered artifacts that replace the step text in the loop panel (layouts/shortcodes/hib-evidence.html).
+  # Values come from the repo's git history: CSS at each version, tokens/tokens.json, docs/wcag-2.2-aa-audit.md, a11y commits.
+  evidence:
+    data:
+      type: data
+      sources: [USGS earthquakes, Smithsonian GVP, PB2002 plates, Tavily web search]
+      stages:
+      - [78, volcanoes, 'curated, some added after friends asked for them']
+      - [231, eruptions, 'with year, VEI and a description']
+      - [54, plates, PB2002 polygons]
+      - [242, boundary segments, 'subduction, divergent, transform']
+      caption: 'Built on seismic-agent (2025). Tavily keeps eruptions current; friends suggested the volcanoes that were missing.'
+    design:
+      type: versions
+      caption: 'Each version''s real CSS: try the chips. v3 added visual-impairment support, so plates and status read without color.'
+      items:
+      - v: v1
+        when: May 2026
+        font: System sans
+        family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        radius: 20px
+        on_mix: 20
+        on_border: 60
+        what: Globe, plates and compare work
+        legend: [dot, '#ff6b35', dot, '#4da8da', dot, '#a0a0c0']
+      - v: v2
+        when: Sep 2026
+        font: JetBrains Mono
+        family: "'JetBrains Mono', ui-monospace, monospace"
+        radius: 8px
+        on_mix: 20
+        on_border: 60
+        what: Redesign after live seismic dashboards
+        legend: [dot, '#b56cf0', dot, '#4da8da', dot, '#a0a0c0']
+      - v: v3
+        when: Oct 2026
+        font: JetBrains Mono
+        family: "'JetBrains Mono', ui-monospace, monospace"
+        radius: 8px
+        on_mix: 35
+        on_border: 100
+        min_height: 24px
+        control_border: true
+        what: Plates, sound, tokens, and built for visual impairment
+        legend: [solid, '#b56cf0', dashed, '#4da8da', dotted, '#a0a0c0']
+    polish:
+      type: tokens
+      caption: 'Literals drifted in v2, then moved into tokens. Still left: 4 colors on /styleguide and 8 radii in the modals.'
+      drift:
+      - [v1, 88, 15]
+      - [v2, 111, 19]
+      - [v3, 4, 8]
+      total: 193
+      groups:
+      - [Color palette, 61]
+      - [Color roles, 56]
+      - [Type, 24]
+      - [Space, 15]
+      - [Motion, 12]
+      - [Radius, 7]
+      - [Other, 18]
+    access:
+      type: contrast
+      caption: 'Contrast computed live from the tokens, before and after, and every WCAG criterion a commit names.'
+      bg: '#0a0a16'
+      rows:
+      - [text.subtle, 'rgba(255,255,255,.45)', 'rgba(255,255,255,.5)', borderline at 4.50]
+      - [text.faint, 'rgba(255,255,255,.35)', 'rgba(255,255,255,.5)', merged into text.subtle]
+      - [text.disabled, 'rgba(255,255,255,.3)', 'rgba(255,255,255,.5)', merged into text.subtle]
+      - [button on ember, '#ffffff', '#1f0800', 'on #ff6432']
+      commits: 20
+      criteria:
+      - [1.3.1, 1]
+      - [1.4.1, 3]
+      - [1.4.2, 1]
+      - [1.4.3, 1]
+      - [1.4.4, 1]
+      - [1.4.10, 1]
+      - [1.4.11, 2]
+      - [2.1.1, 3]
+      - [2.2.2, 1]
+      - [2.3.3, 1]
+      - [2.4.3, 3]
+      - [2.4.7, 2]
+      - [2.5.1, 1]
+      - [2.5.8, 1]
+      - [4.1.2, 4]
+- id: tracing
+  name: Tracing Origins
+  short: Tracing
+  emoji: 🏛️
+  url: https://tracing-origins-lac.vercel.app/
+  repo: https://github.com/veronicadeleonh/tracing-origins
+  github: tracing-origins
+  folder: colonial-museum-routes
+  tokens:
+    url: https://tracing-origins-lac.vercel.app/#tokens
+    path: /#tokens
+  meta: Since July 2026 · Python, React, Mapbox
+  card:
+    img: /images/project-tracing-origins.png
+    mess: Four museums, four ways in, places no geocoder knows
+    access: One map, plus a list view for keyboards
+    lesson: Data rigor across four museums, then the first audit.
+    tags:
+    - Data sourcing
+    - Data modeling
+    - UX
+    - Accessibility
+  story:
+  - label: The question
+    text: 'Where did museum objects come from, and how did they get there?'
+  - label: The hard part
+    text: 'Many origins are historical regions no geocoder knows. A fallback chain and my own dictionary place them.'
+  - label: My call
+    text: 'Colonial context is a visual mark on each piece, not a filter. A filter would let people hide it.'
+  steps:
+    question: 'Where do museum objects come from, and how did they get there?'
+    data: 'Four museums, four ways in: the Met''s public API, the Louvre through Wikidata, a polite 20-second-delay scraper for the British Museum, and Quai Branly''s undocumented search endpoint. Historical regions like "Mesopotamia" needed a hand-made gazetteer.'
+    design: A quick static map in Python to check the data, then straight to React and the browser. The 3D globe came a month later. Claude's first visual proposal stayed almost unchanged. The iteration went into the map, the side panel and the colonial timeline.
+    ux: '"Ur" matched inside "sur" and silently misplaced 12 Louvre objects. Fixed, with tests built from the real cases.'
+    polish: Tokens for neutrals, surfaces and radii, a type scale and a spacing scale, plus a live tokens page with usage counts and the values still untokenized.
+    access: 'The first audit, in October: contrast, 24px touch targets, focus order, and a list view as the keyboard alternative to the globe.'
+    ship: 'Live with SEO and analytics. Friends'' feedback came back as a guided onboarding tour.'
+    context: 'The first and the longest: a dated decision log with every bug and why it happened.'
+    skills: 'Where the WCAG routine started: tools first, then one fix at a time.'
+  evidence:
+    data:
+      type: data
+      funnel: true
+      sources: [Met API, Louvre via Wikidata, British Museum scraper, Quai Branly search]
+      stages:
+      - [703, objects collected, from four museums]
+      - [645, in the app, each with a place of origin]
+      - [215, origin places, on the map]
+      - [93, countries, of origin]
+      split:
+        label: How precisely each origin could be placed
+        parts: [[site, 208], [country, 276], [region, 60], [subregion, 43], [culture, 51], [editorial, 7]]
+      caption: 'Four ways in, then the hard part: placing origins no modern geocoder knows.'
+    design:
+      type: iterations
+      caption: 'One decision, three tries in one day. Hover a museum to follow its route.'
+      bg: '#fbfaf7'
+      museums: [[Met, '#c9a227'], [Louvre, '#3d7a8c'], [British Museum, '#b23a48']]
+      items:
+      - label: Try 1
+        marker: ['#c9a227', '#c9a227', '#c9a227']
+        note: Gold, the same as the Met
+      - label: Try 2
+        marker: ['#6a4c93', '#6a4c93', '#6a4c93']
+        note: Violet, a fourth color that meant nothing
+      - label: Kept
+        marker: ['#c9a227', '#3d7a8c', '#b23a48']
+        note: Each piece in its museum's color
+    polish:
+      type: tokens
+      caption: 'Partial tokens: museum and map colors are still literals, listed on the tokens page.'
+      drift:
+      - [before, 58, 13]
+      - [refactor, 49, 11]
+      - [now, 39, 10]
+      total: 27
+      groups:
+      - [Color, 12]
+      - [Space, 7]
+      - [Type, 6]
+      - [Radius, 2]
+    access:
+      type: contrast
+      caption: 'The first audit, computed live. Criteria mapped from commit messages.'
+      bg: '#fbfaf7'
+      head: color
+      mapped: true
+      rows:
+      - [muted text ×18, '#928d82', '#6b665d', '']
+      - [timeline caption, 'rgba(255,255,255,.45)', 'rgba(255,255,255,.7)', on the dark timeline band, '#302f2d']
+      commits: 10
+      criteria:
+      - [1.3.1, 1]
+      - [1.4.3, 2]
+      - [1.4.10, 3]
+      - [1.4.13, 1]
+      - [2.1.1, 2]
+      - [2.3.3, 1]
+      - [2.4.3, 2]
+      - [2.4.7, 1]
+      - [2.5.8, 1]
+      - [3.1.1, 1]
+- id: reef
+  name: Reef Pulse
+  short: Reef
+  emoji: 🪸
+  status: In progress
+  repo: https://github.com/veronicadeleonh/coral-bleaching-model
+  github: coral-bleaching-model
+  folder: corals
+  chart_note: 'the 8 commits from the 2025 bootcamp sit before the chart starts, and the three.js rebuild isn''t committed yet, so the last weeks of work don''t show.'
+  meta: Since 2025 · third version in progress · Python, React, three.js
+  next:
+  - polish
+  - access
+  - ship
+  card:
+    img: /images/project-reef-pulse.jpg
+    mess: Over 11,000 reef surveys and a risk model
+    access: One sentence and a coral that reacts
+    lesson: The project I couldn't finish, back for a third try with the whole system from the start.
+    tags:
+    - three.js
+    - Risk model
+    - Domain knowledge
+  story:
+  - label: The question
+    text: 'How heat, latitude and water variability change the risk of coral bleaching.'
+  - label: The hard part
+    text: 'I''m not a marine scientist. That stopped the project the first time.'
+  - label: Workaround
+    text: 'Claude takes the science side and explains each choice in plain language.'
+  steps:
+    question: 'How do heat, latitude and water variability change the risk of bleaching? My unfinished bootcamp project.'
+    data: 'Reef Check surveys, one row per survey and grouped by ecoregion. "Noticeable bleaching" means more than 10% of the corals bleached. The model now trains on Reef Check only: a second dataset stays out on purpose.'
+    design: 'Three looks for the same data: a notebook, a world map with a DESIGN.md borrowed from another repo, and now a 3D coral in three.js with the sentence, map and timeline on top of the scene. The palette comes from an underwater photo.'
+    ux: 'No server to wake up: the risk is computed in the browser, so the coral answers at once.'
+    polish: 'Render quality, a consistency pass, then a tokens page.'
+    access: 'A 3D canvas needs a non-visual twin: the sentence and the map carry the same information. Plus reduced motion.'
+    ship: 'Vercel, front end only.'
+    context: 'The first CLAUDE.md written before shipping, not after.'
+    skills: 'The first project with the skills planned before the first deploy.'
+  evidence:
+    data:
+      type: data
+      funnel: true
+      chain: true
+      sources: [NOAA CoRTAD v6 satellite temperatures, van Woesik & Kratochwill 2022 bleaching database, Kaggle copy]
+      stages:
+      - [23203, field surveys, 'Reef Check and Donner, each with the CoRTAD heat stress of its site and week']
+      - [11179, Reef Check surveys, one source only]
+      - [50, ecoregions, the map and the bars]
+      - [3, model inputs, 'heat stress, water variability, latitude']
+      caption: 'Satellite heat stress joined to field surveys, then half left out on purpose. CoRTAD ends in 2019.'
+    design:
+      type: looks
+      caption: 'Three looks for the same risk: v2 borrowed a design, v3 took its palette from an underwater photo.'
+      items:
+      - label: v1 · Streamlit
+        when: Apr 2026
+        bg: '#ffffff'
+        fg: '#212529'
+        border: '#dee2e6'
+        font: Source Sans
+        family: "'Source Sans 3', 'Source Sans Pro', sans-serif"
+        swatches: ['#d4edda', '#fff3cd', '#fde8d8', '#f8d7da', '#2d2d2d']
+        badge: [Bleaching, '#fde8d8', '#8a3a00', 4px]
+        what: Severity pills from Bootstrap defaults
+      - label: v2 · World map
+        when: Jun 2026
+        bg: '#f5f1ec'
+        fg: '#111111'
+        border: '#d3cec6'
+        font: Inter
+        family: "Inter, sans-serif"
+        swatches: ['#ff5600', '#0007cb', '#0bdf50', '#c41c1c', '#111111']
+        badge: [Bleaching, '#ff5600', '#ffffff', 9999px]
+        what: A DESIGN.md borrowed from another repo
+      - label: v3 · Reef Pulse
+        when: Oct 2026
+        bg: 'linear-gradient(180deg, #2C6FD6 0%, #17438C 34%, #0E2E66 64%, #08193D 100%)'
+        fg: '#F2FAFC'
+        border: '#4A76B4'
+        font: Schibsted Grotesk
+        family: "'Schibsted Grotesk', sans-serif"
+        swatches: ['#73E9FB', '#2C6FD6', '#0E2E66', '#FF8A4C', '#A9C8E6']
+        badge: [Bleaching, 'rgba(255,138,76,.18)', '#FF8A4C', 0]
+        what: Palette from an underwater photo
+# milestones: moments the way of working changed, drawn as marks on the commit chart (section 03).
+# date: where the mark sits; label: short, on the chart; text: shown on hover or focus.
+milestones:
+- date: '2026-04-20'
+  label: First work with Claude
+  text: 'Back to the stalled coral project: a reworked model and a React map app, with a DESIGN.md borrowed from another repo as my first design guide.'
+- date: '2026-05-27'
+  label: Straight to code
+  text: 'Volcano Explorer: the seismic-agent data rebuilt as a 3D globe, designed directly in code with Claude Code.'
+- date: '2026-08-01'
+  label: Cowork, CLAUDE.md as a log
+  text: 'Over the summer, with Tracing Origins: Cowork replaced ChatGPT, the CLAUDE.md became a dated decision log, and friends started testing.'
+- date: '2026-10-08'
+  label: Three audits
+  text: 'Consistency, tokens and accessibility, back to back in all three projects. Deep Lineages got its system in the first sprint.'
+- date: '2026-10-26'
+  label: Routines become skills
+  text: 'The audits became reusable skills, every repo has a CLAUDE.md, and the coral came back as Reef Pulse with the whole system from the start.'

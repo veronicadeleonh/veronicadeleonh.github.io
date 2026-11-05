@@ -2,6 +2,12 @@
 <section class="personal-projects">
   <h2 class="personal-projects-heading">Tiny Data Adventures</h2>
   <p class="personal-projects-subtext">Making big, messy datasets accessible to everyone.</p>
+  <a class="hib-entry" href="/how-i-build/">
+    <svg class="hib-entry-icon" viewBox="0 0 28 28" aria-hidden="true"><line class="hib-entry-lane hib-entry-lane--me" x1="2" y1="11" x2="26" y2="11"/><line class="hib-entry-lane hib-entry-lane--ai" x1="2" y1="18" x2="26" y2="18"/><rect class="hib-entry-dot" x="1" y="3" width="4" height="4"/></svg>
+    <span class="hib-entry-text"><span class="hib-entry-title">How I build these</span><span class="hib-entry-sub">me × Claude Code · the loop, the skills, the commits</span></span>
+    <span class="hib-entry-arrow" aria-hidden="true">→</span>
+  </a>
+  <script>document.querySelector(".hib-entry").addEventListener("pointermove", function (e) { var r = this.getBoundingClientRect(); this.style.setProperty("--x", (e.clientX - r.left) + "px"); this.style.setProperty("--y", (e.clientY - r.top) + "px"); }, { passive: true });</script>
   <div class="personal-projects-grid">
     {{- range .projects }}
     <div class="project-card" data-project-title="{{ .title }}">
@@ -30,7 +36,10 @@
           </a>
           {{- end }}
         </div>
-<div class="flex-wrap">
+{{- with .role }}
+        <p class="project-card-role"><span class="project-card-role-label">My role</span> {{ . }}</p>
+        {{- end }}
+        <div class="flex-wrap">
           {{- range .tags }}
           <div class="label-grey">{{ . }}</div>
           {{- end }}
