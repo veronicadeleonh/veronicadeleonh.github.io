@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gradient Motion Lab</title>
+<style>
+:root {
+  --bg: #0e1011; --band: #161819; --surface: #1a1d1f; --text: #f1f4f5; --muted: #8d9495; --border: #2a2e30;
+  --blue: #6cb6ff; --purple: #c9a7ff; --pink: #ff7ad9; --orange: #ff9e57; --yellow: #ffd84d; --green: #4fe08c;
+  /* palette slots, swapped by the palette buttons */
+  --c1: var(--blue); --c2: var(--purple); --c3: var(--pink);
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+body[data-pal="ice"] { --c1: var(--blue); --c2: var(--purple); --c3: var(--blue); }
+body[data-pal="aurora"] { --c1: var(--blue); --c2: var(--purple); --c3: var(--pink); }
+body[data-pal="signal"] { --c1: var(--purple); --c2: var(--pink); --c3: var(--orange); }
+body[data-pal="mono"] { --c1: #ffffff; --c2: var(--purple); --c3: #ffffff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.5; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 80px; }
+h1 { font-weight: 400; font-size: 26px; margin: 0 0 4px; }
+.sub { color: var(--muted); margin: 0 0 24px; }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 28px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.bar button { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border); padding: 6px 10px; cursor: pointer; }
+.bar button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+.sw { display: inline-block; width: 22px; height: 8px; vertical-align: middle; margin-left: 6px; background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3)); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--band); padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.card h2 { font-family: var(--mono); font-size: 13px; font-weight: 400; margin: 0; color: var(--text); }
+.card p { margin: 0; color: var(--muted); font-size: 13px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+/* sample elements, styled like the page */
+.node { position: relative; isolation: isolate; width: 120px; padding: 8px 10px; background: var(--band); border: 1px solid var(--text); color: var(--text); font-family: var(--mono); font-size: 12px; text-align: left; cursor: pointer; }
+.node b { display: block; font-family: var(--sans); font-weight: 500; font-size: 13px; }
+.node.on { background: var(--text); color: var(--bg); }
+.cta { position: relative; isolation: isolate; display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--text); color: var(--text); text-decoration: none; font-size: 15px; }
+.cta small { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.cta span:last-child { margin-left: auto; }
+@property --a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@property --p { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
+
+/* ---------- 1. Border beam: a short bright arc runs around the edge ---------- */
+.beam::before, .beam::after { content: ""; position: absolute; inset: -1px; pointer-events: none; opacity: 0; transition: opacity .3s; }
+.beam::before { padding: 1.5px; background: conic-gradient(from var(--a), transparent 0 62%, var(--c1) 72%, var(--c2) 84%, var(--c3) 94%, transparent 100%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 2.2s linear infinite; }
+.beam::after { z-index: -1; background: conic-gradient(from var(--a), transparent 0 62%, var(--c1) 72%, var(--c2) 84%, var(--c3) 94%, transparent 100%); filter: blur(14px); animation: spin 2.2s linear infinite; }
+.beam:is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.beam:is(:hover, :focus-visible, .force)::after { opacity: .55; }
+.beam:is(:hover, :focus-visible, .force) { border-color: var(--border); }
+.beam.on:is(:hover, .force) { border-color: var(--text); }
+@keyframes spin { to { --a: 360deg; } }
+
+/* ---------- 2. Spotlight: a gradient light follows the cursor ---------- */
+.spot { --x: 50%; --y: 50%; }
+.spot::before { content: ""; position: absolute; inset: -1px; padding: 1px; pointer-events: none; opacity: 0; transition: opacity .25s; background: radial-gradient(160px circle at var(--x) var(--y), var(--c1), var(--c2) 40%, transparent 70%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+.spot::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity .25s; background: radial-gradient(200px circle at var(--x) var(--y), color-mix(in srgb, var(--c2) 22%, transparent), transparent 70%); }
+.spot:is(:hover, :focus-visible, .force)::before, .spot:is(:hover, :focus-visible, .force)::after { opacity: 1; }
+.spot:is(:hover, .force) { border-color: var(--border); }
+.spot.on::after { background: radial-gradient(220px circle at var(--x) var(--y), var(--c1), var(--c2) 45%, var(--text) 80%); }
+
+/* ---------- 3. Scan: a slanted light band sweeps across, once per hover ---------- */
+.scan { overflow: hidden; }
+.scan::before { content: ""; position: absolute; inset: -1px; padding: 1px; pointer-events: none; opacity: 0; transition: opacity .3s; background: linear-gradient(120deg, var(--c1), var(--c2), var(--c3)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+.scan::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 45%; z-index: -1; pointer-events: none; opacity: 0; background: linear-gradient(105deg, transparent, color-mix(in srgb, var(--c2) 45%, transparent), color-mix(in srgb, var(--c1) 30%, transparent), transparent); transform: skewX(-18deg); }
+.scan:is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.scan:is(:hover, :focus-visible)::after { opacity: 1; animation: sweep .9s cubic-bezier(.3,.6,.2,1) both; }
+.scan.force::after { opacity: 1; animation: sweep 2.4s cubic-bezier(.3,.6,.2,1) infinite; }
+.scan:is(:hover, .force) { border-color: var(--border); }
+@keyframes sweep { from { left: -60%; } to { left: 120%; } }
+
+/* ---------- 4. Flow (current idea, refined): 3 colors, faster, soft glow ---------- */
+.flow::before, .flow::after { content: ""; position: absolute; inset: -1px; pointer-events: none; opacity: 0; transition: opacity .3s; background: linear-gradient(120deg, var(--c1), var(--c2), var(--c3), var(--c1)); background-size: 300% 300%; animation: drift 3s ease-in-out infinite alternate; }
+.flow::before { padding: 1.5px; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+.flow::after { z-index: -1; filter: blur(12px); }
+.flow:is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.flow:is(:hover, :focus-visible, .force)::after { opacity: .4; }
+.flow.on::before { padding: 0; -webkit-mask: none; mask: none; z-index: -1; }
+.flow:is(:hover, .force) { border-color: transparent; }
+@keyframes drift { from { background-position: 0% 0%; } to { background-position: 100% 100%; } }
+
+/* ---------- 5. Pulse: border lights up, halo breathes ---------- */
+.pulse::before, .pulse::after { content: ""; position: absolute; inset: -1px; pointer-events: none; opacity: 0; transition: opacity .3s; background: conic-gradient(from 210deg, var(--c1), var(--c2), var(--c3), var(--c1)); }
+.pulse::before { padding: 1.5px; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+.pulse::after { z-index: -1; filter: blur(16px); }
+.pulse:is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.pulse:is(:hover, :focus-visible, .force)::after { animation: breathe 1.8s ease-in-out infinite; }
+.pulse:is(:hover, .force) { border-color: transparent; }
+@keyframes breathe { 0%, 100% { opacity: .15; transform: scale(.98); } 50% { opacity: .6; transform: scale(1.04); } }
+
+/* ---------- 6. Aurora fill: slow liquid gradient inside active elements ---------- */
+.aur.on { overflow: hidden; }
+.aur.on::before { content: ""; position: absolute; inset: -40%; z-index: -1; opacity: 0; transition: opacity .3s; background: radial-gradient(40% 50% at 30% 40%, var(--c1), transparent 70%), radial-gradient(45% 55% at 70% 60%, var(--c2), transparent 70%), radial-gradient(35% 45% at 50% 20%, var(--c3), transparent 70%), var(--text); animation: aurora 6s ease-in-out infinite alternate; }
+.aur.on:is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.aur:not(.on)::before { content: ""; position: absolute; inset: -1px; padding: 1px; opacity: 0; transition: opacity .3s; background: conic-gradient(from var(--a), var(--c1), var(--c2), var(--c3), var(--c1)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 6s linear infinite; }
+.aur:not(.on):is(:hover, :focus-visible, .force)::before { opacity: 1; }
+.aur:not(.on):is(:hover, .force) { border-color: transparent; }
+@keyframes aurora { 0% { transform: translate(-6%, -4%) rotate(0deg); } 100% { transform: translate(6%, 5%) rotate(25deg); } }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; } }
+</style>
+</head>
+<body data-pal="aurora">
+<main>
+<h1>Gradient motion lab</h1>
+<p class="sub">Hover each sample, or switch on "Animate all". Same elements as the page: a loop step, an active step and the home CTA.</p>
+<div class="bar" role="group" aria-label="Palette">
+Palette:
+<button data-pal="aurora" aria-pressed="true">Aurora<span class="sw" style="background:linear-gradient(90deg,#6cb6ff,#c9a7ff,#ff7ad9)"></span></button>
+<button data-pal="ice" aria-pressed="false">Ice<span class="sw" style="background:linear-gradient(90deg,#6cb6ff,#c9a7ff,#6cb6ff)"></span></button>
+<button data-pal="signal" aria-pressed="false">Signal<span class="sw" style="background:linear-gradient(90deg,#c9a7ff,#ff7ad9,#ff9e57)"></span></button>
+<button data-pal="mono" aria-pressed="false">Mono + violet<span class="sw" style="background:linear-gradient(90deg,#fff,#c9a7ff,#fff)"></span></button>
+<span style="width:16px"></span>
+<button id="force" aria-pressed="false">Animate all</button>
+</div>
+<div class="grid" id="grid"></div>
+</main>
+<script>
+var V = [
+  ["beam", "1 · Border beam", "A short bright arc races around the edge, with a soft glow behind. Feels like something is running. The most 'AI-tech'."],
+  ["spot", "2 · Spotlight", "A gradient light follows the cursor along the border and inside. Interactive, calm, no loop."],
+  ["scan", "3 · Scan", "A slanted light band sweeps across once per hover, like a scanner. Short and punchy."],
+  ["flow", "4 · Flow (refined current)", "Today's drifting gradient with 3 colors, faster, thicker border and a soft glow."],
+  ["pulse", "5 · Pulse", "The border lights up and a halo breathes behind it. Feels alive, a bit like a 'thinking' state."],
+  ["aur", "6 · Aurora", "Slow rotating border; active elements fill with a liquid, moving light. Most atmospheric."]
+];
+var grid = document.getElementById("grid");
+V.forEach(function (v) {
+  var c = document.createElement("div"); c.className = "card";
+  c.innerHTML = '<h2>' + v[1] + '</h2><div class="row"><button class="node ' + v[0] + '">03<b>Prototype</b></button><button class="node on ' + v[0] + '">04<b>UX audit</b></button></div>' +
+    '<a href="#" class="cta ' + v[0] + '" onclick="return false"><span>How I build these<small>me × Claude Code</small></span><span>→</span></a><p>' + v[2] + '</p>';
+  grid.appendChild(c);
+});
+document.querySelectorAll(".spot").forEach(function (el) {
+  el.addEventListener("pointermove", function (e) { var r = el.getBoundingClientRect(); el.style.setProperty("--x", (e.clientX - r.left) + "px"); el.style.setProperty("--y", (e.clientY - r.top) + "px"); });
+});
+document.querySelectorAll("[data-pal]").forEach(function (b) {
+  if (b.tagName !== "BUTTON") return;
+  b.addEventListener("click", function () { document.body.dataset.pal = b.dataset.pal; document.querySelectorAll(".bar [data-pal]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); });
+});
+document.getElementById("force").addEventListener("click", function () {
+  var on = this.getAttribute("aria-pressed") !== "true"; this.setAttribute("aria-pressed", on);
+  document.querySelectorAll(".node, .cta").forEach(function (el) { el.classList.toggle("force", on); });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<ol class="hib-tl">{{ range site.Data.how_i_build.timeline }}<li><time>{{ .when }}</time><h4>{{ .title }}</h4><p>{{ .text }}</p><div class="hib-tl-tags">{{ range .tags }}<span>{{ . }}</span>{{ end }}</div></li>{{ end }}</ol>
