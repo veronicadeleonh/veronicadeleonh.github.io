@@ -995,20 +995,7 @@ strong {
 }
 
 
-/* Tiny Data Adventures — role line + How I build entry */
-.project-card-role {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-    margin: var(--space-1) 0 var(--space-2) !important;
-    line-height: 1.4;
-}
-
-.project-card-role-label {
-    font-family: var(--font-mono);
-    font-size: var(--font-size-xs);
-    color: var(--color-text-tertiary);
-    margin-right: var(--space-1);
-}
+/* Tiny Data Adventures — How I build entry */
 
 .hib-entry {
     position: relative;

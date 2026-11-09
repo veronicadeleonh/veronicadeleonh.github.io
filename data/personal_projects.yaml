@@ -1,7 +1,6 @@
 projects:
   - title: "🦕 Deep Lineages"
-    role: "Data pipeline, information design, tokens, keyboard UX"
-    description: "186 million years of dinosaur evolution — explore species, family trees, and fossil discoveries on a paleomap."
+    description: "186 million years of dinosaurs, on maps of the world as it was."
     url: "https://deep-lineages.vercel.app/"
     github: "https://github.com/veronicadeleonh/deep-lineages"
     thumbnail: "/images/project-deep-lineages.png"
@@ -12,8 +11,7 @@ projects:
       - Paleontology
 
   - title: "🌋 Volcano Explorer"
-    role: "Redesign, design tokens, WCAG 2.2 AA audit"
-    description: "Explore volcanoes, eruptions and tectonic activity on an interactive 3D globe."
+    description: "The world's volcanoes, their eruptions and the tectonic plates underneath, on one 3D globe."
     url: "https://volcano-explorer-iota.vercel.app/"
     github: "https://github.com/veronicadeleonh/volcano-explorer"
     thumbnail: "/images/project-volcano-explorer.png"
@@ -24,8 +22,7 @@ projects:
       - Geospatial
 
   - title: "🏛️ Tracing Origins"
-    role: "Data sourcing & modeling, UX, accessibility"
-    description: "Exploring the colonial histories of museum collections through data."
+    description: "Museum objects traced back to where they came from, to make colonial acquisition visible."
     url: "https://tracing-origins-lac.vercel.app/"
     github: "https://github.com/veronicadeleonh/tracing-origins"
     thumbnail: "/images/project-tracing-origins.png"
