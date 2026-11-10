@@ -1,541 +1,520 @@
 ---
-title: "How I build Tiny Data Adventures"
+title: "How I build with AI, so far"
 layout: "page"
 url: "/how-i-build/"
 pageTheme: "dark"
-summary: "Me × Claude Code: the loop, the context and the commits behind my data projects"
+summary: "A work in progress: how I build data apps with Claude, told through Deep Lineages"
 ---
 
 <style>
-/* Dark theme and bright accents come from the design system: custom.css, `pageTheme: dark` */
-/* Bands (.hib-wide): the translucent band marks what you use (pick, hover, try); reading stays on the plain page (.hib-wide--plain). */
-.hib-lead { font-size: var(--font-size-lg) !important; line-height: 1.4em; color: var(--color-text-secondary); }
+/* The method as a trunk on the left; other projects join it as branches. */
+:root { --hib-band: rgba(255, 255, 255, .035); --lin-accent: var(--accent-glow); --lin-tracing: var(--color-blue-bright); --lin-volcano: var(--color-orange-bright); --lin-open: var(--color-text-tertiary); --lin-x: -56px; }
+.hib-wide { width: min(1028px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); padding: var(--space-5) var(--space-5); margin: var(--space-4) 0; background: var(--hib-band); box-sizing: border-box; }
+@media (max-width: 760px) { .hib-wide { padding: var(--space-4) var(--space-3); } }
 .hib-kicker { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .04em; margin: var(--space-5) 0 var(--space-1) !important; }
-.post-content h2.hib-h2 { margin-top: 0; }
-.hib-wide { width: min(980px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); }
-/* full-bleed translucent band behind the wide sections; box-shadow paints past the edges without causing horizontal scroll */
-:root { --hib-band: rgba(255, 255, 255, .035); }
-.hib-wide { padding: var(--space-5) 0; margin: var(--space-4) 0; background: var(--hib-band); box-shadow: 0 0 0 100vmax var(--hib-band); clip-path: inset(0 -100vmax); }
-.hib-wide--plain { padding: var(--space-2) 0 0; background: none; box-shadow: none; clip-path: none; }
-/* owner glyphs */
-/* lanes: yellow = me, purple = Claude Code */
-:root { --hib-me: var(--color-yellow); --hib-ai: var(--color-purple); }
-.own { display: inline-block; flex-shrink: 0; width: 10px; height: 10px; vertical-align: middle; margin-right: 6px; }
-.own--me { background: var(--hib-me); }
-.own--ai { background: var(--hib-ai); }
-.own--both { background: linear-gradient(90deg, var(--hib-me) 50%, var(--hib-ai) 50%); }
-.hib-owners { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-3); }
-.hib-owners-label { color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .04em; font-size: var(--font-size-xs); }
-/* the loop as two lanes */
-.hib-lanes { display: grid; grid-template-columns: 96px repeat(7, minmax(0, 1fr)); column-gap: var(--space-2); row-gap: 4px; }
-.hib-lane-labels { grid-column: 1; grid-row: 1 / 5; display: grid; grid-template-rows: subgrid; }
-.hib-lane-label { display: flex; align-items: center; align-self: start; padding-top: var(--space-2); line-height: 1.45; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
-.hib-timeaxis { grid-column: 2 / -1; grid-row: 1; position: relative; height: 1px; margin: 0 0 var(--space-3); background: linear-gradient(90deg, var(--color-border), var(--color-text-tertiary)); }
-.hib-timeaxis::after { content: ""; position: absolute; right: -1px; top: -3px; border: 3.5px solid transparent; border-left: 6px solid var(--color-text-tertiary); border-right: 0; }
-.hib-axis-dot { position: absolute; top: -3px; left: 0; width: 7px; height: 7px; background: var(--color-text); animation: hib-slide 12s linear infinite; }
-@keyframes hib-slide { from { left: 0; } to { left: calc(100% - 7px); } }
-.hib-col { grid-row: 2 / 5; display: grid; grid-template-rows: subgrid; }
-.hib-node { position: relative; padding: 8px 10px; margin-bottom: var(--space-1); background: linear-gradient(var(--hib-band), var(--hib-band)), var(--color-bg); border: 1px solid var(--color-text); font-family: var(--font-mono); font-size: var(--font-size-xs); line-height: 1.35; text-align: left; cursor: pointer; color: var(--color-text); transition: background var(--transition-fast), color var(--transition-fast); }
-.hib-node .n { display: block; color: var(--color-text-tertiary); }
-.hib-node .l { display: block; font-size: var(--font-size-sm); font-family: var(--font-sans); font-weight: var(--font-weight-medium); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hib-node:hover { background: var(--color-surface); }
-.hib-node[aria-pressed="true"] { background: var(--color-text); color: var(--color-bg); }
-.hib-node[aria-pressed="true"] .n { color: var(--color-surface-active); }
-.hib-cell { padding: var(--space-2); font-size: var(--font-size-sm); line-height: 1.45; color: var(--color-text-secondary); transition: background var(--transition-fast), color var(--transition-fast); }
-.hib-cell--me { background: color-mix(in srgb, var(--hib-me) 11%, transparent); border-top: 2px solid var(--hib-me); }
-.hib-cell--ai { background: color-mix(in srgb, var(--hib-ai) 12%, transparent); border-top: 2px solid var(--hib-ai); }
-.hib-col.is-active .hib-cell { color: var(--color-text); }
-.hib-col.is-active .hib-cell--me { background: color-mix(in srgb, var(--hib-me) 22%, transparent); }
-.hib-col.is-active .hib-cell--ai { background: color-mix(in srgb, var(--hib-ai) 24%, transparent); }
-.hib-back { grid-column: 5 / 8; grid-row: 5; position: relative; height: 14px; margin-top: var(--space-2); border: 1px dashed var(--color-text-tertiary); border-top: 0; }
-.hib-back::before { content: ""; position: absolute; left: -4.5px; top: -7px; border: 4px solid transparent; border-bottom: 6px solid var(--color-text-tertiary); border-top: 0; }
-.hib-back-label { grid-column: 5 / 8; grid-row: 6; text-align: center; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); margin: 4px 0 0 !important; }
-.hib-next-label { grid-column: 8; grid-row: 5 / 7; align-self: start; text-align: center; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); margin: var(--space-2) 0 0 !important; }
-.hib-core { grid-column: 1 / -1; grid-row: 7; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-3); margin-top: var(--space-4); padding: var(--space-3); border: 1px dashed var(--color-border); }
-.hib-core p { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-secondary); margin: 0 !important; }
-.hib-core button { font-family: var(--font-mono); font-size: var(--font-size-xs); padding: 6px 12px; background: var(--color-surface); border: 1px dashed var(--color-text-tertiary); color: var(--color-text); cursor: pointer; }
-.hib-core button:hover { background: var(--color-surface-hover); }
-.hib-core button[aria-pressed="true"] { background: var(--color-text); color: var(--color-bg); border-style: solid; border-color: var(--color-text); }
-.hib-panel { max-width: var(--main-width, 620px); margin: var(--space-5) auto 0; border-top: 1px solid var(--color-text); padding-top: var(--space-3); }
-.hib-panel .hib-step { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin: 0 !important; }
-.post-content .hib-panel h3 { margin: var(--space-1) 0 var(--space-2); font-size: var(--font-size-lg); }
-.hib-panel p { font-size: var(--font-size-base); margin-bottom: var(--space-3) !important; }
-.hib-note { background: var(--color-surface); padding: var(--space-3); }
-.hib-note-row { padding: var(--space-2) 0; border-top: 1px solid var(--color-border); }
-.hib-note-row:first-of-type { border-top: 0; padding-top: 0; }
-.hib-note-row:last-child { padding-bottom: 0; }
-.hib-note-proj { display: block; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-bottom: 2px; }
-.hib-note-label { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); display: block; margin-bottom: var(--space-1); }
-.hib-note p { margin: 0 !important; }
-.hib-note ul { margin: 0; padding-left: var(--space-3); }
-.hib-note li { font-size: var(--font-size-base); margin-bottom: var(--space-2); }
-.hib-hint { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-/* project tabs under the loop: which project(s) the step panel shows */
-.hib-tabs { max-width: var(--main-width, 620px); margin: var(--space-5) auto 0; display: flex; border: 1px solid var(--color-text); overflow-x: auto; scrollbar-width: none; }
-.hib-tabs button { flex: 1 0 auto; background: none; border: 0; border-left: 1px solid var(--color-text); padding: 7px 10px; min-height: 32px; font-family: var(--font-sans); font-size: var(--font-size-tag); color: var(--color-text-secondary); cursor: pointer; white-space: nowrap; transition: background var(--transition-fast), color var(--transition-fast); }
-.hib-tabs button:first-child { border-left: 0; }
-.hib-tabs button:hover { background: var(--color-surface); color: var(--color-text); }
-.hib-tabs button[aria-selected="true"] { background: var(--color-text); color: var(--color-bg); }
-.hib-tabs .short { display: none; }
-.hib-tabs + .hib-panel { margin-top: var(--space-3); }
-/* skills */
-.hib-skills { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3); }
-.hib-skill { border: 1px solid var(--color-border); padding: var(--space-3); display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: var(--space-1) var(--space-3); align-items: baseline; }
-.hib-skill p { grid-column: 2; }
-.hib-skill code { grid-row: 1; }
-.hib-skill code { font-family: var(--font-mono); font-size: var(--font-size-sm); background: none; padding: 0; color: var(--color-text); }
-.hib-skill p { font-size: var(--font-size-base); margin: 0 !important; }
-/* Spotlight (hover): a light follows the cursor along the border and inside.
-   Aurora (active): selected elements fill with a slow, liquid light. Both "Mono + violet".
-   Overlays only: the element itself never changes size, and the loop lines can't show through. */
-.hib-spot { --x: 50%; --y: 50%; position: relative; isolation: isolate; }
-.hib-spot::before { content: ""; position: absolute; inset: -1px; padding: 1px; pointer-events: none; opacity: 0; transition: opacity var(--transition-base) ease;
-  background: radial-gradient(150px circle at var(--x) var(--y), var(--accent-light), var(--accent-glow) 40%, transparent 70%);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
-.hib-spot:not(.hib-cell)::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity var(--transition-base) ease;
-  background: radial-gradient(200px circle at var(--x) var(--y), color-mix(in srgb, var(--accent-glow) 20%, transparent), transparent 70%); }
-.hib-spot:is(:hover, :focus-visible)::before, .hib-spot:not(.hib-cell):is(:hover, :focus-visible)::after { opacity: 1; }
-.hib-spot:is(:hover, :focus-visible):not([aria-pressed="true"]):not(.hib-cell) { border-color: var(--color-border); }
-.hib-spot[aria-pressed="true"]::before, .hib-spot[aria-pressed="true"]::after { display: none; }
-.hib-aurora { isolation: isolate; overflow: hidden; } /* parent must already be positioned */
-.hib-aurora::before { content: ""; position: absolute; inset: -40%; z-index: -1; pointer-events: none; background: var(--gradient-aurora), var(--color-text); animation: aurora-move 6s ease-in-out infinite alternate; }
-.hib-node[aria-pressed="true"], .hib-core button[aria-pressed="true"] { position: relative; isolation: isolate; overflow: hidden; }
-.hib-node[aria-pressed="true"]::after, .hib-core button[aria-pressed="true"]::after { content: ""; position: absolute; inset: -40%; z-index: -1; pointer-events: none; display: block; opacity: 1; background: var(--gradient-aurora), var(--color-text); animation: aurora-move 6s ease-in-out infinite alternate; }
-/* lane cells share the steps' motion: spotlight in the lane's color on hover, aurora in the lane's color when the step is active */
-.hib-cell { position: relative; isolation: isolate; overflow: hidden; }
-.hib-cell--me { --accent-glow: var(--hib-me); }
-.hib-cell--ai { --accent-glow: var(--hib-ai); }
-.hib-cell.hib-spot::before { inset: 0; padding: 0; -webkit-mask: none; mask: none; z-index: -1; background: radial-gradient(170px circle at var(--x) var(--y), color-mix(in srgb, var(--accent-glow) 38%, transparent), transparent 70%); }
-.hib-col.is-active .hib-cell::after { content: ""; position: absolute; inset: -40%; z-index: -1; pointer-events: none; opacity: .32; background: radial-gradient(40% 50% at 30% 40%, var(--accent-glow), transparent 70%), radial-gradient(35% 45% at 70% 65%, color-mix(in srgb, var(--accent-glow) 60%, #fff), transparent 70%); animation: aurora-move 6s ease-in-out infinite alternate; }
-.hib-col.is-active .hib-cell.hib-spot:hover::after { opacity: .45; }
-/* "In each project": rows rise in, one after another, whenever the step or the tab changes */
-@keyframes hib-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.hib-panel > div:first-child { animation: hib-rise .35s ease both; }
-.hib-note { position: relative; overflow: hidden; }
-.hib-note::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(var(--accent-light), var(--accent-glow)); transform-origin: top; animation: hib-grow .6s ease both; }
-@keyframes hib-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-.hib-note-row { animation: hib-rise .45s ease both; animation-delay: calc(var(--i, 0) * 80ms + 80ms); }
-.hib-callout { border-left: 2px solid var(--color-text); padding: var(--space-1) 0 var(--space-1) var(--space-3); color: var(--color-text-secondary); }
-.hib-callout strong { color: var(--color-text); }
-/* the shared portfolio intro (tag, description, details) on this dark page: light icons */
-.intro-details .fi { filter: invert(1); opacity: .75; }
-.hib-sys-intro { margin-top: var(--space-4) !important; }
-.hib-syslinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); margin-top: var(--space-2); }
-.post-content .hib-syslinks a { position: relative; isolation: isolate; display: flex; flex-direction: column; gap: 2px; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); color: var(--color-text); text-decoration: none; box-shadow: none; font-weight: var(--font-weight-regular); font-size: var(--font-size-sm); }
-.post-content .hib-syslinks a code { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); background: none; padding: 0; margin: 0; box-shadow: none; border: 0; text-decoration: none; }
-.post-content h3.hib-h3 { margin: var(--space-5) 0 var(--space-2); font-size: var(--font-size-lg); }
-/* section 03: milestone marks over the commit rows, and the monthly mix of phases under them */
-.hib-chart { position: relative; --lab: 150px; }
-.hib-marks, .hib-mix { display: grid; grid-template-columns: var(--lab) 1fr; gap: var(--space-3); align-items: end; }
-.hib-marks-track { position: relative; height: 74px; }
-.hib-mark { position: absolute; bottom: 0; transform: translateX(-4px); display: flex; flex-direction: column; align-items: flex-start; gap: 3px; background: none; border: 0; padding: 0; cursor: default; color: var(--color-text-secondary); font-family: var(--font-mono); font-size: var(--font-size-xs); white-space: nowrap; }
-.hib-mark span { position: absolute; left: 0; bottom: calc(14px + var(--lv, 0) * 20px); }
-.hib-mark.is-left span { left: auto; right: 0; }
-.hib-mark::after { content: ""; width: 9px; height: 9px; transform: rotate(45deg); background: var(--color-bg); border: 1px solid var(--color-text); }
-.hib-mark:hover, .hib-mark:focus-visible, .hib-mark.is-current { color: var(--color-text); outline: none; }
-.hib-mark:hover::after, .hib-mark:focus-visible::after, .hib-mark.is-current::after { background: var(--color-text); box-shadow: 0 0 10px var(--accent-glow); }
-.hib-mark-line { position: absolute; top: 74px; bottom: 16px; width: 0; border-left: 1px dashed var(--color-text-tertiary); opacity: .45; pointer-events: none; transition: opacity var(--transition-fast); }
-.hib-mark-line.is-current { opacity: 1; border-left-color: var(--color-text); }
-.hib-mix { margin-top: var(--space-3); }
-.hib-mix .hib-row-label { color: var(--color-text-tertiary); font-size: var(--font-size-xs); font-family: var(--font-mono); }
-.hib-mix-track { position: relative; height: 56px; }
-.hib-mix-col { position: absolute; bottom: 0; top: 0; display: flex; flex-direction: column-reverse; padding: 0 1px; }
-.hib-mix-col span { display: block; transition: opacity var(--transition-fast); }
-.hib-mix-col span.is-off { opacity: .12; }
-/* project cards (section 04) */
-.hib-cards { display: grid; grid-template-columns: repeat(var(--hib-n, 3), minmax(0, 1fr)); gap: var(--space-3); }
-.hib-card { position: relative; display: flex; flex-direction: column; padding: 0; text-align: left; font: inherit; color: var(--color-text); background: var(--color-bg); border: 1px solid var(--color-border); cursor: pointer; overflow: hidden; transition: opacity var(--transition-base), border-color var(--transition-fast); }
-.hib-card-img { display: block; overflow: hidden; border-bottom: 1px solid var(--color-border); }
-.hib-card-img img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
-.hib-card:hover .hib-card-img img, .hib-card.is-active .hib-card-img img { transform: scale(1.04); }
-.hib-card-body { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-3); }
-.hib-card time { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-.hib-card-name { font-size: var(--font-size-md); font-weight: var(--font-weight-medium); }
-.hib-card-lesson { font-size: var(--font-size-sm); line-height: 1.5; color: var(--color-text-secondary); margin-bottom: var(--space-1); }
-.post-content .hib-takeaways { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4) var(--space-3); }
-.post-content .hib-takeaways li { position: relative; display: flex; flex-direction: column; gap: var(--space-1); margin: 0; padding: var(--space-3) 0 0; border-top: 1px solid var(--color-border); }
-.hib-tk-n { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-.post-content .hib-takeaways h3 { margin: 0; font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); line-height: 1.25; color: var(--color-text); }
-.post-content .hib-takeaways p { margin: 0; font-size: var(--font-size-sm); line-height: 1.55; color: var(--color-text-secondary); }
-.post-content .hib-takeaways li::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: linear-gradient(90deg, var(--accent-light), var(--accent-glow) 40%, transparent); transform: scaleX(0); transform-origin: left; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
-.post-content .hib-takeaways li:hover::before { transform: scaleX(1); }
-.post-content .hib-takeaways li:hover p { color: var(--color-text); }
-@media (max-width: 860px) { .post-content .hib-takeaways { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .post-content .hib-takeaways { grid-template-columns: 1fr; gap: var(--space-3); } .post-content .hib-takeaways h3 { font-size: var(--font-size-md); } }
-@media (prefers-reduced-motion: reduce) { .post-content .hib-takeaways li::before { transition: none; } }
-.hib-flow { display: flex; flex-direction: column; gap: var(--space-1); margin: var(--space-1) 0; padding: var(--space-2) 0 0; border-top: 1px solid var(--color-border); font-size: var(--font-size-sm); line-height: 1.45; color: var(--color-text-secondary); }
-.hib-flow-row { display: flex; flex-direction: column; gap: 1px; }
-.hib-flow-row.is-to { color: var(--color-text); }
-.hib-flow-k { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-.hib-flow-row.is-to .hib-flow-k::before { content: "→ "; color: var(--accent-glow); }
-.hib-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-.hib-tags span { font-family: var(--font-mono); font-size: var(--font-size-xs); padding: 1px 6px; border: 1px solid var(--color-border); color: var(--color-text-secondary); }
-.hib-card-bar { position: absolute; left: 0; right: 0; top: 0; height: 3px; z-index: 2; opacity: 0; background: linear-gradient(90deg, var(--accent-glow), var(--accent-light), var(--accent-glow)); background-size: 200% 100%; transition: opacity var(--transition-base); animation: hib-bar 3s linear infinite; }
-@keyframes hib-bar { from { background-position: 0% 0; } to { background-position: 200% 0; } }
-.hib-card.is-active { border-color: var(--color-text); }
-.hib-card.is-active .hib-card-bar { opacity: 1; }
-.hib-card.is-active .hib-card-lesson { color: var(--color-text); }
-.hib-cards.has-active .hib-card:not(.is-active) { opacity: .5; }
-.hib-cards.has-active .hib-card:not(.is-active):hover { opacity: .85; }
-.hib-story { margin-top: var(--space-4); border-top: 1px solid var(--color-text); padding-top: var(--space-3); animation: hib-rise .4s ease both; }
-.hib-story-head h3 { margin: var(--space-1) 0 var(--space-1) !important; font-size: var(--font-size-lg); }
-/* commits */
-.hib-legend { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
-.hib-legend button { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: var(--font-size-xs); padding: 4px 8px; background: var(--color-bg); border: 1px solid var(--color-border); cursor: pointer; color: var(--color-text); }
-.hib-legend button[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
-.hib-legend i, .hib-dot { display: inline-block; width: 8px; height: 8px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
-.hib-rows { display: flex; flex-direction: column; gap: var(--space-3); }
-.hib-syslinks .is-next { display: flex; flex-direction: column; gap: 2px; padding: var(--space-2) var(--space-3); border: 1px dashed var(--color-border); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
-.hib-syslinks .is-next code { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); background: none; padding: 0; margin: 0; border: 0; }
-.hib-card-img { position: relative; }
-.hib-status { position: absolute; top: 8px; left: 8px; z-index: 1; display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text); background: rgba(14, 16, 17, .82); border: 1px solid var(--color-text); }
-.hib-status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-glow); animation: hib-pulse 1.6s ease-in-out infinite; }
-@keyframes hib-pulse { 50% { opacity: .25; } }
-.hib-next { display: inline-block; margin-right: 6px; padding: 0 6px; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-secondary); border: 1px dashed var(--color-text-tertiary); vertical-align: 1px; }
-.hib-note-row.is-next p { color: var(--color-text-secondary); }
-@media (min-width: 761px) and (max-width: 1040px) { .hib-cards, .hib-syslinks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.hib-row { display: grid; grid-template-columns: 150px 1fr; gap: var(--space-3); align-items: end; transition: opacity var(--transition-base); }
-.hib-row.is-dim { opacity: .25; }
-.hib-row-label { font-size: var(--font-size-sm); padding-bottom: 2px; }
-.hib-row-label small { display: block; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-.hib-track { position: relative; border-bottom: 1px solid var(--color-text); }
-.hib-dot { position: absolute; width: 6px; height: 6px; transition: opacity var(--transition-fast); }
-.hib-dot.is-off { opacity: .06; }
-.hib-axis { display: grid; grid-template-columns: 150px 1fr; gap: var(--space-3); margin-top: 4px; }
-.hib-axis div { position: relative; height: 16px; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
-.hib-axis span { position: absolute; white-space: nowrap; transform: translateX(-50%); }
-.hib-readout { display: flex; align-items: flex-start; gap: var(--space-2); font-family: var(--font-mono); font-size: var(--font-size-sm); line-height: 1.6; color: var(--color-text-secondary); margin-top: var(--space-3) !important; min-height: 2.8em; }
-.hib-readout-dot { flex-shrink: 0; width: 10px; height: 10px; margin-top: calc((1.6em - 10px) / 2); border: 1px dashed var(--color-text-tertiary); transition: background var(--transition-fast), transform var(--transition-fast); }
-.hib-readout.has-commit .hib-readout-dot { border: 0; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .18); transform: scale(1.2); }
-.hib-readout.has-commit { color: var(--color-text); }
-.hib-dot { transition: opacity var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast); }
-.hib-dot:hover, .hib-dot.is-current { transform: scale(1.9); z-index: 2; box-shadow: 0 0 0 1px var(--color-bg), 0 0 10px color-mix(in srgb, var(--accent-glow) 60%, transparent); }
-.hib-datanote { background: var(--color-surface); padding: var(--space-3); margin-top: var(--space-3); }
-.hib-datanote p { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); margin: 0 0 var(--space-1) !important; }
-.hib-datanote p:last-child { margin-bottom: 0 !important; }
-/* stories */
-.hib-story-meta { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin-bottom: var(--space-2) !important; }
-.post-content .hib-story dl { display: grid; grid-template-columns: 140px 1fr; gap: var(--space-2) var(--space-3); margin: var(--space-3) 0; }
-.post-content .hib-story dt { width: auto; margin: 0; white-space: nowrap; font-weight: var(--font-weight-regular); font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); padding-top: 2px; }
-.post-content .hib-story dd { width: auto; margin: 0; padding-inline-start: 0; font-size: var(--font-size-base); }
-.post-content .hib-story dt ~ dt, .post-content .hib-story dd ~ dd { margin-top: 0; }
+
+.lin { position: relative; padding-bottom: 30vh; }
+.lin-lines { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }
+.lin-trunk-bg { stroke: var(--color-border); stroke-width: 2; fill: none; }
+.lin-trunk { stroke: url(#lin-aurora); stroke-width: 2; fill: none; }
+/* Spotlight: copies of the drawn lines, lit only around the pointer */
+.lin-spot path { fill: none; stroke: url(#lin-spot); stroke-width: 3; stroke-linecap: round; }
+.lin-branch { fill: none; stroke-width: 2; stroke-linecap: round; }
+.lin-branch.tracing { stroke: var(--lin-tracing); } .lin-branch.volcano { stroke: var(--lin-volcano); }
+.lin-branch.open { stroke: var(--lin-open); stroke-dasharray: 2 6; transition: opacity .5s; }
+.lin-endopen { fill: var(--color-bg); stroke: var(--lin-open); stroke-width: 1.5; transition: opacity .5s; }
+
+.lin-sec { position: relative; padding-top: 26vh; }
+.lin-sec:first-of-type { padding-top: var(--space-4); }
+.lin-intro { margin-bottom: var(--space-4); }
+.lin-node { position: absolute; z-index: 2; left: calc(var(--lin-x) - 7px); width: 14px; height: 14px; transform: rotate(45deg); background: var(--color-bg); border: 2px solid var(--color-text-tertiary); transition: background .4s, border-color .4s, box-shadow .4s; }
+.lin-node { overflow: hidden; isolation: isolate; }
+.lin-sec.is-on .lin-node { border-color: var(--accent-light); }
+/* Aurora inside the active node, the same light as the site's active buttons */
+.lin-sec.is-on .lin-node::before { content: ""; position: absolute; inset: -60%; z-index: -1; background: var(--gradient-aurora), var(--accent-glow); animation: aurora-move 6s ease-in-out infinite alternate; }
+.lin-card { position: relative; z-index: 2; opacity: .35; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+.lin-sec.is-on .lin-card, .lin-sec.was-on .lin-card { opacity: 1; transform: none; }
+.lin-num { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin: 0 0 var(--space-1) !important; }
+.post-content .lin h2 { margin-top: 0; }
+.lin-lead { font-size: var(--font-size-lg) !important; line-height: 1.45; }
+.lin-note { font-family: var(--font-mono); font-size: var(--font-size-sm) !important; color: var(--color-text-tertiary); }
+
+.lin-froms { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 16px; margin: 0 0 90px; }
+.lin-from { max-width: 260px; font-family: var(--font-mono); font-size: var(--font-size-xs); line-height: 1.45; color: var(--color-text-secondary); opacity: 0; transition: opacity .5s; }
+.lin-from b { display: block; font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+.lin-from.tracing b { color: var(--lin-tracing); } .lin-from.volcano b { color: var(--lin-volcano); }
+.lin-from + .lin-from { margin-left: 200px; }
+.lin-from.is-on { opacity: 1; }
+/* focus: the section being read stays bright, the rest step back */
+.lin-sec > .lin-card, .lin-sec > .lin-wide, .lin-sec > .lin-froms { transition: opacity .6s ease, transform .6s ease; }
+.lin-sec.was-on:not(.is-current) > .lin-card, .lin-sec.was-on:not(.is-current) > .lin-wide, .lin-sec.was-on:not(.is-current) > .lin-froms { opacity: .45 !important; }
+.lin-sec.was-on:not(.is-current) .lin-node { border-color: var(--color-text-tertiary); }
+
+.lin-compare { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin: var(--space-4) 0 var(--space-3); }
+.lin-cmp { position: relative; border: 1px solid var(--color-border); padding: var(--space-3); --x: 50%; --y: 50%; }
+/* Spotlight on the cards, as on the How I build entry: a violet light around the border that follows the pointer */
+.lin-cmp::before, .lin-cmp::after { content: ""; position: absolute; pointer-events: none; opacity: 0; transition: opacity var(--transition-base) ease; }
+.lin-cmp::before { inset: -1px; padding: 1px; background: radial-gradient(160px circle at var(--x) var(--y), var(--accent-light), var(--accent-glow) 40%, transparent 70%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+.lin-cmp::after { inset: 0; z-index: -1; background: radial-gradient(240px circle at var(--x) var(--y), color-mix(in srgb, var(--accent-glow) 22%, transparent), transparent 70%); }
+.lin-cmp:hover::before, .lin-cmp:hover::after { opacity: 1; }
+.lin-cmp .who { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .04em; }
+.lin-cmp .big { font-family: var(--font-mono); font-size: 34px; font-weight: var(--font-weight-medium); line-height: 1.1; margin: 8px 0 2px; }
+.lin-cmp.tracing .big { color: var(--lin-tracing); } .lin-cmp.deep .big { color: var(--lin-accent); }
+.lin-cmp p { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); margin: 0 !important; }
+.lin-skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-2); }
+.lin-skill { border-top: 1px solid var(--color-border); padding-top: var(--space-2); }
+.lin-skill code { font-size: var(--font-size-sm); color: var(--lin-accent); background: none; padding: 0; }
+.lin-skill p { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); margin: 6px 0 0 !important; }
+.lin-task { margin: var(--space-4) 0 0 !important; }
+.lin-task + .lin-compare { margin-top: var(--space-2); }
+.lin-tool { display: block; text-decoration: none; color: inherit; box-shadow: none !important; }
+.lin-tool .big { font-size: 22px; color: var(--lin-accent); }
+a.lin-tool:hover .who { color: var(--accent-light); }
+.lin-vs { margin: var(--space-4) 0 0; }
+.lin-vs-grid { display: grid; grid-template-columns: 108px 150px 24px 150px minmax(0,1fr); column-gap: 10px; margin-top: var(--space-2); }
+.lin-vs-head, .lin-vs-row { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: center; }
+.lin-vs-head span:nth-child(2), .lin-vs-head span:nth-child(4) { text-align: center; }
+.lin-vs-head { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); padding-bottom: 8px; border-bottom: 1px solid var(--color-border); }
+.lin-vs-row { padding: 14px 0; border-bottom: 1px solid var(--color-border); }
+.lin-vs-who { font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+.lin-vs-row.tracing .lin-vs-who { color: var(--lin-tracing); } .lin-vs-row.deep .lin-vs-who { color: var(--lin-accent); }
+.lin-order { grid-column: 2 / span 3; display: grid; grid-template-columns: subgrid; list-style: none; margin: 0 !important; padding: 0 !important; font-family: var(--font-mono); font-size: var(--font-size-xs); }
+.lin-order::before { content: "→"; grid-column: 2; grid-row: 1; align-self: center; justify-self: center; color: var(--color-text-tertiary); }
+.lin-order li { margin: 0 !important; border: 1px solid var(--color-border); padding: 6px 4px; color: var(--color-text-tertiary); text-align: center; font-size: 12px; white-space: nowrap; }
+.lin-order li:first-child { grid-column: 1; } .lin-order li:last-child { grid-column: 3; }
+.lin-vs-row.tracing .lin-order li.on { color: var(--lin-tracing); border-color: var(--lin-tracing); } .lin-vs-row.deep .lin-order li.on { color: var(--lin-accent); border-color: var(--lin-accent); }
+.lin-vs-bar p { margin: 0 0 6px !important; line-height: 1; }
+.lin-vs-bar b { font-family: var(--font-mono); font-size: 22px; font-weight: var(--font-weight-medium); }
+.lin-vs-row.tracing .lin-vs-bar b { color: var(--lin-tracing); } .lin-vs-row.deep .lin-vs-bar b { color: var(--lin-accent); }
+.lin-vs-bar small { font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+.lin-vs-bar i { display: block; height: 6px; background: var(--color-border); }
+.lin-vs-bar i span { display: block; height: 100%; width: var(--w); }
+.lin-vs-row.tracing .lin-vs-bar span { background: var(--lin-tracing); } .lin-vs-row.deep .lin-vs-bar span { background: var(--lin-accent); }
+.lin-tools { display: grid; gap: var(--space-3); margin-top: var(--space-2); }
+.lin-labwrap { margin-top: var(--space-2); }
+.lin-labnote { font-size: var(--font-size-sm) !important; color: var(--color-text-secondary); }
+.lin-labnote b { color: var(--lin-accent); font-family: var(--font-mono); font-weight: var(--font-weight-medium); }
+.lin-lab { display: grid; grid-template-columns: 1fr 340px; border: 1px solid var(--color-border); --l-bg: #eef2f4; --l-surface: #ffffff; --l-text: #18222b; --l-text-2: #4a5763; --l-text-3: #7d8a96; --l-tri: #a99ee6; --l-jur: #7467d0; --l-cre: #40349a; }
+.lin-lab-preview { background: var(--l-bg); padding: 20px; display: flex; align-items: center; font-family: "IBM Plex Sans", system-ui, sans-serif; }
+.lp-card { background: var(--l-surface); padding: 16px; width: 100%; border: 1px solid #d8e0e5; border-radius: 8px; }
+.lp-k { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--l-text-3); }
+.lp-h { font-size: 20px; font-weight: 600; color: var(--l-text); margin: 2px 0; }
+.lp-t2 { font-size: 13px; color: var(--l-text-2); }
+.lp-t3 { font-size: 12px; color: var(--l-text-3); margin-top: 6px; }
+.lp-small { margin-top: 4px; font-size: 11px; }
+.lp-bars { display: flex; gap: 3px; margin-top: 12px; height: 10px; }
+.lp-bars span { flex: 1; border-radius: 2px; } .lp-tri { background: var(--l-tri); } .lp-jur { background: var(--l-jur); } .lp-cre { background: var(--l-cre); }
+.lin-lab-panel { font: 12px/1.35 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; color: #18222b; background: #fff; display: flex; flex-direction: column; }
+.ll-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px 6px; font-size: 13px; }
+.ll-dim { color: #5b6773; font-size: 11px; }
+.ll-btn { margin-left: auto; font: inherit; color: #18222b; background: #f1f4f6; border: 1px solid #c9d2d9; border-radius: 6px; padding: 3px 8px; cursor: pointer; }
+.ll-list { padding: 4px 6px; border-top: 1px solid #e3e8ec; border-bottom: 1px solid #e3e8ec; }
+.ll-row { display: flex; align-items: center; gap: 8px; padding: 6px; border-radius: 6px; }
+.ll-row.changed { background: #fbeefb; }
+.ll-sw { position: relative; width: 26px; height: 26px; flex: none; border-radius: 5px; border: 1px solid #c9d2d9; overflow: hidden; cursor: pointer; }
+.ll-sw input { position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
+.ll-mid { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ll-mid code { font-family: ui-monospace, Menlo, monospace; font-size: 11px; font-weight: 600; background: none; padding: 0; color: #18222b; }
+.ll-mid input { font-family: ui-monospace, Menlo, monospace; font-size: 11px; padding: 1px 4px; border: 1px solid transparent; border-radius: 4px; background: #f6f8f9; color: #18222b; width: 100%; }
+.ll-cr { display: flex; flex-direction: column; gap: 2px; align-items: flex-end; min-width: 70px; }
+.ll-badge { font-size: 10px; font-weight: 700; border-radius: 4px; padding: 0 5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ll-badge.ok { background: #dcf3e8; color: #0b5c40; } .ll-badge.no { background: #fbe1e6; color: #8f1538; }
+.ll-foot { margin: 0 !important; padding: 6px 12px 10px; color: #5b6773; font-size: 11px !important; line-height: 1.35; }
+.lin-dirs { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); }
+.lin-dir-top { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: var(--font-size-sm); margin-bottom: 8px; }
+.lin-dir-top b { font-weight: var(--font-weight-medium); }
+.lin-dir-top span { font-size: var(--font-size-xs); color: var(--lin-accent); border: 1px solid var(--lin-accent); padding: 0 6px; }
+.lin-dir-sw { display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: 64px 22px; gap: 0; border: 1px solid var(--color-border); }
+.lin-dir.kept .lin-dir-sw { border-color: var(--lin-accent); }
+.lin-dir-sw .aa { grid-column: 1 / -1; margin: 10px; display: flex; align-items: baseline; gap: 10px; padding: 6px 10px; font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 18px; }
+.lin-dir-sw .aa i { font-style: normal; font-weight: 600; }
+.lin-dir-final { font-family: var(--font-mono); color: var(--color-text-tertiary) !important; display: flex; align-items: center; gap: 6px; }
+.sw-mini { display: inline-block; width: 12px; height: 12px; }
+.lin-dir p { font-size: var(--font-size-xs) !important; color: var(--color-text-secondary); margin: 8px 0 0 !important; }
+.lin-dir-legend { font-family: var(--font-mono); font-size: var(--font-size-xs) !important; color: var(--color-text-tertiary); margin: var(--space-3) 0 var(--space-2) !important; }
+.lin-real { margin-top: var(--space-5); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
+
+.lin-qs { list-style: none; margin: var(--space-3) 0 0; padding: 0; display: grid; gap: 10px; }
+.lin-qs li { border-left: 2px dotted var(--lin-open); padding: 2px 0 2px 12px; color: var(--color-text-secondary); }
+.lin-qs li b { color: var(--color-text); font-weight: var(--font-weight-medium); }
+.lin-fan { position: relative; height: 260px; }
+.lin-fan span { position: absolute; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); white-space: nowrap; opacity: 0; transition: opacity .4s; }
+.lin-fan span.is-on { opacity: 1; }
+.lin-end { font-family: var(--font-mono); font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin-left: calc(var(--lin-x) - 4px); position: relative; z-index: 2; }
+.lin-end span { background: var(--color-bg); padding: 2px 6px; }
+
+
 @media (max-width: 760px) {
-  .hib-lanes { display: block; }
-  .hib-lane-labels, .hib-timeaxis, .hib-back { display: none; }
-  .hib-next-label { text-align: left; margin: 0 !important; }
-  .hib-col { display: grid; gap: 4px; margin-bottom: var(--space-2); }
-  .hib-col:not(.is-active) .hib-cell { display: none; }
-  .hib-cell::before { content: attr(data-lane); display: block; font-family: var(--font-mono); font-size: var(--font-size-xs); color: var(--color-text-tertiary); margin-bottom: 2px; }
-  .hib-back-label { text-align: left; margin: var(--space-1) 0 0 !important; }
-  .hib-core { margin-top: var(--space-3); justify-content: flex-start; gap: var(--space-2); }
-  .hib-core p { flex-basis: 100%; }
+  :root { --lin-x: -22px; }
+  .lin { padding-left: 26px; }
+  .lin-from + .lin-from { margin-left: 40px; }
+  .lin-compare, .lin-skills { grid-template-columns: 1fr; }
+  .lin-vs-grid { grid-template-columns: 140px 24px 140px; row-gap: 8px; }
+  .lin-vs-head { display: none; }
+  .lin-vs-who, .lin-vs-bar { grid-column: 1 / -1; }
+  .lin-order { grid-column: 1 / -1; }
+  .lin-vs-row { row-gap: 10px; }
+  .lin-lab { grid-template-columns: 1fr; }
+  .lin-dirs { grid-template-columns: 1fr 1fr; }
+  .lin-fan { height: 320px; }
 }
-@media (max-width: 860px) {
+@media (prefers-reduced-motion: reduce) {
+  .lin-card, .lin-node, .lin-from { transition: none; }
+  .lin-sec.is-on .lin-node::before { animation: none; }
+  .lin-sec > .lin-card, .lin-sec > .lin-wide, .lin-sec > .lin-froms { transition: none; }
+  .lin-card, .lin-from { opacity: 1; transform: none; }
 }
-@media (max-width: 600px) {
-  .hib-skill { grid-template-columns: 1fr; }
-  .hib-skill p, .hib-skill code { grid-column: 1; grid-row: auto; }
-  .hib-syslinks, .hib-cards { grid-template-columns: 1fr; }
-  .hib-card { flex-direction: row; }
-  .hib-card-img { width: 38%; flex-shrink: 0; border-bottom: 0; border-right: 1px solid var(--color-border); }
-  .hib-card-img img { height: 100%; aspect-ratio: auto; }
-  .hib-card-body { padding: var(--space-2); }
-  .hib-card .hib-tags { display: none; }
-  .hib-row, .hib-axis, .hib-marks, .hib-mix { grid-template-columns: 1fr; gap: var(--space-1); }
-  .hib-chart { --lab: 0px; }
-  .hib-marks > .hib-row-label { display: none; }
-  .hib-mark span { display: none; } .hib-marks-track { height: 18px; } .hib-mark-line { top: 18px; }
-  .hib-axis > div:first-child { display: none; }
-  .post-content .hib-story dl { grid-template-columns: 1fr; gap: 0; }
-  .post-content .hib-story dd { margin-bottom: var(--space-2); }
-}
-@media (max-width: 600px) { .hib-tabs .full { display: none; } .hib-tabs .short { display: inline; } .hib-tabs button { padding: 7px 6px; } }
-@media (prefers-reduced-motion: reduce) { .hib-orbit, .hib-wide *, .hib-wide *::before, .hib-wide *::after, .hib-aurora::before, .hib-node::after, .hib-core button::after { animation: none !important; } }
 </style>
-<div class="intro-info">
-<p><span class="tag blue text-blue">personal data projects</span></p>
-<p class="intro-description">Tiny Data Adventures take big, messy datasets (fossil records, museum catalogs, eruption reports, reef surveys) and make them accessible to everyone: easy to read for someone new to the data, and usable with a keyboard, a screen reader or without color.</p>
-<div class="intro-details-wrapper">
-<p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Design and build, with Claude Code</p>
-<p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/document.svg)"></span> 4 projects, 1 in progress</p>
-<p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2025 – 2026</p>
+
+<div class="lin-intro">
+<p class="hib-kicker" style="margin-top:0 !important">Tiny Data Adventures · a work in progress</p>
+<p class="lin-lead">I'm a product designer learning, project by project, how to build data apps with Claude. This is what has worked for me so far, told through Deep Lineages, the project where it came together.</p>
+<p class="lin-note">The line below is the method; branches show where each lesson came from.</p>
 </div>
+
+<div class="lin" id="lin">
+<svg class="lin-lines" id="lin-lines" aria-hidden="true"></svg>
+
+<section class="lin-sec lin-wide-sec" data-sec="mess">
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">01</p>
+<h2>From a raw export to something anyone can explore</h2>
+<p>Real rows from the Paleobiology Database, cleaned, all at once, then the design I made of them.</p>
 </div>
-<div class="hib-wide">
+<div class="hib-wide lin-wide">
 {{< hib-mess >}}
 </div>
-<p>I'm a product designer and a data enthusiast, not a data engineer. Claude Code gets me from a dataset to a working visualization fast; my eye and judgment decide what ships. Outside these solo projects, this is how I'd bring it to a team: running prototypes people can react to instead of static mocks, and small, well-scoped changes made directly in the codebase alongside engineers.</p>
-<p class="hib-callout"><strong>No Figma file, no design system up front.</strong> I designed these apps directly in code, because I wanted to see the data first. The system came out of the code afterwards, which is why so much of the work below is consistency and accessibility audits.</p>
-<p class="hib-kicker">01 · The loop</p>
-<h2 class="hib-h2" id="loop">Same loop, different lessons</h2>
-<p>Seven steps from messy data to something anyone can explore. Claude Code is in every step; what changes is what each of us brings. Pick a step, then a project in the tabs below it.</p>
-<div class="hib-wide">
-<div class="hib-lanes" id="hib-ring">
-<div class="hib-lane-labels" aria-hidden="true"><span></span><span></span><span class="hib-lane-label"><span class="own own--me"></span>Me</span><span class="hib-lane-label"><span class="own own--ai"></span>Claude Code</span></div>
-<div class="hib-timeaxis" aria-hidden="true"><span class="hib-axis-dot"></span></div>
-<div class="hib-back" aria-hidden="true"></div>
-<p class="hib-back-label">↺ 05–06 send fixes back to 04</p>
-<p class="hib-next-label">↺ starts the next version</p>
-<div class="hib-core"><p>Underneath every step:</p><button type="button" data-node="context" aria-pressed="false">CLAUDE.md</button><button type="button" data-node="skills" aria-pressed="false">Skills</button></div>
+</section>
+
+<section class="lin-sec" data-sec="directions" data-branches="volcano,tracing">
+<div class="lin-froms">
+<div class="lin-from volcano" data-from="volcano"><b>Volcano Explorer</b>May 2026 · straight to code: Claude proposed fonts, colors and radii, I edited them. A redesign came in September.</div>
+<div class="lin-from tracing" data-from="tracing"><b>Tracing Origins</b>Summer 2026 · straight to code too, and it stayed close to that first proposal.</div>
 </div>
-<div class="hib-tabs" id="hib-tabs" role="tablist" aria-label="Show the step for"></div>
-<div class="hib-panel" id="hib-panel" role="tabpanel" aria-live="polite"></div>
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">02</p>
+<h2>Look at directions before building one</h2>
+<p>My first two projects went with whatever Claude proposed first. In Deep Lineages I asked for four directions, rendered in code on the real app, the same three views each. Lead grey lasted a few minutes; Museum became the base. I kept its palette with a few small changes, the biggest one the accent: from violet to amber.</p>
 </div>
-<p class="hib-kicker">02 · Context, not prompts</p>
-<h2 class="hib-h2" id="skills">Memory and know-how</h2>
-<p>A <strong>CLAUDE.md</strong> in each repo is its memory; <strong>skills</strong> are routines that travel between projects.</p>
-<p class="hib-callout"><strong>Memory needs maintenance too.</strong> Tracing Origins' CLAUDE.md grew to about 44,000 words, full of reversals, and all of it loads every session. Treat it like code: keep it short, archive the history, delete what's superseded.</p>
-<p>The three skills I distilled from these projects:</p>
-<div class="hib-skills">
-<div class="hib-skill"><code>visual-consistency-qa</code><p>Aligns radius, color roles, spacing and type, so they can become tokens.</p></div>
-<div class="hib-skill"><code>wcag-audit-learning</code><p>"Learning" because I check every case by hand and talk each fix through before it's applied.</p></div>
-<div class="hib-skill"><code>design-tokens-system</code><p>Fixes contrast and sizes in one place, and holds each project's visual identity.</p></div>
+<div class="hib-wide lin-wide"><div id="lin-directions"></div></div>
+</section>
+
+<section class="lin-sec" data-sec="tokens" data-branches="tracing,volcano">
+<div class="lin-froms">
+<div class="lin-from tracing" data-from="tracing"><b>Tracing Origins</b>8 Oct 2026 · my first WCAG audit, contrast fixed before any tokens</div>
+<div class="lin-from volcano" data-from="volcano"><b>Volcano Explorer</b>11 Oct 2026 · tokens from one tokens.json first, the WCAG audit right after, the same day</div>
 </div>
-<p class="hib-sys-intro">Each project's tokens page shows what is tokenized and what isn't yet.</p>
-{{< hib-syslinks >}}
-<p class="hib-kicker">03 · Over time</p>
-<h2 class="hib-h2" id="time">What my commits say about how I work</h2>
-<p>Every commit from the four repos, one square each, placed by date. The marks are the moments my way of working changed; the band below shows what the commits were about, month by month. Before all this: a 2024–25 bootcamp, seismic-agent written with ChatGPT, and a coral project that stalled.</p>
-<div class="hib-wide">
-<div class="hib-legend" id="hib-legend" role="group" aria-label="Filter by phase"></div>
-<div class="hib-chart" id="hib-chart">
-<div class="hib-marks" id="hib-marks"><div class="hib-row-label">What changed</div><div class="hib-marks-track" role="list" aria-label="Moments the way of working changed"></div></div>
-<div class="hib-rows" id="hib-rows"></div>
-<div class="hib-mix" id="hib-mix"><div class="hib-row-label">What the commits<br>were about</div><div class="hib-mix-track" aria-hidden="true"></div></div>
-<div class="hib-axis"><div></div><div id="hib-axis"></div></div>
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">03</p>
+<h2>Tokens first, then the audit</h2>
+<p>The lesson that changed my process most. In Tracing Origins I fixed accessibility first and tokenized afterwards. Three days later, in Volcano Explorer, I flipped the order. Deep Lineages started from tokens and a lab to test them, and the contrast fixes took a fraction of the work.</p>
+<div class="lin-vs" role="group" aria-label="The same contrast fix in both projects">
+<p class="lin-num lin-task">Same fix in both: make every text color pass WCAG contrast</p>
+<div class="lin-vs-grid">
+<div class="lin-vs-head" aria-hidden="true"><span></span><span>First</span><span></span><span>Then</span><span>Lines changed</span></div>
+<div class="lin-vs-row tracing">
+<b class="lin-vs-who">Tracing Origins</b>
+<ol class="lin-order"><li class="on">Contrast fixes</li><li>Tokens</li></ol>
+<div class="lin-vs-bar"><p><b>~90</b> <small>in App.css</small></p><i><span style="--w:100%"></span></i></div>
 </div>
-<p class="hib-readout" id="hib-readout" aria-live="polite"><i class="hib-readout-dot" aria-hidden="true"></i><span>Hover a square or a mark to read it.</span></p>
-<div class="hib-datanote"><span class="hib-note-label">About this data</span><p><span id="hib-source"></span> Phases are tagged automatically from commit messages, so a few may be off.</p></div>
+<div class="lin-vs-row deep">
+<b class="lin-vs-who">Deep Lineages</b>
+<ol class="lin-order"><li>Tokens + lab</li><li class="on">Contrast fixes</li></ol>
+<div class="lin-vs-bar"><p><b>5</b> <small>in global.css</small></p><i><span style="--w:5.6%"></span></i></div>
 </div>
-<p class="hib-kicker">04 · The projects</p>
-<h2 class="hib-h2" id="projects">What each one taught me</h2>
-<p>Same loop, a different kind of mess each time. Pick a project to read its story.</p>
-<div class="hib-wide">
-<div class="hib-cards" id="hib-cards"></div>
-<div class="hib-story" id="hib-story" aria-live="polite"></div>
 </div>
-<p class="hib-kicker">05 · Takeaways</p>
-<h2 class="hib-h2">What I've learned working this way</h2>
-<div class="hib-wide hib-wide--plain">
-<ol class="hib-takeaways">
-<li><span class="hib-tk-n" aria-hidden="true">01</span><h3>Context over prompts</h3><p>I talk to Claude like a coworker. The CLAUDE.md and the skills carry the precision.</p></li>
-<li><span class="hib-tk-n" aria-hidden="true">02</span><h3>Verify everything</h3><p>Audits, data and every "it's fixed" get checked in the browser before I believe them.</p></li>
-<li><span class="hib-tk-n" aria-hidden="true">03</span><h3>Learn the fixes</h3><p>I run the tests myself, so I understand each fix instead of just collecting it.</p></li>
-</ol>
 </div>
-{{< hib-evidence >}}
-{{< hib-data >}}
+
+<div class="lin-real"><p class="lin-num">Deep Lineages' tokens</p><div id="lin-tokens"></div></div>
+<div class="lin-real"><p class="lin-num">Two tools to check tokens live, in the browser</p>
+<div class="lin-tools">
+<a class="lin-cmp lin-tool" href="https://deep-lineages.vercel.app/#tokens" target="_blank" rel="noopener"><div class="who">In the app · /#tokens ↗</div><div class="big">/#tokens</div><p>Every token with its live value, contrast per color role, where each one is used, and any value still written by hand.</p></a>
+<div class="lin-labwrap">
+<p class="lin-labnote"><b>Token Lab</b>, dev only: a floating panel over the app to change tokens and see the WCAG contrast update before anything goes into global.css. Below, a small working copy with three of Deep Lineages' real colors, set to the values they had before the audit. Try fixing them.</p>
+<div class="lin-lab">
+<div class="lin-lab-preview" id="lab-preview" aria-label="Preview">
+<div class="lp-card"><div class="lp-k">Late Cretaceous</div><div class="lp-h">Tyrannosaurus</div><div class="lp-t2">Tyrannosauridae · North America</div><div class="lp-t3">Theropod · meat-eater</div>
+<div class="lp-bars"><span class="lp-tri"></span><span class="lp-jur"></span><span class="lp-cre"></span></div><div class="lp-t3 lp-small">Triassic · Jurassic · Cretaceous</div></div>
+</div>
+<aside class="lin-lab-panel" aria-label="Token lab, a small copy">
+<div class="ll-head"><b>🎨 Token lab</b><span class="ll-dim">a small copy</span><button type="button" class="ll-btn" id="lab-reset">Reset</button></div>
+<div class="ll-list" id="lab-list"></div>
+<p class="ll-foot">Pick a color or type a value and press Enter. Text needs 4.5:1, graphics 3:1; the badge shows the worst pair.</p>
+</aside>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+
+<section class="lin-sec" data-sec="context" data-branches="tracing">
+<div class="lin-froms">
+<div class="lin-from tracing" data-from="tracing"><b>Tracing Origins</b>Aug 2026 · the CLAUDE.md became a dated decision log, and kept growing.</div>
+</div>
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">04</p>
+<h2>Context, not prompts</h2>
+<p>I talk to Claude like a coworker. The precision lives in two places: a CLAUDE.md in each repo, its memory, and skills, routines that travel between projects.</p>
+<div class="lin-real"><p class="lin-num">Three skills distilled from the audits</p>
+<div class="lin-skills">
+<div class="lin-skill"><code>visual-consistency-qa</code><p>Aligns radius, color roles, spacing and type, so they can become tokens.</p></div>
+<div class="lin-skill"><code>design-tokens-system</code><p>Fixes contrast and sizes in one place, and holds each project's visual identity.</p></div>
+<div class="lin-skill"><code>wcag-audit-learning</code><p>"Learning" because I check every case by hand and talk each fix through.</p></div>
+</div></div>
+</div>
+</section>
+
+<section class="lin-sec" data-sec="learn">
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">05</p>
+<h2>Run the audit myself</h2>
+<p>I run the tests and talk each fix through before it's applied, so I understand it instead of just collecting it. Deep Lineages' colors, checked live: contrast, and how they read with color blindness.</p>
+<div class="lin-real"><div id="lin-access"></div></div>
+</div>
+</section>
+
+<section class="lin-sec" data-sec="open" data-open="4">
+<span class="lin-node"></span>
+<div class="lin-card">
+<p class="lin-num">06</p>
+<h2>What I haven't figured out yet</h2>
+<p>Open branches. If you've solved any of these, I'd like to hear how.</p>
+<ul class="lin-qs">
+<li><b>Memory that grows.</b> A CLAUDE.md reached 44,000 words and contradicts itself.</li>
+<li><b>"It's fixed."</b> I still verify every fix in the browser before I believe it.</li>
+<li><b>Real users.</b> It passes my audit, and the apps get a little traffic (I can see it in Vercel Analytics). What I can't see is whether anyone using a screen reader has tried them, or how it went.</li>
+<li><b>A team.</b> How does this loop work with engineers and a shared codebase?</li>
+</ul>
+</div>
+<div class="lin-fan" aria-hidden="true"><span data-q="0">Memory that grows</span><span data-q="1">"It's fixed"</span><span data-q="2">Real users</span><span data-q="3">A team</span></div>
+</section>
+
+<p class="lin-end"><span>to be continued</span></p>
+</div>
+
+
+<canvas id="lin-field" aria-hidden="true"></canvas>
+<style>
+/* background: quiet traces, like a seismograph at rest; a click sends a slow swell along them */
+#lin-field { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 1.2s ease; }
+#lin-field.on { opacity: 1; }
+/* quieter behind the reading column, so the text always wins */
+#lin-field { -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(50% - 460px), rgba(0,0,0,.25) calc(50% - 320px), rgba(0,0,0,.25) calc(50% + 320px), #000 calc(50% + 460px), #000 100%); mask-image: linear-gradient(90deg, #000 0, #000 calc(50% - 460px), rgba(0,0,0,.25) calc(50% - 320px), rgba(0,0,0,.25) calc(50% + 320px), #000 calc(50% + 460px), #000 100%); }
+@media (max-width: 760px) { #lin-field { -webkit-mask-image: none; mask-image: none; } #lin-field.on { opacity: .6; } }
+header.header, main.main, footer.footer { position: relative; z-index: 1; }
+.top-link { z-index: 2; }
+</style>
 <script>
 (function () {
-  /* all content comes from data/how_i_build.yaml (see the hib-data shortcode) */
-  var D = JSON.parse(document.getElementById("hib-data").textContent);
-  var ORDER = D.projects.map(function (p) { return p.id; });
-  var PROJECTS = {}, STORIES = {}, CARDS = {}, REPOS = {}, EVID = {};
-  D.projects.forEach(function (p) {
-    EVID[p.id] = p.evidence || {};
-    PROJECTS[p.id] = { name: p.name, short: p.short, emoji: p.emoji, url: p.url, repo: p.repo, meta: p.meta, status: p.status, next: p.next || [] };
-    STORIES[p.id] = (p.story || []).map(function (r) { return [r.label, r.text]; });
-    CARDS[p.id] = p.card; REPOS[p.id] = p.github;
+  var cv = document.getElementById("lin-field"), ctx = cv && cv.getContext("2d");
+  if (!ctx) return;
+  // live at the top of <body>, behind header, main and footer (inside the post it would cover the text)
+  document.body.insertBefore(cv, document.body.firstChild);
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var css = getComputedStyle(document.documentElement);
+  var BG = css.getPropertyValue("--color-bg").trim() || "#111214", ACC = css.getPropertyValue("--accent-glow").trim() || "#c9a7ff";
+  var W = 0, H = 0, DPR = Math.min(devicePixelRatio || 1, 2);
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * DPR; cv.height = H * DPR; ctx.setTransform(DPR, 0, 0, DPR, 0, 0); }
+
+  // smooth value noise, enough for a calm field
+  var P = []; for (var i = 0; i < 512; i++) P[i] = Math.random();
+  function h(x, y) { return P[((x * 73856093) ^ (y * 19349663)) & 511]; }
+  function sm(t) { return t * t * (3 - 2 * t); }
+  function noise(x, y) { var xi = Math.floor(x), yi = Math.floor(y), xf = sm(x - xi), yf = sm(y - yi);
+    var a = h(xi, yi), b = h(xi + 1, yi), c = h(xi, yi + 1), d = h(xi + 1, yi + 1); return a + (b - a) * xf + (c - a) * yf + (a - b - c + d) * xf * yf; }
+
+  var rips = []; // {x, y, t}
+  addEventListener("click", function (e) {
+    if (e.target.closest("a, button, input, select, label, textarea, iframe, .lin-lab")) return;
+    rips.push({ x: e.clientX, y: e.clientY, t: performance.now() }); if (rips.length > 5) rips.shift();
+    if (reduce) frame(performance.now());
   });
-  var NODES = D.steps.map(function (st) {
-    var nd = {}; for (var key in st) nd[key] = st[key];
-    nd.n = st.num; /* "n" alone is a boolean in YAML, so the data file uses "num" */
-    nd.p = {}; D.projects.forEach(function (p) { nd.p[p.id] = (p.steps || {})[st.id] || ""; });
-    return nd;
-  });
-  var PHASES = [["data", "Data & research", "var(--color-blue)"], ["ui", "UI & features", "var(--color-orange)"], ["tokens", "Tokens", "var(--color-pink)"], ["a11y", "Accessibility", "var(--color-green)"], ["docs", "Docs & ship", "var(--color-grey)"]];
-  var state = { project: "all", tab: "all", node: "question", phases: { data: 1, ui: 1, tokens: 1, a11y: 1, docs: 1 } };
-  var ring = document.getElementById("hib-ring"), panel = document.getElementById("hib-panel");
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-  /* ring nodes */
-  NODES.slice(0, 7).forEach(function (nd, i) {
-    var col = document.createElement("div");
-    col.className = "hib-col"; col.dataset.node = nd.id; col.style.gridColumn = String(i + 2);
-    col.innerHTML = '<button type="button" class="hib-node" data-node="' + nd.id + '" aria-pressed="false"><span class="n">' + nd.n + '</span><span class="l">' + nd.label + '</span></button>' +
-      '<div class="hib-cell hib-cell--me" data-lane="Me">' + esc(nd.me) + '</div>' +
-      '<div class="hib-cell hib-cell--ai" data-lane="Claude Code">' + esc(nd.ai) + '</div>';
-    ring.insertBefore(col, ring.querySelector(".hib-back"));
-  });
-  ring.addEventListener("click", function (e) { var b = e.target.closest("[data-node]"); if (b) { state.node = b.dataset.node; render(); } });
-  function renderPanel() {
-    var nd = NODES.filter(function (x) { return x.id === state.node; })[0], html = '<div><p class="hib-step">' + (nd.n === "CORE" ? "Underneath every step" : "Step " + nd.n + " · " + nd.label) + '</p><h3>' + esc(nd.title) + '</h3><p>' + esc(nd.text) + '</p></div>';
-    if (state.tab === "all") {
-      html += '<div class="hib-note"><span class="hib-note-label">In each project</span>' + ORDER.map(function (k, i) { return '<div class="hib-note-row' + nextCls(k) + '" style="--i:' + i + '"><span class="hib-note-proj">' + PROJECTS[k].emoji + ' ' + PROJECTS[k].name + '</span>' + stepBody(k, nd) + '</div>'; }).join("") + '</div>';
-    } else {
-      var P = PROJECTS[state.tab];
-      html += '<div class="hib-note"><span class="hib-note-label">In ' + P.emoji + ' ' + P.name + '</span><div class="hib-note-row' + nextCls(state.tab) + '">' + stepBody(state.tab, nd) + '</div></div>';
+
+  // SEISMO: a few quiet traces, like a seismograph or a signal monitor; a click sends a pulse along them
+  function seismo(now) {
+    ctx.clearRect(0, 0, W, H);
+    var n = Math.max(7, Math.round(H / 95)), t = now / 1000, gap = H / (n + 1);
+    for (var j = 1; j <= n; j++) {
+      var y0 = j * gap, hot = 0;
+      ctx.beginPath();
+      for (var x = 0; x <= W; x += 4) {
+        var y = y0 + (noise(x * .006 + t * .15, j * 3.1) - .5) * 14 + Math.sin(x * .02 + t * .8 + j) * 1.2;
+        for (var k = 0; k < rips.length; k++) { var r = rips[k], age = (now - r.t) / 1000; if (age > 5) continue;
+          var dy = y0 - r.y, dx = x - r.x, front = age * 170, w = Math.abs(dx) - front, fall = 1 - age / 5;
+          // a single rounded crest, wide and low, that rolls away from the click and settles
+          var amp = Math.exp(-w * w / 14000) * Math.exp(-Math.abs(dy) / 220) * fall * fall; y -= 16 * amp; hot = Math.max(hot, amp); }
+        x ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      }
+      ctx.lineWidth = 1; ctx.strokeStyle = hot > .15 ? ACC : "rgba(160,166,176,1)"; ctx.globalAlpha = hot > .15 ? .16 + hot * .22 : .16; ctx.stroke();
     }
-    panel.innerHTML = html;
+    ctx.globalAlpha = 1;
   }
-  function isNext(k) { return PROJECTS[k].next.indexOf(state.node) > -1; }
-  function nextCls(k) { return isNext(k) ? " is-next" : ""; }
-  // a project's evidence for this step (hib-evidence.html) replaces its text; the text stays behind "The story"
-  function stepBody(k, nd) {
-    var ev = (EVID[k] || {})[nd.id];
-    if (!isNext(k) && window.HIB_EV && HIB_EV.has(ev)) return HIB_EV.render(ev, nd.p[k]);
-    return '<p>' + stepText(k, nd) + '</p>';
+
+  function frame(now) { rips = rips.filter(function (r) { return now - r.t < 5000; }); seismo(now); }
+  var running = !reduce;
+  function loop(now) { if (!running) return; frame(now); requestAnimationFrame(loop); }
+  addEventListener("resize", function () { size(); if (reduce) frame(performance.now()); });
+  document.addEventListener("visibilitychange", function () { running = !document.hidden && !reduce; if (running) requestAnimationFrame(loop); });
+  size();
+  if (reduce) frame(0); else requestAnimationFrame(loop);
+  cv.classList.add("on");
+})();
+</script>
+
+{{< hib-evidence >}}
+{{< hib-data >}}
+
+<script>
+(function () {
+  var NS = "http://www.w3.org/2000/svg", story = document.getElementById("lin"), svg = document.getElementById("lin-lines");
+  var secs = [].slice.call(story.querySelectorAll(".lin-sec"));
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var trunk, trunkLen = 0, y0 = 0, branches = [], spot, spotG;
+  function el(t, a) { var n = document.createElementNS(NS, t); for (var k in a) n.setAttribute(k, a[k]); return n; }
+  function narrow() { return innerWidth <= 760; }
+
+  // a real artifact in the column: Deep Lineages' contrast + color-blindness evidence
+  try { var D = JSON.parse(document.getElementById("hib-data").textContent), ev = D.projects[0].evidence.access;
+    document.getElementById("lin-access").innerHTML = HIB_EV.render(ev, null);
+    document.getElementById("lin-tokens").innerHTML = HIB_EV.render(D.projects[0].evidence.polish, null);
+    document.getElementById("lin-directions").innerHTML = directions(D.projects[0].evidence.design); } catch (e) { console.log(e); }
+
+  // the four directions as their real palettes: flat swatches, no drawings
+  function directions(ev) {
+    var keys = [["page", "page"], ["card", "card"], ["ocean", "ocean"], ["land", "land"], ["accent", "accent"], ["ink", "ink"]];
+    var h = '<div class="lin-dirs">' + ev.items.map(function (it) {
+      return '<div class="lin-dir' + (it.kept ? " kept" : "") + '"><div class="lin-dir-top"><b>' + it.name + '</b>' + (it.kept ? '<span>Kept</span>' : "") + '</div>' +
+        '<div class="lin-dir-sw" style="background:' + it.page + '"><span class="aa" style="color:' + it.ink + ';background:' + it.card + '">Aa <i style="color:' + it.number + '">150</i></span>' +
+        keys.slice(1).map(function (k) { return '<span class="sw" title="' + k[1] + " " + it[k[0]] + '" style="background:' + it[k[0]] + '"></span>'; }).join("") + '</div>' +
+        '<p>' + it.note + '</p>' +
+        // what changed after picking it: the accent (amber-600 in Deep Lineages' global.css)
+        (it.kept ? '<p class="lin-dir-final">Then: accent <span class="sw-mini" style="background:' + it.accent + '"></span> → <span class="sw-mini" style="background:#b57500"></span> amber</p>' : "") + '</div>';
+    }).join("") + '</div>';
+    h += '<p class="lin-dir-legend">Swatches: page with text and the big number · card · ocean · land · accent · ink. Each direction was applied to the same 3 views: ' + ev.views.join(", ") + '.</p>';
+    return h;
   }
-  function stepText(k, nd) { return (isNext(k) ? '<span class="hib-next">Next</span>' : "") + esc(nd.p[k]); }
-  /* commit chart */
-  var rows = document.getElementById("hib-rows"), legend = document.getElementById("hib-legend"), readout = document.getElementById("hib-readout"), axis = document.getElementById("hib-axis"), color = {};
-  PHASES.forEach(function (ph) {
-    color[ph[0]] = ph[2];
-    var b = document.createElement("button"); b.type = "button"; b.dataset.phase = ph[0]; b.setAttribute("aria-pressed", "true");
-    b.innerHTML = '<i style="background:' + ph[2] + '"></i>' + ph[1]; legend.appendChild(b);
-  });
-  legend.addEventListener("click", function (e) { var b = e.target.closest("[data-phase]"); if (!b) return; var k = b.dataset.phase; state.phases[k] = state.phases[k] ? 0 : 1; b.setAttribute("aria-pressed", state.phases[k] ? "true" : "false"); paintDots(); });
-  var labelOf = {}; PHASES.forEach(function (p) { labelOf[p[0]] = p[1]; });
-  function drawChart(data) {
-    var all = [].concat.apply([], ORDER.map(function (k) { return data[k] || []; })).map(function (c) { return Date.parse(c[0]); });
-    var day = 864e5, from = D.chart_from ? Date.parse(D.chart_from) : -Infinity, t0 = Math.max(Math.min.apply(null, all), from) - 7 * day, t1 = Math.max(Date.now(), Math.max.apply(null, all)) + 7 * day, span = t1 - t0;
-    for (var m = new Date(t0); m.getTime() < t1; m.setMonth(m.getMonth() + 1)) {
-      var tick = new Date(m.getFullYear(), m.getMonth() + 1, 1); if (tick.getTime() >= t1) break;
-      var s = document.createElement("span"); s.style.left = ((tick - t0) / span * 100) + "%";
-      s.textContent = tick.toLocaleString("en", { month: "short" }) + (tick.getMonth() === 0 ? " " + tick.getFullYear() : ""); axis.appendChild(s);
+
+  // the small token lab: real Deep Lineages colors, starting from their pre-audit values
+  (function () {
+    var lab = document.querySelector(".lin-lab"); if (!lab) return;
+    var BG = { "--bg": "#eef2f4", "--surface": "#ffffff" };
+    var T = [
+      { name: "--text-3", v: "#7d8a96", fixed: "#5f6b76", need: 4.5, on: ["--bg", "--surface"], role: "text", css: "--l-text-3" },
+      { name: "--text-2", v: "#4a5763", fixed: "#4a5763", need: 4.5, on: ["--bg", "--surface"], role: "text", css: "--l-text-2" },
+      { name: "--period-tri", v: "#a99ee6", fixed: "#9284dc", need: 3, on: ["--surface"], role: "graphic", css: "--l-tri" }
+    ];
+    T.forEach(function (t) { t.start = t.v; });
+    function lum(hex) { var c = hex.replace("#", ""); if (c.length === 3) c = c.replace(/./g, "$&$&"); return [0, 2, 4].map(function (i) { var x = parseInt(c.substr(i, 2), 16) / 255; return x <= .03928 ? x / 12.92 : Math.pow((x + .055) / 1.055, 2.4); }).reduce(function (a, x, i) { return a + x * [.2126, .7152, .0722][i]; }, 0); }
+    function ratio(a, b) { var A = lum(a), B = lum(b); return (Math.max(A, B) + .05) / (Math.min(A, B) + .05); }
+    var list = document.getElementById("lab-list");
+    function draw() {
+      list.innerHTML = T.map(function (t, i) {
+        var worst = Math.min.apply(null, t.on.map(function (b) { return ratio(t.v, BG[b]); })), ok = worst >= t.need;
+        lab.style.setProperty(t.css, t.v);
+        return '<div class="ll-row' + (t.v !== t.start ? " changed" : "") + '"><label class="ll-sw" style="background:' + t.v + '" title="Pick a color"><input type="color" data-i="' + i + '" value="' + t.v + '" aria-label="' + t.name + '"></label>' +
+          '<div class="ll-mid"><code>' + t.name + '</code><input data-i="' + i + '" value="' + t.v + '" aria-label="' + t.name + ' value"></div>' +
+          '<div class="ll-cr"><span class="ll-badge ' + (ok ? "ok" : "no") + '">' + worst.toFixed(1) + (ok ? " ✓" : " ✗") + '</span><span class="ll-dim">' + t.role + ', ' + t.need + ':1</span></div></div>';
+      }).join("");
     }
-    ORDER.forEach(function (k) {
-      var full = data[k] || [], list = full.filter(function (c) { return Date.parse(c[0]) >= from; }), before = full.length - list.length, perDay = {}, max = 0;
-      list.forEach(function (c) { perDay[c[0]] = (perDay[c[0]] || 0) + 1; if (perDay[c[0]] > max) max = perDay[c[0]]; });
-      var row = document.createElement("div"); row.className = "hib-row"; row.dataset.project = k;
-      row.innerHTML = '<div class="hib-row-label">' + PROJECTS[k].emoji + ' ' + PROJECTS[k].name + '<small>' + full.length + ' commits</small>' + (before ? '<small>+' + before + ' before ' + new Date(from).toLocaleString("en", { month: "short" }) + '</small>' : '') + '</div><div class="hib-track" style="height:' + (max * 7 + 4) + 'px"></div>';
-      var track = row.lastChild, seen = {};
-      list.forEach(function (c) {
-        var i = seen[c[0]] = (seen[c[0]] || 0) + 1, d = document.createElement("span");
-        d.className = "hib-dot"; d.dataset.phase = c[1]; d.style.background = color[c[1]];
-        d.style.left = "calc(" + ((Date.parse(c[0]) - t0) / span * 100) + "% - 3px)"; d.style.bottom = ((i - 1) * 7 + 2) + "px";
-        d.dataset.info = c[0] + " · " + labelOf[c[1]] + " · " + c[2];
-        track.appendChild(d);
+    function set(i, v) { v = v.trim(); if (!/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(v)) return; if (v.length === 4) v = "#" + v.slice(1).replace(/./g, "$&$&"); T[i].v = v.toLowerCase(); draw(); }
+    list.addEventListener("input", function (e) { if (e.target.type === "color") set(+e.target.dataset.i, e.target.value); });
+    list.addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target.type === "text") set(+e.target.dataset.i, e.target.value); });
+    list.addEventListener("change", function (e) { if (e.target.type === "text") set(+e.target.dataset.i, e.target.value); });
+    document.getElementById("lab-reset").addEventListener("click", function () { T.forEach(function (t) { t.v = t.start; }); draw(); });
+    draw();
+  })();
+
+  function build() {
+    svg.innerHTML = '<defs>' +
+      // Aurora along the trunk: white and violet sliding slowly down the line
+      '<linearGradient id="lin-aurora" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="700" spreadMethod="reflect">' +
+      '<stop offset="0" style="stop-color:var(--accent-glow)"/><stop offset=".5" style="stop-color:var(--accent-light)"/><stop offset="1" style="stop-color:var(--accent-glow)"/>' +
+      (reduce ? "" : '<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="0 1400" dur="12s" repeatCount="indefinite"/>') + '</linearGradient>' +
+      '<radialGradient id="lin-spot" gradientUnits="userSpaceOnUse" cx="-999" cy="-999" r="190">' +
+      '<stop offset="0" style="stop-color:var(--accent-light)"/><stop offset=".4" style="stop-color:var(--accent-glow)"/><stop offset="1" style="stop-color:var(--accent-glow);stop-opacity:0"/></radialGradient></defs>';
+    spot = el("g", { class: "lin-spot" }); branches = [];
+    var box = story.getBoundingClientRect(), nodes = secs.map(function (s) { var r = s.querySelector(".lin-node"); var b = r.getBoundingClientRect(); return { x: b.left + b.width / 2 - box.left, y: b.top + b.height / 2 - box.top }; });
+    // place each node beside its section's first line
+    secs.forEach(function (s) { var c = s.querySelector(".lin-card"), n = s.querySelector(".lin-node"); n.style.top = (c.offsetTop + 6) + "px"; });
+    nodes = secs.map(function (s) { var b = s.querySelector(".lin-node").getBoundingClientRect(); return { x: b.left + b.width / 2 - box.left, y: b.top + b.height / 2 - box.top }; });
+    var x = nodes[0].x; y0 = nodes[0].y;
+    var y1 = story.querySelector(".lin-end").getBoundingClientRect().top - box.top + 10;
+    // the trunk stops where a full-width block starts and picks up after it
+    var gaps = [].slice.call(story.querySelectorAll(".lin-wide")).map(function (w) { var r = w.getBoundingClientRect(); return [r.top - box.top - 16, r.bottom - box.top + 16]; });
+    var d = "", y = y0;
+    gaps.forEach(function (g) { d += "M" + x + " " + y + "V" + g[0]; y = g[1]; });
+    d += "M" + x + " " + y + "V" + y1;
+    svg.appendChild(el("path", { class: "lin-trunk-bg", d: d }));
+    trunk = el("path", { class: "lin-trunk", d: d }); svg.appendChild(trunk);
+    trunkLen = trunk.getTotalLength(); trunk.style.strokeDasharray = trunkLen + " " + trunkLen; trunk.style.strokeDashoffset = trunkLen;
+    trunk._gaps = gaps; trunk._y1 = y1;
+    trunk._spot = el("path", { d: d }); spot.appendChild(trunk._spot);
+
+    secs.forEach(function (s, i) {
+      var n = nodes[i];
+      (s.dataset.branches || "").split(",").filter(Boolean).forEach(function (kind) {
+        var lab = s.querySelector('[data-from="' + kind + '"]'), lr = lab.getBoundingClientRect(), ly = lr.top + 9 - box.top, sx = lr.left - box.left - 8;
+        var p = el("path", { class: "lin-branch " + kind, d: "M" + sx + " " + ly + " C" + (n.x + (sx - n.x) * .25) + " " + ly + " " + n.x + " " + (ly + (n.y - ly) * .45) + " " + n.x + " " + n.y });
+        svg.appendChild(p); var L = p.getTotalLength(); p.style.strokeDasharray = L; p.style.strokeDashoffset = L;
+        var sp = el("path", { d: p.getAttribute("d") }); spot.appendChild(sp);
+        branches.push({ p: p, L: L, sec: s, lab: lab, sp: sp });
       });
-      track.addEventListener("mouseover", function (e) {
-        var d = e.target; if (!d.dataset.info) return;
-        document.querySelectorAll("#hib-chart .is-current").forEach(function (x) { x.classList.remove("is-current"); });
-        d.classList.add("is-current");
-        readout.classList.add("has-commit");
-        readout.querySelector(".hib-readout-dot").style.background = d.style.background;
-        readout.querySelector("span").textContent = PROJECTS[k].emoji + " " + d.dataset.info;
-      });
-      rows.appendChild(row);
+      var k = +s.dataset.open || 0, fan = s.querySelector(".lin-fan");
+      if (!fan) return;
+      var fr = fan.getBoundingClientRect(), fy = fr.top - box.top;
+      for (var j = 0; j < k; j++) {
+        var reach = narrow() ? 46 + (k - 1 - j) * 22 : 90 + (k - 1 - j) * 150, sy = fy + 10 + j * 26, ex = n.x + reach, ey = fy + (narrow() ? 70 + j * 62 : 80 + j * 46);
+        var q = el("path", { class: "lin-branch open", d: "M" + n.x + " " + sy + " C" + n.x + " " + (sy + 55) + " " + ex + " " + (ey - 55) + " " + ex + " " + ey });
+        var c = el("circle", { class: "lin-endopen", cx: ex, cy: ey, r: 4 }); svg.appendChild(q); svg.appendChild(c);
+        var lab2 = fan.querySelector('[data-q="' + j + '"]'); lab2.style.top = (ey - fy - 8) + "px"; lab2.style.left = (ex - (fr.left - box.left) + 10) + "px";
+        branches.push({ p: q, sec: s, end: c, lab: lab2, open: true, idx: j, anchor: fan });
+      }
     });
-    /* milestone marks: a diamond with a short label, and a dashed line down through the rows */
-    var chart = document.getElementById("hib-chart"), mt = chart.querySelector(".hib-marks-track");
-    var xOf = function (t) { return (t - t0) / span; };
-    var lineAt = function (f) { return "calc(var(--lab) + var(--space-3) + (100% - var(--lab) - var(--space-3)) * " + f.toFixed(4) + ")"; };
-    (D.milestones || []).forEach(function (m, i) {
-      var f = xOf(Date.parse(m.date)), b = document.createElement("button"), line = document.createElement("i");
-      b.type = "button"; b.className = "hib-mark"; b.setAttribute("role", "listitem");
-      b.style.left = (f * 100) + "%"; b.innerHTML = "<span>" + esc(m.label) + "</span>";
-      b.setAttribute("aria-label", new Date(m.date).toLocaleString("en", { month: "short", year: "numeric" }) + ": " + m.label + ". " + m.text);
-      line.className = "hib-mark-line"; line.style.left = lineAt(f); chart.appendChild(line);
-      var show = function () {
-        chart.querySelectorAll(".is-current").forEach(function (x) { x.classList.remove("is-current"); });
-        b.classList.add("is-current"); line.classList.add("is-current");
-        readout.classList.remove("has-commit"); readout.querySelector(".hib-readout-dot").style.background = "";
-        readout.querySelector("span").textContent = new Date(m.date).toLocaleString("en", { month: "short", year: "numeric" }) + " · " + m.label + ". " + m.text;
-      };
-      b.addEventListener("mouseenter", show); b.addEventListener("focus", show);
-      mt.appendChild(b);
-    });
-    // labels: open to the left near the right edge, then take the lowest of three levels that doesn't overlap
-    function placeMarks() {
-      var placed = [[], [], []], W = mt.clientWidth;
-      mt.querySelectorAll(".hib-mark").forEach(function (b) {
-        var lab = b.querySelector("span"), w = lab.offsetWidth, x = b.offsetLeft + 4, left = x + w > W;
-        b.classList.toggle("is-left", left);
-        var a0 = left ? x - w : x, a1 = left ? x : x + w, lv = 0;
-        while (lv < 2 && placed[lv].some(function (r) { return a0 < r[1] + 12 && r[0] < a1 + 12; })) lv++;
-        placed[lv].push([a0, a1]); b.style.setProperty("--lv", lv);
-      });
-    }
-    placeMarks(); window.addEventListener("resize", placeMarks);
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeMarks);
-    /* monthly mix: one column per month, stacked by phase share */
-    var mix = chart.querySelector(".hib-mix-track"), months = {};
-    ORDER.forEach(function (k) { (data[k] || []).forEach(function (c) { var t = Date.parse(c[0]); if (t < from) return; var key = c[0].slice(0, 7); (months[key] = months[key] || { n: 0 })[c[1]] = (months[key][c[1]] || 0) + 1; months[key].n++; }); });
-    Object.keys(months).forEach(function (key) {
-      var a0 = Math.max(Date.parse(key + "-01"), t0), d1 = new Date(key + "-01"); d1.setMonth(d1.getMonth() + 1);
-      var a1 = Math.min(d1.getTime(), t1), col = document.createElement("div"), M = months[key];
-      col.className = "hib-mix-col"; col.style.left = (xOf(a0) * 100) + "%"; col.style.width = ((a1 - a0) / span * 100) + "%";
-      col.title = new Date(key + "-01").toLocaleString("en", { month: "long" }) + ": " + M.n + " commits";
-      PHASES.forEach(function (ph) { if (!M[ph[0]]) return; var sp = document.createElement("span"); sp.dataset.phase = ph[0]; sp.style.background = ph[2]; sp.style.height = (M[ph[0]] / M.n * 100) + "%"; col.appendChild(sp); });
-      mix.appendChild(col);
-    });
-    var note = document.querySelector(".hib-datanote");
-    if (note && !note.dataset.filled) { note.dataset.filled = 1; ORDER.forEach(function (k) { var t = D.projects[ORDER.indexOf(k)].chart_note; if (t) { var q = document.createElement("p"); q.textContent = PROJECTS[k].emoji + " " + PROJECTS[k].name + ": " + t; note.appendChild(q); } }); }
-    paintDots();
+    svg.appendChild(spot); spotG = svg.querySelector("#lin-spot");
+    update();
   }
-  function paintDots() { document.querySelectorAll("#hib-rows .hib-dot, #hib-mix span[data-phase]").forEach(function (d) { d.classList.toggle("is-off", !state.phases[d.dataset.phase]); }); }
-  function dimRows() { rows.querySelectorAll(".hib-row").forEach(function (r) { r.classList.toggle("is-dim", state.project !== "all" && r.dataset.project !== state.project); }); }
-  /* commits: live from GitHub (cached 1h per visitor), snapshot JSON as fallback */
-  var RULES = [["a11y", /a11y|accessib|wcag|contrast|keyboard|focus|wave\b|axe\b|lighthouse|aria|reflow|screen reader|color blind|without colou?r|reduced.motion|teclado|foco|sr-only|landmark|skip link|zoom/i], ["tokens", /token|styleguide|design system|type scale|spacing scale|escala|radii/i], ["data", /data|dataset|pipeline|fetch|scraper|geocod|geograph|\bapi\b|louvre|\bmet\b|\bbm\b|quai|piezas|pbdb|fossil|volcanoes|eruption|csv|json|translat|traduc|layer [123]|investig|batch|ronda|research|wikidata|tavily|provenance|hallazgo/i], ["docs", /readme|seo|metadata|screenshot|image|\bog\b|analytics|docs|credits|cr[eé]dit/i]];
-  function phaseOf(msg) { for (var i = 0; i < RULES.length; i++) if (RULES[i][1].test(msg)) return RULES[i][0]; return "ui"; }
-  function repoCommits(repo) {
-    function page(n, acc) {
-      return fetch("https://api.github.com/repos/veronicadeleonh/" + repo + "/commits?per_page=100&page=" + n).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (list) {
-        acc = acc.concat(list); return list.length === 100 && n < 10 ? page(n + 1, acc) : acc;
-      });
-    }
-    return page(1, []).then(function (list) {
-      return list.reverse().map(function (c) { var msg = (c.commit.message || "").split("\n")[0]; return [c.commit.author.date.slice(0, 10), phaseOf(msg), msg.slice(0, 140)]; });
-    });
-  }
-  var CACHE = "hib-commits-" + ORDER.join("-"), source = document.getElementById("hib-source");
-  function fromCache() { try { var c = JSON.parse(localStorage.getItem(CACHE)); if (c && Date.now() - c.t < 36e5) return c.data; } catch (e) {} return null; }
-  function live() {
-    var keys = Object.keys(REPOS);
-    return Promise.all(keys.map(function (k) { return repoCommits(REPOS[k]); })).then(function (lists) {
-      var data = {}; keys.forEach(function (k, i) { data[k] = lists[i]; });
-      try { localStorage.setItem(CACHE, JSON.stringify({ t: Date.now(), data: data })); } catch (e) {}
-      return data;
-    });
-  }
-  var cached = fromCache();
-  (cached ? Promise.resolve(cached) : live()).then(function (data) { if (source) source.textContent = "Live from GitHub."; drawChart(data); }).catch(function () {
-    fetch("/data/how-i-build-commits.json").then(function (r) { return r.json(); }).then(function (data) { if (source) source.textContent = "Snapshot of the repos (GitHub was unreachable)."; drawChart(data); }).catch(function () { readout.querySelector("span").textContent = "Commit data couldn't load."; });
-  });
-  /* stories */
-  var story = document.getElementById("hib-story");
-  var cardsEl = document.getElementById("hib-cards");
-  cardsEl.style.setProperty("--hib-n", ORDER.length);
-  ORDER.forEach(function (k) {
-    var P = PROJECTS[k], C = CARDS[k], b = document.createElement("button");
-    b.type = "button"; b.className = "hib-card"; b.dataset.project = k; b.setAttribute("aria-pressed", "false");
-    b.innerHTML = '<span class="hib-card-bar" aria-hidden="true"></span><span class="hib-card-img">' + (P.status ? '<span class="hib-status">' + esc(P.status) + '</span>' : '') + '<img src="' + C.img + '" alt="" loading="lazy"></span><span class="hib-card-body"><span class="hib-card-name">' + P.emoji + ' ' + P.name + '</span><span class="hib-card-lesson">' + esc(C.lesson) + '</span>' + (C.mess ? '<span class="hib-flow"><span class="hib-flow-row"><span class="hib-flow-k">The mess</span>' + esc(C.mess) + '</span><span class="hib-flow-row is-to"><span class="hib-flow-k">Made accessible</span>' + esc(C.access) + '</span></span>' : '') + '<span class="hib-tags">' + C.tags.map(function (t) { return '<span>' + t + '</span>'; }).join("") + '</span></span>';
-    cardsEl.appendChild(b);
-  });
-  cardsEl.addEventListener("click", function (e) { var b = e.target.closest("[data-project]"); if (b) { state.project = state.project === b.dataset.project ? "all" : b.dataset.project; render(); } });
-  function renderStory() {
-    cardsEl.classList.toggle("has-active", state.project !== "all");
-    cardsEl.querySelectorAll(".hib-card").forEach(function (c) { var on = c.dataset.project === state.project; c.classList.toggle("is-active", on); c.setAttribute("aria-pressed", on ? "true" : "false"); });
-    if (state.project === "all") { story.innerHTML = ""; story.hidden = true; return; }
-    var P = PROJECTS[state.project]; story.hidden = false;
-    story.innerHTML = '<div class="hib-story-head"><span class="hib-note-label">What it taught me</span><h3>' + P.emoji + ' ' + P.name + '</h3><p class="hib-story-meta">' + P.meta + ' · ' + (P.url ? '<a href="' + P.url + '" target="_blank" rel="noopener">Live</a>' : 'Not live yet') + ' · <a href="' + P.repo + '" target="_blank" rel="noopener">Code</a></p></div><dl>' + STORIES[state.project].filter(function (r) { return r[0] !== "Practiced"; }).map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join("") + '</dl>';
-  }
-  /* project tabs under the loop (WAI-ARIA tabs: arrows move, Home/End jump) */
-  var tabs = document.getElementById("hib-tabs");
-  ["all"].concat(ORDER).forEach(function (k) {
-    var b = document.createElement("button"); b.type = "button"; b.setAttribute("role", "tab"); b.dataset.tab = k; b.id = "hib-tab-" + k;
-    b.innerHTML = k === "all" ? "All" : PROJECTS[k].emoji + ' <span class="full">' + PROJECTS[k].name + '</span><span class="short">' + (PROJECTS[k].short || PROJECTS[k].name) + "</span>";
-    tabs.appendChild(b);
-  });
-  tabs.addEventListener("click", function (e) { var b = e.target.closest("[data-tab]"); if (b) { state.tab = b.dataset.tab; render(); } });
-  tabs.addEventListener("keydown", function (e) {
-    var list = [].slice.call(tabs.querySelectorAll("[role=tab]")), i = list.indexOf(document.activeElement), n = list.length, to = null;
-    if (e.key === "ArrowRight") to = (i + 1) % n; else if (e.key === "ArrowLeft") to = (i - 1 + n) % n; else if (e.key === "Home") to = 0; else if (e.key === "End") to = n - 1;
-    if (to === null || i < 0) return; e.preventDefault(); state.tab = list[to].dataset.tab; render(); list[to].focus();
-  });
-  function render() {
-    tabs.querySelectorAll("[role=tab]").forEach(function (b) { var on = b.dataset.tab === state.tab; b.setAttribute("aria-selected", on ? "true" : "false"); b.tabIndex = on ? 0 : -1; });
-    panel.setAttribute("aria-labelledby", "hib-tab-" + state.tab);
-    document.querySelectorAll("#hib-ring button[data-node]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.node === state.node ? "true" : "false"); });
-    document.querySelectorAll("#hib-ring .hib-col").forEach(function (c) { c.classList.toggle("is-active", c.dataset.node === state.node); });
-    renderPanel(); renderStory();
-  }
-  /* spotlight: tag hoverable elements and track the cursor inside them */
-  document.querySelectorAll(".hib-node, .hib-cell, .hib-core button, .hib-legend button, .hib-skill, .hib-syslinks a, .hib-card").forEach(function (el) { el.classList.add("hib-spot"); });
-  document.addEventListener("pointermove", function (e) {
-    var el = e.target.closest && e.target.closest(".hib-spot"); if (!el) return;
-    var r = el.getBoundingClientRect(); el.style.setProperty("--x", (e.clientX - r.left) + "px"); el.style.setProperty("--y", (e.clientY - r.top) + "px");
+
+  // the spotlight follows the pointer over the lines and over the comparison cards
+  addEventListener("pointermove", function (e) {
+    if (spotG) { var b = story.getBoundingClientRect(); spotG.setAttribute("cx", e.clientX - b.left); spotG.setAttribute("cy", e.clientY - b.top); }
+    var c = e.target.closest && e.target.closest(".lin-cmp");
+    if (c) { var r = c.getBoundingClientRect(); c.style.setProperty("--x", (e.clientX - r.left) + "px"); c.style.setProperty("--y", (e.clientY - r.top) + "px"); }
   }, { passive: true });
-  render();
+
+  var lastH = 0;
+  function update() {
+    // anything above changed height (the mess block steps, fonts, the iframe): redraw from the new layout
+    if (story.offsetHeight !== lastH) { lastH = story.offsetHeight; build(); return; }
+    var vh = innerHeight, line = vh * 0.55, box = story.getBoundingClientRect();
+    if (trunk) {
+      // length drawn = distance from the trunk's top to the reading line, minus the gaps above it
+      var target = line - box.top, drawn = target - y0;
+      trunk._gaps.forEach(function (g) { if (target > g[1]) drawn -= g[1] - g[0]; else if (target > g[0]) drawn -= target - g[0]; });
+      drawn = reduce ? trunkLen : Math.max(0, Math.min(trunkLen, drawn));
+      trunk.style.strokeDashoffset = trunkLen - drawn;
+      trunk._spot.style.strokeDasharray = trunkLen + " " + trunkLen; trunk._spot.style.strokeDashoffset = trunkLen - drawn;
+    }
+    var cur = secs[0];
+    secs.forEach(function (s) { var r = s.querySelector(".lin-node").getBoundingClientRect(), on = r.top < line + 40 && r.top > -vh * .2; s.classList.toggle("is-on", on); if (r.top < line) { s.classList.add("was-on"); cur = s; } });
+    // one section in focus at a time: the one whose node last crossed the reading line
+    secs.forEach(function (s) { s.classList.toggle("is-current", s === cur); });
+    branches.forEach(function (b) {
+      var r = (b.anchor || b.sec.querySelector(".lin-node")).getBoundingClientRect();
+      var t = reduce ? 1 : Math.max(0, Math.min(1, (vh * .95 - r.top) / (vh * .4) - (b.open ? b.idx * .15 : 0)));
+      if (b.open) { b.p.style.opacity = t > .2 ? 1 : 0; b.end.style.opacity = t > .2 ? 1 : 0; } else { b.p.style.strokeDashoffset = b.L * (1 - t); b.sp.style.strokeDasharray = b.L; b.sp.style.strokeDashoffset = b.L * (1 - t); }
+      if (b.lab) b.lab.classList.toggle("is-on", t > (b.open ? .2 : .15));
+    });
+  }
+
+  var raf = 0; addEventListener("scroll", function () { if (!raf) raf = requestAnimationFrame(function () { raf = 0; update(); }); }, { passive: true });
+  var rt; addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(build, 150); });
+  // the mess block changes height as it steps: rebuild when it does
+  if (window.ResizeObserver) new ResizeObserver(function () { requestAnimationFrame(update); }).observe(story);
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { setTimeout(build, 300); });
 })();
 </script>

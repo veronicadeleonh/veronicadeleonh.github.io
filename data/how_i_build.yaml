@@ -101,7 +101,7 @@ projects:
   steps:
     question: 'After Brusatte''s The Rise and Fall of the Dinosaurs: who lived when, who was related to whom, where their bones turned up.'
     data: 'The Paleobiology Database as the main source: 7,043 fossils, turned in Python into 29 families and 531 genera. PhyloPic, Wikipedia and PALEOMAP fill in silhouettes, summaries and ancient coastlines.'
-    design: The only one with visual exploration first. Claude and I tried directions and palettes together using AI-generated images, then built it. In code I tried a vertical timeline and dropped it for a horizontal one with the family tree inside.
+    design: 'The only one explored before building: four visual directions applied to the real app, the same three views each, compared side by side. Museum became the base and the brand was tuned from there. In code I tried a vertical timeline and dropped it for a horizontal one with the family tree inside.'
     ux: 'A followed family with no fossils at that time drops out of the list, and where you are lives in the URL.'
     polish: Primitives plus semantic roles with contrast per role, and Token Lab, a tool to see and tune the tokens live in the app.
     access: 'The third audit, inside the first build sprint: timeline and family tree as keyboard trees, color-blind-safe diet colors, an APCA check, reflow at 320px.'
@@ -120,39 +120,53 @@ projects:
       - [531, genera, inside those families]
       caption: 'From the raw export to the family tree. Fossils outside the 29 families stay in the data.'
     design:
-      type: looks
-      caption: 'Three looks in two weeks, in their real colors. The last one tells diets apart by lightness, not only hue.'
+      type: directions
+      caption: 'The one project explored before building: four directions on the real app, the same three views each, side by side. Museum became the base; the brand was tuned from there.'
       items:
-      - label: Prototype
-        when: 2 Oct
-        bg: '#f4f3ef'
-        fg: '#0b0b0b'
-        border: '#e2e0da'
-        font: System UI
-        family: 'ui-sans-serif, system-ui, sans-serif'
-        swatches: ['#2a78d6', '#eb6834', '#a3a29c', '#d03b3b', '#b7d3f6']
-        diet: [[Herbivore, '#2a78d6', '#2a78d6'], [Carnivore, '#eb6834', '#eb6834']]
-        what: D3 sketch, then React the same day
-      - label: Time machine
-        when: 5 Oct
-        bg: '#eef2f4'
-        fg: '#18222b'
-        border: '#dfe5e9'
-        font: IBM Plex Sans
-        family: "'IBM Plex Sans', sans-serif"
-        swatches: ['#14946e', '#e2582f', '#b87700', '#7d8a96', '#ffffff']
-        diet: [[Herbivore, '#14946e', '#14946e'], [Carnivore, '#e2582f', '#e2582f']]
-        what: New home view and a cooler light theme
-      - label: Tokens
-        when: 18 Oct
-        bg: '#eef2f4'
-        fg: '#18222b'
-        border: '#dfe5e9'
-        font: IBM Plex Sans
-        family: "'IBM Plex Sans', sans-serif"
-        swatches: ['#8fd3b0', '#0b6b50', '#c4461f', '#966100', '#5f6b76']
-        diet: [[Herbivore, '#8fd3b0', '#0b6b50'], [Carnivore, '#c4461f', '#c4461f']]
-        what: Diet colors that survive color blindness
+      - name: Lead grey
+        note: Dark, tried for a few minutes
+        page: '#202326'
+        card: '#2a2e32'
+        ocean: '#23404d'
+        land: '#8c7451'
+        number: '#ffd166'
+        accent: '#ffd166'
+        ink: '#f1f2f3'
+      - name: Field notebook
+        note: Warm paper, ink blue
+        page: '#f3eee3'
+        card: '#fbf8f1'
+        ocean: '#cfe2e4'
+        land: '#dcc096'
+        number: '#1d5f8c'
+        accent: '#1d5f8c'
+        ink: '#2a241c'
+      - name: Museum
+        note: Cool grey, black silhouettes
+        kept: true
+        page: '#eef2f4'
+        card: '#ffffff'
+        ocean: '#d9e9f2'
+        land: '#b4c79e'
+        number: '#6b3fc9'
+        accent: '#6b3fc9'
+        ink: '#18222b'
+      - name: Atlas
+        note: Deep ocean, gold land; also tried full size
+        page: '#fbf3e3'
+        card: '#fffaf0'
+        ocean: '#2b5b87'
+        land: '#f0c062'
+        number: '#ffd166'
+        accent: '#c2257a'
+        ink: '#1f2a44'
+      views: [Time machine, Timeline, Field guide]
+      steps:
+      - [2 Oct, Prototype]
+      - [Same week, 4 directions × 3 views]
+      - [Kept, Museum]
+      - [Then, Brand tweaks]
+      - [18 Oct, Tokens]
     polish:
       type: tokens
       caption: 'Variables from day one, so the work was structure: layered tokens and every radius in the scale.'
