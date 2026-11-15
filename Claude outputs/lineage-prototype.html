@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lineage scroll prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Prototype for the How I build page: the method's lineage as a central trunk, other projects as branches that join it.
+   Tokens copied from the portfolio's dark page theme. */
+:root {
+  --bg: #0e1011; --surface: #1a1d1f; --border: #2a2e30;
+  --text: #f1f4f5; --text-2: #b4babb; --text-3: #8d9495;
+  --deep: #ffd84d; --tracing: #6cb6ff; --volcano: #ff9e57; --open: #8d9495;
+  --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --col: 680px; --trunk-w: 2px; --gut: 72px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.55; }
+a { color: var(--text); }
+
+.story { position: relative; padding: 0 16px 40vh; }
+.lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.trunk-bg { stroke: var(--border); stroke-width: var(--trunk-w); fill: none; }
+.trunk { stroke: var(--deep); stroke-width: var(--trunk-w); fill: none; }
+.branch { fill: none; stroke-width: 2; stroke-linecap: round; }
+.branch.tracing { stroke: var(--tracing); }
+.branch.volcano { stroke: var(--volcano); }
+.branch.open { stroke: var(--open); stroke-dasharray: 2 6; }
+.end-open { fill: var(--bg); stroke: var(--open); stroke-width: 1.5; }
+
+/* a section: the node on the trunk, the branch labels, then its card */
+.sec { position: relative; max-width: calc(var(--col) + var(--gut)); margin: 0 auto; padding: 30vh 0 0 var(--gut); }
+.sec:first-child { padding-top: 20vh; }
+.node { position: relative; z-index: 2; width: 14px; height: 14px; margin: 0 0 22px calc(-1 * var(--gut) + 1px); transform: rotate(45deg); background: var(--bg); border: 2px solid var(--text-3); transition: background .4s, border-color .4s, box-shadow .4s; }
+.sec.is-on .node { background: var(--deep); border-color: var(--deep); box-shadow: 0 0 18px color-mix(in srgb, var(--deep) 55%, transparent); }
+.card { position: relative; z-index: 2; background: var(--bg); padding: 0 0 16px; margin-top: -36px; opacity: .35; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+.sec.is-on .card, .sec.was-on .card { opacity: 1; transform: none; }
+.kicker { font-family: var(--mono); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--text-3); margin: 0 0 6px; }
+h1, h2 { font-weight: 500; line-height: 1.15; margin: 0 0 14px; }
+h1 { font-size: clamp(34px, 5vw, 52px); }
+h2 { font-size: clamp(26px, 3.6vw, 34px); }
+.card > p { font-size: 18px; color: var(--text-2); margin: 0 0 14px; }
+.lead { font-size: 21px !important; color: var(--text) !important; }
+
+/* branch labels: where a lesson came from */
+.from { position: absolute; z-index: 2; width: min(220px, 34vw); font-family: var(--mono); font-size: 12px; line-height: 1.45; color: var(--text-2); opacity: 0; transition: opacity .5s; }
+.from b { display: block; font-weight: 500; font-size: 13px; }
+.from.tracing b { color: var(--tracing); } .from.volcano b { color: var(--volcano); }
+.froms { display: flex; flex-direction: column; gap: 16px; margin: -210px 0 90px 40px; }
+.from { position: relative; max-width: 260px; }
+.from + .from { margin-left: 200px; } /* staggered, so each branch passes under the label above it */
+.from.is-on { opacity: 1; }
+
+/* the comparison inside "tokens first" */
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 22px 0 14px; }
+.cmp { border: 1px solid var(--border); padding: 14px; }
+.cmp .who { font-family: var(--mono); font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; }
+.cmp .big { font-family: var(--mono); font-size: 34px; font-weight: 500; line-height: 1.1; margin: 8px 0 2px; }
+.cmp .unit { font-size: 14px; color: var(--text-2); }
+.cmp ul { margin: 10px 0 0; padding-left: 16px; font-size: 14px; color: var(--text-2); }
+.cmp.tracing .big { color: var(--tracing); } .cmp.deep .big { color: var(--deep); }
+.note { font-family: var(--mono); font-size: 13px; color: var(--text-3) !important; }
+
+/* open questions: unfinished branches */
+.qs { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 10px; }
+.qs li { border-left: 2px dotted var(--open); padding: 2px 0 2px 12px; color: var(--text-2); font-size: 16px; }
+.qs li b { color: var(--text); font-weight: 500; }
+
+.fan { position: relative; height: 250px; }
+@media (max-width: 700px) { .fan { height: 320px; } }
+.fan { margin-left: calc(-1 * var(--gut)); }
+.fan span { position: absolute; font-family: var(--mono); font-size: 12px; color: var(--text-3); white-space: nowrap; opacity: 0; transition: opacity .4s; }
+.fan span.is-on { opacity: 1; }
+.end { text-align: left; max-width: calc(var(--col) + var(--gut)); margin: 0 auto; font-family: var(--mono); font-size: 13px; color: var(--text-3); padding-top: 6vh; position: relative; z-index: 2; }
+.end span { background: var(--bg); padding: 4px 8px; }
+
+/* phones: the trunk moves to the left edge, branches come in from the right */
+@media (max-width: 700px) {
+  :root { --gut: 34px; }
+  .froms { gap: 10px; margin: -170px 0 70px 12px; }
+  .from + .from { margin-left: 40px; }
+  .compare { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .node, .from { transition: none; }
+  .card, .from { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+<main class="story" id="story">
+  <svg class="lines" id="lines" aria-hidden="true"></svg>
+
+  <section class="sec" data-sec="intro">
+    <div class="node"></div>
+    <div class="card">
+      <p class="kicker">Tiny Data Adventures · a work in progress</p>
+      <h1>How I build with AI, so far</h1>
+      <p class="lead">I'm a product designer learning, project by project, how to build data apps with Claude. This is what has worked for me so far, told through Deep Lineages, the project where it came together.</p>
+      <p class="note">Scroll. The line is the method; branches show where each lesson came from.</p>
+    </div>
+  </section>
+
+  <section class="sec" data-sec="tokens" data-branches="tracing:left,volcano:right">
+    <div class="froms">
+      <div class="from tracing" data-from="tracing"><b>Tracing Origins</b>Oct 2026 · my first WCAG audit, before any tokens</div>
+      <div class="from volcano" data-from="volcano"><b>Volcano Explorer</b>Oct 2026 · a token pipeline from one tokens.json</div>
+    </div>
+    <div class="node"></div>
+    <div class="card">
+      <p class="kicker">02</p>
+      <h2>Tokens first, then the audit</h2>
+      <p>The lesson that changed my process most. Tracing Origins taught me to audit; Volcano Explorer taught me to tokenize. Deep Lineages did them in that order, and the audit got easy.</p>
+      <div class="compare">
+        <div class="cmp tracing"><div class="who">Tracing Origins · fixing contrast</div><div class="big">~90</div><div class="unit">lines changed, mostly in App.css</div><ul><li>the same gray, #928d82, changed 18 times</li></ul></div>
+        <div class="cmp deep"><div class="who">Deep Lineages · fixing contrast</div><div class="big">5</div><div class="unit">lines, one file: global.css</div><ul><li>one token per fix</li></ul></div>
+      </div>
+      <p class="note">Color blindness still needed design work: the diet colors touched 10 files.</p>
+    </div>
+  </section>
+
+  <section class="sec" data-sec="open" data-open="4">
+    <div class="node"></div>
+    <div class="card">
+      <p class="kicker">05</p>
+      <h2>What I haven't figured out yet</h2>
+      <p>Open branches. If you've solved any of these, I'd like to hear how.</p>
+      <ul class="qs">
+        <li><b>Memory that grows.</b> A CLAUDE.md reached 44,000 words and contradicts itself.</li>
+        <li><b>"It's fixed."</b> I still verify every fix in the browser before I believe it.</li>
+        <li><b>Real users.</b> It passes my audit; nobody using a screen reader has tried it yet.</li>
+        <li><b>A team.</b> How does this loop work with engineers and a shared codebase?</li>
+      </ul>
+    </div>
+    <div class="fan" aria-hidden="true">
+      <span data-q="0">Memory that grows</span><span data-q="1">"It's fixed"</span><span data-q="2">Real users</span><span data-q="3">A team</span>
+    </div>
+  </section>
+
+  <p class="end"><span>to be continued</span></p>
+</main>
+
+<script>
+(function () {
+  var NS = "http://www.w3.org/2000/svg";
+  var story = document.getElementById("story"), svg = document.getElementById("lines");
+  var secs = [].slice.call(document.querySelectorAll(".sec"));
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var trunk, trunkLen = 0, branches = [];
+
+  function el(tag, attrs) { var n = document.createElementNS(NS, tag); for (var k in attrs) n.setAttribute(k, attrs[k]); return n; }
+  function narrow() { return innerWidth <= 700; }
+
+  // geometry is rebuilt from the live layout, so the lines always meet the real nodes
+  function build() {
+    svg.innerHTML = "";
+    branches = [];
+    var box = story.getBoundingClientRect(), W = box.width;
+    var nodes = secs.map(function (s) { var r = s.querySelector(".node").getBoundingClientRect(); return { x: r.left + r.width / 2 - box.left, y: r.top + r.height / 2 - box.top }; });
+    var x = nodes[0].x, y0 = nodes[0].y, y1 = story.querySelector(".end").getBoundingClientRect().top - box.top + 10;
+    svg.appendChild(el("path", { class: "trunk-bg", d: "M" + x + " " + y0 + "V" + y1 }));
+    trunk = el("path", { class: "trunk", d: "M" + x + " " + y0 + "V" + y1 });
+    svg.appendChild(trunk); trunkLen = y1 - y0;
+    trunk.style.strokeDasharray = trunkLen; trunk.style.strokeDashoffset = trunkLen;
+
+    secs.forEach(function (s, i) {
+      var n = nodes[i];
+      // branches that join the trunk at this node: a curve from the side, where the label sits
+      (s.dataset.branches || "").split(",").filter(Boolean).forEach(function (b) {
+        var kind = b.split(":")[0], side = b.split(":")[1], lab = s.querySelector('[data-from="' + kind + '"]');
+        var lr = lab.getBoundingClientRect(), ly = lr.top + 10 - box.top;
+        // from the label's left edge, down and left into the node on the trunk
+        var sx = lr.left - box.left - 8;
+        var d = "M" + sx + " " + ly + " C" + (n.x + (sx - n.x) * 0.25) + " " + ly + " " + n.x + " " + (ly + (n.y - ly) * 0.45) + " " + n.x + " " + n.y;
+        var p = el("path", { class: "branch " + kind, d: d }); svg.appendChild(p);
+        var L = p.getTotalLength(); p.style.strokeDasharray = L; p.style.strokeDashoffset = L;
+        branches.push({ p: p, L: L, sec: s, lab: lab, open: false });
+      });
+      // open questions: dotted branches leaving the trunk, unfinished
+      var k = +s.dataset.open || 0, fan = s.querySelector(".fan"), fy = fan ? fan.getBoundingClientRect().top - box.top : n.y;
+      for (var j = 0; j < k; j++) {
+        // a fan: branches leave the trunk one after another and end on one line, two on each side
+        // the first branch to leave the trunk reaches farthest, so none of them cross
+        var reach = narrow() ? 46 + (k - 1 - j) * 22 : 90 + (k - 1 - j) * 150;
+        var sy = fy + 10 + j * 26, ex = n.x + reach, ey = fy + (narrow() ? 70 + j * 62 : 80 + j * 46);
+        var d2 = "M" + n.x + " " + sy + " C" + n.x + " " + (sy + 55) + " " + ex + " " + (ey - 55) + " " + ex + " " + ey;
+        var lab = fan && fan.querySelector('[data-q="' + j + '"]');
+        if (lab) { var fl = fan.getBoundingClientRect().left - box.left;
+          lab.style.top = (ey - fy - 8) + "px"; lab.style.left = (ex - fl + 10) + "px"; }
+        var q = el("path", { class: "branch open", d: d2 }); svg.insertBefore(q, trunk);
+        var c = el("circle", { class: "end-open", cx: ex, cy: ey, r: 4 }); svg.appendChild(c);
+        var L2 = q.getTotalLength(); q.style.transition = "opacity .5s"; // dotted lines appear instead of drawing, so the dots stay
+        branches.push({ p: q, L: L2, sec: s, end: c, open: true, idx: j, lab: lab, anchor: fan });
+      }
+    });
+    update();
+  }
+
+  // scroll only drives drawing: the trunk grows to the reading line, branches draw as their node nears it
+  function update() {
+    var vh = innerHeight, line = vh * 0.55, box = story.getBoundingClientRect();
+    if (trunk) {
+      var top = +trunk.getAttribute("d").split(" ")[1].split("V")[0];
+      var drawn = reduce ? trunkLen : Math.max(0, Math.min(trunkLen, line - (box.top + top)));
+      trunk.style.strokeDashoffset = trunkLen - drawn;
+    }
+    secs.forEach(function (s) {
+      var r = s.querySelector(".node").getBoundingClientRect(), on = r.top < line + 40 && r.top > -vh * 0.1;
+      s.classList.toggle("is-on", on);
+      if (r.top < line) s.classList.add("was-on");
+    });
+    branches.forEach(function (b) {
+      var r = (b.anchor || b.sec.querySelector(".node")).getBoundingClientRect();
+      var t = reduce ? 1 : Math.max(0, Math.min(1, (vh * 0.95 - r.top) / (vh * 0.4) - (b.open ? b.idx * 0.15 : 0)));
+      if (b.open) b.p.style.opacity = t > 0.2 ? 1 : 0; else b.p.style.strokeDashoffset = b.L * (1 - t);
+      if (b.lab) b.lab.classList.toggle("is-on", b.open ? t > 0.2 : t > 0.15);
+      if (b.end) b.end.style.opacity = t > 0.2 ? 1 : 0;
+    });
+  }
+
+  var raf = 0;
+  addEventListener("scroll", function () { if (!raf) raf = requestAnimationFrame(function () { raf = 0; update(); }); }, { passive: true });
+  var rt; addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(build, 120); });
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(build);
+})();
+</script>
+</body>
+</html>

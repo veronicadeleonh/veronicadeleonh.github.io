@@ -300,12 +300,10 @@ a.lin-tool:hover .who { color: var(--accent-light); }
 
 <canvas id="lin-field" aria-hidden="true"></canvas>
 <style>
-/* background: quiet traces, like a seismograph at rest; a click sends a slow swell along them */
-#lin-field { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 1.2s ease; }
+/* background: soft light that drifts slowly behind the page; a small light follows the mouse; a click bends a fabric grid, like the drawings that explain space and dimensions.
+   Drawn at a quarter of the resolution and scaled up, so it stays blurred, soft and cheap. */
+#lin-field { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; opacity: 0; transition: opacity 1.6s ease; }
 #lin-field.on { opacity: 1; }
-/* quieter behind the reading column, so the text always wins */
-#lin-field { -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(50% - 460px), rgba(0,0,0,.25) calc(50% - 320px), rgba(0,0,0,.25) calc(50% + 320px), #000 calc(50% + 460px), #000 100%); mask-image: linear-gradient(90deg, #000 0, #000 calc(50% - 460px), rgba(0,0,0,.25) calc(50% - 320px), rgba(0,0,0,.25) calc(50% + 320px), #000 calc(50% + 460px), #000 100%); }
-@media (max-width: 760px) { #lin-field { -webkit-mask-image: none; mask-image: none; } #lin-field.on { opacity: .6; } }
 header.header, main.main, footer.footer { position: relative; z-index: 1; }
 .top-link { z-index: 2; }
 </style>
@@ -313,55 +311,84 @@ header.header, main.main, footer.footer { position: relative; z-index: 1; }
 (function () {
   var cv = document.getElementById("lin-field"), ctx = cv && cv.getContext("2d");
   if (!ctx) return;
-  // live at the top of <body>, behind header, main and footer (inside the post it would cover the text)
+  // live at the top of <body>, behind header, main and footer
   document.body.insertBefore(cv, document.body.firstChild);
+  // a second, sharp layer for the fabric grid (the glow layer is drawn soft on purpose)
+  var mesh = document.createElement("canvas"), mx = mesh.getContext("2d"), MR = Math.min(devicePixelRatio || 1, 2);
+  mesh.setAttribute("aria-hidden", "true"); mesh.style.cssText = "position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none";
+  document.body.insertBefore(mesh, cv.nextSibling);
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var css = getComputedStyle(document.documentElement);
-  var BG = css.getPropertyValue("--color-bg").trim() || "#111214", ACC = css.getPropertyValue("--accent-glow").trim() || "#c9a7ff";
-  var W = 0, H = 0, DPR = Math.min(devicePixelRatio || 1, 2);
-  function size() { W = innerWidth; H = innerHeight; cv.width = W * DPR; cv.height = H * DPR; ctx.setTransform(DPR, 0, 0, DPR, 0, 0); }
+  // resolve the design tokens to plain r,g,b (they may point to other variables)
+  function rgb(v, fb) { var s = document.createElement("span"); s.style.color = "var(" + v + ", " + fb + ")"; document.body.appendChild(s);
+    var m = getComputedStyle(s).color.match(/\d+/g); s.remove(); return m ? m.slice(0, 3).join(",") : "201,167,255"; }
+  var PURPLE = rgb("--accent-glow", "#c9a7ff"), BLUE = rgb("--color-blue-bright", "#6cb6ff");
+  var SC = .25, W = 0, H = 0, small = false;
+  function size() { W = innerWidth; H = innerHeight; small = W < 760; cv.width = Math.ceil(W * SC); cv.height = Math.ceil(H * SC); mesh.width = W * MR; mesh.height = H * MR; mx.setTransform(MR, 0, 0, MR, 0, 0); }
 
-  // smooth value noise, enough for a calm field
-  var P = []; for (var i = 0; i < 512; i++) P[i] = Math.random();
-  function h(x, y) { return P[((x * 73856093) ^ (y * 19349663)) & 511]; }
-  function sm(t) { return t * t * (3 - 2 * t); }
-  function noise(x, y) { var xi = Math.floor(x), yi = Math.floor(y), xf = sm(x - xi), yf = sm(y - yi);
-    var a = h(xi, yi), b = h(xi + 1, yi), c = h(xi, yi + 1), d = h(xi + 1, yi + 1); return a + (b - a) * xf + (c - a) * yf + (a - b - c + d) * xf * yf; }
-
-  var rips = []; // {x, y, t}
+  // three large, faint pools of light on slow, different orbits
+  var pools = [
+    { c: PURPLE, a: .16, r: .55, px: .18, py: .22, ax: .14, ay: .10, sx: .021, sy: .017, ph: 0 },
+    { c: BLUE,   a: .09, r: .50, px: .82, py: .55, ax: .12, ay: .16, sx: .015, sy: .023, ph: 2 },
+    { c: PURPLE, a: .10, r: .45, px: .45, py: .92, ax: .20, ay: .08, sx: .019, sy: .012, ph: 4 }
+  ];
+  var rings = [];
+  // a small light that follows the mouse, eased so it trails a little (mouse only: on touch there is nothing to follow)
+  var cur = { x: -999, y: -999, tx: -999, ty: -999, a: 0, ta: 0 };
+  addEventListener("pointermove", function (e) { if (e.pointerType !== "mouse") return; cur.tx = e.clientX; cur.ty = e.clientY; cur.ta = 1; if (cur.x < -900) { cur.x = cur.tx; cur.y = cur.ty; } if (reduce) frame(performance.now()); }, { passive: true });
+  document.addEventListener("mouseleave", function () { cur.ta = 0; });
   addEventListener("click", function (e) {
     if (e.target.closest("a, button, input, select, label, textarea, iframe, .lin-lab")) return;
-    rips.push({ x: e.clientX, y: e.clientY, t: performance.now() }); if (rips.length > 5) rips.shift();
+    rings.push({ x: e.clientX, y: e.clientY, t: performance.now(), s: Math.random() * 6.28 }); if (rings.length > 4) rings.shift();
     if (reduce) frame(performance.now());
   });
 
-  // SEISMO: a few quiet traces, like a seismograph or a signal monitor; a click sends a pulse along them
-  function seismo(now) {
-    ctx.clearRect(0, 0, W, H);
-    var n = Math.max(7, Math.round(H / 95)), t = now / 1000, gap = H / (n + 1);
-    for (var j = 1; j <= n; j++) {
-      var y0 = j * gap, hot = 0;
-      ctx.beginPath();
-      for (var x = 0; x <= W; x += 4) {
-        var y = y0 + (noise(x * .006 + t * .15, j * 3.1) - .5) * 14 + Math.sin(x * .02 + t * .8 + j) * 1.2;
-        for (var k = 0; k < rips.length; k++) { var r = rips[k], age = (now - r.t) / 1000; if (age > 5) continue;
-          var dy = y0 - r.y, dx = x - r.x, front = age * 170, w = Math.abs(dx) - front, fall = 1 - age / 5;
-          // a single rounded crest, wide and low, that rolls away from the click and settles
-          var amp = Math.exp(-w * w / 14000) * Math.exp(-Math.abs(dy) / 220) * fall * fall; y -= 16 * amp; hot = Math.max(hot, amp); }
-        x ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
-      }
-      ctx.lineWidth = 1; ctx.strokeStyle = hot > .15 ? ACC : "rgba(160,166,176,1)"; ctx.globalAlpha = hot > .15 ? .16 + hot * .22 : .16; ctx.stroke();
-    }
-    ctx.globalAlpha = 1;
+  function glow(x, y, r, color, a) {
+    var g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, "rgba(" + color + "," + a + ")"); g.addColorStop(1, "rgba(" + color + ",0)");
+    ctx.fillStyle = g; ctx.fillRect(x - r, y - r, r * 2, r * 2);
   }
-
-  function frame(now) { rips = rips.filter(function (r) { return now - r.t < 5000; }); seismo(now); }
+  function frame(now) {
+    var t = now / 1000, k = small ? .7 : 1, m = Math.max(W, H) * SC;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    pools.forEach(function (p) {
+      var x = (p.px + Math.sin(t * p.sx + p.ph) * p.ax) * cv.width, y = (p.py + Math.cos(t * p.sy + p.ph) * p.ay) * cv.height;
+      glow(x, y, p.r * m, p.c, p.a * k);
+    });
+    // fabric: a patch of grid appears around the click, sinks in like a weight on a sheet, ripples once and settles
+    mx.clearRect(0, 0, W, H);
+    rings = rings.filter(function (r) { return now - r.t < 3400; });
+    rings.forEach(function (r) {
+      var age = (now - r.t) / 1000, R = small ? 140 : 210, G = small ? 22 : 26;
+      var env = Math.min(1, age / .25) * Math.pow(Math.max(0, 1 - age / 3.4), 1.5);      // fade in fast, out slow
+      var well = 15 * Math.min(1, age / .5) * Math.max(0, 1 - age / 3.4);                 // how deep the sheet sinks
+      function warp(x, y) {
+        var dx = x - r.x, dy = y - r.y, d = Math.sqrt(dx * dx + dy * dy) || 1, ux = dx / d, uy = dy / d;
+        var pull = well * Math.exp(-(d * d) / (2 * 70 * 70)) * (d / 70);                  // lines lean in toward the weight
+        var front = age * 150, wave = 4 * Math.exp(-Math.pow((d - front) / 45, 2)) * Math.sin(d * .09 - age * 6) * Math.max(0, 1 - age / 3);
+        return [x - ux * (pull - wave), y - uy * (pull - wave), d];
+      }
+      mx.lineWidth = 1;
+      for (var pass = 0; pass < 2; pass++) {                                               // rows, then columns
+        for (var o = -R; o <= R; o += G) {
+          var prev = null;
+          for (var q = -R; q <= R; q += 8) {
+            var x0 = r.x + (pass ? o : q), y0 = r.y + (pass ? q : o), w = warp(x0, y0);
+            var fade = Math.max(0, 1 - w[2] / R), a = .2 * fade * fade * env * k;
+            if (prev && a > .004) { mx.strokeStyle = "rgba(" + PURPLE + "," + a.toFixed(3) + ")"; mx.beginPath(); mx.moveTo(prev[0], prev[1]); mx.lineTo(w[0], w[1]); mx.stroke(); }
+            prev = w;
+          }
+        }
+      }
+    });
+    // the mouse light
+    cur.x += (cur.tx - cur.x) * .12; cur.y += (cur.ty - cur.y) * .12; cur.a += (cur.ta - cur.a) * .06;
+    if (cur.a > .01) glow(cur.x * SC, cur.y * SC, 70 * SC, PURPLE, .18 * cur.a);
+  }
   var running = !reduce;
   function loop(now) { if (!running) return; frame(now); requestAnimationFrame(loop); }
-  addEventListener("resize", function () { size(); if (reduce) frame(performance.now()); });
+  addEventListener("resize", function () { size(); frame(performance.now()); });
   document.addEventListener("visibilitychange", function () { running = !document.hidden && !reduce; if (running) requestAnimationFrame(loop); });
-  size();
-  if (reduce) frame(0); else requestAnimationFrame(loop);
+  size(); frame(0); if (!reduce) requestAnimationFrame(loop);
   cv.classList.add("on");
 })();
 </script>
