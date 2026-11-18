@@ -2,7 +2,7 @@
 <p><span class="tag blue text-blue">e-learning</span></p>
 <p class="intro-description">Working closely with marketing stakeholders, I helped transform pricing information into a dedicated decision-making experience for future learners, balancing discoverability, content strategy and conversion goals.</p>
   <div class="intro-details-wrapper">
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Freelance Product Designer</p>
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Freelance Project</p>
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2026</p>
   </div>
@@ -28,7 +28,7 @@ One of the most impactful changes was also one of the simplest: introducing a de
 </div>
 <hr>
 <h3 id="designing-for-discovery-and-decision-making">Designing for discovery and decision-making</h3>
-<p>The goal was not simply to create a pricing page. The page needed to serve multiple purposes at once:</p>
+<p>The brief was not simply to create a pricing page. The page needed to serve multiple purposes at once:</p>
 <ul>
   <li>Help visitors understand Skoove's plans and subscription options.</li>
   <li>Communicate value beyond price alone.</li>
@@ -37,6 +37,14 @@ One of the most impactful changes was also one of the simplest: introducing a de
   <li>Create a clearer path from interest to trial.</li>
 </ul>
 <p>This shifted the project from being a <strong>pricing exercise</strong> into a broader <strong>information architecture challenge</strong>.</p>
+<hr>
+<h3 id="from-wireframe-to-final-structure">From wireframe to final structure</h3>
+<p>The PM proposed an initial <strong>wireframe</strong> for the page structure, which became our starting point. From there, I proposed a <strong>new structure for the hero</strong>, based on <strong>benchmarking</strong> the pricing pages of ChatGPT, DocuSign and Miro on desktop and mobile. Two patterns stood out: bringing the <strong>pricing cards into the hero</strong>, fully visible within the screen height on desktop, and placing the <strong>CTA before the list of benefits</strong>, so it doesn&rsquo;t get lost. I then designed <strong>new pricing cards</strong> built on Skoove&rsquo;s <strong>UI kit</strong>, borrowing details like a <strong>label on the highlighted plan</strong> and a <strong>soft background</strong> separating the price from the benefits.</p>
+<p>On mobile, the PM initially wanted the pricing cards in a <strong>carousel</strong>. Using the same references, where all three stack their plans vertically, I made the case for <strong>stacking the cards one below the other</strong> instead: a carousel would hide important information behind an extra interaction, while stacked cards only ask users to scroll. That&rsquo;s the version that went live.</p>
+<a href="images/skoove-references.png" class="lightbox">
+  <img src="images/skoove-references.png" alt="Pricing pages of ChatGPT, Miro and DocuSign on desktop and mobile, annotated with the patterns taken from each: cards fully visible in the hero, a label on the highlighted plan, a soft background dividing the card, the CTA before the list of benefits and stacked cards on mobile">
+</a>
+<p class="photo-footnote">Benchmarking ChatGPT, Miro and DocuSign pricing pages on desktop and mobile.</p>
 <hr>
 <h3 id="a-pricing-page-is-more-than-pricing">A pricing page is more than pricing</h3>
 <p>Many of the design decisions focused on <strong>reducing uncertainty</strong>.</p>
@@ -65,6 +73,8 @@ One of the most impactful changes was also one of the simplest: introducing a de
   <img src="images/skoove-navigation.png" alt="Before-and-after comparison of the website navigation showing the new Pricing entry">
 </a>
 <p class="photo-footnote">Adding Pricing to the main navigation made subscription information easier to discover before sign-up.</p>
+<p>As an external designer, I didn&rsquo;t have access to performance data after launch. Because the pricing page was a <strong>new experience</strong>, there was no behavioural baseline to compare against. The natural measure of its impact is the change in <strong>free trial starts and converted users</strong>.</p>
+<p><a href="https://www.skoove.com/en/pricing" target="_blank">See the live pricing page<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
 <p>Sometimes the challenge is not designing a new feature. It&rsquo;s making an existing experience easier to find, understand and trust.</p>
 ]]></content:encoded></item><item><title>Designing growth experiences at Mondly</title><link>http://localhost:1313/mondly/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/mondly/</guid><description>Mondly · Growth &amp;amp; Senior Product Designer</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag blue text-blue">e-learning</span></p>
@@ -78,14 +88,28 @@ One of the most impactful changes was also one of the simplest: introducing a de
 <p><img loading="lazy" src="/mondly/images/mondly-intro.png" type="" alt="Mondly"  /></p>
 <h3 id="about-mondly">About Mondly</h3>
 <p><strong>Mondly</strong> is a language learning app that aims to make language learning fun and easy through technological innovation and multiple language combinations.</p>
-<p>On 2022 Mondly got acquired by Pearson, giving the Product team a chance for a big redesign of Mondly&rsquo;s platform and web presence.</p>
+<p>In 2022 Mondly was acquired by Pearson, giving the Product team a chance for a big redesign of Mondly&rsquo;s platform and web presence.</p>
 <h3 id="my-role-at-mondly">My Role at Mondly</h3>
-<p>During my stay at Mondly, making <strong>A/B tests</strong> about the performance of the Old vs. the New Design was important to validate with data the development of the rebrand and plan the marketing strategies for this design transition.</p>
-<p>Before I joined the team, the product designers put in place a detailed <strong>design system</strong> that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a <strong>style guide</strong> in Notion, were we documented the details of the New Mondly Brand and its usage.</p>
+<p>My role sat between <strong>Product Design</strong> and <strong>Growth</strong>. I designed growth and monetization experiences, and the variants for <strong>A/B tests</strong> that the Growth and User Acquisition teams set up and analysed. Testing the old vs. the new design helped us validate the rebrand with data and plan the marketing transition.</p>
+<p>Before I joined the team, the product designers put in place a detailed <strong>design system</strong> that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a <strong>style guide</strong> in Notion, where we documented the details of the New Mondly Brand and its usage.</p>
 <a href="images/styleguide-components.png" class="lightbox">
   <img src="images/styleguide-components.png" alt="Mondly Style Guide Components">
 </a>
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
+<h3 id="balancing-growth-with-brand-experience">Balancing Growth with Brand Experience</h3>
+<p>A recurring challenge at Mondly was <strong>balancing short-term acquisition goals with the long-term product experience</strong>.</p>
+<p>The User Acquisition team often looked to high-converting apps like <strong>Temu</strong> or <strong>AliExpress</strong> for inspiration. These apps rely on urgency, aggressive promotions and visually dense interfaces. The patterns clearly worked for them, but we in the Product Design team felt they could <strong>hurt trust in a learning product</strong> and didn&rsquo;t fit Mondly&rsquo;s brand.</p>
+<p>Instead of rejecting the requests, I looked at <em>why</em> those patterns convert: <strong>urgency, a clear offer and high visibility</strong>. I then designed Limited Time Offer banners that used those principles within Mondly&rsquo;s design system.</p>
+<a href="images/mondly-lto-process.png" class="lightbox">
+  <img src="images/mondly-lto-process.png" alt="A Temu Valentine's sale banner next to Mondly's adapted banner, mapping urgency to a countdown timer, aggressive promotions to a clear discount, and dense interfaces to a contained card">
+</a>
+<p class="photo-footnote">From inspiration to adaptation: keeping the conversion principles, leaving out the visual density.</p>
+<p>For the <strong>Valentine&rsquo;s Day campaign</strong>, this meant taking the energy of high-conversion promotions and translating it into Mondly&rsquo;s visual language. It took <strong>several rounds of feedback</strong> with Marketing, Growth and User Acquisition. I explored different versions, explained the trade-offs of each, kept what supported their goals and adjusted what compromised the brand.</p>
+<a href="images/mondly-lto-versions.png" class="lightbox">
+  <img src="images/mondly-lto-versions.png" alt="Four versions of the Valentine's banner in the app: header timer, campaign-first, timer in pill, and the final version with a full-width CTA">
+</a>
+<p class="photo-footnote">Explorations for the Valentine's banner: timer in a header vs. inside the card, offer-first vs. campaign-first, and the weight of the CTA. The final kept the timer inside the card with a full-width CTA.</p>
+<p>The same approach shaped the <strong>Limited Time Offer banners</strong> that appeared in the app outside seasonal campaigns. Here, instead of debating which direction was right, we tested <strong>three variants in an A/B/C test</strong> and let user behaviour decide.</p>
 <h3 id="mondly-web--marketing">Mondly Web &amp; Marketing</h3>
 <p>With a major rebranding underway, we created brand guidelines based on our design system that we could extend into marketing materials. We conducted a series of <strong>A/B tests</strong> to compare the performance of the <strong>new design versus the old one</strong>, ensuring a positive impact on user engagement.</p>
 <h4 id="redesigned-offer-page">Redesigned Offer page</h4>
@@ -109,24 +133,10 @@ One of the most impactful changes was also one of the simplest: introducing a de
    <img src="images/app-store-images-dark.png" alt="Mondly App Store Images Dark Theme">
  </a>
  <a href="images/app-store-images-light.png" class="lightbox">
-   <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
+   <img src="images/app-store-images-light.png" alt="Mondly App Store Images Light Theme">
  </a>
 <p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
-<h4 id="balancing-growth-with-brand-experience">Balancing Growth with Brand Experience</h4>
-<p>A recurring challenge at Mondly was <strong>balancing short-term acquisition goals with the long-term product experience</strong>.</p>
-<p>The User Acquisition team often looked to high-converting apps like <strong>Temu</strong> or <strong>AliExpress</strong> for inspiration. These apps rely on urgency, aggressive promotions and visually dense interfaces. The patterns clearly worked for them, but we in the Product Design team felt they could <strong>hurt trust in a learning product</strong> and didn&rsquo;t fit Mondly&rsquo;s brand.</p>
-<p>Instead of rejecting the requests, I looked at <em>why</em> those patterns convert: <strong>urgency, a clear offer and high visibility</strong>. I then designed Limited Time Offer banners that used those principles within Mondly&rsquo;s design system.</p>
-<a href="images/mondly-lto-process.png" class="lightbox">
-  <img src="images/mondly-lto-process.png" alt="A Temu Valentine's sale banner next to Mondly's adapted banner, mapping urgency to a countdown timer, aggressive promotions to a clear discount, and dense interfaces to a contained card">
-</a>
-<p class="photo-footnote">From inspiration to adaptation: keeping the conversion principles, leaving out the visual density.</p>
-<p>For the <strong>Valentine&rsquo;s Day campaign</strong>, this meant taking the energy of high-conversion promotions and translating it into Mondly&rsquo;s visual language. It took <strong>several rounds of feedback</strong> with Marketing, Growth and User Acquisition. I explored different versions, explained the trade-offs of each, kept what supported their goals and adjusted what compromised the brand.</p>
-<a href="images/mondly-lto-versions.png" class="lightbox">
-  <img src="images/mondly-lto-versions.png" alt="Four versions of the Valentine's banner in the app: header timer, campaign-first, timer in pill, and the final version with a full-width CTA">
-</a>
-<p class="photo-footnote">Explorations for the Valentine's banner: timer in a header vs. inside the card, offer-first vs. campaign-first, and the weight of the CTA. The final kept the timer inside the card with a full-width CTA.</p>
-<p>The same approach shaped the <strong>Limited Time Offer banners</strong> that appeared in the app outside seasonal campaigns. Here, instead of debating which direction was right, we tested <strong>three variants in an A/B/C test</strong> and let user behaviour</p>
 <h4 id="seasonal-campaigns">Seasonal Campaigns</h4>
 <p>Seasonal campaigns such as Spring Sale, Valentine’s Day and Black Friday were one of Mondly’s <strong>key growth initiatives</strong>. They encouraged free users to upgrade to Premium through limited-time offers, and they followed a consistent in-app conversion flow.</p>
 <a href="images/seasonal-campaigns-user-flow.png" class="lightbox">
@@ -146,6 +156,7 @@ One of the most impactful changes was also one of the simplest: introducing a de
 <blockquote>
 <p><strong>How can we keep Mondly’s 3D visual identity while making campaigns faster to produce and easier to align on with stakeholders?</strong></p></blockquote>
 <p>I redesigned the campaign layout so the 3D look came from an <strong>AI-generated background</strong> instead of a bespoke illustration. The designer in charge could now produce the final asset in-house, without waiting on an external partner, while the campaign still felt unmistakably Mondly.</p>
+<p>The background was generated with <strong>Midjourney</strong>, using a defined prompt for the style and image size so results stayed consistent across campaigns. Because the brand was still evolving through everyone&rsquo;s work, we first validated the images with the Product Design team in our weekly <strong>fresh eyes</strong> sessions, especially with the Design Lead, before showing them to stakeholders. This removed the round-trip with an external 3D artist: we could iterate on the visuals ourselves and bring stakeholders an option that was already aligned with the brand.</p>
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign"> 
 </a> 
@@ -156,15 +167,13 @@ One of the most impactful changes was also one of the simplest: introducing a de
  <img src="images/seasonal-campaigns-test-result.png" alt="Mondly Seasonal Campaign Results"> 
 </a>
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> <strong>Variant B</strong> performed best, <strong>with 7% more Activate taps than the original campaign</strong>. The new layout showed that faster, in-house production could keep the brand experience and improve engagement at the same time.</br></br><strong>The new layout became the template for the following seasonal campaigns</strong>, so each new promotion could be produced in-house and tested without commissioning new 3D artwork.</div>
-<h3 id="marketing-campaigns">Marketing Campaigns</h3>
-<p>One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.</p>
-<a href="images/w2w-screens.png" class="lightbox">
-  <img src="images/w2w-screens.png" alt="Mondly W2W Screens">
-</a>
-<a href="images/w2w-components.png" class="lightbox">
-  <img src="images/w2w-components.png" alt="Mondly W2W Screens">
-</a>
-<p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
+<h3 id="learnings">Learnings</h3>
+<ul>
+<li><strong>Growth requests are signals, not specs.</strong> Asking <em>why</em> a pattern converts let me keep the principle (urgency, a clear offer, visibility) without hurting trust in a learning product.</li>
+<li><strong>Remove the bottleneck, not the quality.</strong> Campaigns were slow because of the dependency on bespoke 3D artwork, not because of the layout. Reframing the problem made production faster and improved engagement.</li>
+<li><strong>A design system can scale beyond the product.</strong> Extending it to the Offer page, store images and campaigns gave marketing and growth a shared foundation.</li>
+<li><strong>Let data settle the debates.</strong> My first time working in user acquisition taught me to turn opinions into testable variants.</li>
+</ul>
 <script>
 document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   const imgs = slider.querySelectorAll('.fade-img');
@@ -190,7 +199,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </script>
 ]]></content:encoded></item><item><title>Improving ecommerce flows at EyeEm</title><link>http://localhost:1313/eyeem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/eyeem/</guid><description>EyeEm · Product Design</description><content:encoded><![CDATA[<div class="intro-info">
 <p><span class="tag green text-green">e-commerce</span></p>
-<p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
+<p class="intro-description">I worked at EyeEm for 2+ years on the browser-based platform and the Webflow marketing site. When the team shrank, I partnered with the PM to hire new product designers, reviewing portfolios and interviewing candidates together.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Product Designer</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/location.svg)"></span> Berlin, Hybrid</p>
@@ -199,12 +208,16 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </div>
 <p><img loading="lazy" src="/eyeem/images/eyeem-intro.png" type="" alt="EyeEm"  /></p>
 <h3 id="about-eyeem">About EyeEm</h3>
-<p><strong>EyeEm</strong> is as a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.</p>
+<p><strong>EyeEm</strong> is a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.</p>
 <h3 id="my-role-at-eyeem">My role at EyeEm</h3>
-<p>During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application.</p>
+<p>I was one of the designers in the Product team, working on the browser-based platform. I <strong>led the Cart &amp; Checkout redesign</strong>, working with a PM, the Data team and a front-end developer, and I maintained EyeEm&rsquo;s <strong>Webflow</strong> marketing site.</p>
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
+<strong>Project status:</strong> the redesign was in its final review before development when EyeEm went through insolvency, so it never shipped. I'm sharing it for the process: diagnosing drop-offs with data, prioritising quick wins and designing within an existing system.
+</div>
 <h3 id="reducing-friction-in-the-purchase-journey">Reducing friction in the purchase journey</h3>
-<p>Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked together on the continuos development of the platform and set up regular meetings and feedback sessions.</p>
-<p>For the redesign of the Cart &amp; Checkout process, we analyzed <strong>data reports</strong>, identified <strong>pain points</strong>, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, premature tax calculations, and issues with SSO implementation for logged-out users. We also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.</p>
+<p>The redesign started from <strong>funnel data</strong> prepared by the Data team and shared by the PM, which showed where users were dropping off between the Cart and a completed purchase.</p>
+<p>From there, we identified <strong>pain points</strong>, formed hypotheses and proposed improvements, including background color inconsistencies, premature tax calculations and SSO issues for logged-out users. We also consulted the legal team on changes like pre-saving billing and payment details.</p>
+<p>The company was under pressure, so we needed to move fast and effectively. We prioritised by <strong>impact vs. effort</strong>, favouring changes that were also <strong>low effort for front-end development</strong>. I ran <strong>fresh eyes sessions</strong> with the two other product designers to review the work, and the final design was a <strong>consensus between the PM, Data, Front-End and me</strong>, with input from several areas of the company.</p>
 <a href="images/eyeem-user-flow.png" class="lightbox">
   <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
 </a>
@@ -224,7 +237,8 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 <h5 id="vat-calculations">VAT Calculations</h5>
 <p>VAT calculations were appearing <strong>too early in the cart flow</strong>. As users added more items, the displayed total rose significantly, which might discourage them. We considered moving VAT calculations closer to the payment step to present a more approachable total earlier in the process.</p>
 <h5 id="dark-theme-vs-light-theme">Dark Theme vs. Light Theme</h5>
-<p>Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to <strong>maintain visual consistency</strong> and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.</p>
+<p>A previous designer&rsquo;s audit had already flagged parts of this flow as outdated. Looking at the screens in depth, we found that the Cart had <strong>no top navigation</strong> and used a <strong>light background</strong>, which could make users feel they had left EyeEm. <strong>Benchmarking</strong> how competitors handled their carts supported this hypothesis.</p>
+<p>Switching to EyeEm&rsquo;s <strong>dark theme</strong> was also a low-effort quick win: it was our main theme, and all the components already existed in the <strong>design system and UI kit</strong>.</p>
 <h5 id="introducing-more-payment-methods-long-term-goals">Introducing more payment methods: Long term goals</h5>
 <p>To enhance convenience, we considered adding <strong>more one-click payment options</strong>, such as PayPal, Apple Pay and Google Pay, in future iterations.</p>
 <div class="image-comparison-slider">
@@ -262,7 +276,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 <hr>
 <h4 id="checkout-page">Checkout Page</h4>
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
-  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
+  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkout Page">
 </a>
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
 <h5 id="cart-preview--buy-now-button">Cart Preview &amp; Buy Now button</h5>
@@ -284,7 +298,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 <hr>
 <h4 id="thank-you-page">Thank you Page</h4>
 <a href="images/eyeem-ux-thank-you.png" class="lightbox">
-  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkput Page">
+  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkout Page">
 </a>
 <h5 id="dark-theme-consistency">Dark Theme Consistency</h5>
 <p>To maintain a cohesive user experience, we applied EyeEm’s dark theme to the Thank You page as well. This ensured visual continuity throughout the checkout journey, reinforcing a sense of familiarity and completion. Introducing a light theme at this final stage could have disrupted the flow and made the experience feel disconnected from the rest of the platform.</p>
@@ -298,43 +312,24 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
     <button class="btn-after">After</button>
   </div>
 </div>
-<div style="display:none">
-### Low-fi & Prototype
-<p>We created initial <strong>prototypes</strong> and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.</p>
-<p><a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
-" target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
-<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
-  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
-</a>
-<p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
-<h3 id="hi-fi--redesigned-screens">Hi-fi &amp; Redesigned screens</h3>
-<p>The final step involved preparing high-fidelity mockups using our <strong>design system</strong>, ensuring consistency across the platform and alignment with the front-end developers&rsquo; UI kit.</p>
-<a href="images/eyeem-auth.png" class="lightbox">
-  <img src="images/eyeem-auth.png" alt="EyeEm Hifi Authentication">
-</a>
-<a href="images/eyeem-hifi-modals.png" class="lightbox">
-  <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
-</a>
-<a href="images/eyeem-hifi-1.png" class="lightbox">
-  <img src="images/eyeem-hifi-1.png" alt="EyeEm Hifi Screens">
-</a>
-<a href="images/eyeem-hifi-2.png" class="lightbox">
-  <img src="images/eyeem-hifi-2.png" alt="EyeEm Hifi Screens">
-</a>
-<p class="photo-footnote">View of redesigned elements and screens</p>
-</div>
 <hr>
 <h3 id="eyeems-web-presence">EyeEm&rsquo;s Web presence</h3>
-<p><a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
+<p><a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> combines the flexibility of <strong>Webflow</strong> with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and launched around <strong>four landing pages per quarter</strong> for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.</p>
 <p>Here are some live examples:</p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-web.jpg" type="" alt="EyeEm Web"  />
-<a href="https://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
+<a href="https://eyeem.com" target="_blank">eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-magazine.jpg" type="" alt="EyeEm Web"  />
-<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p></p>
+<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-awards.jpg" type="" alt="EyeEm Web"  />
-<a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p></p>
+<a href="https://www.eyeem.com/awards" target="_blank">eyeem.com/awards<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
 <p><img loading="lazy" src="/eyeem/images/eyeem-creative-trends.jpg" type="" alt="EyeEm Web"  />
-<a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p></p>
+<a href="https://creativetrends.eyeem.com/" target="_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a></p>
+<h3 id="learnings">Learnings</h3>
+<ul>
+<li><strong>Data makes a problem concrete.</strong> The funnel numbers turned a project with many opinions into a shared diagnosis, and helped align the PM, Data and Front-End on what to fix first.</li>
+<li><strong>Quick wins live inside the system.</strong> Reusing the dark theme and existing components made improvements cheap to build when speed mattered most.</li>
+<li><strong>Define success at the start.</strong> We had the baseline funnel data, so measuring the impact after launch would have been straightforward, but we never agreed on targets. Today I&rsquo;d set them at kick-off.</li>
+</ul>
 <script>
 document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   const imgs = slider.querySelectorAll('.fade-img');
@@ -368,20 +363,22 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   </div>
 </div>
 <p><img loading="lazy" src="/basecase/images/basecase-intro.png" type="" alt="BaseCase"  /></p>
-<h4 id="about-basecase">About BaseCase</h4>
+<h3 id="about-basecase">About BaseCase</h3>
 <p><strong>BaseCase</strong> is a no-code platform used by life sciences companies to transform spreadsheets into digital applications for medical communication, product education, and sales enablement.</p>
-<h4 id="my-role-at-basecase">My role at Basecase</h4>
-<p>Working in a small cross-functional design team, I contributed across marketing, product documentation and UX/UI. As my role evolved, I became responsible for designing and building interactive demo applications used to explain product capabilities, new features and healthcare workflows.</p>
+<h3 id="my-role-at-basecase">My role at Basecase</h3>
+<p>I joined BaseCase as a <strong>Marketing Designer</strong>, working directly with the Design Manager, who was also part of the software team and had led design until then. Our first project was redesigning the <strong>print materials for trade fairs</strong>, with one flyer per product add-on. Without calling it that at the time, we were building a small <strong>design system</strong> to keep the website and print materials consistent.</p>
+<p>When I was asked to cover a <strong>demo app</strong> for a client, the CEO suggested I keep producing them. There was a lot to do: besides creating new demos, many older ones needed to be <strong>redesigned and updated</strong> as BaseCase&rsquo;s features evolved. That&rsquo;s how I became responsible for the <strong>Demo App Library</strong>.</p>
 <div class="box-notes yellow-background yellow-border">
   Complex software doesn't need more documentation, just better explanations.
 </div>
-<h4 id="the-demo-app-library">The Demo App Library</h4>
+<h3 id="the-demo-app-library">The Demo App Library</h3>
 <p>My main responsibility was building a growing library of interactive demo applications used to communicate complex product capabilities and healthcare workflows.</p>
-<a href="images/demo-apps.png" class="lightbox">
-  <img src="images/demo-apps.png" alt="BaseCase Demo Apps Library">
+<a href="images/demo-apps.jpg" class="lightbox">
+  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
 </a>
 <p>The Demo App Library was a growing collection of interactive applications showcasing BaseCase&rsquo;s capabilities—from onboarding and feature walkthroughs to complex healthcare use cases.</p>
 <p>I owned the end-to-end process, from understanding the brief and designing the experience to building the applications inside the BaseCase platform.</p>
+<p>The demos were used by Marketing at <strong>events and in campaigns</strong>, and many were also part of the <strong>product documentation</strong>, linked from Jira tickets.</p>
 <hr>
 <a href="images/bc-demo-apps-brief.svg" class="lightbox">
   <img src="images/bc-demo-apps-brief.svg" alt="BaseCase Demo Apps Brief">
@@ -407,11 +404,12 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   <div class="numbers">6</div><span class="numbers-label">Deliver for QA and documentation</span>
 </div>
 <hr>
+<p>Because their scope was purely illustrative, the demos used <strong>fictional healthcare brands</strong> instead of real clients. When Marketing wanted to reach a specific group of clients, I adapted a demo&rsquo;s brand to that audience.</p>
 <a href="images/basecase-detailed-demo.png" class="lightbox">
   <img src="images/basecase-detailed-demo.png" alt="Basecase Demo Apps">
 </a>
 <p class="photo-footnote">Close-ups to some of the tools that made part of the Demo App Library</p>
-<h4 id="marketing-assets">Marketing Assets</h4>
+<h3 id="marketing-assets">Marketing Assets</h3>
 <p>Beyond product experiences, I designed marketing visuals supporting feature launches, trade fairs and website content. Many of these illustrations were created for the BaseCase Features pages, helping communicate complex product capabilities through simple visual examples.</p>
 <a href="images/basecase-features.png" class="lightbox">
   <img src="images/basecase-features.png" alt="BaseCase Features">
@@ -421,7 +419,7 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
   <img src="images/basecase-content-creation.png" alt="BaseCase Features Content Creation">
 </a>
 <a href="images/basecase-spreadsheets.png" class="lightbox">
-  <img src="images/basecase-features-spreadsheets.png" alt="BaseCase Features Spreadsheets">
+  <img src="images/basecase-spreadsheets.png" alt="BaseCase Features Spreadsheets">
 </a>
 <a href="images/basecase-knowledge-base.png" class="lightbox">
   <img src="images/basecase-knowledge-base.png" alt="BaseCase Features Knowledge Base">
@@ -431,4 +429,10 @@ document.querySelectorAll('.image-comparison-slider').forEach(slider => {
 </a>
 </div>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
+<h3 id="learnings">Learnings</h3>
+<ul>
+<li><strong>This is where I learned UX/UI.</strong> Building demos taught me to turn complex features into experiences people could understand at a glance.</li>
+<li><strong>Systems before they had a name.</strong> Keeping the website, print materials and demos consistent showed me the value of reusable patterns early on.</li>
+<li><strong>Maintenance is part of the job.</strong> As the product evolved, so did the demos. Updating old ones mattered as much as creating new ones.</li>
+</ul>
 ]]></content:encoded></item></channel></rss>

@@ -24,7 +24,7 @@ cover:
 <p class="intro-description">Working closely with marketing stakeholders, I helped transform pricing information into a dedicated decision-making experience for future learners, balancing discoverability, content strategy and conversion goals.</p>
 
   <div class="intro-details-wrapper">
-      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Senior Product Designer</p>
+      <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Freelance Product Designer</p>
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/globe.svg)"></span> Freelance Project</p>
       <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/calendar.svg)"></span> 2026</p>
   </div>
@@ -66,7 +66,7 @@ One of the most impactful changes was also one of the simplest: introducing a de
 
 ### Designing for discovery and decision-making
 
-The goal was not simply to create a pricing page. The page needed to serve multiple purposes at once:
+The brief was not simply to create a pricing page. The page needed to serve multiple purposes at once:
 
 <ul>
   <li>Help visitors understand Skoove's plans and subscription options.</li>
@@ -77,6 +77,20 @@ The goal was not simply to create a pricing page. The page needed to serve multi
 </ul>
 
 This shifted the project from being a **pricing exercise** into a broader **information architecture challenge**.
+
+---
+
+### From wireframe to final structure
+
+The PM proposed an initial **wireframe** for the page structure, which became our starting point. From there, I proposed a **new structure for the hero**, based on **benchmarking** the pricing pages of ChatGPT, DocuSign and Miro on desktop and mobile. Two patterns stood out: bringing the **pricing cards into the hero**, fully visible within the screen height on desktop, and placing the **CTA before the list of benefits**, so it doesn't get lost. I then designed **new pricing cards** built on Skoove's **UI kit**, borrowing details like a **label on the highlighted plan** and a **soft background** separating the price from the benefits.
+
+On mobile, the PM initially wanted the pricing cards in a **carousel**. Using the same references, where all three stack their plans vertically, I made the case for **stacking the cards one below the other** instead: a carousel would hide important information behind an extra interaction, while stacked cards only ask users to scroll. That's the version that went live.
+
+<a href="images/skoove-references.png" class="lightbox">
+  <img src="images/skoove-references.png" alt="Pricing pages of ChatGPT, Miro and DocuSign on desktop and mobile, annotated with the patterns taken from each: cards fully visible in the hero, a label on the highlighted plan, a soft background dividing the card, the CTA before the list of benefits and stacked cards on mobile">
+</a>
+
+<p class="photo-footnote">Benchmarking ChatGPT, Miro and DocuSign pricing pages on desktop and mobile.</p>
 
 ---
 
@@ -125,5 +139,10 @@ One of the most interesting aspects of this project was seeing how closely conte
 </a>
 
 <p class="photo-footnote">Adding Pricing to the main navigation made subscription information easier to discover before sign-up.</p>
+
+As an external designer, I didn't have access to performance data after launch. Because the pricing page was a **new experience**, there was no behavioural baseline to compare against. The natural measure of its impact is the change in **free trial starts and converted users**.
+
+<a href="https://www.skoove.com/en/pricing" target="_blank">See the live pricing page<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
+
 
 Sometimes the challenge is not designing a new feature. It's making an existing experience easier to find, understand and trust.

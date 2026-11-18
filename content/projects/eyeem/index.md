@@ -21,7 +21,7 @@ cover:
 
 <span class="tag green text-green">e-commerce</span>
 
-<p class="intro-description">I worked in EyeEm for 2+ years, contributing on the brower-based platform, owning the Webflow account and helping with the recruitment of new designers to build a new Product Design Team.</p>
+<p class="intro-description">I worked at EyeEm for 2+ years on the browser-based platform and the Webflow marketing site. When the team shrank, I partnered with the PM to hire new product designers, reviewing portfolios and interviewing candidates together.</p>
   <div class="intro-details-wrapper">
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/mouse.svg)"></span> Product Designer</p>
     <p class="intro-details no-margin-bottom"><span class="fi" style="background-image: url(/images/location.svg)"></span> Berlin, Hybrid</p>
@@ -34,17 +34,23 @@ cover:
 
 ### About EyeEm
 
-**EyeEm** is as a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.
+**EyeEm** is a photography community and marketplace that facilitates connections between creators and prominent brands to source original and on-brand content.
 
 ### My role at EyeEm
 
-During my role at EyeEm I was one of Designers inside the Product team, specifically collaborating on the maintenance of the browser-based application.
+I was one of the designers in the Product team, working on the browser-based platform. I **led the Cart & Checkout redesign**, working with a PM, the Data team and a front-end developer, and I maintained EyeEm's **Webflow** marketing site.
+
+<div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)">
+<strong>Project status:</strong> the redesign was in its final review before development when EyeEm went through insolvency, so it never shipped. I'm sharing it for the process: diagnosing drop-offs with data, prioritising quick wins and designing within an existing system.
+</div>
 
 ### Reducing friction in the purchase journey
 
-Our Product Design team collaborated closely with project managers, data analysts, and developers. We worked together on the continuos development of the platform and set up regular meetings and feedback sessions.
+The redesign started from **funnel data** prepared by the Data team and shared by the PM, which showed where users were dropping off between the Cart and a completed purchase.
 
-For the redesign of the Cart & Checkout process, we analyzed **data reports**, identified **pain points**, elaborated hypothesis and proposed improvements. This included addressing UX improvements on the cart dropdown feature, background color inconsistencies, premature tax calculations, and issues with SSO implementation for logged-out users. We also collaborated with the legal team to ensure compliance with changes like pre-saving billing information and payment details.
+From there, we identified **pain points**, formed hypotheses and proposed improvements, including background color inconsistencies, premature tax calculations and SSO issues for logged-out users. We also consulted the legal team on changes like pre-saving billing and payment details.
+
+The company was under pressure, so we needed to move fast and effectively. We prioritised by **impact vs. effort**, favouring changes that were also **low effort for front-end development**. I ran **fresh eyes sessions** with the two other product designers to review the work, and the final design was a **consensus between the PM, Data, Front-End and me**, with input from several areas of the company.
 
 <a href="images/eyeem-user-flow.png" class="lightbox">
   <img src="images/eyeem-user-flow.png" alt="EyeEm User Flow">
@@ -76,7 +82,9 @@ VAT calculations were appearing **too early in the cart flow**. As users added m
 
 ##### Dark Theme vs. Light Theme
 
-Based on research, we applied EyeEm’s dark theme to the Cart Page, along with the top navigation, to **maintain visual consistency** and keep users feeling connected to the platform. A light theme at this stage could have disrupted the flow, making users feel like they were leaving the page.
+A previous designer's audit had already flagged parts of this flow as outdated. Looking at the screens in depth, we found that the Cart had **no top navigation** and used a **light background**, which could make users feel they had left EyeEm. **Benchmarking** how competitors handled their carts supported this hypothesis.
+
+Switching to EyeEm's **dark theme** was also a low-effort quick win: it was our main theme, and all the components already existed in the **design system and UI kit**.
 
 ##### Introducing more payment methods: Long term goals
 
@@ -131,7 +139,7 @@ We also discussed the potential for a Guest Checkout, allowing users to **skip a
 #### Checkout Page
 
 <a href="images/eyeem-ux-checkout.png" class="lightbox">
-  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkput Page">
+  <img src="images/eyeem-ux-checkout.png" alt="EyeEm UX Checkout Page">
 </a>
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"><strong>Only 10% of users</strong> who reached the Checkout page <strong>completed their purchase</strong>, highlighting a need to streamline this stage. We aimed to compress the steps required and reduce user interactions.</div>
@@ -164,7 +172,7 @@ To streamline the purchase process, we considered **pre-saving user data**, such
 #### Thank you Page
 
 <a href="images/eyeem-ux-thank-you.png" class="lightbox">
-  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkput Page">
+  <img src="images/eyeem-ux-thank-you.png" alt="EyeEm UX Checkout Page">
 </a>
 
 ##### Dark Theme Consistency
@@ -182,63 +190,32 @@ To maintain a cohesive user experience, we applied EyeEm’s dark theme to the T
   </div>
 </div>
 
-<div style="display:none">
-### Low-fi & Prototype
-
-We created initial **prototypes** and discussed them with the Data and Front-End teams. Their feedback was crucial in finalizing a solution that addressed our quick wins.
-
-<a href="https://www.figma.com/proto/8uY2K7IVQ9ZY0zZ6nbfgLY/Cart-%26-Checkout-process-(Quick-wins)-(Copy)?page-id=2754%3A8279&node-id=2767-16673&viewport=831%2C395%2C0.06&t=CbdfJQfKEAJWeuO0-1&scaling=min-zoom&starting-point-node-id=2767%3A16673&show-proto-sidebar=1
-" target="_blank" style="display:none">Check final prototype<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
-
-<a href="images/eyeem-low-fi-dropdown.png" class="lightbox">
-  <img src="images/eyeem-low-fi-dropdown.png" alt="Checkout Prototyping phase">
-</a>
-
-<p class="photo-footnote">Prototyping the new behaviour of the cart dopdown</p>
-
-### Hi-fi & Redesigned screens
-
-The final step involved preparing high-fidelity mockups using our **design system**, ensuring consistency across the platform and alignment with the front-end developers' UI kit.
-
-<a href="images/eyeem-auth.png" class="lightbox">
-  <img src="images/eyeem-auth.png" alt="EyeEm Hifi Authentication">
-</a>
-
-<a href="images/eyeem-hifi-modals.png" class="lightbox">
-  <img src="images/eyeem-hifi-modals.png" alt="EyeEm Hifi Modals">
-</a>
-
-<a href="images/eyeem-hifi-1.png" class="lightbox">
-  <img src="images/eyeem-hifi-1.png" alt="EyeEm Hifi Screens">
-</a>
-
-<a href="images/eyeem-hifi-2.png" class="lightbox">
-  <img src="images/eyeem-hifi-2.png" alt="EyeEm Hifi Screens">
-</a>
-
-<p class="photo-footnote">View of redesigned elements and screens</p>
-
-</div>
-
 <hr>
 
 ### EyeEm's Web presence
 
-<a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and frequently launched landing pages for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
+<a href="https://eyeem.com" target="_blank">EyeEm.com <span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a> combines the flexibility of **Webflow** with the capabilities of front-end development, giving designers complete control over the UI and behavior of some areas of the website. I maintained various site areas and launched around **four landing pages per quarter** for marketing campaigns, collaborating with the Marketing and Innovation teams. I was responsible for ideation, design, implementation, and final release of these projects.
 
 Here are some live examples:
 
 ![EyeEm Web](images/eyeem-web.jpg)
-<a href="https://eyeem.com" target="\_blank">eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
+<a href="https://eyeem.com" target="_blank">eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-magazine.jpg)
-<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/magazine" target="_blank">eyeem.com/magazine<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-awards.jpg)
-<a href="https://www.eyeem.com/awards" target="\_blank">eyeem.com/awards<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+<a href="https://www.eyeem.com/awards" target="_blank">eyeem.com/awards<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
 
 ![EyeEm Web](images/eyeem-creative-trends.jpg)
-<a href="https://creativetrends.eyeem.com/" target="\_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></p>
+<a href="https://creativetrends.eyeem.com/" target="_blank">creativetrends.eyeem.com<span class="fi" style="background-image: url(/images/ext-link.svg)"></span></a>
+
+
+### Learnings
+
+- **Data makes a problem concrete.** The funnel numbers turned a project with many opinions into a shared diagnosis, and helped align the PM, Data and Front-End on what to fix first.
+- **Quick wins live inside the system.** Reusing the dark theme and existing components made improvements cheap to build when speed mattered most.
+- **Define success at the start.** We had the baseline funnel data, so measuring the impact after launch would have been straightforward, but we never agreed on targets. Today I'd set them at kick-off.
 
 <script>
 document.querySelectorAll('.image-comparison-slider').forEach(slider => {

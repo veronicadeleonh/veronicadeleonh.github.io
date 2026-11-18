@@ -33,29 +33,33 @@ cover:
 
 ![BaseCase](images/basecase-intro.png)
 
-#### About BaseCase
+### About BaseCase
 
 **BaseCase** is a no-code platform used by life sciences companies to transform spreadsheets into digital applications for medical communication, product education, and sales enablement.
 
-#### My role at Basecase
+### My role at Basecase
 
-Working in a small cross-functional design team, I contributed across marketing, product documentation and UX/UI. As my role evolved, I became responsible for designing and building interactive demo applications used to explain product capabilities, new features and healthcare workflows.
+I joined BaseCase as a **Marketing Designer**, working directly with the Design Manager, who was also part of the software team and had led design until then. Our first project was redesigning the **print materials for trade fairs**, with one flyer per product add-on. Without calling it that at the time, we were building a small **design system** to keep the website and print materials consistent.
+
+When I was asked to cover a **demo app** for a client, the CEO suggested I keep producing them. There was a lot to do: besides creating new demos, many older ones needed to be **redesigned and updated** as BaseCase's features evolved. That's how I became responsible for the **Demo App Library**.
 
 <div class="box-notes yellow-background yellow-border">
   Complex software doesn't need more documentation, just better explanations.
 </div>
 
-#### The Demo App Library
+### The Demo App Library
 
 My main responsibility was building a growing library of interactive demo applications used to communicate complex product capabilities and healthcare workflows.
 
-<a href="images/demo-apps.png" class="lightbox">
-  <img src="images/demo-apps.png" alt="BaseCase Demo Apps Library">
+<a href="images/demo-apps.jpg" class="lightbox">
+  <img src="images/demo-apps.jpg" alt="BaseCase Demo Apps Library">
 </a>
 
 The Demo App Library was a growing collection of interactive applications showcasing BaseCase's capabilities—from onboarding and feature walkthroughs to complex healthcare use cases.
 
 I owned the end-to-end process, from understanding the brief and designing the experience to building the applications inside the BaseCase platform.
+
+The demos were used by Marketing at **events and in campaigns**, and many were also part of the **product documentation**, linked from Jira tickets.
 
 <hr>
 
@@ -88,13 +92,15 @@ I owned the end-to-end process, from understanding the brief and designing the e
 
 <hr>
 
+Because their scope was purely illustrative, the demos used **fictional healthcare brands** instead of real clients. When Marketing wanted to reach a specific group of clients, I adapted a demo's brand to that audience.
+
 <a href="images/basecase-detailed-demo.png" class="lightbox">
   <img src="images/basecase-detailed-demo.png" alt="Basecase Demo Apps">
 </a>
 
 <p class="photo-footnote">Close-ups to some of the tools that made part of the Demo App Library</p>
 
-#### Marketing Assets
+### Marketing Assets
 
 Beyond product experiences, I designed marketing visuals supporting feature launches, trade fairs and website content. Many of these illustrations were created for the BaseCase Features pages, helping communicate complex product capabilities through simple visual examples.
 
@@ -108,7 +114,7 @@ Beyond product experiences, I designed marketing visuals supporting feature laun
 </a>
 
 <a href="images/basecase-spreadsheets.png" class="lightbox">
-  <img src="images/basecase-features-spreadsheets.png" alt="BaseCase Features Spreadsheets">
+  <img src="images/basecase-spreadsheets.png" alt="BaseCase Features Spreadsheets">
 </a>
 
 <a href="images/basecase-knowledge-base.png" class="lightbox">
@@ -120,3 +126,9 @@ Beyond product experiences, I designed marketing visuals supporting feature laun
 </a>
 </div>
 <p class="photo-footnote">Example of some of the Feature illustrations created for BaseCase's website</p>
+
+### Learnings
+
+- **This is where I learned UX/UI.** Building demos taught me to turn complex features into experiences people could understand at a glance.
+- **Systems before they had a name.** Keeping the website, print materials and demos consistent showed me the value of reusable patterns early on.
+- **Maintenance is part of the job.** As the product evolved, so did the demos. Updating old ones mattered as much as creating new ones.

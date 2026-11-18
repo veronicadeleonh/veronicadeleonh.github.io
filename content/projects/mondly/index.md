@@ -36,19 +36,43 @@ cover:
 
 **Mondly** is a language learning app that aims to make language learning fun and easy through technological innovation and multiple language combinations.
 
-On 2022 Mondly got acquired by Pearson, giving the Product team a chance for a big redesign of Mondly's platform and web presence.
+In 2022 Mondly was acquired by Pearson, giving the Product team a chance for a big redesign of Mondly's platform and web presence.
 
 ### My Role at Mondly
 
-During my stay at Mondly, making **A/B tests** about the performance of the Old vs. the New Design was important to validate with data the development of the rebrand and plan the marketing strategies for this design transition.
+My role sat between **Product Design** and **Growth**. I designed growth and monetization experiences, and the variants for **A/B tests** that the Growth and User Acquisition teams set up and analysed. Testing the old vs. the new design helped us validate the rebrand with data and plan the marketing transition.
 
-Before I joined the team, the product designers put in place a detailed **design system** that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a **style guide** in Notion, were we documented the details of the New Mondly Brand and its usage.
+Before I joined the team, the product designers put in place a detailed **design system** that served as base for all the future assets we developed on the way. I collaborated closely with one of my colleagues on the creation of a **style guide** in Notion, where we documented the details of the New Mondly Brand and its usage.
 
 <a href="images/styleguide-components.png" class="lightbox">
   <img src="images/styleguide-components.png" alt="Mondly Style Guide Components">
 </a>
 
 <p class="photo-footnote">View of some of the components built for the Styleguide in Figma</p>
+
+### Balancing Growth with Brand Experience
+
+A recurring challenge at Mondly was **balancing short-term acquisition goals with the long-term product experience**.
+
+The User Acquisition team often looked to high-converting apps like **Temu** or **AliExpress** for inspiration. These apps rely on urgency, aggressive promotions and visually dense interfaces. The patterns clearly worked for them, but we in the Product Design team felt they could **hurt trust in a learning product** and didn't fit Mondly's brand.
+
+Instead of rejecting the requests, I looked at _why_ those patterns convert: **urgency, a clear offer and high visibility**. I then designed Limited Time Offer banners that used those principles within Mondly's design system.
+
+<a href="images/mondly-lto-process.png" class="lightbox">
+  <img src="images/mondly-lto-process.png" alt="A Temu Valentine's sale banner next to Mondly's adapted banner, mapping urgency to a countdown timer, aggressive promotions to a clear discount, and dense interfaces to a contained card">
+</a>
+
+<p class="photo-footnote">From inspiration to adaptation: keeping the conversion principles, leaving out the visual density.</p>
+
+For the **Valentine's Day campaign**, this meant taking the energy of high-conversion promotions and translating it into Mondly's visual language. It took **several rounds of feedback** with Marketing, Growth and User Acquisition. I explored different versions, explained the trade-offs of each, kept what supported their goals and adjusted what compromised the brand.
+
+<a href="images/mondly-lto-versions.png" class="lightbox">
+  <img src="images/mondly-lto-versions.png" alt="Four versions of the Valentine's banner in the app: header timer, campaign-first, timer in pill, and the final version with a full-width CTA">
+</a>
+
+<p class="photo-footnote">Explorations for the Valentine's banner: timer in a header vs. inside the card, offer-first vs. campaign-first, and the weight of the CTA. The final kept the timer inside the card with a full-width CTA.</p>
+
+The same approach shaped the **Limited Time Offer banners** that appeared in the app outside seasonal campaigns. Here, instead of debating which direction was right, we tested **three variants in an A/B/C test** and let user behaviour decide.
 
 ### Mondly Web & Marketing
 
@@ -83,36 +107,12 @@ In order to test the impact of the rebranding on the Stores, we initiated a proj
  </a>
 
  <a href="images/app-store-images-light.png" class="lightbox">
-   <img src="images/app-store-images-light.png" alt="Mondly App Strore Images Light Theme">
+   <img src="images/app-store-images-light.png" alt="Mondly App Store Images Light Theme">
  </a>
 
 <p class="photo-footnote">Screenshots of the dark and light versions of the App Store images for iPhone X</p>
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> Data showed a <strong>nearly 3% increase in App Store downloads</strong> with <strong>Mondly's Light theme</strong> version compared to the control and dark theme variants. With this percentage we met our OKRs for Q1 2024</div>
-
-#### Balancing Growth with Brand Experience
-
-A recurring challenge at Mondly was **balancing short-term acquisition goals with the long-term product experience**.
-
-The User Acquisition team often looked to high-converting apps like **Temu** or **AliExpress** for inspiration. These apps rely on urgency, aggressive promotions and visually dense interfaces. The patterns clearly worked for them, but we in the Product Design team felt they could **hurt trust in a learning product** and didn't fit Mondly's brand.
-
-Instead of rejecting the requests, I looked at _why_ those patterns convert: **urgency, a clear offer and high visibility**. I then designed Limited Time Offer banners that used those principles within Mondly's design system.
-
-<a href="images/mondly-lto-process.png" class="lightbox">
-  <img src="images/mondly-lto-process.png" alt="A Temu Valentine's sale banner next to Mondly's adapted banner, mapping urgency to a countdown timer, aggressive promotions to a clear discount, and dense interfaces to a contained card">
-</a>
-
-<p class="photo-footnote">From inspiration to adaptation: keeping the conversion principles, leaving out the visual density.</p>
-
-For the **Valentine's Day campaign**, this meant taking the energy of high-conversion promotions and translating it into Mondly's visual language. It took **several rounds of feedback** with Marketing, Growth and User Acquisition. I explored different versions, explained the trade-offs of each, kept what supported their goals and adjusted what compromised the brand.
-
-<a href="images/mondly-lto-versions.png" class="lightbox">
-  <img src="images/mondly-lto-versions.png" alt="Four versions of the Valentine's banner in the app: header timer, campaign-first, timer in pill, and the final version with a full-width CTA">
-</a>
-
-<p class="photo-footnote">Explorations for the Valentine's banner: timer in a header vs. inside the card, offer-first vs. campaign-first, and the weight of the CTA. The final kept the timer inside the card with a full-width CTA.</p>
-
-The same approach shaped the **Limited Time Offer banners** that appeared in the app outside seasonal campaigns. Here, instead of debating which direction was right, we tested **three variants in an A/B/C test** and let user behaviour
 
 #### Seasonal Campaigns
 
@@ -144,6 +144,8 @@ So we changed the question:
 
 I redesigned the campaign layout so the 3D look came from an **AI-generated background** instead of a bespoke illustration. The designer in charge could now produce the final asset in-house, without waiting on an external partner, while the campaign still felt unmistakably Mondly.
 
+The background was generated with **Midjourney**, using a defined prompt for the style and image size so results stayed consistent across campaigns. Because the brand was still evolving through everyone's work, we first validated the images with the Product Design team in our weekly **fresh eyes** sessions, especially with the Design Lead, before showing them to stakeholders. This removed the round-trip with an external 3D artist: we could iterate on the visuals ourselves and bring stakeholders an option that was already aligned with the brand.
+
 <a href="images/seasonal-campaigns-redesign.png" class="lightbox">
  <img src="images/seasonal-campaigns-redesign.png" alt="Mondly Seasonal Campaign"> 
 </a> 
@@ -159,19 +161,12 @@ We aligned with stakeholders to test **two variants with different backgrounds a
 
 <div class="box-notes yellow-background yellow-border" style="margin-bottom: var(--space-4)"> <strong>Variant B</strong> performed best, <strong>with 7% more Activate taps than the original campaign</strong>. The new layout showed that faster, in-house production could keep the brand experience and improve engagement at the same time.</br></br><strong>The new layout became the template for the following seasonal campaigns</strong>, so each new promotion could be produced in-house and tested without commissioning new 3D artwork.</div>
 
-### Marketing Campaigns
+### Learnings
 
-One major ongoing marketing campaign involved creating an onboarding flow with a questionnaire that guided users to a payment screen. I was responsible for the design and UX of this flow. The biggest challenge was developing a style that seamlessly blended elements of both the old and new Mondly branding.
-
-<a href="images/w2w-screens.png" class="lightbox">
-  <img src="images/w2w-screens.png" alt="Mondly W2W Screens">
-</a>
-
-<a href="images/w2w-components.png" class="lightbox">
-  <img src="images/w2w-components.png" alt="Mondly W2W Screens">
-</a>
-
-<p class="photo-footnote">Figma screenshot from the W2W campaing mockups and components in Figma</p>
+- **Growth requests are signals, not specs.** Asking _why_ a pattern converts let me keep the principle (urgency, a clear offer, visibility) without hurting trust in a learning product.
+- **Remove the bottleneck, not the quality.** Campaigns were slow because of the dependency on bespoke 3D artwork, not because of the layout. Reframing the problem made production faster and improved engagement.
+- **A design system can scale beyond the product.** Extending it to the Offer page, store images and campaigns gave marketing and growth a shared foundation.
+- **Let data settle the debates.** My first time working in user acquisition taught me to turn opinions into testable variants.
 
 <script>
 document.querySelectorAll('.image-comparison-slider').forEach(slider => {
