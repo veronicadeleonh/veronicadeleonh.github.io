@@ -20,7 +20,7 @@
             <a class="btn-connect circled" href="https://github.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/github.svg)"></span></a>
             <a class="btn-connect circled" href="https://instagram.com/veronicadeleonh" target=_blank><span class="fip" style="background-image: url(/images/instagram.svg)"></span></a>
       </div>
-      <a class="btn-connect rounded arrow" href="images/Veronica_De_Leon_Product_Designer_CV.pdf">Download CV</a>
+      <a class="btn-connect rounded arrow" href="images/Veronica_De_Leon_Senior_Product_Designer_CV.pdf">Download CV</a>
       <!-- <span class="fip" style="background-image: url(images/arrow-bottom.svg)">  -->
 </div>
 
